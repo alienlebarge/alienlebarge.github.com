@@ -1,0 +1,46 @@
+// Variables
+// --------------------
+
+@color-typo: #666;
+@color-typo-secondary: #ccc;
+@color-heading: #000;
+@linkcolor: #000;
+
+
+// Typography
+// --------------------
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Menlo, Monaco, monospace;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: @color-typo;
+  
+  // heading
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: @color-heading;
+  }
+
+  time {
+    color: @color-typo-secondary;
+  }
+}
+
+a {
+  color: @linkcolor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

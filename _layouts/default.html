@@ -6,7 +6,10 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
+        <!-- normalize -->
+        <link rel="stylesheet" href="/assets/normalize/normalize.css">
+
+        <!-- syntax highlighting CSS  -->
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
@@ -14,33 +17,20 @@
 
     </head>
     <body>
+      
+      <header>
+        <h1><a href="/">{{ site.name }}</a></h1>
+      </header>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+      {{ content }}
 
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/alienlebarge/">github.com/alienlebarge</a><br />
-                  <a href="http://twitter.com/alienlebarge/">twitter.com/alienlebarge</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+      <footer>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="http://github.com/alienlebarge/">github.com/alienlebarge</a></li>
+          <li><a href="http://twitter.com/alienlebarge/">twitter.com/alienlebarge</a></li>
+        </ul>
+      </footer>
 
     </body>
 </html>
