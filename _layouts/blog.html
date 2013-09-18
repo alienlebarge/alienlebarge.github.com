@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- normalize -->
+        <link rel="stylesheet" href="/assets/normalize/normalize.css">
+
+        <!-- syntax highlighting CSS  -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+      <header>
+        <p class="h1"><a href="/">{{ site.name }}</a></p>
+      </header>
+
+      {{ content }}
+
+      <footer>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="http://github.com/alienlebarge/">github.com/alienlebarge</a></li>
+          <li><a href="http://twitter.com/alienlebarge/">twitter.com/alienlebarge</a></li>
+        </ul>
+      </footer>
+
+    </body>
+</html>
