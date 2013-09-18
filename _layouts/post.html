@@ -3,7 +3,7 @@ layout: blog
 ---
 <main>
   <h1>{{ page.title }}</h1>
-  <p><time>{{ page.date | date_to_string }}</time></p>
+  <p><time pubdate datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></p>
 
   <div class="post">
     {{ content }}
