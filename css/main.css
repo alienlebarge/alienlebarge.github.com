@@ -1,13 +1,15 @@
 html {
   font-size: 62.5%;
 }
+
 body {
+  margin: 0.5em;
   font-family: Menlo, Monaco, monospace;
   font-size: 1.4rem;
   line-height: 1.5;
   color: #666666;
-  margin: 0.5em;
 }
+
 body h1,
 body h2,
 body h3,
@@ -16,13 +18,16 @@ body h5,
 body h6 {
   color: #000000;
 }
+
 body time {
   color: #cccccc;
 }
+
 a {
   color: #000000;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
