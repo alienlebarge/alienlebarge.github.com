@@ -1,0 +1,12 @@
+{
+  "name": "alienlebargeblog",
+  "description": "alienlebarge blog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alienlebarge/alienlebarge.github.com.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-recess": "~0.4.0"
+  }
+}
