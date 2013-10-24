@@ -10,4 +10,4 @@ I'm currently testing some deployment routing. Here is the current process. It w
 
 1. `$ grunt`
 1. `$jekyll serve`
-1. `http://localhost:4000
+1. `http://localhost:4000`
