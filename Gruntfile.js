@@ -5,7 +5,6 @@ module.exports = function (grunt) {
 
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
-    dest: '../intranet13/',
 
 
 
