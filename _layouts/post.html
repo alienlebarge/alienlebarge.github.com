@@ -2,8 +2,11 @@
 layout: blog
 ---
 <main>
+
   <h1>{{ page.title }}</h1>
+
   <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
 
   {{ content }}
+
 </main>
