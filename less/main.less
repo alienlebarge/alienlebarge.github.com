@@ -6,6 +6,9 @@
 @color-heading: #000;
 @color-link: #000;
 
+@font-main: Menlo, Monaco, monospace;
+@font-header: Menlo, Monaco, monospace;
+
 
 // Style
 // --------------------
@@ -15,7 +18,7 @@ html {
 }
 
 body {
-  font-family: Menlo, Monaco, monospace;
+  font-family: @font-main;
   font-size: 1.4rem;
   line-height: 1.5;
   color: @color-typo;
@@ -29,6 +32,7 @@ body {
   h4,
   h5,
   h6 {
+    font-family: @font-header;
     color: @color-heading;
   }
 
@@ -37,6 +41,9 @@ body {
   }
 }
 
+
+// Link
+// -------------------
 a {
   color: @color-link;
   text-decoration: none;
@@ -45,4 +52,3 @@ a {
     text-decoration: underline;
   }
 }
-
