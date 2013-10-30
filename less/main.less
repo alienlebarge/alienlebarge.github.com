@@ -2,19 +2,31 @@
 // --------------------
 
 @color-typo: #666;
-@color-typo-secondary: #ccc;
+@color-muted: #ccc;
 @color-heading: #000;
 @color-link: #000;
 
-@font-main: Menlo, Monaco, monospace;
-@font-header: Menlo, Monaco, monospace;
+@font-main: 'Merriweather', Menlo, Monaco, monospace;
+@font-header: 'Raleway', Menlo, Monaco, monospace;
+
+// Raleway font import
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+// Merriweather font import
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+
+// Muted
+// -------------------
+.muted {
+  color: @color-muted;
+}
 
 
 // Style
 // --------------------
 
 html {
-  font-size: 62.5%;
+  //font-size: 62.5%;
 }
 
 body {
@@ -37,7 +49,7 @@ body {
   }
 
   time {
-    color: @color-typo-secondary;
+    .muted;
   }
 }
 
