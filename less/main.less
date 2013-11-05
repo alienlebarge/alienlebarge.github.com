@@ -1,13 +1,33 @@
-// Variables
-// --------------------
 
-@color-typo: #666;
-@color-muted: #ccc;
-@color-heading: #000;
-@color-link: #000;
+//------------------------------------//
+//    $IMPORT ASSETS
+//------------------------------------//
+
+@import 'assets/normalize/normalize.css';
 
 
-@import "assets/normalize/normalize.css";
+
+
+
+
+//------------------------------------//
+//    $VARIABLES
+//------------------------------------//
+
+@import 'lib/variables.less';
+
+
+
+
+
+
+//------------------------------------//
+//    $BASE ELEMENTS
+//------------------------------------//
+
+@import 'lib/heading.less';
+
+
 
 
 @font-main: 'Merriweather', Menlo, Monaco, monospace;
@@ -29,10 +49,6 @@
 // Style
 // --------------------
 
-html {
-  //font-size: 62.5%;
-}
-
 body {
   font-family: @font-main;
   font-size: 1.4rem;
@@ -40,17 +56,6 @@ body {
   color: @color-typo;
 
   margin: 0.5em;
-
-  // heading
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: @font-header;
-    color: @color-heading;
-  }
 
   time {
     .muted;
