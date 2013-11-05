@@ -25,7 +25,11 @@
 //    $BASE ELEMENTS
 //------------------------------------//
 
-@import 'lib/heading.less';
+@import 'lib/base/main.less';
+@import 'lib/base/heading.less';
+@import 'lib/base/anchor.less';
+
+
 
 
 
@@ -49,29 +53,6 @@
 // Style
 // --------------------
 
-body {
-  font-family: @font-main;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: @color-typo;
-
-  margin: 0.5em;
-
-  time {
-    .muted;
-  }
+time {
+  .muted;
 }
-
-
-// Link
-// -------------------
-a {
-  color: @color-link;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-
