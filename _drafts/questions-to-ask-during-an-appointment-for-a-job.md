@@ -5,6 +5,6 @@ date:   2013-09-18 16:19:00
 categories: blog
 ---
 
-La plus part du temps, c'est seulement une fois que vous occupez votre place de travail que vous vous dites "J'aurais du leur poser la questions".
+La plus part du temps, c'est seulement une fois que vous occupez votre place de travail que vous vous dites "J'aurais du leur poser la question".
 
 - Est-il possible de faire du télétravail ?
