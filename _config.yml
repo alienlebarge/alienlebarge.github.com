@@ -1,3 +1,3 @@
 name: alienlebarge's code blog
 pygments: true
-exclude: [Gruntfile.js, package.json, wordpress.xml, less]
+exclude: [Gruntfile.js, package.json, wordpress.xml, less, *.scss]
