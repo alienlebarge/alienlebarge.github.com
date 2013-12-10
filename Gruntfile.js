@@ -10,15 +10,26 @@ module.exports = function (grunt) {
 
 
 
-    recess: {
+    sass: {
       dist: {
         options: {
-          compile: true,
-          compress: true,
+          style: 'expanded'
         },
         files: {
-          'css/main.css': ['less/main.less']
+          'css/style.css' : 'css/style.scss'
         }
+      }
+    },
+
+
+
+
+
+
+    watch: {
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass']
       }
     }
 
@@ -29,9 +40,10 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['recess']);
+  grunt.registerTask('default', ['watch']);
 
 };
