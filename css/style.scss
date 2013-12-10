@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.SCSS
+\*------------------------------------*/
+/**
+ * Here we start to pull everything together into one big stylesheet.
+ *
+ * SETUP............Settings, tools, mixins, etc.
+ * GENERIC..........normalize.css, reset, shared styles, etc.
+ * BASE.............Basic HTML elements.
+ * OBJECTS..........Objects, abstractions, design patterns.
+ * GUI..............Components and modules.
+ * TRUMPS...........Helpers, overrides, ‘trump-cards’.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SETUP
+\*------------------------------------*/
+/**
+ * Settings, variables and tools.
+ */
+@import "01_settings/all",
+        "02_tools/all";
+
+
+
+
+
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+/**
+ * These are far reaching styles that affect and underpin every element on the
+ * page, e.g. `* {}`.
+ */
+@import "03_generic/all";
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/**
+ * These are base HTML elements, things with no classes on them, e.g. `h1 {}`,
+ * `blockquote {}`.
+ */
+@import "04_base/all";
+
+
+
+
+
+/*------------------------------------*\
+    #OBJECTS
+\*------------------------------------*/
+/**
+ * These are design-free objects, abstractions and design patterns. These create
+ * constructs that you lay your designs over.
+ */
+@import "05_objects/all";
+
+
+
+
+
+/*------------------------------------*\
+    #GUI
+\*------------------------------------*/
+/**
+ * These are your components and modules; things like buttons, accordions,
+ * carousels, etc.
+ */
+@import "06_gui/all";
+
+
+
+
+
+/*------------------------------------*\
+    #TRUMPS
+\*------------------------------------*/
+/**
+ * These are helper classes and overrides that should take precedence over all
+ * other styles, e.g. `.float--left {}`.
+ */
+@import "07_trumps/all";
