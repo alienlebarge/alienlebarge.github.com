@@ -1,7 +1,6 @@
 /*------------------------------------*\
-    #BASE
+    #LINKS
 \*------------------------------------*/
-/**
- * Pull in all the base files we want.
- */
-@import "links";
+a {
+    color: $base--link-color;
+}
