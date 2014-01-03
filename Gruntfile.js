@@ -31,9 +31,6 @@ module.exports = function (grunt) {
       },
       serve: {
         cmd: 'jekyll serve --watch'
-      },
-      deploy: {
-        cmd: 'rsync --progress -a --delete -e "ssh -q" _site/ myuser@host:mydir/'
       }
     },
 
