@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS  -->
-        <link rel="stylesheet" href="/stylesheets/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/stylesheets/style.css">
-
-        <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-
-    </head>
+    {% include head.html %}
     <body>
 
       <header>
@@ -24,13 +9,7 @@
 
       {{ content }}
 
-      <footer>
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="http://github.com/alienlebarge/">github.com/alienlebarge</a></li>
-          <li><a href="http://twitter.com/alienlebarge/">twitter.com/alienlebarge</a></li>
-        </ul>
-      </footer>
+      {% include footer.html %}
 
     </body>
 </html>
