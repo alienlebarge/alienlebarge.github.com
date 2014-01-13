@@ -1,0 +1,8 @@
+//------------------------------------//
+//  $FUNCTIONS
+//------------------------------------//
+
+// A small, internally-used function to remove the units from a given value.
+@function typecsset-strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}

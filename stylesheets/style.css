@@ -35,9 +35,6 @@
     #COLOR
 \*------------------------------------*/
 /*------------------------------------*\
-    #TYPES
-\*------------------------------------*/
-/*------------------------------------*\
     #Tools
 \*------------------------------------*/
 /**
@@ -502,57 +499,74 @@ table {
  * Pull in all the base files we want.
  */
 /*------------------------------------*\
-    #MAIN
+    #SHARED
 \*------------------------------------*/
-html {
-  font-size: 12px;
-  font-size: 1rem;
-  line-height: 1.5;
+/**
+ * A lot of elements in Typecsset need to share some declarations (mainly for
+ * vertical rhythm), so we `@extend` some silent classes.
+ */
+pre, h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, blockquote, table {
+  margin: 0;
+  padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+pre, h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, blockquote, table {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
-h1, .h1 {
-  font-size: 36px;
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+/**
+ * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a
+ *    font-size smaller than 1em.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* [1] */
+}
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1 {
+  font-size: 48px;
   font-size: 3rem;
   line-height: 1;
 }
 
-h2, .h2 {
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333;
+}
+
+h3 {
   font-size: 30px;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
-h3, .h3 {
-  font-size: 24px;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-h4, .h4 {
-  font-size: 20px;
-  font-size: 1.66667rem;
-  line-height: 1.8;
-}
-
-h5, .h5 {
-  font-size: 16px;
-  font-size: 1.33333rem;
-  line-height: 1.125;
-}
-
-h6, .h6 {
-  font-size: 14px;
-  font-size: 1.16667rem;
-  line-height: 1.28571;
+h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 
 /*------------------------------------*\
@@ -560,6 +574,128 @@ h6, .h6 {
 \*------------------------------------*/
 a {
   color: #bada55;
+}
+
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+ul, ol, dd {
+  margin-left: 48px;
+  margin-left: 3rem;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/*------------------------------------*\
+    #MAIN
+\*------------------------------------*/
+/**
+ * 1. Set the base element’s `font-size` to the value of your choosing. Set in
+ *    ems, assuming a browser default of 16px.
+ * 2. Work out the unitless `line-height` for your project based around your
+ *    desired `line-height` (defined previously in pixels), and your project’s
+ *    base font size.
+ */
+/**
+ * 3. If you have chosen to display a baseline grid, we turn it on here.
+ */
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [2] */
+  background-image: url(http://basehold.it/i/24);
+  /* [3] */
+}
+
+body {
+  margin: 0;
+}
+
+/*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+/**
+ * Not strictly a paragraph, but probably doesn’t need its own section.
+ */
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+/**
+ * 1. Hang the opening quote of the blockquote.
+ */
+blockquote {
+  text-indent: -0.41em;
+  /* [1] */
+}
+
+/**
+ * Set up quote marks on quoting elements. This is very English-based, so we are
+ * using “, ”, ‘, and ’ quotes.
+ */
+blockquote {
+  quotes: "“" "”";
+  margin-left: 48px;
+  margin-left: 3rem;
+}
+blockquote p:before {
+  content: "“";
+  content: open-quote;
+}
+blockquote p:after {
+  content: "";
+  content: no-close-quote;
+}
+blockquote p:last-of-type:after {
+  content: "”";
+  content: close-quote;
+}
+
+q {
+  quotes: "‘" "’" "“" "”";
+  /**
+   * If an element opens with an inline quote, let’s hang that.
+   */
+}
+q:before {
+  content: "‘";
+  content: open-quote;
+}
+q:after {
+  content: "’";
+  content: close-quote;
+}
+q q:before {
+  content: "“";
+  content: open-quote;
+}
+q q:after {
+  content: "”";
+  content: close-quote;
+}
+q:first-child {
+  display: inline-block;
+  text-indent: -0.22em;
+}
+
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+/**
+ * Crude table styles; tables are very difficult to keep on the baseline.
+ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 12px;
 }
 
 /*------------------------------------*\

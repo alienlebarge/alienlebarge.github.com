@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h1-size);
+}
+
+h2 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h2-size);
+}
+
+h3 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h3-size);
+}
+
+h4 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h4-size);
+}
+
+h5 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h5-size);
+}
+
+h6 {
+    @extend %typecsset-vertical-rhythm;
+    @include typecsset-font-size($typecsset-h6-size);
+}

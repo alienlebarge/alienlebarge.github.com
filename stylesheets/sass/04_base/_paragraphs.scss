@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+p {
+    @extend %typecsset-vertical-rhythm;
+
+    @if $typecsset-indented-paragraphs == true {
+
+        + p {
+            @include typecsset-space(text-indent);
+            margin-top: -$typecsset-magic-number;
+            margin-top: -$typecsset-magic-ratio + rem;
+        }
+
+    }
+
+}
+
+/**
+ * Not strictly a paragraph, but probably doesn’t need its own section.
+ */
+address {
+    @extend %typecsset-vertical-rhythm;
+}

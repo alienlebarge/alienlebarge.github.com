@@ -2,18 +2,34 @@
 //  $MIXINS
 //------------------------------------//
 
-// Create a fully formed type style (sizing and vertical rhythm) by passing in a
-// single value, e.g.:
+// Typecsset has a number of its own tools which it uses to generate its CSS
+// more efficiently.
+
+// Quickly generate a font-size in rems, with a pixel fallback, based on the
+// value we pass into the mixin, e.g.:
 //
-// `@include font-size(10px);`
+// h1 {
+//     @include typecsset-font-size(24px);
+// }
 //
-// Thanks to @redclov3r for the `line-height` Sass:
-// twitter.com/redclov3r/status/250301539321798657
+@mixin typecsset-font-size($font-size, $line-height: true) {
+    font-size: $font-size;
+    font-size: ($font-size / $typecsset-base-font-size) * 1rem;
+
+    @if $line-height == true {
+        line-height: ceil($font-size / $typecsset-base-line-height) * ($typecsset-base-line-height / $font-size);
+    }
+
+}
+
+// Space elements by an amount based on your magic number. Pass in the property
+// to be indented as a paramater, e.g.:
 //
-@mixin font-size($font-size, $line-height:true){
-  font-size:$font-size + px;
-  font-size:($font-size / $base-font-size) + rem;
-  @if $line-height == true{
-    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
-  }
+// pre {
+//     @include typecsset-space(padding-left);
+// }
+//
+@mixin typecsset-space($property) {
+    #{$property}: 2 * $typecsset-magic-number;
+    #{$property}: 2 * $typecsset-magic-ratio + rem;
 }

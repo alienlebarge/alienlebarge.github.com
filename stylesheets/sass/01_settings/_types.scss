@@ -1,19 +1,31 @@
-/*------------------------------------*\
-    #TYPES
-\*------------------------------------*/
+//------------------------------------\\
+    // SETTINGS
+//------------------------------------\\
+// Typecsset needs some variables setting before it can get started. Some of
+// these variables can be overriden by developers, others need to remain
+// untouched because Typecsset will assign them automatically based on what
+// you’ve told it.
 
-// Fonts
-$base--header-font: 'PT Sans', Helvetica, Arial, sans-serif;
-$base--body-font:   'PT Serif', Georgia, 'Times New Roman', serif;
+// What would you like your base font-size to be? Define in pixels; the library
+// will convert measurements to the most appropriate units (rems or unitless).
+$typecsset-base-font-size:      16px !default;
+$typecsset-base-line-height:    24px !default;
 
-// Size & line-height
-$base-font-size: 12;
-$base-line-height:  18;
+// Heading sizes
+$typecsset-h1-size:             48px !default;
+$typecsset-h2-size:             36px !default;
+$typecsset-h3-size:             30px !default;
+$typecsset-h4-size:             24px !default;
+$typecsset-h5-size:             20px !default;
+$typecsset-h6-size:             18px !default;
 
-//Heading size
-$h1-size:           36!default; // .h1
-$h2-size:           30!default; // .h2
-$h3-size:           24!default; // .h3
-$h4-size:           20!default; // .h4
-$h5-size:           16!default; // .h5
-$h6-size:           14!default; // .h6
+// Would you like indented (rather than spaced) paragraph delimiting?
+$typecsset-indented-paragraphs: false !default;
+
+// Would you like to show a baseline grid? This is handy during development.
+$typecsset-show-baseline:       true !default;
+
+// Do not modify these variables; they are internal settings upon which the
+// library depends.
+$typecsset-magic-number:        $typecsset-base-line-height;
+$typecsset-magic-ratio:         $typecsset-base-line-height / $typecsset-base-font-size;
