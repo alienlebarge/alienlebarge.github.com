@@ -1,0 +1,63 @@
+[submodule "stylesheets/sass/settings.defaults"]
+	path = stylesheets/sass/settings.defaults
+	url = https://github.com/inuitcss/settings.defaults.git
+[submodule "stylesheets/sass/tools.functions"]
+	path = stylesheets/sass/tools.functions
+	url = https://github.com/inuitcss/tools.functions.git
+[submodule "stylesheets/sass/tools.mixins"]
+	path = stylesheets/sass/tools.mixins
+	url = https://github.com/inuitcss/tools.mixins.git
+[submodule "stylesheets/sass/generic.reset"]
+	path = stylesheets/sass/generic.reset
+	url = https://github.com/inuitcss/generic.reset.git
+[submodule "stylesheets/sass/generic.normalize"]
+	path = stylesheets/sass/generic.normalize
+	url = https://github.com/inuitcss/generic.normalize.git
+[submodule "stylesheets/sass/generic.box-sizing"]
+	path = stylesheets/sass/generic.box-sizing
+	url = https://github.com/inuitcss/generic.box-sizing.git
+[submodule "stylesheets/sass/generic.shared"]
+	path = stylesheets/sass/generic.shared
+	url = https://github.com/inuitcss/generic.shared.git
+[submodule "stylesheets/sass/generic.clearfix"]
+	path = stylesheets/sass/generic.clearfix
+	url = https://github.com/inuitcss/generic.clearfix.git
+[submodule "stylesheets/sass/base.page"]
+	path = stylesheets/sass/base.page
+	url = https://github.com/inuitcss/base.page.git
+[submodule "stylesheets/sass/base.paragraphs"]
+	path = stylesheets/sass/base.paragraphs
+	url = https://github.com/inuitcss/base.paragraphs.git
+[submodule "stylesheets/sass/base.headings"]
+	path = stylesheets/sass/base.headings
+	url = https://github.com/inuitcss/base.headings.git
+[submodule "stylesheets/sass/base.lists"]
+	path = stylesheets/sass/base.lists
+	url = https://github.com/inuitcss/base.lists.git
+[submodule "stylesheets/sass/base.tables"]
+	path = stylesheets/sass/base.tables
+	url = https://github.com/inuitcss/base.tables.git
+[submodule "stylesheets/sass/base.images"]
+	path = stylesheets/sass/base.images
+	url = https://github.com/inuitcss/base.images.git
+[submodule "stylesheets/sass/objects.layout"]
+	path = stylesheets/sass/objects.layout
+	url = https://github.com/inuitcss/objects.layout.git
+[submodule "stylesheets/sass/objects.media"]
+	path = stylesheets/sass/objects.media
+	url = https://github.com/inuitcss/objects.media.git
+[submodule "stylesheets/sass/objects.flag"]
+	path = stylesheets/sass/objects.flag
+	url = https://github.com/inuitcss/objects.flag.git
+[submodule "stylesheets/sass/objects.box"]
+	path = stylesheets/sass/objects.box
+	url = https://github.com/inuitcss/objects.box.git
+[submodule "stylesheets/sass/objects.tabs"]
+	path = stylesheets/sass/objects.tabs
+	url = https://github.com/inuitcss/objects.tabs.git
+[submodule "stylesheets/sass/trumps.widths"]
+	path = stylesheets/sass/trumps.widths
+	url = https://github.com/inuitcss/trumps.widths.git
+[submodule "stylesheets/sass/trumps.spacing"]
+	path = stylesheets/sass/trumps.spacing
+	url = https://github.com/inuitcss/trumps.spacing.git

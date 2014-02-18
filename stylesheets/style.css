@@ -1,57 +1,64 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    STYLE.SCSS
+    #DEFAULTS
 \*------------------------------------*/
 /**
- * Here we start to pull everything together into one big stylesheet.
+ * These variables are inuitcss’ defaults; they should not be modified or
+ * adjusted, you should redfine the variables in your own overrides file and
+ * include it in your project before this file. 
+ */
+/**
+ * High-level base settings.
+ */
+/**
+ * Namespace.
  *
- * SETUP............Settings, tools, mixins, etc.
- * GENERIC..........normalize.css, reset, shared styles, etc.
- * BASE.............Basic HTML elements.
- * OBJECTS..........Objects, abstractions, design patterns.
- * GUI..............Components and modules.
- * TRUMPS...........Helpers, overrides, ‘trump-cards’.
+ * Would you like inuitcss’ classes to be prepended with a namespace? If so,
+ * define it here.
+ */
+/**
+ * Headings.
+ *
+ * These font sizes, defined in pixels, will be converted into rems (with pixel
+ * fallbacks) by inuitcss.
+ */
+/**
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
  */
 /*------------------------------------*\
-    #SETUP
+    #FUNCTIONS
 \*------------------------------------*/
 /**
- * Settings, variables and tools.
+ * inuitcss makes use of a few functions that are also available for you to use
+ * later on in your extension of the framework.
+ */
+/**
+ * Maths helpers.
+ *
+ * Halve and double numbers, returning rounded integers. E.g.:
+ *
+   .foo {
+       padding: halve(3.2px);
+   }
+ *
  */
 /*------------------------------------*\
-    #SETTINGS
+    #MIXINS
 \*------------------------------------*/
 /**
- * Pull in all the settings we require for this project.
+ * inuitcss has a number of default mixins that the framework, and developers
+ * working with it, can make use of.
  */
-/*------------------------------------*\
-    $BORDER-BOX
-\*------------------------------------*/
 /**
- * Do you want all elements to adopt `box-sizing:border-box;` as per
- * paulirish.com/2012/box-sizing-border-box-ftw ?
- */
-/*------------------------------------*\
-    #COLOR
-\*------------------------------------*/
-/*------------------------------------*\
-    #Tools
-\*------------------------------------*/
-/**
- * Pull in all the tools to make your life easier.
- */
-/*------------------------------------*\
-    #GENERIC
-\*------------------------------------*/
-/**
- * These are far reaching styles that affect and underpin every element on the
- * page, e.g. `* {}`.
- */
-/*------------------------------------*\
-    #GENERIC
-\*------------------------------------*/
-/**
- * Pull in all our generic styles, e.g. resets.
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   .foo {
+       @include font-size(10px);
+   }
+ *
  */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -431,423 +438,268 @@ table {
   border-spacing: 0;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+/**
+ * As well as using normalize.css, it is often advantageous to remove all
+ * margins from certain elements.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*------------------------------------*\
-    #BASE
-\*------------------------------------*/
 /**
- * These are base HTML elements, things with no classes on them, e.g. `h1 {}`,
- * `blockquote {}`.
+ * Give a help cursor to elements that give extra info on `:hover`.
  */
+abbr[title],
+dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,
+ins {
+  text-decoration: none;
+}
+
+/**
+ * Apply faux underlines to inserted text via `border-bottom`.
+ */
+ins {
+  border-bottom: 1px solid;
+}
+
 /*------------------------------------*\
-    #BASE
+    #BOX-SIZING
 \*------------------------------------*/
 /**
- * Pull in all the base files we want.
+ * Set the global `box-sizing` state to `border-box`.
+ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * If we have included this file, set a variable to tell the rest of the
+ * framework that global `box-sizing: border-box` has been set.
  */
 /*------------------------------------*\
     #SHARED
 \*------------------------------------*/
 /**
- * A lot of elements in Typecsset need to share some declarations (mainly for
- * vertical rhythm), so we `@extend` some silent classes.
+ * Where `margin-bottom` is concerned,this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
  */
-pre, h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, blockquote, table {
-  margin: 0;
-  padding: 0;
-}
-
-pre, h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, blockquote, table {
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-/*------------------------------------*\
-    #CODE
-\*------------------------------------*/
 /**
- * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a
- *    font-size smaller than 1em.
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once,here.
  */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  /* [1] */
-}
-
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-h1 {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333;
-}
-
-h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6;
-}
-
-h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-h6 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.33333;
-}
-
-/*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
-a {
-  color: #bada55;
-}
-
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
 ul, ol, dd {
   margin-left: 48px;
   margin-left: 3rem;
 }
 
-li > ul,
-li > ol {
-  margin-bottom: 0;
+/*------------------------------------*\
+    #CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
+ * over and over in your markup.
+ */
+.clearfix:after,
+.media:after,
+.box:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*------------------------------------*\
-    #MAIN
+    #PAGE
 \*------------------------------------*/
 /**
- * 1. Set the base element’s `font-size` to the value of your choosing. Set in
- *    ems, assuming a browser default of 16px.
- * 2. Work out the unitless `line-height` for your project based around your
- *    desired `line-height` (defined previously in pixels), and your project’s
- *    base font size.
- */
-/**
- * 3. If you have chosen to display a baseline grid, we turn it on here.
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
  */
 html {
   font-size: 1em;
   /* [1] */
   line-height: 1.5;
+  /* [1] */
+  background-color: white;
+  color: #333333;
+  overflow-y: scroll;
   /* [2] */
-  background-image: url(http://basehold.it/i/24);
+  min-height: 100%;
   /* [3] */
-}
-
-body {
-  margin: 0;
 }
 
 /*------------------------------------*\
     #PARAGRAPHS
 \*------------------------------------*/
 /**
- * Not strictly a paragraph, but probably doesn’t need its own section.
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
  */
+.lede {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
 /*------------------------------------*\
-    #QUOTES
+    #HEADINGS
 \*------------------------------------*/
 /**
- * 1. Hang the opening quote of the blockquote.
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  */
-blockquote {
-  text-indent: -0.41em;
-  /* [1] */
+h1,
+.alpha {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333;
 }
 
+h2,
+.beta {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
+}
+
+h3,
+.gamma {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+h4,
+.delta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+h5,
+.epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h6,
+.zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
 /**
- * Set up quote marks on quoting elements. This is very English-based, so we are
- * using “, ”, ‘, and ’ quotes.
+ * Remove extra vertical spacing when nesting lists.
  */
-blockquote {
-  quotes: "“" "”";
-  margin-left: 48px;
-  margin-left: 3rem;
-}
-blockquote p:before {
-  content: "“";
-  content: open-quote;
-}
-blockquote p:after {
-  content: "";
-  content: no-close-quote;
-}
-blockquote p:last-of-type:after {
-  content: "”";
-  content: close-quote;
-}
-
-q {
-  quotes: "‘" "’" "“" "”";
-  /**
-   * If an element opens with an inline quote, let’s hang that.
-   */
-}
-q:before {
-  content: "‘";
-  content: open-quote;
-}
-q:after {
-  content: "’";
-  content: close-quote;
-}
-q q:before {
-  content: "“";
-  content: open-quote;
-}
-q q:after {
-  content: "”";
-  content: close-quote;
-}
-q:first-child {
-  display: inline-block;
-  text-indent: -0.22em;
+li > ul,
+li > ol {
+  margin-bottom: 0;
 }
 
 /*------------------------------------*\
     #TABLES
 \*------------------------------------*/
 /**
- * Crude table styles; tables are very difficult to keep on the baseline.
+ * Simple `table` styles.
  */
 table {
   width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 th,
 td {
-  padding: 12px;
+  padding: 6px;
 }
 
 /*------------------------------------*\
-    #OBJECTS
+    #IMAGES
 \*------------------------------------*/
 /**
- * These are design-free objects, abstractions and design patterns. These create
- * constructs that you lay your designs over.
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
  */
-/*------------------------------------*\
-    #OBJECTS
-\*------------------------------------*/
-/**
- * Pull in all our objects and abstractions.
- */
-/*------------------------------------*\
-    $CSSWIZARDRY-GRIDS
-\*------------------------------------*/
-/**
- * CONTENTS
- * INTRODUCTION.........How the grid system works.
- * VARIABLES............Your settings.
- * MIXINS...............Library mixins.
- * GRID SETUP...........Build the grid structure.
- * WIDTHS...............Build our responsive widths around our breakpoints.
- * PUSH.................Push classes.
- * PULL.................Pull classes.
- */
-/*------------------------------------*\
-    $INTRODUCTION
-\*------------------------------------*/
-/**
- * csswizardry grids provides you with widths to suit a number of breakpoints
- * designed around devices of a size you specify. Out of the box, csswizardry
- * grids caters to the following types of device:
- *
- * palm     --  palm-based devices, like phones and small tablets
- * lap      --  lap-based devices, like iPads or laptops
- * portable --  all of the above
- * desk     --  stationary devices, like desktop computers
- * regular  --  any/all types of device
- *
- * These namespaces are then used in the library to give you the ability to
- * manipulate your layouts based around them, for example:
- *
-   <div class="grid__item  one-whole  lap--one-half  desk--one-third">
- *
- * This would give you a grid item which is 100% width unless it is on a lap
- * device, at which point it become 50% wide, or it is on a desktop device, at
- * which point it becomes 33.333% width.
- *
- * csswizardry grids also has push and pull classes which allow you to nudge
- * grid items left and right by a defined amount. These follow the same naming
- * convention as above, but are prepended by either `push--` or `pull--`, for
- * example:
- *
-   `class="grid__item  one-half  push--one-half"`
- *
- * This would give you a grid item which is 50% width and pushed over to the
- * right by 50%.
- *
- * All classes in csswizardry grids follow this patten, so you should fairly
- * quickly be able to piece together any combinations you can imagine, for
- * example:
- *
-   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
- *
-   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
- *
-   `class="grid__item  palm--one-third  desk--five-twelfths"`
- */
-/*------------------------------------*\
-    $VARIABLES
-\*------------------------------------*/
-/**
- * If you are building a non-responsive site but would still like to use
- * csswizardry-grids, set this to ‘false’:
- */
-/**
- * Is this build mobile first? Setting to ‘true’ means that all grids will be
- * 100% width if you do not apply a more specific class to them.
- */
-/**
- * Set the spacing between your grid items.
- */
-/**
- * Would you like Sass’ silent classes, or regular CSS classes?
- */
-/**
- * Would you like push and pull classes enabled?
- */
-/**
- * Using `inline-block` means that the grid items need their whitespace removing
- * in order for them to work correctly. Set the following to true if you are
- * going to achieve this by manually removing/commenting out any whitespace in
- * your HTML yourself.
- *
- * Setting this to false invokes a hack which cannot always be guaranteed,
- * please see the following for more detail:
- *
- * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
- * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
- */
-/**
- * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
- * that the breakpoint fires at.
- */
-/**
- * Define which namespaced breakpoints you would like to generate for each of
- * widths, push and pull. This is handy if you only need pull on, say, desk, or
- * you only need a new width breakpoint at mobile sizes. It allows you to only
- * compile as much CSS as you need. All are turned on by default, but you can
- * add and remove breakpoints at will.
- *
- * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
- * have been set to ‘true’.
- */
-/**
- * You do not need to edit anything from this line onward; csswizardry-grids is
- * good to go. Happy griddin’!
- */
-/*------------------------------------*\
-    $MIXINS
-\*------------------------------------*/
-/**
- * These mixins are for the library to use only, you should not need to modify
- * them at all.
- *
- * Enclose a block of code with a media query as named in `$breakpoints`.
- */
-/**
- * Drop relative positioning into silent classes which can’t take advantage of
- * the `[class*="push--"]` and `[class*="pull--"]` selectors.
- */
-/*------------------------------------*\
-    $GRID SETUP
-\*------------------------------------*/
-/**
- * 1. Allow the grid system to be used on lists.
- * 2. Remove any margins and paddings that might affect the grid system.
- * 3. Apply a negative `margin-left` to negate the columns’ gutters.
- */
-.grid {
-  list-style: none;
+img {
+  max-width: 100%;
   /* [1] */
+  font-style: italic;
+  /* [2] */
+}
+
+/**
+ * If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * not make the image fluid.
+ */
+img[width],
+img[height] {
+  max-width: none;
+}
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ *
+ * Predefine the variables below in order to alter and enable specific features.
+ */
+/**
+ * Here we set a variable assuming that `box-sizing: border-box;` is not set
+ * globally. If it has been previously been defined, the following variable will
+ * be overriden and will be set to `true`.
+ */
+/**
+ * Begin a layout group.
+ */
+.layout {
+  list-style: none;
   margin: 0;
-  /* [2] */
   padding: 0;
-  /* [2] */
   margin-left: -24px;
-  /* [3] */
 }
 
 /**
@@ -857,7 +709,7 @@ td {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.grid__item {
+.layout__item {
   display: inline-block;
   /* [1] */
   padding-left: 24px;
@@ -866,768 +718,660 @@ td {
   /* [3] */
   width: 100%;
   /* [4] */
-  -webkit-box-sizing: border-box;
-  /* [5] */
-  -moz-box-sizing: border-box;
-  /* [5] */
-  box-sizing: border-box;
-  /* [5] */
 }
 
 /**
- * Reversed grids allow you to structure your source in the opposite order to
- * how your rendered layout will appear. Extends `.grid`.
+ * Different size variations.
  */
-.grid--rev {
+/**
+ * Layout items without gutters.
+ */
+/**
+ * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your markup
+ * will display in order 4, 3, 2, 1 on your page.
+ */
+/**
+ * Align layout items to the vertical centers or bottoms of each other.
+ */
+/**
+ * Make the layout items fill up from the right hand side.
+ */
+/**
+ * Make the layout items fill up from the center outward.
+ */
+/*------------------------------------*\
+    #MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *
+ * Predefine the variables below in order to alter and enable specific features.
+ */
+.media {
+  display: block;
+}
+
+.media__img {
+  float: left;
+  margin-right: 24px;
+}
+.media__img > img {
+  display: block;
+}
+
+.media__body {
+  overflow: hidden;
+}
+.media__body,
+.media__body > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Size variants.
+ */
+/**
+ * Flush media objects have no space between the image- and text-content.
+ */
+/**
+ * Reversed image location (right instead of left). Extends `.media`.
+ */
+/*------------------------------------*\
+    #FLAG
+\*------------------------------------*/
+/**
+ * The flag object is a design pattern similar to the media object, however it
+ * utilises `display: table[-cell];` to give us control over the vertical
+ * alignments of the text and image. csswizardry.com/2013/05/the-flag-object
+ *
+ * Predefine the variables below in order to alter and enable specific features.
+ */
+/**
+ * 1. Allows us to control vertical alignments
+ * 2. Force the object to be the full width of its parent. Combined with [1],
+ *    this makes the object behave in a quasi-`display: block;` manner.
+ */
+.flag {
+  display: table;
+  /* [1] */
+  width: 100%;
+  /* [2] */
+}
+
+/**
+ * Items within a flag object. There should only ever be one of each.
+ *
+ * 1. Default to aligning content to their middles.
+ */
+.flag__img,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+  /* [1] */
+}
+
+/**
+ * Flag images have a space between them and the body of the object.
+ */
+.flag__img {
+  padding-right: 24px;
+}
+.flag__img > img {
+  display: block;
+  max-width: none;
+}
+
+/**
+ * The container for the main content of the flag object.
+ *
+ * 1. Forces the `.flag__body` to take up all remaining space.
+ */
+.flag__body {
+  width: 100%;
+  /* [1] */
+}
+
+/**
+ * Size variants.
+ */
+/**
+ * Reversed flag objects have their image-content to the right, and text-content
+ * to the left.
+ *
+ * 1. Swap the rendered direction of the object…
+ * 2. …and reset it.
+ * 3. Reassign margins to the correct sides.
+ */
+.flag--rev {
   direction: rtl;
-  text-align: left;
+  /* [1] */
 }
-.grid--rev > .grid__item {
+.flag--rev > .flag__img,
+.flag--rev > .flag__body {
   direction: ltr;
-  text-align: left;
+  /* [2] */
+}
+.flag--rev > .flag__img {
+  padding-right: 0;
+  /* [3] */
+  padding-left: 24px;
+  /* [3] */
 }
 
 /**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
+ * Flush flag objects have no space between the image- and text-content.
  */
-.grid--full {
-  margin-left: 0;
+/**
+ * Vertical alignment variations of the flag object. Either align image- and
+ * text-content to the tops of bottoms of each other.
+ */
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+/**
+ * The box object simply boxes off content.
+ *
+ * Predefine the variables below in order to alter and enable specific features.
+ */
+/**
+ * 1. So we can apply the `.box` class to naturally-inline elements.
+ */
+.box {
+  display: block;
+  /* [1] */
+  padding: 24px;
 }
-.grid--full > .grid__item {
-  padding-left: 0;
+.box > :last-child {
+  margin-bottom: 0;
 }
 
 /**
- * Align the entire grid to the right. Extends `.grid`.
+ * Size variants
  */
-.grid--right {
-  text-align: right;
-}
-.grid--right > .grid__item {
-  text-align: left;
-}
-
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
 /**
- * Centered grids align grid items centrally without needing to use push or pull
- * classes. Extends `.grid`.
+ * A simple abstraction for making equal-width navigation tabs.
+ *
+ * 1. Reset any residual styles (most likely from lists).
+ * 2. Tables for layout!
+ * 3. Force all `table-cell` children to have equal widths.
+ * 4. Force the object to be the full width of its parent. Combined with [2],
+ *    this makes the object behave in a quasi-`display: block;` manner.
  */
-.grid--center {
+.tabs {
+  margin: 0;
+  /* [1] */
+  padding: 0;
+  /* [1] */
+  list-style: none;
+  /* [1] */
+  display: table;
+  /* [2] */
+  table-layout: fixed;
+  /* [3] */
+  width: 100%;
+  /* [4] */
   text-align: center;
 }
-.grid--center > .grid__item {
-  text-align: left;
+
+.tabs__item {
+  display: table-cell;
+  /* [2] */
 }
 
-/**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
- */
-.grid--middle > .grid__item {
-  vertical-align: middle;
-}
-
-.grid--bottom > .grid__item {
-  vertical-align: bottom;
-}
-
-/**
- * Create grids with narrower gutters. Extends `.grid`.
- */
-.grid--narrow {
-  margin-left: -12px;
-}
-.grid--narrow > .grid__item {
-  padding-left: 12px;
-}
-
-/**
- * Create grids with wider gutters. Extends `.grid`.
- */
-.grid--wide {
-  margin-left: -48px;
-}
-.grid--wide > .grid__item {
-  padding-left: 48px;
+.tabs__link {
+  display: block;
 }
 
 /*------------------------------------*\
-    $WIDTHS
+    #WIDTHS
 \*------------------------------------*/
 /**
- * Create our width classes, prefixed by the specified namespace.
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
  */
 /**
- * Our regular, non-responsive width classes.
+ * Halves.
  */
-/**
- * Whole
- */
-.one-whole {
-  width: 100%;
-}
-
-/**
- * Halves
- */
-.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
-  width: 50%;
+[class*="1/2"],
+[class*="2/4"],
+[class*="3/6"],
+[class*="4/8"],
+[class*="5/10"],
+[class*="6/12"] {
+  width: 50% !important;
 }
 
 /**
- * Thirds
+ * Thirds.
  */
-.one-third, .two-sixths, .four-twelfths {
-  width: 33.333%;
+[class*="1/3"],
+[class*="2/6"],
+[class*="3/9"],
+[class*="4/12"] {
+  width: 33.3333333% !important;
 }
 
-.two-thirds, .four-sixths, .eight-twelfths {
-  width: 66.666%;
+[class*="2/3"]
+[class*="4/6"],
+[class*="6/9"],
+[class*="8/12"] {
+  width: 66.6666666% !important;
 }
 
 /**
- * Quarters
+ * Quarters.
  */
-.one-quarter, .two-eighths, .three-twelfths {
-  width: 25%;
+[class*="1/4"],
+[class*="2/8"],
+[class*="3/12"] {
+  width: 25% !important;
 }
 
-.three-quarters, .six-eighths, .nine-twelfths {
-  width: 75%;
+[class*="3/4"],
+[class*="6/8"],
+[class*="9/12"] {
+  width: 75% !important;
 }
 
 /**
- * Fifths
+ * Fifths.
  */
-.one-fifth, .two-tenths {
-  width: 20%;
+[class*="1/5"],
+[class*="2/10"] {
+  width: 20% !important;
 }
 
-.two-fifths, .four-tenths {
-  width: 40%;
+[class*="2/5"],
+[class*="4/10"] {
+  width: 40% !important;
 }
 
-.three-fifths, .six-tenths {
-  width: 60%;
+[class*="3/5"],
+[class*="6/10"] {
+  width: 60% !important;
 }
 
-.four-fifths, .eight-tenths {
-  width: 80%;
+[class*="4/5"],
+[class*="8/10"] {
+  width: 80% !important;
 }
 
 /**
- * Sixths
+ * Sixths.
  */
-.one-sixth, .two-twelfths {
-  width: 16.666%;
+[class*="1/6"],
+[class*="2/12"] {
+  width: 16.6666666% !important;
 }
 
-.five-sixths, .ten-twelfths {
-  width: 83.333%;
+[class*="5/6"],
+[class*="10/12"] {
+  width: 83.3333333% !important;
 }
 
 /**
- * Eighths
+ * Eighths.
  */
-.one-eighth {
-  width: 12.5%;
+[class*="1/8"] {
+  width: 12.5% !important;
 }
 
-.three-eighths {
-  width: 37.5%;
+[class*="3/8"] {
+  width: 37.5% !important;
 }
 
-.five-eighths {
-  width: 62.5%;
+[class*="5/8"] {
+  width: 62.5% !important;
 }
 
-.seven-eighths {
-  width: 87.5%;
+[class*="7/8"] {
+  width: 87.5% !important;
 }
 
 /**
- * Tenths
+ * Ninths.
  */
-.one-tenth {
-  width: 10%;
+[class*="1/9"] {
+  width: 11.1111111% !important;
 }
 
-.three-tenths {
-  width: 30%;
+[class*="2/9"] {
+  width: 22.2222222% !important;
 }
 
-.seven-tenths {
-  width: 70%;
+[class*="4/9"] {
+  width: 44.4444444% !important;
 }
 
-.nine-tenths {
-  width: 90%;
+[class*="5/9"] {
+  width: 55.5555555% !important;
+}
+
+[class*="7/9"] {
+  width: 77.7777777% !important;
+}
+
+[class*="8/9"] {
+  width: 88.8888888% !important;
 }
 
 /**
- * Twelfths
+ * Tenths.
  */
-.one-twelfth {
-  width: 8.333%;
+[class*="1/10"] {
+  width: 10% !important;
 }
 
-.five-twelfths {
-  width: 41.666%;
+[class*="3/10"] {
+  width: 30% !important;
 }
 
-.seven-twelfths {
-  width: 58.333%;
+[class*="7/10"] {
+  width: 70% !important;
 }
 
-.eleven-twelfths {
-  width: 91.666%;
+[class*="9/10"] {
+  width: 90% !important;
 }
 
 /**
- * Our responsive classes, if we have enabled them.
+ * Twelfths.
  */
-@media only screen and (max-width: 480px) {
-  /**
-   * Whole
-   */
-  .palm--one-whole {
-    width: 100%;
-  }
-
-  /**
-   * Halves
-   */
-  .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths {
-    width: 50%;
-  }
-
-  /**
-   * Thirds
-   */
-  .palm--one-third, .palm--two-sixths, .palm--four-twelfths {
-    width: 33.333%;
-  }
-
-  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths {
-    width: 66.666%;
-  }
-
-  /**
-   * Quarters
-   */
-  .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths {
-    width: 25%;
-  }
-
-  .palm--three-quarters, .palm--six-eighths, .palm--nine-twelfths {
-    width: 75%;
-  }
-
-  /**
-   * Fifths
-   */
-  .palm--one-fifth, .palm--two-tenths {
-    width: 20%;
-  }
-
-  .palm--two-fifths, .palm--four-tenths {
-    width: 40%;
-  }
-
-  .palm--three-fifths, .palm--six-tenths {
-    width: 60%;
-  }
-
-  .palm--four-fifths, .palm--eight-tenths {
-    width: 80%;
-  }
-
-  /**
-   * Sixths
-   */
-  .palm--one-sixth, .palm--two-twelfths {
-    width: 16.666%;
-  }
-
-  .palm--five-sixths, .palm--ten-twelfths {
-    width: 83.333%;
-  }
-
-  /**
-   * Eighths
-   */
-  .palm--one-eighth {
-    width: 12.5%;
-  }
-
-  .palm--three-eighths {
-    width: 37.5%;
-  }
-
-  .palm--five-eighths {
-    width: 62.5%;
-  }
-
-  .palm--seven-eighths {
-    width: 87.5%;
-  }
-
-  /**
-   * Tenths
-   */
-  .palm--one-tenth {
-    width: 10%;
-  }
-
-  .palm--three-tenths {
-    width: 30%;
-  }
-
-  .palm--seven-tenths {
-    width: 70%;
-  }
-
-  .palm--nine-tenths {
-    width: 90%;
-  }
-
-  /**
-   * Twelfths
-   */
-  .palm--one-twelfth {
-    width: 8.333%;
-  }
-
-  .palm--five-twelfths {
-    width: 41.666%;
-  }
-
-  .palm--seven-twelfths {
-    width: 58.333%;
-  }
-
-  .palm--eleven-twelfths {
-    width: 91.666%;
-  }
+[class*="1/12"] {
+  width: 8.3333333% !important;
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  /**
-   * Whole
-   */
-  .lap--one-whole {
-    width: 100%;
-  }
 
-  /**
-   * Halves
-   */
-  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths {
-    width: 50%;
-  }
-
-  /**
-   * Thirds
-   */
-  .lap--one-third, .lap--two-sixths, .lap--four-twelfths {
-    width: 33.333%;
-  }
-
-  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
-    width: 66.666%;
-  }
-
-  /**
-   * Quarters
-   */
-  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths {
-    width: 25%;
-  }
-
-  .lap--three-quarters, .lap--six-eighths, .lap--nine-twelfths {
-    width: 75%;
-  }
-
-  /**
-   * Fifths
-   */
-  .lap--one-fifth, .lap--two-tenths {
-    width: 20%;
-  }
-
-  .lap--two-fifths, .lap--four-tenths {
-    width: 40%;
-  }
-
-  .lap--three-fifths, .lap--six-tenths {
-    width: 60%;
-  }
-
-  .lap--four-fifths, .lap--eight-tenths {
-    width: 80%;
-  }
-
-  /**
-   * Sixths
-   */
-  .lap--one-sixth, .lap--two-twelfths {
-    width: 16.666%;
-  }
-
-  .lap--five-sixths, .lap--ten-twelfths {
-    width: 83.333%;
-  }
-
-  /**
-   * Eighths
-   */
-  .lap--one-eighth {
-    width: 12.5%;
-  }
-
-  .lap--three-eighths {
-    width: 37.5%;
-  }
-
-  .lap--five-eighths {
-    width: 62.5%;
-  }
-
-  .lap--seven-eighths {
-    width: 87.5%;
-  }
-
-  /**
-   * Tenths
-   */
-  .lap--one-tenth {
-    width: 10%;
-  }
-
-  .lap--three-tenths {
-    width: 30%;
-  }
-
-  .lap--seven-tenths {
-    width: 70%;
-  }
-
-  .lap--nine-tenths {
-    width: 90%;
-  }
-
-  /**
-   * Twelfths
-   */
-  .lap--one-twelfth {
-    width: 8.333%;
-  }
-
-  .lap--five-twelfths {
-    width: 41.666%;
-  }
-
-  .lap--seven-twelfths {
-    width: 58.333%;
-  }
-
-  .lap--eleven-twelfths {
-    width: 91.666%;
-  }
+[class*="5/12"] {
+  width: 41.6666666% !important;
 }
-@media only screen and (max-width: 1023px) {
-  /**
-   * Whole
-   */
-  .portable--one-whole {
-    width: 100%;
-  }
 
-  /**
-   * Halves
-   */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
-    width: 50%;
-  }
-
-  /**
-   * Thirds
-   */
-  .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
-    width: 33.333%;
-  }
-
-  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
-    width: 66.666%;
-  }
-
-  /**
-   * Quarters
-   */
-  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths {
-    width: 25%;
-  }
-
-  .portable--three-quarters, .portable--six-eighths, .portable--nine-twelfths {
-    width: 75%;
-  }
-
-  /**
-   * Fifths
-   */
-  .portable--one-fifth, .portable--two-tenths {
-    width: 20%;
-  }
-
-  .portable--two-fifths, .portable--four-tenths {
-    width: 40%;
-  }
-
-  .portable--three-fifths, .portable--six-tenths {
-    width: 60%;
-  }
-
-  .portable--four-fifths, .portable--eight-tenths {
-    width: 80%;
-  }
-
-  /**
-   * Sixths
-   */
-  .portable--one-sixth, .portable--two-twelfths {
-    width: 16.666%;
-  }
-
-  .portable--five-sixths, .portable--ten-twelfths {
-    width: 83.333%;
-  }
-
-  /**
-   * Eighths
-   */
-  .portable--one-eighth {
-    width: 12.5%;
-  }
-
-  .portable--three-eighths {
-    width: 37.5%;
-  }
-
-  .portable--five-eighths {
-    width: 62.5%;
-  }
-
-  .portable--seven-eighths {
-    width: 87.5%;
-  }
-
-  /**
-   * Tenths
-   */
-  .portable--one-tenth {
-    width: 10%;
-  }
-
-  .portable--three-tenths {
-    width: 30%;
-  }
-
-  .portable--seven-tenths {
-    width: 70%;
-  }
-
-  .portable--nine-tenths {
-    width: 90%;
-  }
-
-  /**
-   * Twelfths
-   */
-  .portable--one-twelfth {
-    width: 8.333%;
-  }
-
-  .portable--five-twelfths {
-    width: 41.666%;
-  }
-
-  .portable--seven-twelfths {
-    width: 58.333%;
-  }
-
-  .portable--eleven-twelfths {
-    width: 91.666%;
-  }
+[class*="7/12"] {
+  width: 58.3333333% !important;
 }
-@media only screen and (min-width: 1024px) {
-  /**
-   * Whole
-   */
-  .desk--one-whole {
-    width: 100%;
-  }
 
-  /**
-   * Halves
-   */
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
-    width: 50%;
-  }
-
-  /**
-   * Thirds
-   */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
-    width: 33.333%;
-  }
-
-  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
-    width: 66.666%;
-  }
-
-  /**
-   * Quarters
-   */
-  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths {
-    width: 25%;
-  }
-
-  .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths {
-    width: 75%;
-  }
-
-  /**
-   * Fifths
-   */
-  .desk--one-fifth, .desk--two-tenths {
-    width: 20%;
-  }
-
-  .desk--two-fifths, .desk--four-tenths {
-    width: 40%;
-  }
-
-  .desk--three-fifths, .desk--six-tenths {
-    width: 60%;
-  }
-
-  .desk--four-fifths, .desk--eight-tenths {
-    width: 80%;
-  }
-
-  /**
-   * Sixths
-   */
-  .desk--one-sixth, .desk--two-twelfths {
-    width: 16.666%;
-  }
-
-  .desk--five-sixths, .desk--ten-twelfths {
-    width: 83.333%;
-  }
-
-  /**
-   * Eighths
-   */
-  .desk--one-eighth {
-    width: 12.5%;
-  }
-
-  .desk--three-eighths {
-    width: 37.5%;
-  }
-
-  .desk--five-eighths {
-    width: 62.5%;
-  }
-
-  .desk--seven-eighths {
-    width: 87.5%;
-  }
-
-  /**
-   * Tenths
-   */
-  .desk--one-tenth {
-    width: 10%;
-  }
-
-  .desk--three-tenths {
-    width: 30%;
-  }
-
-  .desk--seven-tenths {
-    width: 70%;
-  }
-
-  .desk--nine-tenths {
-    width: 90%;
-  }
-
-  /**
-   * Twelfths
-   */
-  .desk--one-twelfth {
-    width: 8.333%;
-  }
-
-  .desk--five-twelfths {
-    width: 41.666%;
-  }
-
-  .desk--seven-twelfths {
-    width: 58.333%;
-  }
-
-  .desk--eleven-twelfths {
-    width: 91.666%;
-  }
-}
-/*------------------------------------*\
-    $PUSH
-\*------------------------------------*/
-/**
- * Push classes, to move grid items over to the right by certain amounts.
- */
-/*------------------------------------*\
-    $PULL
-\*------------------------------------*/
-/**
- * Pull classes, to move grid items back to the left by certain amounts.
- */
-/*------------------------------------*\
-    $WRAPPER
-\*------------------------------------*/
-.wrapper {
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 24px;
-  padding-left: 24px;
+[class*="11/12"] {
+  width: 91.6666666% !important;
 }
 
 /*------------------------------------*\
-    #GUI
+    #SPACING
 \*------------------------------------*/
 /**
- * These are your components and modules; things like buttons, accordions,
- * carousels, etc.
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|e|s)(-|+|0) {}` = margin/padding top/right/bottom/left/ends/sides less/more/none
  */
-/*------------------------------------*\
-    #GUI
-\*------------------------------------*/
 /**
- * Pull in all our GUI components.
+ * Margin helper classes.
+ *
+ * Add margins.
  */
-/*------------------------------------*\
-    #TRUMPS
-\*------------------------------------*/
+.m {
+  margin: 24px !important;
+}
+
+.mt {
+  margin-top: 24px !important;
+}
+
+.mr {
+  margin-right: 24px !important;
+}
+
+.mb {
+  margin-bottom: 24px !important;
+}
+
+.ml {
+  margin-left: 24px !important;
+}
+
+.me {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.ms {
+  margin-right: 24px !important;
+  margin-left: 24px !important;
+}
+
 /**
- * These are helper classes and overrides that should take precedence over all
- * other styles, e.g. `.float--left {}`.
+ * Add small margins.
  */
-/*------------------------------------*\
-    #TRUMPS
-\*------------------------------------*/
+.m- {
+  margin: 12px !important;
+}
+
+.mt- {
+  margin-top: 12px !important;
+}
+
+.mr- {
+  margin-right: 12px !important;
+}
+
+.mb- {
+  margin-bottom: 12px !important;
+}
+
+.ml- {
+  margin-left: 12px !important;
+}
+
+.me- {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.ms- {
+  margin-right: 12px !important;
+  margin-left: 12px !important;
+}
+
 /**
- * Pull in all our trumps and overrides.
+ * Add large margins.
  */
+.m\+ {
+  margin: 48px !important;
+}
+
+.mt\+ {
+  margin-top: 48px !important;
+}
+
+.mr\+ {
+  margin-right: 48px !important;
+}
+
+.mb\+ {
+  margin-bottom: 48px !important;
+}
+
+.ml\+ {
+  margin-left: 48px !important;
+}
+
+.me\+ {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+}
+
+.ms\+ {
+  margin-right: 48px !important;
+  margin-left: 48px !important;
+}
+
+/**
+ * Remove margins.
+ */
+.m0 {
+  margin: 0 !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.ml0 {
+  margin-left: 0 !important;
+}
+
+.me0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.ms0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/**
+ * Padding helper classes.
+ *
+ * Add paddings.
+ */
+.p {
+  padding: 24px !important;
+}
+
+.pt {
+  padding-top: 24px !important;
+}
+
+.pr {
+  padding-right: 24px !important;
+}
+
+.pb {
+  padding-bottom: 24px !important;
+}
+
+.pl {
+  padding-left: 24px !important;
+}
+
+.pe {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.ps {
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+}
+
+/**
+ * Add small paddings.
+ */
+.p- {
+  padding: 12px !important;
+}
+
+.pt- {
+  padding-top: 12px !important;
+}
+
+.pr- {
+  padding-right: 12px !important;
+}
+
+.pb- {
+  padding-bottom: 12px !important;
+}
+
+.pl- {
+  padding-left: 12px !important;
+}
+
+.pe- {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.ps- {
+  padding-right: 12px !important;
+  padding-left: 12px !important;
+}
+
+/**
+ * Add large paddings.
+ */
+.p\+ {
+  padding: 48px !important;
+}
+
+.pt\+ {
+  padding-top: 48px !important;
+}
+
+.pr\+ {
+  padding-right: 48px !important;
+}
+
+.pb\+ {
+  padding-bottom: 48px !important;
+}
+
+.pl\+ {
+  padding-left: 48px !important;
+}
+
+.pe\+ {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+.ps\+ {
+  padding-right: 48px !important;
+  padding-left: 48px !important;
+}
+
+/**
+ * Remove paddings.
+ */
+.p0 {
+  padding: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.pe0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ps0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}

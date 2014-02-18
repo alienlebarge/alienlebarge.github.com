@@ -1,92 +1,69 @@
-@charset "UTF-8";
-/*------------------------------------*\
-    STYLE.SCSS
-\*------------------------------------*/
-/**
- * Here we start to pull everything together into one big stylesheet.
- *
- * SETUP............Settings, tools, mixins, etc.
- * GENERIC..........normalize.css, reset, shared styles, etc.
- * BASE.............Basic HTML elements.
- * OBJECTS..........Objects, abstractions, design patterns.
- * GUI..............Components and modules.
- * TRUMPS...........Helpers, overrides, ‘trump-cards’.
- */
+@import
 
+        "settings.defaults/settings.defaults",
 
+        "tools.functions/tools.functions",
+        "tools.mixins/tools.mixins",
 
+        "generic.normalize/generic.normalize",
+        "generic.reset/generic.reset",
+        "generic.box-sizing/generic.box-sizing",
+        "generic.shared/generic.shared",
+        "generic.clearfix/generic.clearfix",
 
+        "base.page/base.page",
+        "base.paragraphs/base.paragraphs",
+        "base.headings/base.headings",
+        "base.lists/base.lists",
+        "base.tables/base.tables",
+        "base.images/base.images"
 
-/*------------------------------------*\
-    #SETUP
-\*------------------------------------*/
-/**
- * Settings, variables and tools.
- */
-@import "01_settings/all",
-        "02_tools/all";
+;
 
+@import
 
+        "objects.layout/objects.layout"
 
+;
 
+@import
 
-/*------------------------------------*\
-    #GENERIC
-\*------------------------------------*/
-/**
- * These are far reaching styles that affect and underpin every element on the
- * page, e.g. `* {}`.
- */
-@import "03_generic/all";
+        "objects.media/objects.media"
 
+;
 
+$inuit-enable-flag--rev:  true;
+@import
 
+        "objects.flag/objects.flag"
 
+;
 
-/*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-/**
- * These are base HTML elements, things with no classes on them, e.g. `h1 {}`,
- * `blockquote {}`.
- */
-@import "04_base/all";
+@import
 
+        "objects.box/objects.box"
 
+;
 
+@import
 
+        "objects.tabs/objects.tabs",
 
-/*------------------------------------*\
-    #OBJECTS
-\*------------------------------------*/
-/**
- * These are design-free objects, abstractions and design patterns. These create
- * constructs that you lay your designs over.
- */
-@import "05_objects/all";
+        "trumps.widths/trumps.widths"
 
+;
 
+$inuit-enable-margins:          true;
+$inuit-enable-margins--small:   true;
+$inuit-enable-margins--large:   true;
+$inuit-enable-margins--none:    true;
 
+$inuit-enable-paddings:         true;
+$inuit-enable-paddings--small:  true;
+$inuit-enable-paddings--large:  true;
+$inuit-enable-paddings--none:   true;
+@import
 
+        "trumps.spacing/trumps.spacing"
 
-/*------------------------------------*\
-    #GUI
-\*------------------------------------*/
-/**
- * These are your components and modules; things like buttons, accordions,
- * carousels, etc.
- */
-@import "06_gui/all";
-
-
-
-
-
-/*------------------------------------*\
-    #TRUMPS
-\*------------------------------------*/
-/**
- * These are helper classes and overrides that should take precedence over all
- * other styles, e.g. `.float--left {}`.
- */
-@import "07_trumps/all";
+;
