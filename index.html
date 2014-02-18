@@ -5,9 +5,13 @@ title: alienlebarge code blog
 
 <div id="home">
   <h2>Blog Posts</h2>
-  <ul class="posts">
+  <ul class="layout">
     {% for post in site.posts %}
-      <li><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="layout__item layout"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="layout__item 1/2">{{ post.date | date_to_string }}</time> <!--
+
+      --><a href="{{ post.url }}" class="layout__item 1/2">{{ post.title }}</a><!--
+
+      --></li>
     {% endfor %}
   </ul>
 </div>
