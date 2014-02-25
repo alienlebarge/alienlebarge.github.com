@@ -1,58 +1,89 @@
-@import
+// We import types of file in the following order:
+//
+// Settings -- Sass vars, etc.
+// Tools -- Functions and mixins.
+// Generic -- Generic, high-level styling, like resets, etc.
+// Base -- Unclasses HTML elements (e.g. `h2`, `ul`).
+// Object -- Objects and abstractions.
+// Components -- Your designed UI elements (inuitcss includes none of these).
+// Trumps -- Overrides and helper classes.
+//
+// These shearing layers are what make inuitcss so scalable.
 
-        "settings.defaults/settings.defaults",
 
-        "tools.functions/tools.functions",
-        "tools.mixins/tools.mixins",
 
-        "generic.normalize/generic.normalize",
-        "generic.reset/generic.reset",
-        "generic.box-sizing/generic.box-sizing",
-        "generic.shared/generic.shared",
-        "generic.clearfix/generic.clearfix",
 
-        "base.page/base.page",
-        "base.paragraphs/base.paragraphs",
-        "base.headings/base.headings",
-        "base.lists/base.lists",
-        "base.tables/base.tables",
-        "base.images/base.images"
 
-;
 
-@import
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+@import "settings.defaults/settings.defaults";
 
-        "objects.layout/objects.layout"
 
-;
 
-@import
 
-        "objects.media/objects.media"
 
-;
 
+/*------------------------------------*\
+    #TOOLS
+\*------------------------------------*/
+@import "tools.functions/tools.functions",
+@import "tools.mixins/tools.mixins";
+
+
+
+
+
+
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+@import "generic.normalize/generic.normalize";
+@import "generic.reset/generic.reset";
+@import "generic.box-sizing/generic.box-sizing";
+@import "generic.shared/generic.shared";
+@import "generic.clearfix/generic.clearfix";
+
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+@import "base.page/base.page";
+@import "base.paragraphs/base.paragraphs";
+@import "base.headings/base.headings";
+@import "base.lists/base.lists";
+@import "base.tables/base.tables";
+@import "base.images/base.images";
+
+
+
+
+
+
+/*------------------------------------*\
+    #OBJECTS
+\*------------------------------------*/
+@import "objects.layout/objects.layout";
+@import "objects.media/objects.media";
 $inuit-enable-flag--rev:  true;
-@import
+@import "objects.flag/objects.flag";
+@import "objects.box/objects.box";
+@import "objects.tabs/objects.tabs";
+@import "trumps.widths/trumps.widths";
 
-        "objects.flag/objects.flag"
 
-;
 
-@import
 
-        "objects.box/objects.box"
 
-;
 
-@import
-
-        "objects.tabs/objects.tabs",
-
-        "trumps.widths/trumps.widths"
-
-;
-
+/*------------------------------------*\
+    #TRUMPS
+\*------------------------------------*/
 $inuit-enable-margins:          true;
 $inuit-enable-margins--small:   true;
 $inuit-enable-margins--large:   true;
@@ -62,8 +93,4 @@ $inuit-enable-paddings:         true;
 $inuit-enable-paddings--small:  true;
 $inuit-enable-paddings--large:  true;
 $inuit-enable-paddings--none:   true;
-@import
-
-        "trumps.spacing/trumps.spacing"
-
-;
+@import "trumps.spacing/trumps.spacing";
