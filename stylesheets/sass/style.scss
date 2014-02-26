@@ -28,7 +28,7 @@
 /*------------------------------------*\
     #TOOLS
 \*------------------------------------*/
-@import "tools.functions/tools.functions",
+@import "tools.functions/tools.functions";
 @import "tools.mixins/tools.mixins";
 
 
@@ -60,7 +60,9 @@
 @import "base.tables/base.tables";
 @import "base.images/base.images";
 
-
+html {
+  font-family: 'Lora', serif;
+}
 
 
 
