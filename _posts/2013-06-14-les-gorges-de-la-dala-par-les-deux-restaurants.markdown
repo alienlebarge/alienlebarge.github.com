@@ -15,6 +15,7 @@ meta:
   _edit_last: '1'
   _wpas_done_all: '1'
 ---
+
 Initialement, nous avions prévu de faire le tour du Daubensee aujourd'hui. Malheureusement, après être arrivés en haut, force fut de constater que nous allions devoir revoir nos projets. Celui-ci était encore gelé et les environs étaient recouverts de neige. C'est que nous sommes quand même un 14 juin (!). Oui, l'hiver est long. <!--more-->
 
 Nous avons donc décidé de faire le sentier dont <a title="http://www.alienlebarge.ch/2013/06/13/les-gorges-de-la-dala/" href="http://www.alienlebarge.ch/2013/06/13/les-gorges-de-la-dala/">on nous avait parlé hier</a> par le restaurant du <a title="http://www.weidstuebli.ch/" href="http://www.weidstuebli.ch/">Weidstübli</a>. Nous avons rejoint le haut de la chute vue la veille par le restaurant <a title="http://www.buljes.ch/" href="http://www.buljes.ch/">Buljes</a> (attention, ça côte au début !). De là, c'est très simple, il suffit de suivre le sentier sans vous poser de question.
