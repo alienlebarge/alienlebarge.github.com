@@ -17,23 +17,25 @@ title: alienlebarge code blog
     {% endfor %}
   </ul>
 
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="/">Previous</a>
-    {% else %}
-      <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-    {% endif %}
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
+  <!-- pagination -->
+  <ul class="layout pb+">
+    <li class="layout__item 1/2">
+      {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+      {% else %}
+        <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+    </li><!--
 
+ --><li class="layout__item 1/2 text-right">
+      {% if paginator.next_page %}
+        <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+      {% else %}
+        <span class="next ">Next</span>
+      {% endif %}
+    </li><!--
+
+  -->
+  </ul>
 </div>
