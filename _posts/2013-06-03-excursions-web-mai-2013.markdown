@@ -14,30 +14,29 @@ meta:
   _wpas_done_all: '1'
 ---
 
-Voici quelques liens intéressants découverts durant le mois de mai. Bien entendu, vous pouvez retrouver tous ces liens sur <a href="https://pinboard.in/u:alienlebarge">mon compte Pinboard</a>.
+Voici quelques liens intéressants découverts durant le mois de mai. Bien entendu, vous pouvez retrouver tous ces liens sur [mon compte Pinboard](https://pinboard.in/u:alienlebarge).
 
-<h2 id="lightendarkenhexcolors"><a href="http://hexcolortool.com/">Lighten &amp; Darken Hex Colors</a></h2>
+## [Lighten &amp; Darken Hex Colors](http://hexcolortool.com/)
 
 Petit générateur de couleur hexadécimale qui permet d’obtenir les pendants clairs ou foncés des dites couleurs.
 
-<h2 id="crofflr"><a href="http://www.crofflr.com/">crofflr</a></h2>
+## [crofflr](http://hexcolortool.com/)
 
 Un service qui permet d’exporter automatiquement vers votre Kindle les articles marqués comme “à lire” depuis les services de liste de lecture.
-Pour ma part, je l’utilise avec <a href="https://pinboard.in/">Pinboard</a>.
+Pour ma part, je l’utilise avec [Pinboard](https://pinboard.in/).
 
-<h2 id="chart.js"><a href="http://www.chartjs.org/">Chart.js</a></h2>
+## [Chart.js](http://www.chartjs.org)
 
-<a href="http://www.chartjs.org/">Chart.js</a> est une librairie JavaScript qui permet de dessiner des graphiques sur la base de la balise <code>canvas</code> HTML5.
+[Chart.js](http://www.chartjs.org/) est une librairie JavaScript qui permet de dessiner des graphiques sur la base de la balise <code>canvas</code> HTML5.
 
-<h2 id="abbrtitleveryshortreplyexpectedvsreabbr"><a href="http://vsre.info/"><abbr title="Very Short Reply
-Expected">VSRE</abbr></a></h2>
-(<abbr title="Very Short Reply Expected">VSRE</abbr>)[http://vsre.info/] permit d’indiquer aux personnes avec qui vous correspondez par courriel que vous privilégiez des réponses courtes.
+## <a href="http://vsre.info/"><abbr title="Very Short Reply Expected">VSRE</abbr></a>
+[<abbr title="Very Short Reply Expected">VSRE</abbr>](http://vsre.info/) permet d’indiquer aux personnes avec qui vous correspondez par courriel que vous privilégiez des réponses courtes.
 
-<h2 id="icomoon"><a href="http://icomoon.io/">IcoMoon</a></h2>
+## [IcoMoon](http://icomoon.io/)
 
 Une police d’écriture d’icônes de forte belle facture.
 
-<h2 id="gumby"><a href="http://gumbyframework.com/">Gumby</a></h2>
+## [Gumby](http://gumbyframework.com/)
 
 Un framework “Responsive” en construit sûr du <a href="http://sass-lang.com/">Sass</a>.
 
