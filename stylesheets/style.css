@@ -1,126 +1,5 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    #SETTINGS
-\*------------------------------------*/
-/*------------------------------------*\
-    #DEFAULTS
-\*------------------------------------*/
-/**
- * These variables are inuitcss’ defaults; they should not be modified or
- * adjusted, you should redfine the variables in your own overrides file and
- * include it in your project before this file. 
- */
-/**
- * High-level base settings.
- */
-/**
- * Namespace.
- *
- * Would you like inuitcss’ classes to be prepended with a namespace? If so,
- * define it here.
- */
-/**
- * Headings.
- *
- * These font sizes, defined in pixels, will be converted into rems (with pixel
- * fallbacks) by inuitcss.
- */
-/**
- * These variables are framework variables, sourced from variables defined
- * above. Feel free to use these variables throughout your project, but do not
- * modify or reassign them.
- */
-/*------------------------------------*\
-    #TOOLS
-\*------------------------------------*/
-/*------------------------------------*\
-    #FUNCTIONS
-\*------------------------------------*/
-/**
- * inuitcss makes use of a few functions that are also available for you to use
- * later on in your extension of the framework.
- */
-/**
- * Maths helpers.
- *
- * Halve and double numbers, returning rounded integers. E.g.:
- *
-   .foo {
-       padding: halve(3.2px);
-   }
- *
- */
-/*------------------------------------*\
-    #MIXINS
-\*------------------------------------*/
-/**
- * inuitcss has a number of default mixins that the framework, and developers
- * working with it, can make use of.
- */
-/**
- * Create a fully formed type style (sizing and vertical rhythm) by passing in a
- * single value, e.g.:
- *
-   .foo {
-       @include font-size(10px);
-   }
- *
- */
-/*------------------------------------*\
-    #GENERIC
-\*------------------------------------*/
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none;
-}
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -142,21 +21,67 @@ body {
   margin: 0;
 }
 
-/* ==========================================================================
-   Links
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
    ========================================================================== */
 /**
  * Remove the gray background color from active links in IE 10.
  */
 a {
   background: transparent;
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
 }
 
 /**
@@ -167,27 +92,17 @@ a:hover {
   outline: 0;
 }
 
-/* ==========================================================================
-   Typography
+/* Text-level semantics
    ========================================================================== */
 /**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 b,
 strong {
@@ -195,19 +110,19 @@ strong {
 }
 
 /**
- * Address styling not present in Safari 5 and Chrome.
+ * Address styling not present in Safari and Chrome.
  */
 dfn {
   font-style: italic;
 }
 
 /**
- * Address differences between Firefox and other browsers.
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
  */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /**
@@ -216,31 +131,6 @@ hr {
 mark {
   background: #ff0;
   color: #000;
-}
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-pre {
-  white-space: pre-wrap;
-}
-
-/**
- * Set consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /**
@@ -269,87 +159,95 @@ sub {
   bottom: -0.25em;
 }
 
-/* ==========================================================================
-   Embedded content
+/* Embedded content
    ========================================================================== */
 /**
- * Remove border when inside `a` element in IE 8/9.
+ * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
   border: 0;
 }
 
 /**
- * Correct overflow displayed oddly in IE 9.
+ * Correct overflow not hidden in IE 9/10/11.
  */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* ==========================================================================
-   Figures
+/* Grouping content
    ========================================================================== */
 /**
- * Address margin not present in IE 8/9 and Safari 5.
+ * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 0;
+  margin: 1em 40px;
 }
 
-/* ==========================================================================
-   Forms
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
    ========================================================================== */
 /**
- * Define consistent border, margin, and padding.
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
  */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
 /**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 button,
 input,
+optgroup,
 select,
 textarea {
-  font-family: inherit;
+  color: inherit;
   /* 1 */
-  font-size: 100%;
+  font: inherit;
   /* 2 */
   margin: 0;
   /* 3 */
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button,
-input {
-  line-height: normal;
+button {
+  overflow: visible;
 }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
  */
 button,
 select {
@@ -382,6 +280,26 @@ html input[disabled] {
 }
 
 /**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
@@ -394,8 +312,18 @@ input[type="radio"] {
 }
 
 /**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
 input[type="search"] {
@@ -408,8 +336,9 @@ input[type="search"] {
 }
 
 /**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -417,27 +346,41 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
- * Remove inner padding and border in Firefox 4+.
+ * Define consistent border, margin, and padding.
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-textarea {
-  overflow: auto;
+legend {
+  border: 0;
   /* 1 */
-  vertical-align: top;
+  padding: 0;
   /* 2 */
 }
 
-/* ==========================================================================
-   Tables
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
    ========================================================================== */
 /**
  * Remove most spacing between table cells.
@@ -445,6 +388,11 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
 }
 
 /*------------------------------------*\
@@ -489,22 +437,6 @@ ins {
 }
 
 /*------------------------------------*\
-    #BOX-SIZING
-\*------------------------------------*/
-/**
- * Set the global `box-sizing` state to `border-box`.
- */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/**
- * If we have included this file, set a variable to tell the rest of the
- * framework that global `box-sizing: border-box` has been set.
- */
-/*------------------------------------*\
     #SHARED
 \*------------------------------------*/
 /**
@@ -519,7 +451,7 @@ table,
 fieldset, figure,
 pre {
   margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 /**
@@ -528,28 +460,9 @@ pre {
  */
 ul, ol, dd {
   margin-left: 48px;
-  margin-left: 3rem;
+  margin-left: 2.4rem;
 }
 
-/*------------------------------------*\
-    #CLEARFIX
-\*------------------------------------*/
-/**
- * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
- * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
- * over and over in your markup.
- */
-.clearfix:after,
-.media:after,
-.box:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*------------------------------------*\
-    #BASE
-\*------------------------------------*/
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
@@ -565,9 +478,9 @@ ul, ol, dd {
  * 3. Ensure the page always fills at least the entire height of the viewport.
  */
 html {
-  font-size: 1em;
+  font-size: 1.25em;
   /* [1] */
-  line-height: 1.5;
+  line-height: 1.4;
   /* [1] */
   background-color: white;
   color: #333333;
@@ -575,6 +488,24 @@ html {
   /* [2] */
   min-height: 100%;
   /* [3] */
+}
+
+html {
+  font-family: "Alegreya", Georgia, serif;
+}
+
+a {
+  color: #333333;
+}
+a:hover {
+  color: #ff0000;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.no-underline:hover {
+  text-decoration: underline;
 }
 
 /*------------------------------------*\
@@ -585,9 +516,9 @@ html {
  * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
  */
 .lede {
-  font-size: 18px;
+  font-size: 22.5px;
   font-size: 1.125rem;
-  line-height: 1.33333;
+  line-height: 1.24444;
 }
 
 /*------------------------------------*\
@@ -599,44 +530,60 @@ html {
  */
 h1,
 .alpha {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333;
+  font-size: 64px;
+  font-size: 3.2rem;
+  line-height: 1.3125;
 }
 
 h2,
 .beta {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6;
+  font-size: 40px;
+  font-size: 2rem;
+  line-height: 1.4;
 }
 
 h3,
 .gamma {
-  font-size: 24px;
+  font-size: 30px;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.86667;
 }
 
 h4,
 .delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 22px;
+  font-size: 1.1rem;
+  line-height: 1.27273;
 }
 
 h5,
 .epsilon {
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.75;
 }
 
 h6,
 .zeta {
   font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 320px) {
+  h1.text-responsive {
+    font-size: 32px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h2.text-responsive {
+    font-size: 28px;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
 }
 
 /*------------------------------------*\
@@ -648,21 +595,6 @@ h6,
 li > ul,
 li > ol {
   margin-bottom: 0;
-}
-
-/*------------------------------------*\
-    #TABLES
-\*------------------------------------*/
-/**
- * Simple `table` styles.
- */
-table {
-  width: 100%;
-}
-
-th,
-td {
-  padding: 6px;
 }
 
 /*------------------------------------*\
@@ -688,13 +620,11 @@ img[height] {
   max-width: none;
 }
 
-html {
-  font-family: 'Lora', serif;
+blockquote {
+  font-style: italic;
+  margin: 0 24px;
 }
 
-/*------------------------------------*\
-    #OBJECTS
-\*------------------------------------*/
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
@@ -703,13 +633,6 @@ html {
  * `display: inline-block;` to create an extremely powerful, flexible
  * alternative to the traditional grid system. Combine the layout items with
  * the widths found in `trumps.widths`.
- *
- * Predefine the variables below in order to alter and enable specific features.
- */
-/**
- * Here we set a variable assuming that `box-sizing: border-box;` is not set
- * globally. If it has been previously been defined, the following variable will
- * be overriden and will be set to `true`.
  */
 /**
  * Begin a layout group.
@@ -737,212 +660,63 @@ html {
   /* [3] */
   width: 100%;
   /* [4] */
+  -webkit-box-sizing: border-box;
+  /* [5] */
+  -moz-box-sizing: border-box;
+  /* [5] */
+  box-sizing: border-box;
+  /* [5] */
 }
 
-/**
- * Different size variations.
- */
-/**
- * Layout items without gutters.
- */
-/**
- * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your markup
- * will display in order 4, 3, 2, 1 on your page.
- */
-/**
- * Align layout items to the vertical centers or bottoms of each other.
- */
-/**
- * Make the layout items fill up from the right hand side.
- */
-/**
- * Make the layout items fill up from the center outward.
- */
-/*------------------------------------*\
-    #MEDIA
-\*------------------------------------*/
-/**
- * Place any image- and text-like content side-by-side, as per:
- * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
- *
- * Predefine the variables below in order to alter and enable specific features.
- */
-.media {
+.center-block {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.media__img {
-  float: left;
-  margin-right: 24px;
-}
-.media__img > img {
-  display: block;
-}
-
-.media__body {
+.sr-only {
+  position: absolute !important;
   overflow: hidden;
-}
-.media__body,
-.media__body > :last-child {
-  margin-bottom: 0;
-}
-
-/**
- * Size variants.
- */
-/**
- * Flush media objects have no space between the image- and text-content.
- */
-/**
- * Reversed image location (right instead of left). Extends `.media`.
- */
-/*------------------------------------*\
-    #FLAG
-\*------------------------------------*/
-/**
- * The flag object is a design pattern similar to the media object, however it
- * utilises `display: table[-cell];` to give us control over the vertical
- * alignments of the text and image. csswizardry.com/2013/05/the-flag-object
- *
- * Predefine the variables below in order to alter and enable specific features.
- */
-/**
- * 1. Allows us to control vertical alignments
- * 2. Force the object to be the full width of its parent. Combined with [1],
- *    this makes the object behave in a quasi-`display: block;` manner.
- */
-.flag {
-  display: table;
-  /* [1] */
-  width: 100%;
-  /* [2] */
-}
-
-/**
- * Items within a flag object. There should only ever be one of each.
- *
- * 1. Default to aligning content to their middles.
- */
-.flag__img,
-.flag__body {
-  display: table-cell;
-  vertical-align: middle;
-  /* [1] */
-}
-
-/**
- * Flag images have a space between them and the body of the object.
- */
-.flag__img {
-  padding-right: 24px;
-}
-.flag__img > img {
-  display: block;
-  max-width: none;
-}
-
-/**
- * The container for the main content of the flag object.
- *
- * 1. Forces the `.flag__body` to take up all remaining space.
- */
-.flag__body {
-  width: 100%;
-  /* [1] */
-}
-
-/**
- * Size variants.
- */
-/**
- * Reversed flag objects have their image-content to the right, and text-content
- * to the left.
- *
- * 1. Swap the rendered direction of the object…
- * 2. …and reset it.
- * 3. Reassign margins to the correct sides.
- */
-.flag--rev {
-  direction: rtl;
-  /* [1] */
-}
-.flag--rev > .flag__img,
-.flag--rev > .flag__body {
-  direction: ltr;
-  /* [2] */
-}
-.flag--rev > .flag__img {
-  padding-right: 0;
-  /* [3] */
-  padding-left: 24px;
-  /* [3] */
-}
-
-/**
- * Flush flag objects have no space between the image- and text-content.
- */
-/**
- * Vertical alignment variations of the flag object. Either align image- and
- * text-content to the tops of bottoms of each other.
- */
-/*------------------------------------*\
-    #BOX
-\*------------------------------------*/
-/**
- * The box object simply boxes off content.
- *
- * Predefine the variables below in order to alter and enable specific features.
- */
-/**
- * 1. So we can apply the `.box` class to naturally-inline elements.
- */
-.box {
-  display: block;
-  /* [1] */
-  padding: 24px;
-}
-.box > :last-child {
-  margin-bottom: 0;
-}
-
-/**
- * Size variants
- */
-/*------------------------------------*\
-    #TABS
-\*------------------------------------*/
-/**
- * A simple abstraction for making equal-width navigation tabs.
- *
- * 1. Reset any residual styles (most likely from lists).
- * 2. Tables for layout!
- * 3. Force all `table-cell` children to have equal widths.
- * 4. Force the object to be the full width of its parent. Combined with [2],
- *    this makes the object behave in a quasi-`display: block;` manner.
- */
-.tabs {
-  margin: 0;
-  /* [1] */
+  width: 1px;
+  height: 1px;
   padding: 0;
-  /* [1] */
-  list-style: none;
-  /* [1] */
-  display: table;
-  /* [2] */
-  table-layout: fixed;
-  /* [3] */
-  width: 100%;
-  /* [4] */
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  max-width: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
   text-align: center;
 }
 
-.tabs__item {
-  display: table-cell;
-  /* [2] */
+.text-right {
+  text-align: right;
 }
 
-.tabs__link {
-  display: block;
+.text-justify {
+  text-align: justify;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.img-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /*------------------------------------*\
@@ -957,170 +731,167 @@ html {
 /**
  * Halves.
  */
-[class*="1/2"],
-[class*="2/4"],
-[class*="3/6"],
-[class*="4/8"],
-[class*="5/10"],
-[class*="6/12"] {
+[class~="1/2"],
+[class~="2/4"],
+[class~="3/6"],
+[class~="4/8"],
+[class~="5/10"],
+[class~="6/12"] {
   width: 50% !important;
 }
 
 /**
  * Thirds.
  */
-[class*="1/3"],
-[class*="2/6"],
-[class*="3/9"],
-[class*="4/12"] {
+[class~="1/3"],
+[class~="2/6"],
+[class~="3/9"],
+[class~="4/12"] {
   width: 33.3333333% !important;
 }
 
-[class*="2/3"]
-[class*="4/6"],
-[class*="6/9"],
-[class*="8/12"] {
+[class~="2/3"],
+[class~="4/6"],
+[class~="6/9"],
+[class~="8/12"] {
   width: 66.6666666% !important;
 }
 
 /**
  * Quarters.
  */
-[class*="1/4"],
-[class*="2/8"],
-[class*="3/12"] {
+[class~="1/4"],
+[class~="2/8"],
+[class~="3/12"] {
   width: 25% !important;
 }
 
-[class*="3/4"],
-[class*="6/8"],
-[class*="9/12"] {
+[class~="3/4"],
+[class~="6/8"],
+[class~="9/12"] {
   width: 75% !important;
 }
 
 /**
  * Fifths.
  */
-[class*="1/5"],
-[class*="2/10"] {
+[class~="1/5"],
+[class~="2/10"] {
   width: 20% !important;
 }
 
-[class*="2/5"],
-[class*="4/10"] {
+[class~="2/5"],
+[class~="4/10"] {
   width: 40% !important;
 }
 
-[class*="3/5"],
-[class*="6/10"] {
+[class~="3/5"],
+[class~="6/10"] {
   width: 60% !important;
 }
 
-[class*="4/5"],
-[class*="8/10"] {
+[class~="4/5"],
+[class~="8/10"] {
   width: 80% !important;
 }
 
 /**
  * Sixths.
  */
-[class*="1/6"],
-[class*="2/12"] {
+[class~="1/6"],
+[class~="2/12"] {
   width: 16.6666666% !important;
 }
 
-[class*="5/6"],
-[class*="10/12"] {
+[class~="5/6"],
+[class~="10/12"] {
   width: 83.3333333% !important;
 }
 
 /**
  * Eighths.
  */
-[class*="1/8"] {
+[class~="1/8"] {
   width: 12.5% !important;
 }
 
-[class*="3/8"] {
+[class~="3/8"] {
   width: 37.5% !important;
 }
 
-[class*="5/8"] {
+[class~="5/8"] {
   width: 62.5% !important;
 }
 
-[class*="7/8"] {
+[class~="7/8"] {
   width: 87.5% !important;
 }
 
 /**
  * Ninths.
  */
-[class*="1/9"] {
+[class~="1/9"] {
   width: 11.1111111% !important;
 }
 
-[class*="2/9"] {
+[class~="2/9"] {
   width: 22.2222222% !important;
 }
 
-[class*="4/9"] {
+[class~="4/9"] {
   width: 44.4444444% !important;
 }
 
-[class*="5/9"] {
+[class~="5/9"] {
   width: 55.5555555% !important;
 }
 
-[class*="7/9"] {
+[class~="7/9"] {
   width: 77.7777777% !important;
 }
 
-[class*="8/9"] {
+[class~="8/9"] {
   width: 88.8888888% !important;
 }
 
 /**
  * Tenths.
  */
-[class*="1/10"] {
+[class~="1/10"] {
   width: 10% !important;
 }
 
-[class*="3/10"] {
+[class~="3/10"] {
   width: 30% !important;
 }
 
-[class*="7/10"] {
+[class~="7/10"] {
   width: 70% !important;
 }
 
-[class*="9/10"] {
+[class~="9/10"] {
   width: 90% !important;
 }
 
 /**
  * Twelfths.
  */
-[class*="1/12"] {
+[class~="1/12"] {
   width: 8.3333333% !important;
 }
 
-[class*="5/12"] {
+[class~="5/12"] {
   width: 41.6666666% !important;
 }
 
-[class*="7/12"] {
+[class~="7/12"] {
   width: 58.3333333% !important;
 }
 
-[class*="11/12"] {
+[class~="11/12"] {
   width: 91.6666666% !important;
 }
 
-/*------------------------------------*\
-    #TRUMPS
-\*------------------------------------*/
 /*------------------------------------*\
     #SPACING
 \*------------------------------------*/
@@ -1166,39 +937,6 @@ html {
 }
 
 /**
- * Add small margins.
- */
-.m- {
-  margin: 12px !important;
-}
-
-.mt- {
-  margin-top: 12px !important;
-}
-
-.mr- {
-  margin-right: 12px !important;
-}
-
-.mb- {
-  margin-bottom: 12px !important;
-}
-
-.ml- {
-  margin-left: 12px !important;
-}
-
-.me- {
-  margin-top: 12px !important;
-  margin-bottom: 12px !important;
-}
-
-.ms- {
-  margin-right: 12px !important;
-  margin-left: 12px !important;
-}
-
-/**
  * Add large margins.
  */
 .m\+ {
@@ -1229,39 +967,6 @@ html {
 .ms\+ {
   margin-right: 48px !important;
   margin-left: 48px !important;
-}
-
-/**
- * Remove margins.
- */
-.m0 {
-  margin: 0 !important;
-}
-
-.mt0 {
-  margin-top: 0 !important;
-}
-
-.mr0 {
-  margin-right: 0 !important;
-}
-
-.mb0 {
-  margin-bottom: 0 !important;
-}
-
-.ml0 {
-  margin-left: 0 !important;
-}
-
-.me0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.ms0 {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
 }
 
 /**
@@ -1300,39 +1005,6 @@ html {
 }
 
 /**
- * Add small paddings.
- */
-.p- {
-  padding: 12px !important;
-}
-
-.pt- {
-  padding-top: 12px !important;
-}
-
-.pr- {
-  padding-right: 12px !important;
-}
-
-.pb- {
-  padding-bottom: 12px !important;
-}
-
-.pl- {
-  padding-left: 12px !important;
-}
-
-.pe- {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
-}
-
-.ps- {
-  padding-right: 12px !important;
-  padding-left: 12px !important;
-}
-
-/**
  * Add large paddings.
  */
 .p\+ {
@@ -1363,37 +1035,4 @@ html {
 .ps\+ {
   padding-right: 48px !important;
   padding-left: 48px !important;
-}
-
-/**
- * Remove paddings.
- */
-.p0 {
-  padding: 0 !important;
-}
-
-.pt0 {
-  padding-top: 0 !important;
-}
-
-.pr0 {
-  padding-right: 0 !important;
-}
-
-.pb0 {
-  padding-bottom: 0 !important;
-}
-
-.pl0 {
-  padding-left: 0 !important;
-}
-
-.pe0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.ps0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
 }
