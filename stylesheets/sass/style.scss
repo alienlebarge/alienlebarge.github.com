@@ -1,30 +1,36 @@
-@charset "UTF-8";
-/*------------------------------------*\
-    STYLE.SCSS
-\*------------------------------------*/
-/**
- * Here we start to pull everything together into one big stylesheet.
- *
- * SETUP............Settings, tools, mixins, etc.
- * GENERIC..........normalize.css, reset, shared styles, etc.
- * BASE.............Basic HTML elements.
- * OBJECTS..........Objects, abstractions, design patterns.
- * GUI..............Components and modules.
- * TRUMPS...........Helpers, overrides, ‘trump-cards’.
- */
+// We import types of file in the following order:
+//
+// Settings -- Sass vars, etc.
+// Tools -- Functions and mixins.
+// Generic -- Generic, high-level styling, like resets, etc.
+// Base -- Unclasses HTML elements (e.g. `h2`, `ul`).
+// Object -- Objects and abstractions.
+// Components -- Your designed UI elements (inuitcss includes none of these).
+// Trumps -- Overrides and helper classes.
+//
+// These shearing layers are what make inuitcss so scalable.
+
 
 
 
 
 
 /*------------------------------------*\
-    #SETUP
+    #SETTINGS
 \*------------------------------------*/
-/**
- * Settings, variables and tools.
- */
-@import "01_settings/all",
-        "02_tools/all";
+@import "settings.defaults/settings.defaults";
+
+
+
+
+
+
+/*------------------------------------*\
+    #TOOLS
+\*------------------------------------*/
+@import "tools.functions/tools.functions";
+@import "tools.mixins/tools.mixins";
+
 
 
 
@@ -33,11 +39,12 @@
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
-/**
- * These are far reaching styles that affect and underpin every element on the
- * page, e.g. `* {}`.
- */
-@import "03_generic/all";
+@import "generic.normalize/generic.normalize";
+@import "generic.reset/generic.reset";
+@import "generic.box-sizing/generic.box-sizing";
+@import "generic.shared/generic.shared";
+@import "generic.clearfix/generic.clearfix";
+
 
 
 
@@ -46,12 +53,16 @@
 /*------------------------------------*\
     #BASE
 \*------------------------------------*/
-/**
- * These are base HTML elements, things with no classes on them, e.g. `h1 {}`,
- * `blockquote {}`.
- */
-@import "04_base/all";
+@import "base.page/base.page";
+@import "base.paragraphs/base.paragraphs";
+@import "base.headings/base.headings";
+@import "base.lists/base.lists";
+@import "base.tables/base.tables";
+@import "base.images/base.images";
 
+html {
+  font-family: 'Lora', serif;
+}
 
 
 
@@ -59,24 +70,14 @@
 /*------------------------------------*\
     #OBJECTS
 \*------------------------------------*/
-/**
- * These are design-free objects, abstractions and design patterns. These create
- * constructs that you lay your designs over.
- */
-@import "05_objects/all";
+@import "objects.layout/objects.layout";
+@import "objects.media/objects.media";
+$inuit-enable-flag--rev:  true;
+@import "objects.flag/objects.flag";
+@import "objects.box/objects.box";
+@import "objects.tabs/objects.tabs";
+@import "trumps.widths/trumps.widths";
 
-
-
-
-
-/*------------------------------------*\
-    #GUI
-\*------------------------------------*/
-/**
- * These are your components and modules; things like buttons, accordions,
- * carousels, etc.
- */
-@import "06_gui/all";
 
 
 
@@ -85,8 +86,13 @@
 /*------------------------------------*\
     #TRUMPS
 \*------------------------------------*/
-/**
- * These are helper classes and overrides that should take precedence over all
- * other styles, e.g. `.float--left {}`.
- */
-@import "07_trumps/all";
+$inuit-enable-margins:          true;
+$inuit-enable-margins--small:   true;
+$inuit-enable-margins--large:   true;
+$inuit-enable-margins--none:    true;
+
+$inuit-enable-paddings:         true;
+$inuit-enable-paddings--small:  true;
+$inuit-enable-paddings--large:  true;
+$inuit-enable-paddings--none:   true;
+@import "trumps.spacing/trumps.spacing";

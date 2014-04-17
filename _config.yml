@@ -1,3 +1,4 @@
-name: alienlebarge's code blog
+name: Rough toughts
 pygments: true
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
+paginate: 10
