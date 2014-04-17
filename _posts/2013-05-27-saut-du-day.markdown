@@ -18,6 +18,7 @@ meta:
   _edit_last: '1'
   _wpas_done_all: '1'
 ---
+
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
 
 Nous faisons beaucoup de petites balades en famille avec ma femme et ma fille. Souvent on manque d’idée ou on ne connaît pas de ballade adaptée aux enfants. C’est pourquoi j’ai décidé de partager la randonnée du Saut du Day avec vous. <!--more-->
@@ -43,12 +44,12 @@ Une fois au pied des chutes vous y êtes.  Voici le Saut du Day, une très jol
 Pour remonter à la gare, il faut emprunter le tunnel  de l’<a title="Histoire de l'usine" href="http://arnexhistoire.blogspot.ch/2012/11/lusine-electrochimique-du-day.html">ancienne usine électrique</a> qui passe sous les chutes. Il est préférable d’être muni d’une lampe de poche. Il n’est pas éclairé et de l’eau ruisselle sur toute la largueuse.
 
 Une fois le tunnel passé, préparez-vous à remonter d’une traite tout ce que vous avez descendu jusque là (environ 100m de dénivelé). Suivez le sentier jusqu’à la place d’exercice militaire puis la route jusqu’à la gare. Faites attention en traversant la route. La visibilité n’est pas excellente et les voitures n’ont de loin pas toutes des vitesses adaptées pour l’endroit.
-<h2>Résumé</h2>
-<ul>
-	<li>Départ: <a title="Position de la gare sur Google Maps" href="https://maps.google.fr/maps?q=46.717283,6.400498&amp;ll=46.717471,6.400722&amp;spn=0.002107,0.005284&amp;num=1&amp;t=h&amp;z=18">Gare du Day</a></li>
-	<li>Durée: 1 heure 20 minutes (sans pause à un bon pas)</li>
-	<li>Dénivelé: env. 100m</li>
-	<li>Equipement: Lampe de poche pour traverser le tunnel</li>
-	<li><a title="Fichier KML à télécharger sur Github" href="https://gist.github.com/alienlebarge/5657247">Fichier KML</a></li>
-	<li><a title="Carte du parcours sur map.geo.admin.ch" href="http://map.geo.admin.ch/?Y=520788&amp;X=174794&amp;zoom=8&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps%3A%2F%2Fgist.github.com%2Falienlebarge%2F5657247%2Fraw%2F3a9b61b34d6a178b7e6c027c1f53a803c217a1df%2FSautDuDay.kml&amp;layers_opacity=1,1&amp;layers_visibility=true,true&amp;time_current=latest&amp;lang=fr">Carte du parcours</a></li>
-</ul>
+
+## Résumé
+
+- Départ: <a title="Position de la gare sur Google Maps" href="https://maps.google.fr/maps?q=46.717283,6.400498&amp;ll=46.717471,6.400722&amp;spn=0.002107,0.005284&amp;num=1&amp;t=h&amp;z=18">Gare du Day</a>
+- Durée: 1 heure 20 minutes (sans pause à un bon pas)
+- Dénivelé: env. 100m
+- Equipement: Lampe de poche pour traverser le tunnel
+- <a title="Fichier KML à télécharger sur Github" href="https://gist.github.com/alienlebarge/5657247">Fichier KML</a>
+- <a title="Carte du parcours sur map.geo.admin.ch" href="http://map.geo.admin.ch/?Y=520788&amp;X=174794&amp;zoom=8&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps%3A%2F%2Fgist.github.com%2Falienlebarge%2F5657247%2Fraw%2F3a9b61b34d6a178b7e6c027c1f53a803c217a1df%2FSautDuDay.kml&amp;layers_opacity=1,1&amp;layers_visibility=true,true&amp;time_current=latest&amp;lang=fr">Carte du parcours</a>
