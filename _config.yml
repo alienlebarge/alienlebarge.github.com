@@ -1,3 +1,4 @@
+markdown: rdiscount
 name: Rough toughts
 pygments: true
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
