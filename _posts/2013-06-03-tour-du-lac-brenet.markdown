@@ -16,7 +16,7 @@ meta:
   _wpas_done_all: '1'
 ---
 
-Le tour du lac Brenet à la Vallée de Joux est une ballade accessible à tous. Le sentier est même facilement accessible avec une poussette.
+Le tour du lac Brenet à la Vallée de Joux est une ballade accessible à tous. Le sentier est même facilement accessible avec une poussette.<!--more-->
 
 ![Lac Brenet](http://www.alienlebarge.ch/wordpress/wp-content/uploads/2013/06/1370288898.jpg)
 
