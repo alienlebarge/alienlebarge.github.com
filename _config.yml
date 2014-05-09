@@ -1,8 +1,6 @@
-markdown: redcarpet
+markdown: rdiscount
 name: Rough toughts
 pygments: true
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
 paginate: 5
 excerpt_separator: <!--more-->
-redcarpet:
-  extensions: ["fenced_code_blocks"]
