@@ -14,7 +14,7 @@ meta:
   _wpas_done_all: '1'
 ---
 
-Voici quelques liens intéressants découverts durant le mois de mai. Bien entendu, vous pouvez retrouver tous ces liens sur [mon compte Pinboard](https://pinboard.in/u:alienlebarge).
+Voici quelques liens intéressants découverts durant le mois de mai. Bien entendu, vous pouvez retrouver tous ces liens sur [mon compte Pinboard](https://pinboard.in/u:alienlebarge).<!--more-->
 
 ## [Lighten &amp; Darken Hex Colors](http://hexcolortool.com/)
 
