@@ -13,23 +13,19 @@ Voici l'installation que j'ai suivis pour le mettre en place (vous trouverez tou
 
 J'ai installé Ruby au moyen de RVM. Cela veut dire, que j'ai simplement taper la ligne ci-dessous dans mon terminal.
 
-yy
-
-{% highlight %}
-$ \curl -L https://get.rvm.io | bash -s stable --ruby
-{% endhighlight %}
+    $ \curl -L https://get.rvm.io | bash -s stable --ruby
 
 ### RubyGems
 
 Pour RubyGems, je ne suis pas cassé la tête. Une simple ligne de commande à également fait l'affaire.
 
-	$ gem update --system
+    $ gem update --system
 
 ### Jekyll
 
 Là aussi, l'installation s'est fait au moyen d'une simple ligne de commande.
 
-	$ gem install jekyll
+  	$ gem install jekyll
 
 ### La suite
 
