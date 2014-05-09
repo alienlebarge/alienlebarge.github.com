@@ -13,9 +13,12 @@ Voici l'installation que j'ai suivis pour le mettre en place (vous trouverez tou
 
 J'ai installé Ruby au moyen de RVM. Cela veut dire, que j'ai simplement taper la ligne ci-dessous dans mon terminal.
 
-{% highlight shell %}
+xx
+
+{% highlight linenos %}
 $ \curl -L https://get.rvm.io | bash -s stable --ruby
 {% endhighlight %}
+
 ### RubyGems
 
 Pour RubyGems, je ne suis pas cassé la tête. Une simple ligne de commande à également fait l'affaire.
