@@ -5,7 +5,7 @@ date:   2013-06-27 07:19:00
 categories: jekyll
 ---
 
-Après quelques mois d'hésitation, je me suis enfin décidé à tester [Jekyll](http://jekyllrb.com).
+Après quelques mois d'hésitation, je me suis enfin décidé à tester [Jekyll](http://jekyllrb.com).<!--more-->
 
 Voici l'installation que j'ai suivis pour le mettre en place (vous trouverez toutes [la procédure sur le site de Jekyll](http://jekyllrb.com/docs/installation/)):
 
