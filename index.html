@@ -21,20 +21,22 @@ title: Rough toughs
   </section>
 
   <!-- pagination -->
-  <ul class="layout pb+">
-    <li class="layout__item 1/2">
-      {% if paginator.previous_page %}
-        <a href="/page{{ paginator.previous_page }}">Previous</a>
-      {% endif %}
-    </li><!--
+  <nav role="navigation">
+    <ul class="layout pb+">
+      <li class="layout__item 1/2">
+        {% if paginator.previous_page %}
+          <a href="/page{{ paginator.previous_page }}">Previous</a>
+        {% endif %}
+      </li><!--
 
-  --><li class="layout__item 1/2 text-right">
-      {% if paginator.next_page %}
-        <a href="/page{{ paginator.next_page }}">Next</a>
-      {% endif %}
-    </li><!--
+    --><li class="layout__item 1/2 text-right">
+        {% if paginator.next_page %}
+          <a href="/page{{ paginator.next_page }}">Next</a>
+        {% endif %}
+      </li><!--
 
-    -->
-  </ul>
+      -->
+    </ul>
+  </nav>
 
 </div>
