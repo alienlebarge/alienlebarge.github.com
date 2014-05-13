@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -395,13 +395,6 @@ th {
   padding: 0;
 }
 
-/*------------------------------------*\
-    #RESET
-\*------------------------------------*/
-/**
- * As well as using normalize.css, it is often advantageous to remove all
- * margins from certain elements.
- */
 body,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -413,37 +406,20 @@ hr {
   padding: 0;
 }
 
-/**
- * Give a help cursor to elements that give extra info on `:hover`.
- */
 abbr[title],
 dfn[title] {
   cursor: help;
 }
 
-/**
- * Remove underlines from potentially troublesome elements.
- */
 u,
 ins {
   text-decoration: none;
 }
 
-/**
- * Apply faux underlines to inserted text via `border-bottom`.
- */
 ins {
   border-bottom: 1px solid;
 }
 
-/*------------------------------------*\
-    #SHARED
-\*------------------------------------*/
-/**
- * Where `margin-bottom` is concerned,this value will be the same as the
- * base line-height. This allows us to keep a consistent vertical rhythm.
- * As per: csswizardry.com/2012/06/single-direction-margin-declarations
- */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
 blockquote, p, address,
@@ -454,29 +430,165 @@ pre {
   margin-bottom: 1.2rem;
 }
 
-/**
- * Where `margin-left` is concerned we want to try and indent certain elements
- * by a consistent amount. Define that amount once,here.
- */
 ul, ol, dd {
   margin-left: 48px;
   margin-left: 2.4rem;
 }
 
-/*------------------------------------*\
-    #PAGE
-\*------------------------------------*/
+a {
+  color: #333333;
+}
+a:hover {
+  color: #ff0000;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.no-underline:hover {
+  text-decoration: underline;
+}
+
 /**
- * High-, page-level styling.
- *
- * 1. Set the default `font-size` and `line-height` for the entire project,
- *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- * 3. Ensure the page always fills at least the entire height of the viewport.
+ * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
+pre {
+  font-size: 0.75em;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  background-color: #333;
+  overflow: auto;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+pre mark {
+  background: none;
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+h1,
+.alpha {
+  font-size: 64px;
+  font-size: 3.2rem;
+  line-height: 1.3125;
+}
+@media only screen and (max-width: 500px) {
+  h1,
+  .alpha {
+    font-size: 51.2px;
+    font-size: 2.56rem;
+  }
+}
+
+h2,
+.beta {
+  font-size: 40px;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+@media only screen and (max-width: 500px) {
+  h2,
+  .beta {
+    font-size: 32px;
+    font-size: 1.6rem;
+  }
+}
+
+h3,
+.gamma {
+  font-size: 30px;
+  font-size: 1.5rem;
+  line-height: 1.86667;
+}
+@media only screen and (max-width: 500px) {
+  h3,
+  .gamma {
+    font-size: 24px;
+    font-size: 1.2rem;
+  }
+}
+
+h4,
+.delta,
+.separators {
+  font-size: 22px;
+  font-size: 1.1rem;
+  line-height: 1.27273;
+}
+@media only screen and (max-width: 500px) {
+  h4,
+  .delta,
+  .separators {
+    font-size: 17.6px;
+    font-size: 0.88rem;
+  }
+}
+
+h5,
+.epsilon {
+  font-size: 16px;
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+@media only screen and (max-width: 500px) {
+  h5,
+  .epsilon {
+    font-size: 12.8px;
+    font-size: 0.64rem;
+  }
+}
+
+h6,
+.zeta {
+  font-size: 14px;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+@media only screen and (max-width: 500px) {
+  h6,
+  .zeta {
+    font-size: 11.2px;
+    font-size: 0.56rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figcaption {
+  font-size: 16px;
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
 html {
   font-size: 1.25em;
   /* [1] */
@@ -494,130 +606,30 @@ html {
   font-family: "Alegreya", Georgia, serif;
 }
 
-a {
-  color: #333333;
-}
-a:hover {
-  color: #ff0000;
-}
-
-.no-underline {
-  text-decoration: none;
-}
-.no-underline:hover {
-  text-decoration: underline;
-}
-
-/*------------------------------------*\
-    #PARAGRAPHS
-\*------------------------------------*/
-/**
- * The `.lede` class is used to make the introductory text (usually a paragraph)
- * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
- */
 .lede {
   font-size: 22.5px;
   font-size: 1.125rem;
   line-height: 1.24444;
 }
-
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-/**
- * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
- * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
- */
-h1,
-.alpha {
-  font-size: 64px;
-  font-size: 3.2rem;
-  line-height: 1.3125;
+@media only screen and (max-width: 500px) {
+  .lede {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
 }
 
-h2,
-.beta {
-  font-size: 40px;
-  font-size: 2rem;
-  line-height: 1.4;
-}
-
-h3,
-.gamma {
-  font-size: 30px;
-  font-size: 1.5rem;
-  line-height: 1.86667;
-}
-
-h4,
-.delta {
-  font-size: 22px;
-  font-size: 1.1rem;
-  line-height: 1.27273;
-}
-
-h5,
-.epsilon {
+.small,
+small {
   font-size: 16px;
   font-size: 0.8rem;
   line-height: 1.75;
 }
-
-h6,
-.zeta {
-  font-size: 14px;
-  font-size: 0.7rem;
-  line-height: 2;
-}
-
-@media screen and (max-width: 320px) {
-  h1.text-responsive {
-    font-size: 32px;
-    font-size: 1.6rem;
-    line-height: 1.75;
+@media only screen and (max-width: 500px) {
+  .small,
+  small {
+    font-size: 12.8px;
+    font-size: 0.64rem;
   }
-}
-
-@media screen and (max-width: 320px) {
-  h2.text-responsive {
-    font-size: 28px;
-    font-size: 1.4rem;
-    line-height: 1;
-  }
-}
-
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
-/**
- * Remove extra vertical spacing when nesting lists.
- */
-li > ul,
-li > ol {
-  margin-bottom: 0;
-}
-
-/*------------------------------------*\
-    #IMAGES
-\*------------------------------------*/
-/**
- * 1. Fluid images for responsive purposes.
- * 2. Offset `alt` text from surrounding copy.
- */
-img {
-  max-width: 100%;
-  /* [1] */
-  font-style: italic;
-  /* [2] */
-}
-
-/**
- * If a `width` and/or `height` attribute have been explicitly defined, let’s
- * not make the image fluid.
- */
-img[width],
-img[height] {
-  max-width: none;
 }
 
 blockquote {
@@ -625,18 +637,6 @@ blockquote {
   margin: 0 24px;
 }
 
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * The inuitcss layout system uses `box-sizing: border-box;` and
- * `display: inline-block;` to create an extremely powerful, flexible
- * alternative to the traditional grid system. Combine the layout items with
- * the widths found in `trumps.widths`.
- */
-/**
- * Begin a layout group.
- */
 .layout {
   list-style: none;
   margin: 0;
@@ -684,6 +684,48 @@ blockquote {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.img-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.separators {
+  text-align: center;
+  font-weight: normal;
+  font-variant: small-caps;
+  overflow: hidden;
+  border: none;
+  position: relative;
+}
+.separators::before {
+  content: "··············································································································································································································································································································································································································································································································";
+  letter-spacing: 0.5em;
+  font-size: 11px;
+  font-size: 0.55rem;
+  line-height: 2.54545;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  overflow: visible;
+}
+@media only screen and (max-width: 500px) {
+  .separators::before {
+    font-size: 8.8px;
+    font-size: 0.44rem;
+  }
+}
+.separators > * {
+  background-color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  z-index: 1;
+}
+
 .container {
   max-width: 540px;
   display: block;
@@ -711,26 +753,6 @@ blockquote {
   font-weight: 400;
 }
 
-.img-circle {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
-/*------------------------------------*\
-    #WIDTHS
-\*------------------------------------*/
-/**
- * A series of width helper classes that you can use to size things like grid
- * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
- * word format (e.g. `two-thirds`). Toggle formats by overriding the
- * `$inuit-use-fractions` variable defined below.
- */
-/**
- * Halves.
- */
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],
@@ -740,9 +762,6 @@ blockquote {
   width: 50% !important;
 }
 
-/**
- * Thirds.
- */
 [class~="1/3"],
 [class~="2/6"],
 [class~="3/9"],
@@ -757,9 +776,6 @@ blockquote {
   width: 66.6666666% !important;
 }
 
-/**
- * Quarters.
- */
 [class~="1/4"],
 [class~="2/8"],
 [class~="3/12"] {
@@ -772,9 +788,6 @@ blockquote {
   width: 75% !important;
 }
 
-/**
- * Fifths.
- */
 [class~="1/5"],
 [class~="2/10"] {
   width: 20% !important;
@@ -795,9 +808,6 @@ blockquote {
   width: 80% !important;
 }
 
-/**
- * Sixths.
- */
 [class~="1/6"],
 [class~="2/12"] {
   width: 16.6666666% !important;
@@ -808,9 +818,6 @@ blockquote {
   width: 83.3333333% !important;
 }
 
-/**
- * Eighths.
- */
 [class~="1/8"] {
   width: 12.5% !important;
 }
@@ -827,9 +834,6 @@ blockquote {
   width: 87.5% !important;
 }
 
-/**
- * Ninths.
- */
 [class~="1/9"] {
   width: 11.1111111% !important;
 }
@@ -873,9 +877,6 @@ blockquote {
   width: 90% !important;
 }
 
-/**
- * Twelfths.
- */
 [class~="1/12"] {
   width: 8.3333333% !important;
 }
@@ -892,15 +893,6 @@ blockquote {
   width: 91.6666666% !important;
 }
 
-/*------------------------------------*\
-    #SPACING
-\*------------------------------------*/
-/**
- * Margin and padding helper classes. Use these to tweak layout on a micro
- * level.
- *
- * `.(m|p)(t|r|b|l|e|s)(-|+|0) {}` = margin/padding top/right/bottom/left/ends/sides less/more/none
- */
 /**
  * Margin helper classes.
  *
@@ -926,14 +918,14 @@ blockquote {
   margin-left: 24px !important;
 }
 
-.me {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
-}
-
-.ms {
+.mh {
   margin-right: 24px !important;
   margin-left: 24px !important;
+}
+
+.mv {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
 }
 
 /**
@@ -959,14 +951,14 @@ blockquote {
   margin-left: 48px !important;
 }
 
-.me\+ {
-  margin-top: 48px !important;
-  margin-bottom: 48px !important;
-}
-
-.ms\+ {
+.mh\+ {
   margin-right: 48px !important;
   margin-left: 48px !important;
+}
+
+.mv\+ {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
 }
 
 /**
@@ -994,14 +986,14 @@ blockquote {
   padding-left: 24px !important;
 }
 
-.pe {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
-
-.ps {
+.ph {
   padding-right: 24px !important;
   padding-left: 24px !important;
+}
+
+.pv {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
 }
 
 /**
@@ -1027,12 +1019,12 @@ blockquote {
   padding-left: 48px !important;
 }
 
-.pe\+ {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
-}
-
-.ps\+ {
+.ph\+ {
   padding-right: 48px !important;
   padding-left: 48px !important;
+}
+
+.pv\+ {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
 }
