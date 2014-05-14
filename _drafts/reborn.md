@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reborn"
-date:   2014-05-14 14:01:15  
+date:   2014-05-14 14:01:15
 categories: blog
 ---
 
@@ -9,7 +9,7 @@ categories: blog
 
 One year ago I have stopped publishing articles on my blog. Since then I’m thinking reborn it with a new design.
 
-The keywords for this were "**simplicity**" and "**open source".  
+The keywords for this were "**simplicity**" and "**open source**".  
 After some works, here it is ! I hope you will enjoy it.
 
 ## Thanks to …
@@ -37,7 +37,7 @@ Since Grunt appears in my development, I can’t live without it.
 ### Jekyll
 
 To be simple, [Jekyll](http://jekyllrb.com/) publish your markdown files as a website. That’s quite straightforward but that’s it.  
-The ability to put my hands in the `HTML` and styles easily is very important for me. With Jekyll, I can fix the frontend without pain.
+The ability to put my hands in the `HTML` and styles easily is very important for me. With Jekyll, I can fix the frontend without pain. It's so simple and hackable.
 
 ## Next Steps
 
