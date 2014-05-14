@@ -435,6 +435,12 @@ ul, ol, dd {
   margin-left: 2.4rem;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 a {
   color: #333333;
 }
@@ -480,12 +486,14 @@ h1,
   font-size: 64px;
   font-size: 3.2rem;
   line-height: 1.3125;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h1,
   .alpha {
-    font-size: 51.2px;
-    font-size: 2.56rem;
+    font-size: 40px;
+    font-size: 2rem;
+    line-height: 1.4;
   }
 }
 
@@ -494,12 +502,14 @@ h2,
   font-size: 40px;
   font-size: 2rem;
   line-height: 1.4;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h2,
   .beta {
-    font-size: 32px;
-    font-size: 1.6rem;
+    font-size: 33px;
+    font-size: 1.65rem;
+    line-height: 1.69697;
   }
 }
 
@@ -508,12 +518,14 @@ h3,
   font-size: 30px;
   font-size: 1.5rem;
   line-height: 1.86667;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h3,
   .gamma {
-    font-size: 24px;
-    font-size: 1.2rem;
+    font-size: 27px;
+    font-size: 1.35rem;
+    line-height: 1.03704;
   }
 }
 
@@ -523,13 +535,15 @@ h4,
   font-size: 22px;
   font-size: 1.1rem;
   line-height: 1.27273;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h4,
   .delta,
   .separators {
-    font-size: 17.6px;
-    font-size: 0.88rem;
+    font-size: 22px;
+    font-size: 1.1rem;
+    line-height: 1.27273;
   }
 }
 
@@ -538,12 +552,14 @@ h5,
   font-size: 16px;
   font-size: 0.8rem;
   line-height: 1.75;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h5,
   .epsilon {
-    font-size: 12.8px;
-    font-size: 0.64rem;
+    font-size: 16px;
+    font-size: 0.8rem;
+    line-height: 1.75;
   }
 }
 
@@ -552,12 +568,14 @@ h6,
   font-size: 14px;
   font-size: 0.7rem;
   line-height: 2;
+  text-align: center;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   h6,
   .zeta {
-    font-size: 11.2px;
-    font-size: 0.56rem;
+    font-size: 14px;
+    font-size: 0.7rem;
+    line-height: 2;
   }
 }
 
@@ -611,25 +629,12 @@ html {
   font-size: 1.125rem;
   line-height: 1.24444;
 }
-@media only screen and (max-width: 500px) {
-  .lede {
-    font-size: 18px;
-    font-size: 0.9rem;
-  }
-}
 
 .small,
 small {
   font-size: 16px;
   font-size: 0.8rem;
   line-height: 1.75;
-}
-@media only screen and (max-width: 500px) {
-  .small,
-  small {
-    font-size: 12.8px;
-    font-size: 0.64rem;
-  }
 }
 
 blockquote {
@@ -660,12 +665,6 @@ blockquote {
   /* [3] */
   width: 100%;
   /* [4] */
-  -webkit-box-sizing: border-box;
-  /* [5] */
-  -moz-box-sizing: border-box;
-  /* [5] */
-  box-sizing: border-box;
-  /* [5] */
 }
 
 .center-block {
@@ -710,12 +709,6 @@ blockquote {
   position: absolute;
   z-index: -1;
   overflow: visible;
-}
-@media only screen and (max-width: 500px) {
-  .separators::before {
-    font-size: 8.8px;
-    font-size: 0.44rem;
-  }
 }
 .separators > * {
   background-color: white;
