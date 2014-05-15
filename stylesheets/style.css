@@ -436,12 +436,12 @@ table,
 fieldset, figure,
 pre {
   margin-bottom: 24px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 ul, ol, dd {
   margin-left: 48px;
-  margin-left: 2.4rem;
+  margin-left: 3rem;
 }
 
 *, *:before, *:after {
@@ -468,7 +468,7 @@ a:hover {
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
 pre {
-  font-size: 0.75em;
+  font-size: 0.6em;
   overflow: auto;
   white-space: pre;
   word-wrap: normal;
@@ -492,99 +492,99 @@ pre mark {
 
 h1,
 .alpha {
-  font-size: 64px;
-  font-size: 3.2rem;
-  line-height: 1.3125;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h1,
   .alpha {
-    font-size: 40px;
-    font-size: 2rem;
-    line-height: 1.4;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 1.06667;
   }
 }
 
 h2,
 .beta {
-  font-size: 40px;
-  font-size: 2rem;
-  line-height: 1.4;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h2,
   .beta {
-    font-size: 33px;
-    font-size: 1.65rem;
-    line-height: 1.69697;
+    font-size: 37.5px;
+    font-size: 2.34375rem;
+    line-height: 1.28;
   }
 }
 
 h3,
 .gamma {
-  font-size: 30px;
+  font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.86667;
+  line-height: 1;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h3,
   .gamma {
-    font-size: 27px;
-    font-size: 1.35rem;
-    line-height: 1.03704;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 1.6;
   }
 }
 
 h4,
-.delta,
-.separators {
-  font-size: 22px;
-  font-size: 1.1rem;
-  line-height: 1.27273;
+.delta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h4,
-  .delta,
-  .separators {
-    font-size: 22px;
-    font-size: 1.1rem;
-    line-height: 1.27273;
+  .delta {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.92;
   }
 }
 
 h5,
-.epsilon {
+.epsilon,
+.separators {
   font-size: 16px;
-  font-size: 0.8rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.5;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h5,
-  .epsilon {
-    font-size: 16px;
-    font-size: 0.8rem;
-    line-height: 1.75;
+  .epsilon,
+  .separators {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
   }
 }
 
 h6,
 .zeta {
   font-size: 14px;
-  font-size: 0.7rem;
-  line-height: 2;
+  font-size: 0.875rem;
+  line-height: 1.71429;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media (min-width: 501px) {
   h6,
   .zeta {
-    font-size: 14px;
-    font-size: 0.7rem;
-    line-height: 2;
+    font-size: 17.5px;
+    font-size: 1.09375rem;
+    line-height: 1.37143;
   }
 }
 
@@ -606,9 +606,9 @@ figure {
 }
 
 figcaption {
-  font-size: 16px;
+  font-size: 12.8px;
   font-size: 0.8rem;
-  line-height: 1.75;
+  line-height: 1.875;
 }
 
 li > ul,
@@ -617,9 +617,9 @@ li > ol {
 }
 
 html {
-  font-size: 1.25em;
+  font-size: 1em;
   /* [1] */
-  line-height: 1.4;
+  line-height: 1.5;
   /* [1] */
   background-color: white;
   color: #333333;
@@ -628,22 +628,36 @@ html {
   min-height: 100%;
   /* [3] */
 }
+@media (min-width: 501px) {
+  html {
+    font-size: 1.25em;
+    line-height: 1.4;
+  }
+}
 
 html {
   font-family: "Alegreya", Georgia, serif;
 }
 
 .lede {
-  font-size: 22.5px;
+  font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.24444;
+  line-height: 1.33333;
 }
 
 .small,
 small {
-  font-size: 16px;
+  font-size: 12.8px;
   font-size: 0.8rem;
-  line-height: 1.75;
+  line-height: 1.875;
+}
+@media (min-width: 900px) {
+  .small,
+  small {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 
 blockquote {
@@ -711,9 +725,9 @@ blockquote {
 .separators::before {
   content: "··············································································································································································································································································································································································································································································································";
   letter-spacing: 0.5em;
-  font-size: 11px;
-  font-size: 0.55rem;
-  line-height: 2.54545;
+  font-size: 8px;
+  font-size: 0.5rem;
+  line-height: 3;
   display: block;
   position: absolute;
   z-index: -1;
