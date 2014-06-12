@@ -11,7 +11,6 @@ The first edition of [UX Lausanne](http://2014.uxlausanne.com/) was a really gre
 
 Well done guys !
 
-[![UXLS team on stage](https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg)](https://www.flickr.com/photos/uxlausanne/14286898731/ "View on Flickr")
 <figure>
   <img src="https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg" alt="UXLS team on stage">
   <figcaption>
