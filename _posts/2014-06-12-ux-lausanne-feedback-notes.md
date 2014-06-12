@@ -7,8 +7,6 @@ description: Feedback and notes about UX conference in Lausanne
 tags: uxls, ux, event, lausanne
 ---
 
-# UX Lausanne feedback & notes
-
 The first edition of [UX Lausanne](http://2014.uxlausanne.com/) was a really great event. I really appreciate it. If there will be a 2015 edition, you can count me in.
 
 It's now time to share my notes.  
