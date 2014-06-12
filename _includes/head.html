@@ -19,7 +19,9 @@
   {% else %}
   <meta name="twitter:description" content="{{site.description}}">
   {% endif %}
-  <!--<meta name="twitter:image" content="...">-->
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image }}">
+  {% endif %}
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Rough Though by alienlebarge" href="http://feeds.feedburner.com/alienlebarge">
