@@ -12,7 +12,7 @@ Here's my sketchnote of [Giles Colborne](https://twitter.com/gilescolborne)'s ta
 
 <figure>
 ![Delight and innovation sketchnote](https://farm4.staticflickr.com/3837/14224367428_e503c1c557_z.jpg)
-  <figcaption>[View original on Flickr](https://www.flickr.com/photos/alienlebarge/14224367428/)</figcaption>
+  <figcaption>Delight and Innovation sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14224367428/)</figcaption>
 </figure>
 
 ## Related links
