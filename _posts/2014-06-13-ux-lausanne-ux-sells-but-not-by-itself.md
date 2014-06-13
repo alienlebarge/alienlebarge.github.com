@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       UX Lausanne: UX sells, but not by itself
+title:       "UX Lausanne: UX sells, but not by itself"
 date:        2014-06-13 15:24:27
 categories:  blog
 description: My sketchnote of Birgit Geiberger & Peter Boersma's talk UX sells, but not by itself
