@@ -4,7 +4,7 @@ title:       "UX Lausanne: Empathy is not an Interview"
 date:        2014-06-13 16:26:15
 categories:  blog
 description: My sketchnote of Indi Young's talk Empathy is not an Interview
-image:       https://farm3.staticflickr.com/2902/14059916040_4cc974bfe8_z.jpg
+image:       https://farm3.staticflickr.com/2902/14409269631_b0fd5bb74e_z.jpg
 tags:        uxls, ux, event, lausanne, empathy, interview, sketchnote
 ---
 
