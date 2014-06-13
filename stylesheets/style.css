@@ -606,11 +606,33 @@ figure {
 }
 
 figcaption {
-  font-size: 12.8px;
-  font-size: 0.8rem;
-  line-height: 1.875;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+figcaption:before {
+  display: block;
+  color: #333333;
+  content: "\2014\2014";
+  font-weight: bold;
+  line-height: 0;
+  margin: 6px auto;
 }
 
+@media (min-width: 1200px) {
+  figure {
+    position: relative;
+  }
+  figure figcaption {
+    position: absolute;
+    text-align: right;
+    width: 150px;
+    left: -174px;
+    top: 0;
+  }
+  figure figcaption:before {
+    margin: 0 auto 6px;
+  }
+}
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -647,17 +669,9 @@ html {
 
 .small,
 small {
-  font-size: 12.8px;
-  font-size: 0.8rem;
-  line-height: 1.875;
-}
-@media (min-width: 900px) {
-  .small,
-  small {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  line-height: 1.76471;
 }
 
 blockquote {
