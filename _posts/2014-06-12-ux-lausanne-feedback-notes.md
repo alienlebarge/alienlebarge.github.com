@@ -14,7 +14,7 @@ Well done guys !
 
 <figure>
   ![UXLS team on stage](https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg)
-  <figcaption>[View original on Flickr](https://www.flickr.com/photos/uxlausanne/14286898731/)</figcaption>
+  <figcaption>The UX Lausanne team on stage. [View original on Flickr](https://www.flickr.com/photos/uxlausanne/14286898731/)</figcaption>
 </figure>
 
 It's now time to share my notes.  
