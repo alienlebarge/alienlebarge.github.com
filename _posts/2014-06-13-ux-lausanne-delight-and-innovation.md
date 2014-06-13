@@ -17,4 +17,4 @@ Here's my sketchnote of [Giles Colborne](https://twitter.com/gilescolborne)'s ta
 
 ## Related links
 
-- Bonny Colville-Hide has taken some really great [notes](http://rockpooldigitalux.tumblr.com/post/86496010801/designing-for-delight-giles-colborne-ux) of the talk.
+- [Bonny Colville-Hide](https://twitter.com/almostexact) has taken some really great [notes](http://rockpooldigitalux.tumblr.com/post/86496010801/designing-for-delight-giles-colborne-ux) of the talk.

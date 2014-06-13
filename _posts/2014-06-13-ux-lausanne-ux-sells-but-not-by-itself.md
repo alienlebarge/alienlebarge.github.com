@@ -17,4 +17,4 @@ Here's my sketchnote of [Birgit Geiberger](https://twitter.com/birgitgcom) and [
 
 ## Related links
 
-- Bonny Colville-Hide's [notes](http://rockpooldigitalux.tumblr.com/post/86502249471/ux-sells-but-not-by-itself-birgit-geiberger) of the talk.
+- [Bonny Colville-Hide](https://twitter.com/almostexact)'s [notes](http://rockpooldigitalux.tumblr.com/post/86502249471/ux-sells-but-not-by-itself-birgit-geiberger) of the talk.
