@@ -12,7 +12,10 @@ The first edition of [UX Lausanne](http://2014.uxlausanne.com/) was a really gre
 
 Well done guys !
 
-{% include image.html url="https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg" alt="UXLS team on stage" caption="[View original on Flickr](https://www.flickr.com/photos/uxlausanne/14286898731/)" %}
+<figure>
+  ![UXLS team on stage](https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg)
+  <figcaption>[View original on Flickr](https://www.flickr.com/photos/uxlausanne/14286898731/)</figcaption>
+</figure>
 
 It's now time to share my notes.  
 The two last weeks, I was in holidays. I have (almost) totally disconnected from the online world. This why I come a bit late with my feedback.
