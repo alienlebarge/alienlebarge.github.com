@@ -25,10 +25,11 @@ title: Rough toughs
     <ul class="layout pb+">
       <li class="layout__item 1/2">
         {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-          <a href="/">Previous</a>
-        {% else %}
-          <a href="/page{{ paginator.previous_page }}">Previous</a>
+          {% if paginator.previous_page == 1 %}
+            <a href="/">Previous</a>
+          {% else %}
+            <a href="/page{{ paginator.previous_page }}">Previous</a>
+          {% endif %}
         {% endif %}
       </li><!--
 
