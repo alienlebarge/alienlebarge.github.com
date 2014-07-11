@@ -6,7 +6,7 @@
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
 pre{
-  font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em;
+  font-size: ($base-font-size * 0.6 / 16px) * 1em;
   overflow:auto;
   white-space:pre;
   word-wrap:normal;

@@ -1,56 +1,3 @@
-// # Defaults
-// These variables are inuitcss’ defaults; they should not be modified or
-// adjusted, you should redfine the variables in your own overrides file and
-// include it in your project before this file.
-
-
-
-
-
-// # High-level base settings.
-$inuit-base-font-size:          20px !default;
-$inuit-base-line-height:        28px !default;
-$inuit-base-text-color:         #333 !default;
-$inuit-base-background-color:   #fff !default;
-
-
-
-
-
-// # Namespace.
-//
-// Would you like inuitcss’ classes to be prepended with a namespace? If so,
-// define it here.
-$inuit-namespace:               null !default;
-
-
-
-
-
-// # Headings.
-//
-// These font sizes, defined in pixels, will be converted into rems (with pixel
-// fallbacks) by inuitcss.
-$heading-size-1:          36px !default;
-$heading-size-2:          30px !default;
-$heading-size-3:          24px !default;
-$heading-size-4:          20px !default;
-$heading-size-5:          16px !default;
-$heading-size-6:          14px !default;
-
-
-
-
-
-// These variables are framework variables, sourced from variables defined
-// above. Feel free to use these variables throughout your project, but do not
-// modify or reassign them.
-$inuit-base-spacing-unit:       $inuit-base-line-height;
-
-
-
-
-
 // # Settings defaults
 //
 // Let's set the main variables
@@ -66,13 +13,14 @@ $inuit-base-spacing-unit:       $inuit-base-line-height;
 // Everythings about the fonts
 //
 // No styleguide reference.
-$base-font-family: 'freight-display-pro', Georgia, serif;
-$base-headings-font-family: "ff-dax-compact-web-pro", serif;
-$base-font-size:   20px;
-$base-line-height: 28px;
+$base-font-family          : 'freight-display-pro', Georgia, serif;
+$base-headings-font-family : "ff-dax-compact-web-pro", serif;
+$base-font-size            : 20px;
+$base-line-height          : 28px;
 
-$inuit-base-font-size:   $base-font-size;
-$inuit-base-line-height: $base-line-height;
+
+
+
 
 // ## Headings
 //
@@ -96,15 +44,21 @@ $base-line-height--md-factor: $base-line-height--md $base-line-height;
 
 
 
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$base-spacing-unit:       $base-line-height;
+
+
+
+
+
 // # Colors
 //
 // It's all about the colors
 $base-text-color:       #333;
 $base-primary-color:    #ff0000;
 $base-background-color: #fff;
-
-$inuit-base-text-color:         $base-text-color;
-$inuit-base-background-color:   $base-background-color;
 
 
 
@@ -129,8 +83,8 @@ $base-container-width: 750px;
 // # Spacing
 //
 // InuitCSS settings for margin and spacing
-$inuit-enable-margins: true;
-$inuit-enable-paddings: true;
+$enable-margins: true;
+$enable-paddings: true;
 
-$inuit-enable-margins--large:   true;
-$inuit-enable-paddings--large:  true;
+$enable-margins--large:   true;
+$enable-paddings--large:  true;

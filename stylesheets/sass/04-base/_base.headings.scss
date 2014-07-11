@@ -17,44 +17,44 @@
 //    <p class="epsilon">Paragraph epsilon</p>
 //    <p class="zeta">Paragraph zeta</p>
 h1,
-.#{$inuit-namespace}alpha,
-%#{$inuit-namespace}alpha {
-  @include inuit-font-size($heading-size-1);
+.alpha,
+%alpha {
+  @include font-size($heading-size-1);
   text-align: center;
 }
 
 h2,
-.#{$inuit-namespace}beta,
-%#{$inuit-namespace}beta {
-  @include inuit-font-size($heading-size-2);
+.beta,
+%beta {
+  @include font-size($heading-size-2);
   text-align: center;
 }
 
 h3,
-.#{$inuit-namespace}gamma,
-%#{$inuit-namespace}gamma {
-  @include inuit-font-size($heading-size-3);
+.gamma,
+%gamma {
+  @include font-size($heading-size-3);
   text-align: center;
 }
 
 h4,
-.#{$inuit-namespace}delta,
-%#{$inuit-namespace}delta {
-  @include inuit-font-size($heading-size-4);
+.delta,
+%delta {
+  @include font-size($heading-size-4);
   text-align: center;
 }
 
 h5,
-.#{$inuit-namespace}epsilon,
-%#{$inuit-namespace}epsilon {
-  @include inuit-font-size($heading-size-5);
+.epsilon,
+%epsilon {
+  @include font-size($heading-size-5);
   text-align: center;
 }
 
 h6,
-.#{$inuit-namespace}zeta,
-%#{$inuit-namespace}zeta {
-  @include inuit-font-size($heading-size-6);
+.zeta,
+%zeta {
+  @include font-size($heading-size-6);
   text-align: center;
 }
 

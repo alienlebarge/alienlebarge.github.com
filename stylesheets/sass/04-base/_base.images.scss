@@ -47,7 +47,7 @@ figure {
 //
 //     <figcaption>This is the caption</figure>
 figcaption {
-  @include inuit-font-size($base-font-size * 0.85, false);
+  @include font-size($base-font-size * 0.85, false);
 
   &:before {
     display: block;
@@ -68,7 +68,7 @@ figcaption {
       position: absolute;
       text-align: right;
       width: $base-container-width/5;
-      left: -(($base-container-width/5) + $inuit-base-spacing-unit);
+      left: -(($base-container-width/5) + $base-spacing-unit);
       top: 0;
       &:before {
         margin: 0 auto $base-line-height/4;

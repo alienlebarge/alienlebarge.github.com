@@ -14,7 +14,7 @@
 //     @include font-size(10px);
 // }`
 //
-@mixin inuit-font-size($font-size, $line-height: true) {
+@mixin font-size($font-size, $line-height: true) {
     font-size: $font-size;
     font-size: ($font-size / $base-font-size) * 1rem;
 
