@@ -483,17 +483,17 @@ pre mark {
 
 h1,
 .alpha {
-  font-size: 36px;
-  font-size: 1.8rem;
-  line-height: 1.55556;
+  font-size: 40px;
+  font-size: 2rem;
+  line-height: 1.4;
   text-align: center;
 }
 
 h2,
 .beta {
-  font-size: 30px;
-  font-size: 1.5rem;
-  line-height: 1.86667;
+  font-size: 32px;
+  font-size: 1.6rem;
+  line-height: 1.75;
   text-align: center;
 }
 
@@ -516,17 +516,17 @@ h4,
 h5,
 .epsilon,
 .separators {
-  font-size: 16px;
-  font-size: 0.8rem;
-  line-height: 1.75;
+  font-size: 17px;
+  font-size: 0.85rem;
+  line-height: 1.64706;
   text-align: center;
 }
 
 h6,
 .zeta {
-  font-size: 14px;
-  font-size: 0.7rem;
-  line-height: 2;
+  font-size: 13px;
+  font-size: 0.65rem;
+  line-height: 2.15385;
   text-align: center;
 }
 
@@ -536,7 +536,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ff-meta-web-pro";
+  font-family: "ff-dax-compact-web-pro", serif;
 }
 
 img {
@@ -603,7 +603,7 @@ html {
 }
 
 html {
-  font-family: "chaparral-pro", Georgia, serif;
+  font-family: "freight-display-pro", Georgia, serif;
   font-weight: 100;
 }
 
@@ -685,9 +685,9 @@ blockquote {
 .separators::before {
   content: "··············································································································································································································································································································································································································································································································";
   letter-spacing: 0.5em;
-  font-size: 8px;
-  font-size: 0.4rem;
-  line-height: 3.5;
+  font-size: 8.5px;
+  font-size: 0.425rem;
+  line-height: 3.29412;
   display: block;
   position: absolute;
   z-index: -1;
