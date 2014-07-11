@@ -14,12 +14,12 @@
 //     @include font-size(10px);
 // }`
 //
-@mixin inuit-font-size($inuit-font-size, $inuit-line-height: true) {
-    font-size: $inuit-font-size;
-    font-size: ($inuit-font-size / $inuit-base-font-size) * 1rem;
+@mixin inuit-font-size($font-size, $line-height: true) {
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size) * 1rem;
 
-    @if $inuit-line-height == true {
-        line-height: ceil($inuit-font-size / $inuit-base-line-height) * ($inuit-base-line-height / $inuit-font-size);
+    @if $line-height == true {
+        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
     }
 }
 
