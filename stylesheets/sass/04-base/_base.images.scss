@@ -1,0 +1,78 @@
+// # Images
+//
+//   1. Fluid images for responsive purposes.
+//   2. Offset `alt` text from surrounding copy.
+//
+img{
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+}
+
+
+
+
+
+// # Image with height & width attributes
+//
+// If a `width` and/or `height` attribute have been explicitly defined, let’s
+// not make the image fluid.
+img[width],
+img[height] {
+    max-width: none;
+}
+
+
+
+
+
+
+// # Figure
+//
+// No left and right margin
+//
+//     <figure><img src="http://placekitten.com/g/200/200"></figure>
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+
+
+// # Figcaption
+//
+// Let see what is a *caption* and what is *text*.
+// The caption in on the left on big screen.
+//
+//     <figcaption>This is the caption</figure>
+figcaption {
+  @include inuit-font-size($base-font-size * 0.85, false);
+
+  &:before {
+    display: block;
+    color: $base-text-color;
+    content:"\2014";
+    font-weight: bold;
+    line-height: 0;
+    margin: $base-line-height/4 auto;
+    //margin-bottom: $base-line-height/4;
+  }
+}
+
+@include breakpoint(lg) {
+  figure {
+    position: relative;
+
+    figcaption {
+      position: absolute;
+      text-align: right;
+      width: $base-container-width/5;
+      left: -(($base-container-width/5) + $inuit-base-spacing-unit);
+      top: 0;
+      &:before {
+        margin: 0 auto $base-line-height/4;
+      }
+    }
+  }
+}
