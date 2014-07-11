@@ -1,0 +1,14 @@
+// # Quotes
+//
+// Citation, Blockquotes and things you are not the author
+
+
+// # Blockquotes
+//
+// `<blockquote>` basic tag
+//
+//     <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, mollitia.</blockquote>
+blockquote {
+  font-style: italic;
+  margin: 0 $inuit-base-spacing-unit;
+}

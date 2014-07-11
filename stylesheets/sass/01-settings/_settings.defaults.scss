@@ -1,0 +1,135 @@
+// # Defaults
+// These variables are inuitcss’ defaults; they should not be modified or
+// adjusted, you should redfine the variables in your own overrides file and
+// include it in your project before this file.
+
+
+
+
+
+// # High-level base settings.
+$inuit-base-font-size:          16px !default;
+$inuit-base-line-height:        24px !default;
+$inuit-base-text-color:         #333 !default;
+$inuit-base-background-color:   #fff !default;
+
+
+
+
+
+// # Namespace.
+//
+// Would you like inuitcss’ classes to be prepended with a namespace? If so,
+// define it here.
+$inuit-namespace:               null !default;
+
+
+
+
+
+// # Headings.
+//
+// These font sizes, defined in pixels, will be converted into rems (with pixel
+// fallbacks) by inuitcss.
+$heading-size-1:          36px !default;
+$heading-size-2:          30px !default;
+$heading-size-3:          24px !default;
+$heading-size-4:          20px !default;
+$heading-size-5:          16px !default;
+$heading-size-6:          14px !default;
+
+
+
+
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$inuit-base-spacing-unit:       $inuit-base-line-height;
+
+
+
+
+
+// # Settings defaults
+//
+// Let's set the main variables
+//
+// No styleguide reference.
+
+
+
+
+
+// # Fonts
+//
+// Everythings about the fonts
+//
+// No styleguide reference.
+$base-font-family: 'chaparral-pro', Georgia, serif;
+$base-font-size:   20px;
+$base-line-height: 28px;
+
+$inuit-base-font-size:   $base-font-size;
+$inuit-base-line-height: $base-line-height;
+
+// ## Headings
+//
+// Headings size is set here
+$heading-size-1: 36px;
+$heading-size-2: 30px;
+$heading-size-3: 24px;
+$heading-size-4: 20px;
+$heading-size-5: 16px;
+$heading-size-6: 14px;
+
+// ### Medium device size
+//
+// Size for medium devices
+$base-font-size--md: 20px;
+$base-font-size--md-factor: $base-font-size--md / $base-font-size;
+$base-line-height--md: 28px;
+$base-line-height--md-factor: $base-line-height--md $base-line-height;
+
+
+
+
+
+// # Colors
+//
+// It's all about the colors
+$base-text-color:       #333;
+$base-primary-color:    #ff0000;
+$base-background-color: #fff;
+
+$inuit-base-text-color:         $base-text-color;
+$inuit-base-background-color:   $base-background-color;
+
+
+
+
+
+// # Breakpoints
+$base-break-xs: 500px;
+$base-break-sm: 900px;
+$base-break-md: 1200px;
+
+
+
+
+
+// # Container width
+$base-container-width: 750px;
+
+
+
+
+
+// # Spacing
+//
+// InuitCSS settings for margin and spacing
+$inuit-enable-margins: true;
+$inuit-enable-paddings: true;
+
+$inuit-enable-margins--large:   true;
+$inuit-enable-paddings--large:  true;

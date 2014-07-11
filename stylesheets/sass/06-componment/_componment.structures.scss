@@ -1,0 +1,17 @@
+// # Structure
+//
+// Main wrapper and container
+
+
+
+
+
+// # Container
+//
+// Container is the main ... container
+//
+//     <div class="container">...</div>
+.container {
+  max-width: $base-container-width;
+  @include center-block;
+}

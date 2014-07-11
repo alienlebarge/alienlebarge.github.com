@@ -1,0 +1,84 @@
+// # Main file
+//
+// One File to rule them all, One File to find them,
+// One File to bring them all and in the darkness bind them
+
+
+
+
+
+// ## Settings
+//
+// Sass vars, etc.
+@import "sass/01-settings/settings.defaults";
+
+
+
+
+
+// ## Tools
+//
+// Functions and mixins.
+@import "sass/02-tools/tools.functions";
+@import "sass/02-tools/tools.mixins";
+
+
+
+
+
+// ## Generic
+//
+// Generic, high-level styling, like resets, etc.
+@import "sass/03-generic/generic.normalize";
+@import "sass/03-generic/generic.reset";
+@import "sass/03-generic/generic.shared";
+@import "sass/03-generic/generic.box-sizing";
+
+
+
+
+
+// ## Base
+//
+// Unclasses HTML elements (e.g. `h2`, `ul`).
+@import "sass/04-base/base.anchors";
+@import "sass/04-base/base.codes";
+@import "sass/04-base/base.headings";
+@import "sass/04-base/base.images";
+@import "sass/04-base/base.lists";
+@import "sass/04-base/base.page";
+@import "sass/04-base/base.paragraphs";
+@import "sass/04-base/base.quotes";
+
+
+
+
+
+
+// ## Objects
+//
+// Objects and abstractions.
+@import "sass/05-objects/objects.layout";
+@import "sass/05-objects/objects.helper-classes";
+
+
+
+
+
+// ## Componment
+//
+// Designed UI elements .
+@import "sass/06-componment/componment.images-shapes";
+@import "sass/06-componment/componment.separators";
+@import "sass/06-componment/componment.structures";
+@import "sass/06-componment/componment.types";
+
+
+
+
+
+// ## Trumps
+//
+// Overrides and helper classes.
+@import "sass/07-trumps/trumps.widths";
+@import "sass/07-trumps/trumps.spacing";
