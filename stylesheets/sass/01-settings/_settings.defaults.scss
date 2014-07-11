@@ -8,8 +8,8 @@
 
 
 // # High-level base settings.
-$inuit-base-font-size:          16px !default;
-$inuit-base-line-height:        24px !default;
+$inuit-base-font-size:          20px !default;
+$inuit-base-line-height:        28px !default;
 $inuit-base-text-color:         #333 !default;
 $inuit-base-background-color:   #fff !default;
 
@@ -66,7 +66,8 @@ $inuit-base-spacing-unit:       $inuit-base-line-height;
 // Everythings about the fonts
 //
 // No styleguide reference.
-$base-font-family: 'chaparral-pro', Georgia, serif;
+$base-font-family: 'freight-display-pro', Georgia, serif;
+$base-headings-font-family: "ff-dax-compact-web-pro", serif;
 $base-font-size:   20px;
 $base-line-height: 28px;
 
@@ -76,12 +77,12 @@ $inuit-base-line-height: $base-line-height;
 // ## Headings
 //
 // Headings size is set here
-$heading-size-1: 36px;
-$heading-size-2: 30px;
+$heading-size-1: 40px;
+$heading-size-2: 32px;
 $heading-size-3: 24px;
 $heading-size-4: 20px;
-$heading-size-5: 16px;
-$heading-size-6: 14px;
+$heading-size-5: 17px;
+$heading-size-6: 13px;
 
 // ### Medium device size
 //

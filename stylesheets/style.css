@@ -426,13 +426,13 @@ blockquote, p, address,
 table,
 fieldset, figure,
 pre {
-  margin-bottom: 24px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 28px;
+  margin-bottom: 1.4rem;
 }
 
 ul, ol, dd {
-  margin-left: 48px;
-  margin-left: 2.4rem;
+  margin-left: 56px;
+  margin-left: 2.8rem;
 }
 
 *, *:before, *:after {
@@ -483,17 +483,17 @@ pre mark {
 
 h1,
 .alpha {
-  font-size: 36px;
-  font-size: 1.8rem;
-  line-height: 1.55556;
+  font-size: 40px;
+  font-size: 2rem;
+  line-height: 1.4;
   text-align: center;
 }
 
 h2,
 .beta {
-  font-size: 30px;
-  font-size: 1.5rem;
-  line-height: 1.86667;
+  font-size: 32px;
+  font-size: 1.6rem;
+  line-height: 1.75;
   text-align: center;
 }
 
@@ -516,17 +516,17 @@ h4,
 h5,
 .epsilon,
 .separators {
-  font-size: 16px;
-  font-size: 0.8rem;
-  line-height: 1.75;
+  font-size: 17px;
+  font-size: 0.85rem;
+  line-height: 1.64706;
   text-align: center;
 }
 
 h6,
 .zeta {
-  font-size: 14px;
-  font-size: 0.7rem;
-  line-height: 2;
+  font-size: 13px;
+  font-size: 0.65rem;
+  line-height: 2.15385;
   text-align: center;
 }
 
@@ -536,7 +536,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ff-meta-web-pro";
+  font-family: "ff-dax-compact-web-pro", serif;
 }
 
 img {
@@ -577,7 +577,7 @@ figcaption:before {
     position: absolute;
     text-align: right;
     width: 150px;
-    left: -174px;
+    left: -178px;
     top: 0;
   }
   figure figcaption:before {
@@ -603,7 +603,7 @@ html {
 }
 
 html {
-  font-family: "chaparral-pro", Georgia, serif;
+  font-family: "freight-display-pro", Georgia, serif;
   font-weight: 100;
 }
 
@@ -622,14 +622,14 @@ small {
 
 blockquote {
   font-style: italic;
-  margin: 0 24px;
+  margin: 0 28px;
 }
 
 .layout {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -24px;
+  margin-left: -28px;
 }
 
 /**
@@ -642,7 +642,7 @@ blockquote {
 .layout__item {
   display: inline-block;
   /* [1] */
-  padding-left: 24px;
+  padding-left: 28px;
   /* [2] */
   vertical-align: top;
   /* [3] */
@@ -685,9 +685,9 @@ blockquote {
 .separators::before {
   content: "··············································································································································································································································································································································································································································································································";
   letter-spacing: 0.5em;
-  font-size: 8px;
-  font-size: 0.4rem;
-  line-height: 3.5;
+  font-size: 8.5px;
+  font-size: 0.425rem;
+  line-height: 3.29412;
   display: block;
   position: absolute;
   z-index: -1;
@@ -875,66 +875,66 @@ blockquote {
  * Add margins.
  */
 .m {
-  margin: 24px !important;
+  margin: 28px !important;
 }
 
 .mt {
-  margin-top: 24px !important;
+  margin-top: 28px !important;
 }
 
 .mr {
-  margin-right: 24px !important;
+  margin-right: 28px !important;
 }
 
 .mb {
-  margin-bottom: 24px !important;
+  margin-bottom: 28px !important;
 }
 
 .ml {
-  margin-left: 24px !important;
+  margin-left: 28px !important;
 }
 
 .mh {
-  margin-right: 24px !important;
-  margin-left: 24px !important;
+  margin-right: 28px !important;
+  margin-left: 28px !important;
 }
 
 .mv {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
+  margin-top: 28px !important;
+  margin-bottom: 28px !important;
 }
 
 /**
  * Add large margins.
  */
 .m\+ {
-  margin: 48px !important;
+  margin: 56px !important;
 }
 
 .mt\+ {
-  margin-top: 48px !important;
+  margin-top: 56px !important;
 }
 
 .mr\+ {
-  margin-right: 48px !important;
+  margin-right: 56px !important;
 }
 
 .mb\+ {
-  margin-bottom: 48px !important;
+  margin-bottom: 56px !important;
 }
 
 .ml\+ {
-  margin-left: 48px !important;
+  margin-left: 56px !important;
 }
 
 .mh\+ {
-  margin-right: 48px !important;
-  margin-left: 48px !important;
+  margin-right: 56px !important;
+  margin-left: 56px !important;
 }
 
 .mv\+ {
-  margin-top: 48px !important;
-  margin-bottom: 48px !important;
+  margin-top: 56px !important;
+  margin-bottom: 56px !important;
 }
 
 /**
@@ -943,64 +943,64 @@ blockquote {
  * Add paddings.
  */
 .p {
-  padding: 24px !important;
+  padding: 28px !important;
 }
 
 .pt {
-  padding-top: 24px !important;
+  padding-top: 28px !important;
 }
 
 .pr {
-  padding-right: 24px !important;
+  padding-right: 28px !important;
 }
 
 .pb {
-  padding-bottom: 24px !important;
+  padding-bottom: 28px !important;
 }
 
 .pl {
-  padding-left: 24px !important;
+  padding-left: 28px !important;
 }
 
 .ph {
-  padding-right: 24px !important;
-  padding-left: 24px !important;
+  padding-right: 28px !important;
+  padding-left: 28px !important;
 }
 
 .pv {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
 }
 
 /**
  * Add large paddings.
  */
 .p\+ {
-  padding: 48px !important;
+  padding: 56px !important;
 }
 
 .pt\+ {
-  padding-top: 48px !important;
+  padding-top: 56px !important;
 }
 
 .pr\+ {
-  padding-right: 48px !important;
+  padding-right: 56px !important;
 }
 
 .pb\+ {
-  padding-bottom: 48px !important;
+  padding-bottom: 56px !important;
 }
 
 .pl\+ {
-  padding-left: 48px !important;
+  padding-left: 56px !important;
 }
 
 .ph\+ {
-  padding-right: 48px !important;
-  padding-left: 48px !important;
+  padding-right: 56px !important;
+  padding-left: 56px !important;
 }
 
 .pv\+ {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
 }
