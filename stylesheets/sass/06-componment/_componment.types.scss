@@ -84,6 +84,5 @@
   font-family    : $base-headings-font-family;
   letter-spacing : -0.015em;
   font-weight    : 400;
-  color          : $base-muted-color;
   @include font-size($text-size-small);
 }

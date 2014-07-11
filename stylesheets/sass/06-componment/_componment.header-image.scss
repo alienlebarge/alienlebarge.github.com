@@ -1,0 +1,51 @@
+// # Header image
+
+%header-image-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: block;
+  width: 100%;
+  height: $base-header-image;
+
+  z-index: -100;
+}
+
+
+.header-image {
+
+    @extend %header-image-base;
+
+    background-color: $base-header-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; // 2.
+
+  &:before {
+    content: '';
+    @extend %header-image-base;
+
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) $base-header-image/2, rgba(0,0,0,0.4) $base-header-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  // The text over the image must be visible
+  // So we set it to #fff
+  @at-root .header-image__hover {
+    color: #fff;
+  }
+}
+
+
+// if the post doesn't contain an image in his varaibles
+.header-image--no-image {
+  content: '';
+  @extend %header-image-base;
+  background-color: $base-header-color;
+}

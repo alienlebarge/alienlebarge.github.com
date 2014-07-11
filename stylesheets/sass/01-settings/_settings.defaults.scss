@@ -53,6 +53,7 @@ $base-text-color:       #333;
 $base-muted-color:      #999;
 $base-primary-color:    #ff0000;
 $base-background-color: #fff;
+$base-header-color:     $base-primary-color;
 
 
 
@@ -84,3 +85,10 @@ $enable-margins--none: true;
 
 $enable-margins--large:   true;
 $enable-paddings--large:  true;
+
+
+
+
+
+// # Header images
+$base-header-image: 400px;
