@@ -22,3 +22,14 @@
 small {
   @include font-size($base-font-size * 0.85)
 }
+
+
+
+
+
+// # Strong
+strong,
+.strong,
+%strong {
+  font-weight: bold;
+}

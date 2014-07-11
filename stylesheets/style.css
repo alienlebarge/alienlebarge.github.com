@@ -615,6 +615,11 @@ small {
   line-height: 1.64706;
 }
 
+strong,
+.strong {
+  font-weight: bold;
+}
+
 blockquote {
   font-style: italic;
   margin: 0 28px;
