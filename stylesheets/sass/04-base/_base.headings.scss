@@ -20,42 +20,36 @@ h1,
 .alpha,
 %alpha {
   @include font-size($heading-size-1);
-  text-align: center;
 }
 
 h2,
 .beta,
 %beta {
   @include font-size($heading-size-2);
-  text-align: center;
 }
 
 h3,
 .gamma,
 %gamma {
   @include font-size($heading-size-3);
-  text-align: center;
 }
 
 h4,
 .delta,
 %delta {
   @include font-size($heading-size-4);
-  text-align: center;
 }
 
 h5,
 .epsilon,
 %epsilon {
   @include font-size($heading-size-5);
-  text-align: center;
 }
 
 h6,
 .zeta,
 %zeta {
   @include font-size($heading-size-6);
-  text-align: center;
 }
 
 h1,
@@ -65,4 +59,5 @@ h4,
 h5,
 h6 {
   font-family: $base-headings-font-family;
+  letter-spacing: -0.025em;
 }

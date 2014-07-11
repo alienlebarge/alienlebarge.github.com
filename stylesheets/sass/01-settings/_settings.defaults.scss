@@ -31,6 +31,7 @@ $heading-size-3: 24px;
 $heading-size-4: 20px;
 $heading-size-5: 17px;
 $heading-size-6: 13px;
+$text-size-small: $heading-size-6;
 
 
 
@@ -49,6 +50,7 @@ $base-spacing-unit:       $base-line-height;
 //
 // It's all about the colors
 $base-text-color:       #333;
+$base-muted-color:      #999;
 $base-primary-color:    #ff0000;
 $base-background-color: #fff;
 

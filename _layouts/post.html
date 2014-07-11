@@ -4,8 +4,8 @@ layout: blog
 <article class="container pr pb+ pl">
 
   <header>
-    <h1 class="text-center text-responsive">{{ page.title }}</h1>
-    <p class="small text-center"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+    <h1>{{ page.title }}</h1>
+    <p class="meta"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
   </header>
 
   {{ content }}

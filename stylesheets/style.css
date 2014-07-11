@@ -486,7 +486,6 @@ h1,
   font-size: 40px;
   font-size: 2rem;
   line-height: 1.4;
-  text-align: center;
 }
 
 h2,
@@ -494,7 +493,6 @@ h2,
   font-size: 32px;
   font-size: 1.6rem;
   line-height: 1.75;
-  text-align: center;
 }
 
 h3,
@@ -502,7 +500,6 @@ h3,
   font-size: 24px;
   font-size: 1.2rem;
   line-height: 1.16667;
-  text-align: center;
 }
 
 h4,
@@ -510,7 +507,6 @@ h4,
   font-size: 20px;
   font-size: 1rem;
   line-height: 1.4;
-  text-align: center;
 }
 
 h5,
@@ -519,7 +515,6 @@ h5,
   font-size: 17px;
   font-size: 0.85rem;
   line-height: 1.64706;
-  text-align: center;
 }
 
 h6,
@@ -527,7 +522,6 @@ h6,
   font-size: 13px;
   font-size: 0.65rem;
   line-height: 2.15385;
-  text-align: center;
 }
 
 h1,
@@ -537,6 +531,7 @@ h4,
 h5,
 h6 {
   font-family: "ff-dax-compact-web-pro", serif;
+  letter-spacing: -0.025em;
 }
 
 img {
@@ -727,6 +722,16 @@ blockquote {
 
 .font-weight-normal {
   font-weight: 400;
+}
+
+.meta {
+  font-family: "ff-dax-compact-web-pro", serif;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  color: #999999;
+  font-size: 13px;
+  font-size: 0.65rem;
+  line-height: 2.15385;
 }
 
 [class~="1/2"],
