@@ -5,7 +5,7 @@ layout: blog
 
   <header>
     <h1>{{ page.title }}</h1>
-    <p class="meta"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+    <p class="meta">{% if page.author %}by {{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
   </header>
 
   {{ content }}
