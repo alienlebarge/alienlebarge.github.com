@@ -1,0 +1,11 @@
+// # Navigation
+
+.primary-navigation {
+  position: fixed;
+  color: #000;
+  z-index: 999;
+
+  @at-root primary-navigation__block {
+    display: block;
+  }
+}

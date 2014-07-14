@@ -783,6 +783,15 @@ blockquote {
   line-height: 2.15385;
 }
 
+.primary-navigation {
+  position: fixed;
+  color: #000;
+  z-index: 999;
+}
+primary-navigation__block {
+  display: block;
+}
+
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],
