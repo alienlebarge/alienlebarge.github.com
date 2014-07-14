@@ -445,7 +445,7 @@ a {
   color: #333333;
 }
 a:hover {
-  color: #ff0000;
+  color: #ff5867;
 }
 
 .no-underline {
@@ -731,7 +731,7 @@ blockquote {
 }
 
 .header-image {
-  background-color: red;
+  background-color: #ff5867;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -751,7 +751,7 @@ blockquote {
 
 .header-image--no-image {
   content: '';
-  background-color: red;
+  background-color: #ff5867;
 }
 
 .text-left {
