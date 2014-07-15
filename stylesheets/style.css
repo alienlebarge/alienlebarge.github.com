@@ -650,6 +650,32 @@ blockquote {
   /* [4] */
 }
 
+/*------------------------------------*\
+    #UI-LIST
+\*------------------------------------*/
+/**
+ * The UI list object creates blocky list items with a keyline separator out of
+ * a `ul` or `ol`.
+ */
+.ui-list,
+.ui-list__item,
+.ui-list > li {
+  border: 0 solid #cccccc;
+}
+
+.ui-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top-width: 1px;
+}
+
+.ui-list__item,
+.ui-list > li {
+  padding: 28px;
+  border-bottom-width: 1px;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
