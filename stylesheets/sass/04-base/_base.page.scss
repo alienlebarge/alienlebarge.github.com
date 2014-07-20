@@ -31,3 +31,8 @@ html {
   font-family: $base-font-family;
   font-weight: 100;
 }
+
+html,
+body {
+  height: 100%;
+}

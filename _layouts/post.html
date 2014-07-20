@@ -2,24 +2,22 @@
 layout: blog
 ---
 
-{% if page.image %}
-<div class="header-image" style="background-image: url('{{ page.image }}')"></div>
-{% else %}
-<div class="header-image--no-image" style="background-image: url('{{ page.image }}')"></div>
-{% endif %}
+<article class="header-image">
 
-</div>
-
-<article class="container p">
-
-  <header class="container__header header-image__hover">
-    <div class="container__header__content">
-      <h1 class="mb0">{{ page.title }}</h1>
-      <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+  {% if page.image %}
+  <header class="header-image__image" style="background-image: url('{{ page.image }}')">
+  {% else %}
+  <header class="header-image__image--no-image">
+  {% endif %}
+    <div class="header-image__content">
+      <div class='header-image__content__container'>
+        <h1 class="mb0">{{ page.title }}</h1>
+        <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+      </div>
     </div>
   </header>
 
-  <div class="container__content">
+  <div class="container">
     {{ content }}
   </div>
 

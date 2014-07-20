@@ -6,29 +6,9 @@
 // Container is the main ... container
 //
 //     <div class="container">...</div>
+%container,
 .container {
   max-width: $base-container-width;
+  padding: 0 $base-spacing-unit;
   @include center-block;
-
-  @at-root {
-
-    // Creat a block over the header image.
-    // the content `.container__header__content` is align at bottom of this box
-    .container__header {
-      position: relative;
-
-      //width: $base-container-width;
-      width: 100%;
-      height: $base-header-image;
-
-      @at-root .container__header__content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-
-    }
-
-  }
-
 }
