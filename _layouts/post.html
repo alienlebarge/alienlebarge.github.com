@@ -2,11 +2,11 @@
 layout: blog
 ---
 
-<article class="header-image">
-
-  {% if page.image %}
+{% if page.image %}
+<article class="header-image background-gradient">
   <header class="header-image__image" style="background-image: url('{{ page.image }}')">
-  {% else %}
+{% else %}
+<article class="header-image">
   <header class="header-image__image--no-image">
   {% endif %}
     <div class="header-image__content">

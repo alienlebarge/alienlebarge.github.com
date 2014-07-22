@@ -751,9 +751,6 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header-image__image--no-image {
-  background-color: #ff5867;
-}
 .header-image__content {
   color: #fff;
   position: absolute;
@@ -761,7 +758,12 @@ blockquote {
   left: 0;
   width: 100%;
 }
-.header-image:before {
+
+.header-image__image--no-image {
+  background-color: #ff5867;
+}
+
+.background-gradient:before {
   content: '';
   position: absolute;
   top: 0;

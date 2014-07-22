@@ -20,13 +20,9 @@
     background-size: cover; // 3.
   }
 
-  @at-root .header-image__image--no-image {
-    @extend .header-image__image;
-    background-color: $base-primary-color;
-  }
-
   @at-root .header-image__content {
     color: #fff;
+
     position: absolute; // 2.
     bottom: 0; // 2.
     left: 0;
@@ -36,7 +32,23 @@
       @extend %container; // 4.
     }
   }
+}
 
+
+
+
+
+.header-image__image--no-image {
+  @extend .header-image__image;
+  background-color: $base-primary-color;
+}
+
+
+
+
+
+
+.background-gradient {
   &:before {
     content: '';
 
