@@ -1125,3 +1125,36 @@ blockquote {
   padding-top: 56px !important;
   padding-bottom: 56px !important;
 }
+
+/**
+ * Remove paddings.
+ */
+.p0 {
+  padding: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.ph0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
