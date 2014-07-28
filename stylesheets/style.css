@@ -695,6 +695,10 @@ blockquote {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.relative {
+  position: relative;
+}
+
 .img-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -809,9 +813,13 @@ blockquote {
 }
 
 .primary-navigation {
-  position: fixed;
-  color: #000;
+  position: absolute;
   z-index: 999;
+  top: 0;
+  left: 0;
+}
+.primary-navigation a {
+  color: #fff;
 }
 .primary-navigation__block {
   display: block;

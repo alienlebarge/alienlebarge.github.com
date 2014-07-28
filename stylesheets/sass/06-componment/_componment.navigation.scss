@@ -1,9 +1,14 @@
 // # Navigation
 
 .primary-navigation {
-  position: fixed;
-  color: #000;
+  position: absolute;
   z-index: 999;
+  top: 0;
+  left: 0;
+
+  a {
+    color: #fff;
+  }
 
   @at-root .primary-navigation__block {
     display: block;
