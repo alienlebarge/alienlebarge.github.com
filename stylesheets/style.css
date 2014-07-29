@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -445,7 +444,7 @@ a {
   color: #333333;
 }
 a:hover {
-  color: #ff0000;
+  color: #ff5867;
 }
 
 .no-underline {
@@ -486,7 +485,6 @@ h1,
   font-size: 40px;
   font-size: 2rem;
   line-height: 1.4;
-  text-align: center;
 }
 
 h2,
@@ -494,7 +492,6 @@ h2,
   font-size: 32px;
   font-size: 1.6rem;
   line-height: 1.75;
-  text-align: center;
 }
 
 h3,
@@ -502,7 +499,6 @@ h3,
   font-size: 24px;
   font-size: 1.2rem;
   line-height: 1.16667;
-  text-align: center;
 }
 
 h4,
@@ -510,16 +506,13 @@ h4,
   font-size: 20px;
   font-size: 1rem;
   line-height: 1.4;
-  text-align: center;
 }
 
 h5,
-.epsilon,
-.separators {
+.epsilon {
   font-size: 17px;
   font-size: 0.85rem;
   line-height: 1.64706;
-  text-align: center;
 }
 
 h6,
@@ -527,7 +520,6 @@ h6,
   font-size: 13px;
   font-size: 0.65rem;
   line-height: 2.15385;
-  text-align: center;
 }
 
 h1,
@@ -537,6 +529,7 @@ h4,
 h5,
 h6 {
   font-family: "ff-dax-compact-web-pro", serif;
+  letter-spacing: -0.025em;
 }
 
 img {
@@ -600,11 +593,14 @@ html {
   /* [2] */
   min-height: 100%;
   /* [3] */
-}
-
-html {
+  height: 100%;
+  /* [4] */
   font-family: "freight-display-pro", Georgia, serif;
   font-weight: 100;
+}
+
+body {
+  height: 100%;
 }
 
 .lede {
@@ -618,6 +614,11 @@ small {
   font-size: 17px;
   font-size: 0.85rem;
   line-height: 1.64706;
+}
+
+strong,
+.strong {
+  font-weight: bold;
 }
 
 blockquote {
@@ -650,6 +651,47 @@ blockquote {
   /* [4] */
 }
 
+/*------------------------------------*\
+    #UI-LIST
+\*------------------------------------*/
+/**
+ * The UI list object creates blocky list items with a keyline separator out of
+ * a `ul` or `ol`.
+ */
+.ui-list,
+.ui-list__item,
+.ui-list > li {
+  border: 0 solid #cccccc;
+}
+
+.ui-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top-width: 1px;
+}
+
+.ui-list__item,
+.ui-list > li {
+  padding: 28px;
+  border-bottom-width: 1px;
+}
+
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
@@ -666,6 +708,10 @@ blockquote {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.relative {
+  position: relative;
+}
+
 .img-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -674,39 +720,52 @@ blockquote {
   border-radius: 50%;
 }
 
-.separators {
-  text-align: center;
-  font-weight: normal;
-  font-variant: small-caps;
-  overflow: hidden;
-  border: none;
-  position: relative;
-}
-.separators::before {
-  content: "··············································································································································································································································································································································································································································································································";
-  letter-spacing: 0.5em;
-  font-size: 8.5px;
-  font-size: 0.425rem;
-  line-height: 3.29412;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  overflow: visible;
-}
-.separators > * {
-  background-color: white;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-  z-index: 1;
-}
-
+.header-image__content__container,
 .container {
   max-width: 750px;
+  padding: 0 28px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header-image {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+.header-image__image, .header-image__image--no-image {
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-image__content {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-image__image--no-image {
+  background-color: #ff5867;
+}
+
+.background-gradient:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.4) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .text-left {
@@ -727,6 +786,28 @@ blockquote {
 
 .font-weight-normal {
   font-weight: 400;
+}
+
+.meta {
+  font-family: "ff-dax-compact-web-pro", serif;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  font-size: 13px;
+  font-size: 0.65rem;
+  line-height: 2.15385;
+}
+
+.primary-navigation {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+.primary-navigation a {
+  color: #fff;
+}
+.primary-navigation__block {
+  display: block;
 }
 
 [class~="1/2"],
@@ -938,6 +1019,39 @@ blockquote {
 }
 
 /**
+ * Remove margins.
+ */
+.m0 {
+  margin: 0 !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.ml0 {
+  margin-left: 0 !important;
+}
+
+.mh0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.mv0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/**
  * Padding helper classes.
  *
  * Add paddings.
@@ -1003,4 +1117,37 @@ blockquote {
 .pv\+ {
   padding-top: 56px !important;
   padding-bottom: 56px !important;
+}
+
+/**
+ * Remove paddings.
+ */
+.p0 {
+  padding: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.ph0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

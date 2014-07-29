@@ -1,13 +1,31 @@
 ---
 layout: blog
 ---
-<article class="container pr pb+ pl">
 
-  <header>
-    <h1 class="text-center text-responsive">{{ page.title }}</h1>
-    <p class="small text-center"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+{% if page.image %}
+<article class="header-image background-gradient">
+
+  <div class="relative">
+    <nav class="primary-navigation">
+      <a href="/" class="p primary-navigation__block"><i class="fa fa-long-arrow-left"></i></i><span class="sr-only">Menu</span></a>
+    </nav>
+  </div>
+
+  <header class="header-image__image" style="background-image: url('{{ page.image }}')">
+{% else %}
+<article class="header-image">
+  <header class="header-image__image--no-image">
+  {% endif %}
+    <div class="header-image__content">
+      <div class='header-image__content__container'>
+        <h1 class="mb0">{{ page.title }}</h1>
+        <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
+      </div>
+    </div>
   </header>
 
-  {{ content }}
+  <div class="container mt">
+    {{ content }}
+  </div>
 
 </article>
