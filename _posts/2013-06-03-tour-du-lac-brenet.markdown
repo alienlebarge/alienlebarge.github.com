@@ -11,9 +11,7 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '1'
-  _wpas_done_all: '1'
+coordinates: 6.322417,46.66906
 ---
 
 Le tour du lac Brenet à la Vallée de Joux est une ballade accessible à tous. Le sentier est même facilement accessible avec une poussette.<!--more-->

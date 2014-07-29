@@ -11,9 +11,7 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '1'
-  _wpas_done_all: '1'
+coordinates: 7.638888,46.385995
 ---
 
 Initialement, nous avions prévu de faire le tour du Daubensee aujourd'hui. Malheureusement, après être arrivés en haut, force fut de constater que nous allions devoir revoir nos projets. Celui-ci était encore gelé et les environs étaient recouverts de neige. C'est que nous sommes quand même un 14 juin (!). Oui, l'hiver est long.<!--more-->
