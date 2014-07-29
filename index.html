@@ -3,45 +3,42 @@ layout: default
 title: Rough toughs
 ---
 
-<div class="container pr pl">
+<h1 class="mb0">{{ page.title }}</h1>
 
-  <h1 class="mb0">{{ page.title }}</h1>
-  <p class="meta"><span class="sr-only">Content written </span>by <span class="strong">C&eacute;dric Aellen</span> <abbr title="also know as">aka</abbr> alienlebarge</p>
+<p class="meta"><span class="sr-only">Content written </span>by <span class="strong">C&eacute;dric Aellen</span> <abbr title="also know as">aka</abbr> alienlebarge</p>
 
-  <section>
-    <ul class="ui-list">
-      {% for post in paginator.posts %}
-      <li class="ui-list__item ph0">
-          <h2 class="m0"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p class="meta mb0">
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time>
-          </p>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+<section>
+  <ul class="ui-list">
+    {% for post in paginator.posts %}
+    <li class="ui-list__item ph0">
+        <h2 class="m0"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="meta mb0">
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+        </p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 
-  <!-- pagination -->
-  <nav role="navigation">
-    <ul class="layout pb+ p">
-      <li class="layout__item 1/2">
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-            <a href="/"><i class="fa fa-arrow-left"></i><span class="sr-only">Newer articles</span></a>
-          {% else %}
-            <a href="/page{{ paginator.previous_page }}"><i class="fa fa-arrow-left"></i><span class="sr-only">Newer articles</span></a>
-          {% endif %}
+<!-- pagination -->
+<nav role="navigation">
+  <ul class="layout p">
+    <li class="layout__item 1/2">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a href="/"><i class="fa fa-arrow-left"></i><span class="sr-only">Newer articles</span></a>
+        {% else %}
+          <a href="/page{{ paginator.previous_page }}"><i class="fa fa-arrow-left"></i><span class="sr-only">Newer articles</span></a>
         {% endif %}
-      </li><!--
+      {% endif %}
+    </li><!--
 
-    --><li class="layout__item 1/2 text-right">
-        {% if paginator.next_page %}
-          <a href="/page{{ paginator.next_page }}"><span class="sr-only">Older articles</span><i class="fa fa-arrow-right"></i></a>
-        {% endif %}
-      </li><!--
+  --><li class="layout__item 1/2 text-right">
+      {% if paginator.next_page %}
+        <a href="/page{{ paginator.next_page }}"><span class="sr-only">Older articles</span><i class="fa fa-arrow-right"></i></a>
+      {% endif %}
+    </li><!--
 
-      -->
-    </ul>
-  </nav>
-
-</div>
+    -->
+  </ul>
+</nav>
