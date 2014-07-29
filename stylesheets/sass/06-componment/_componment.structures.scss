@@ -1,17 +1,14 @@
 // # Structure
 //
 // Main wrapper and container
-
-
-
-
-
 // # Container
 //
 // Container is the main ... container
 //
 //     <div class="container">...</div>
+%container,
 .container {
   max-width: $base-container-width;
+  padding: 0 $base-spacing-unit;
   @include center-block;
 }

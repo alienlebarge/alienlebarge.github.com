@@ -9,6 +9,7 @@
 //    navigating between pages that do/do not have enough content to produce
 //    scrollbars naturally.
 // 3. Ensure the page always fills at least the entire height of the viewport.
+// 4. Make the `.header-image` componment work 
 html {
     font-size: ($base-font-size / 16px) * 1em; /* [1] */
     line-height: $base-line-height / $base-font-size; /* [1] */
@@ -16,18 +17,20 @@ html {
     color: $base-text-color;
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
+    height: 100%; /* [4] */
+    font-family: $base-font-family;
+    font-weight: 100;
 }
 
 
 
 
 
-// # HTML
+// # Body
 //
-// Set the font family who is not covered by inuitcss
+// 1. Make the `.header-image` componment work
 //
-//     <html></html>
-html {
-  font-family: $base-font-family;
-  font-weight: 100;
+//     <body></body>
+body {
+  height: 100%;
 }
