@@ -6,4 +6,6 @@ pygments: true
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
 paginate: 5
 excerpt_separator: <!--more-->
+
 mapbox_token: pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
+mapbox_mapid: alienlebarge.io3heb5m
