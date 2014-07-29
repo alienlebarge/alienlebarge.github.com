@@ -12,9 +12,7 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '1'
-  _wpas_done_all: '1'
+coordinates: 7.638888,46.385995
 ---
 
 Voici une petite ballade bien sympathique à faire du côté de Loèche-les-Bains. Elle n'est pas très longue une heure sans arrêter. Le temps parfait pour attendre que votre chambre d'hôtel soit prête. <!--more-->

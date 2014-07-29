@@ -14,9 +14,7 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '1'
-  _wpas_done_all: '1'
+coordinates: 6.407948,46.718826
 ---
 
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
