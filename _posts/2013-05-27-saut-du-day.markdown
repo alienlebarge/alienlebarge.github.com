@@ -15,6 +15,11 @@ status: publish
 type: post
 published: true
 coordinates: 6.407948,46.718826
+markers:
+  name: pin-m
+  label: water
+  long: 6.407948
+  lat: 46.718826
 ---
 
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
