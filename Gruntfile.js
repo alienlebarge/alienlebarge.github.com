@@ -5,6 +5,11 @@ module.exports = function (grunt) {
 
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
+    banner: '/*!\n' +
+            ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            ' */\n',
 
 
 
@@ -26,6 +31,20 @@ module.exports = function (grunt) {
           files: {
             'stylesheets/style.css': 'stylesheets/style.scss'
         }
+      }
+    },
+
+
+
+
+
+    usebanner: {
+      options: {
+        position: 'top',
+        banner: '<%= banner %>'
+      },
+      files: {
+        src: ['stylesheets/style.min.css', 'stylesheets/style.css']
       }
     },
 
@@ -61,10 +80,12 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'exec:serve']);
+  grunt.registerTask('default', ['sass', 'usebanner', 'exec:serve']);
+  grunt.registerTask('build', ['sass', 'usebanner']);
 
 };

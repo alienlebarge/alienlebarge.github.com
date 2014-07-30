@@ -1,15 +1,22 @@
 {
-  "name": "alienlebargeblog",
+  "name": "alienlebarge blog",
   "description": "alienlebarge blog",
+  "author": "Cédric Aellen",
   "version": "1.0.1",
+  "homepage": "http://www.alienlebarge.ch",
   "repository": {
     "type": "git",
     "url": "https://github.com/alienlebarge/alienlebarge.github.com.git"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-exec": "~0.4.3"
+    "grunt-exec": "~0.4.3",
+    "grunt-banner": "^0.2.3"
   }
 }
