@@ -5,8 +5,9 @@
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-pre{
+pre {
   font-size: ($base-font-size * 0.6 / 16px) * 1em;
+  font-family: $base-code-font-family;
   overflow:auto;
   white-space:pre;
   word-wrap:normal;
@@ -22,4 +23,20 @@ pre{
     border-bottom:1px solid;
     color:inherit;
   }
+}
+
+
+// ## Inline code
+//
+// 1. Override `pre` font-size
+code,
+kbd,
+samp {
+  font-family: $base-code-font-family;
+}
+
+p code {
+  font-size: ($base-font-size * 0.6 / 16px) * 1em; // 1.
+  background-color: #f8f8f8;
+  @include rounded(2px);
 }
