@@ -6,11 +6,13 @@
 // 2. Vertical align the text at the bottom of the header
 // 3. Backgournd properties. The image is set in the HTML for CMS purpose
 // 4. Center the title
+// 5. Force smooth scroll on iOS
 
 .header-image {
   position: relative; // 2.
   height: 100%;
-  overflow: auto; // 1.
+  overflow: scroll; // 1.
+  -webkit-overflow-scrolling: touch; // 5.
 
   @at-root .header-image__image {
     height: $base-header-height;

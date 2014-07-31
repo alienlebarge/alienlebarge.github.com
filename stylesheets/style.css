@@ -738,7 +738,8 @@ blockquote {
 .header-image {
   position: relative;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .header-image__image, .header-image__image--no-image {
   height: 100%;
