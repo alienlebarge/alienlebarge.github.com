@@ -15,6 +15,16 @@ status: publish
 type: post
 published: true
 coordinates: 6.407948,46.718826
+markers:
+- coordinates: 6.407948,46.718826
+  name: pin-m
+  label: water
+- coordinates: 6.400716,46.717375
+  name: pin-m
+  label: rail
+- coordinates: 6.400437,46.716507
+  label: parking
+- coordinates: 6.395974,46.722333
 ---
 
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
