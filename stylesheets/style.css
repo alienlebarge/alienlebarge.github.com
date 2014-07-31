@@ -471,6 +471,7 @@ pre {
   background-color: #333;
   overflow: auto;
   color: #fff;
+  padding: 14px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
