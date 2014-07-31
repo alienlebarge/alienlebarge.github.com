@@ -16,10 +16,14 @@ type: post
 published: true
 coordinates: 6.407948,46.718826
 markers:
+- coordinates: 6.407948,46.718826
   name: pin-m
   label: water
-  long: 6.407948
-  lat: 46.718826
+- coordinates: 6.407948,46.715826
+  name: pin-m
+  label: building
+- coordinates: 6.405948,46.715826
+  label: playground
 ---
 
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
