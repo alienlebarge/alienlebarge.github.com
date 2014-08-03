@@ -83,10 +83,10 @@ markers:
   label: p
 ---
 
-Maps are cool and I love them. Since I'm rebuilding this blog, I wanted to add some of them in the design. As I love trekking, I was thinking it was I fine idea to add them on posts where I talk about trekking and things like that.
+Maps are cool and I love them. Since I'm rebuilding this blog, I wanted to add some of them in the design. As I love trekking, I was thinking it was a fine idea to add them on posts where I talk about trekking and things like that.
 [Katy DeCorah](https://twitter.com/katydecorah) was already doing that on [her blog](http://katydecorah.com). [Her work](http://katydecorah.com/code/2014/07/26/static-mapbox-for-jekyll/) was a great inspiration.
 
-I will show you how I build this for this blog based on Jekyll.
+I will show you how I build this for this blog based on [Jekyll](http://jekyllrb.com/).
 
 Mapbox provide an API to build [static maps](https://www.mapbox.com/developers/api/static/). This is what I use to add the maps as background image in the header. I use static maps because they are only used as design elements. They don't need to be zoomable, etc.
 
@@ -178,7 +178,7 @@ The [`{markers}`](https://www.mapbox.com/developers/api/static/#markers) have to
 {name}-{label}+{color}({lon},{lat})
 ```
 
-As everythings are is specific for each post/map, we will add this in the Front Matter of the post.
+As everything are is specific for each post/map, we will add this in the Front Matter of the post.
 
 ```
 markers:
@@ -246,3 +246,10 @@ I hope you will have as much fun as me.
     Map with some fun marker placement
   </figcaption>
 </figure>
+
+## Layout
+
+Here's a pen of the header.
+
+<p data-height="268" data-theme-id="7142" data-slug-hash="yvxco" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alienlebarge/pen/yvxco/'>Full height image header</a> by Cédric Aellen (<a href='http://codepen.io/alienlebarge'>@alienlebarge</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
