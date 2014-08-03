@@ -250,7 +250,7 @@ I hope you will have as much fun as me.
 
 ## Layout
 
-Here's a pen of the header.
+This is how I place those maps in the design.
 
 <p data-height="268" data-theme-id="7142" data-slug-hash="yvxco" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alienlebarge/pen/yvxco/'>Full height image header</a> by Cédric Aellen (<a href='http://codepen.io/alienlebarge'>@alienlebarge</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
