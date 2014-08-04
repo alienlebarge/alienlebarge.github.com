@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, sketchnote, virtual
 Here's my sketchnote of [Janina Wood](https://twitter.com/Kaori_Ino)'s talk.
 
 <figure>
-![The Virtual Reality Experience sketchnote](https://farm6.staticflickr.com/5574/14266361882_57f950487e_z.jpg)
-  <figcaption>The Virtual Reality Experience sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14266361882/)</figcaption>
+  <img src="https://farm6.staticflickr.com/5574/14266361882_57f950487e_z.jpg" alt="The Virtual Reality Experience sketchnote">
+  <figcaption>
+    The Virtual Reality Experience sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14266361882/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links
