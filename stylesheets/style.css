@@ -1,5 +1,5 @@
 /*!
- * alienlebarge blog v1.2.2 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.2.2 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -771,6 +771,9 @@ blockquote {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.header-image__content a {
+  color: #fff;
 }
 
 .header-image__image--no-image {
