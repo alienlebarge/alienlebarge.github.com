@@ -1,7 +1,8 @@
 # Site settings
-name: Rough toughs
+name: "@alienlebarge"
 description: "Articles on the web front-end development, music and hiking."
 url: http://blog.alienlebarge.ch
+author: Cédric Aellen
 
 # Build settings
 markdown: kramdown
