@@ -25,7 +25,7 @@ Pour RubyGems, je ne suis pas cassé la tête. Une simple ligne de commande à �
 
 Là aussi, l'installation s'est fait au moyen d'une simple ligne de commande.
 
-  	$ gem install jekyll
+    $ gem install jekyll
 
 ### La suite
 
