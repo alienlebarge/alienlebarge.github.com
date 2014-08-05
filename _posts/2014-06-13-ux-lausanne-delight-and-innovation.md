@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, delight, innovation, sketchnote
 Here's my sketchnote of [Giles Colborne](https://twitter.com/gilescolborne)'s talk.
 
 <figure>
-![Delight and innovation sketchnote](https://farm4.staticflickr.com/3837/14224367428_e503c1c557_z.jpg)
-  <figcaption>Delight and Innovation sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14224367428/)</figcaption>
+  <img src="https://farm4.staticflickr.com/3837/14224367428_e503c1c557_z.jpg" alt="Delight and innovation sketchnote">
+  <figcaption>
+    Delight and Innovation sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14224367428/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links

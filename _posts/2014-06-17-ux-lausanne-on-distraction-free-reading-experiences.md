@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, sketchnote, distraction, read
 Here's my sketchnote of [Adrian Zumbrunnen](https://twitter.com/webchaeschtli)'s talk.
 
 <figure>
-![On distraction-free reading experiences sketchnote](https://farm3.staticflickr.com/2927/14466249233_9fef7dc1c4_z.jpg)
-  <figcaption>On distraction-free reading experiences sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14466249233/)</figcaption>
+  <img src="https://farm3.staticflickr.com/2927/14466249233_9fef7dc1c4_z.jpg" alt="On distraction-free reading experiences sketchnote">
+  <figcaption>
+    On distraction-free reading experiences sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14466249233/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links
