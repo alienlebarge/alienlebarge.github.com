@@ -465,12 +465,14 @@ a:hover {
  */
 pre {
   font-size: 0.75em;
+  font-family: "inconsolata", Courier, monospace;
   overflow: auto;
   white-space: pre;
   word-wrap: normal;
   background-color: #333;
   overflow: auto;
   color: #fff;
+  padding: 14px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -484,6 +486,22 @@ pre mark {
   background: none;
   border-bottom: 1px solid;
   color: inherit;
+}
+
+code,
+kbd,
+samp {
+  font-family: "inconsolata", Courier, monospace;
+}
+
+p code {
+  font-size: 0.75em;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
 h1,
