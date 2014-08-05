@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, sell, sketchnote
 Here's my sketchnote of [Birgit Geiberger](https://twitter.com/birgitgcom) and [Peter Boersma](https://twitter.com/pboersma)'s talk.
 
 <figure>
-![UX sells, but not by itself sketchnote](https://farm3.staticflickr.com/2902/14059916040_4cc974bfe8_z.jpg)
-  <figcaption>UX sells, but not by itself sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14059916040/)</figcaption>
+  <img src="https://farm3.staticflickr.com/2902/14059916040_4cc974bfe8_z.jpg" alt="UX sells, but not by itself sketchnote">
+  <figcaption>
+    UX sells, but not by itself sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14059916040/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links

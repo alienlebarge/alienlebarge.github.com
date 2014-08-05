@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, sketchnote, body, experience
 Here's my sketchnote of [Fabian Hemmert](https://twitter.com/fabianhemmert)'s talk.
 
 <figure>
-![Bodily Experiences of the Digital sketchnote](https://farm3.staticflickr.com/2898/14423082256_23e9825dfc_z.jpg)
-  <figcaption>Bodily Experiences of the Digital sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14423082256/)</figcaption>
+  <img src="https://farm3.staticflickr.com/2898/14423082256_23e9825dfc_z.jpg" alt="Bodily Experiences of the Digital sketchnote">
+  <figcaption>
+    Bodily Experiences of the Digital sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14423082256/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links

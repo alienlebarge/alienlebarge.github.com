@@ -11,8 +11,10 @@ tags:        uxls, ux, event, lausanne, sketchnote, virtual
 Here's my sketchnote of [Oliver Reichestein](https://twitter.com/reichenstein)'s talk.
 
 <figure>
-![Information ↔ Entropy sketchnote](https://farm3.staticflickr.com/2925/14081817118_a413c13678_z.jpg)
-  <figcaption>Information ↔ Entropy sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14081817118/)</figcaption>
+  <img src="https://farm3.staticflickr.com/2925/14081817118_a413c13678_z.jpg" alt="Information ↔ Entropy sketchnote">
+  <figcaption>
+    Information ↔ Entropy sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14081817118/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links

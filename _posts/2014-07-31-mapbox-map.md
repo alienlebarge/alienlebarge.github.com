@@ -97,29 +97,26 @@ Mapbox provide an API to build [static maps](https://www.mapbox.com/developers/a
 
 This is the request for a map:
 
-```
-http://api.tiles.mapbox.com/v4/{mapid}/{lon},{lat},{z}/{width}x{height}.{format}?access_token=<your access token>
-```
+    http://api.tiles.mapbox.com/v4/{mapid}/{lon},{lat},{z}/{width}x{height}.{format}?access_token=<your access token>
 
 ### What do we need ?
 
 Here are the things we need:
-- `mapid`
-- `lon`
-- `lat`
-- `width`
-- `height`
-- `format`
-- `access_token`
+
+* `mapid`
+* `lon`
+* `lat`
+* `width`
+* `height`
+* `format`
+* `access_token`
 
 #### Things that don't change
 
 The `mapid` and the `access_token` will always be the same. So I put them in the `_config.yml` config file. If they change, I just need to update them in one file.
 
-```
-mapbox_token: ...
-mapbox_mapid: ...
-```
+    mapbox_token: ...
+    mapbox_mapid: ...
 
 `height` and `width` are hardcoded in the request. It would be nice to put them too in the config file. But I'm looking to add some media queries. So at this time, I keep them here.
 
@@ -131,18 +128,14 @@ The only value that will change from a post to an other are the coordinates wher
 
 We will add them in the Front Matter of the post like this:
 
-```
-coordinates: 6.407948,46.718826
-zoom: 13
-```
+    coordinates: 6.407948,46.718826
+    zoom: 13
 
 ### Build the request
 
 We have to build the request for the background image.
 
-```
-http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }})
-```
+    http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }})
 
 As you can see, the `page.zoom` isn't required. If there is no `zoom`value in the Front Mater, it will be set to `15`.
 
@@ -150,9 +143,7 @@ As you can see, the `page.zoom` isn't required. If there is no `zoom`value in th
 
 And here is the result:
 
-```
-http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/6.407948,46.718826,15/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
-```
+    http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/6.407948,46.718826,15/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
 
 <figure>
   <img src="http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/6.407948,46.718826,15/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg" alt="Map of the Saut du Day">
@@ -167,68 +158,58 @@ Maps are cool but if we can add  marker, it's even cooler. And yeah (!), [we can
 
 We have to add the markers in the request juste after the `mapid`.
 
-```
-http://api.tiles.mapbox.com/v4/{mapid}/{markers}/{lon},{lat},{z}/{width}x{height}.{format}?access_token=<your access token>
-```
+  http://api.tiles.mapbox.com/v4/{mapid}/{markers}/{lon},{lat},{z}/{width}x{height}.{format}?access_token=<your access token>
 
 ### Markers parameters
 
 The [`{markers}`](https://www.mapbox.com/developers/api/static/#markers) have to be formatted like that:
 
-```
-{name}-{label}+{color}({lon},{lat})
-```
+    {name}-{label}+{color}({lon},{lat})
 
 As everything are is specific for each post/map, we will add this in the Front Matter of the post.
 
-```
-markers:
-- coordinates: 6.407948,46.718826
-  name: pin-m
-  label: water
-- coordinates: 6.400716,46.717375
-  name: pin-m
-  label: rail
-- coordinates: 6.400437,46.716507
-  label: parking
-- coordinates: 6.395974,46.722333
-```
+    markers:
+    - coordinates: 6.407948,46.718826
+      name: pin-m
+      label: water
+    - coordinates: 6.400716,46.717375
+      name: pin-m
+      label: rail
+    - coordinates: 6.400437,46.716507
+      label: parking
+    - coordinates: 6.395974,46.722333
 
 ### Build it
 
 Here is the liquid template code for the markers:
 
-```
-{% raw %}
-{% for marker in page.markers %}
-  {% if marker.name %}
-    {{ marker.name }}
-  {% else %}
-    pin-m
-  {% endif %}
-  {% if marker.label %}
-    -{{ marker.label }}
-  {% endif %}
-  (
-    {% for coordinate in marker.coordinates limit:1 %}
-      {{ coordinate }}
+    {% raw %}
+    {% for marker in page.markers %}
+      {% if marker.name %}
+        {{ marker.name }}
+      {% else %}
+        pin-m
+      {% endif %}
+      {% if marker.label %}
+        -{{ marker.label }}
+      {% endif %}
+      (
+        {% for coordinate in marker.coordinates limit:1 %}
+          {{ coordinate }}
+        {% endfor %}
+      )
+      {% if forloop.last %}
+      {% else %}
+        ,
+      {% endif %}
     {% endfor %}
-  )
-  {% if forloop.last %}
-  {% else %}
-    ,
-  {% endif %}
-{% endfor %}
-{% endraw %}
-```
+    {% endraw %}
 
 As you can see, `name` and `label` are not required.
 
 So now, let's put everything together.
 
-```
-http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for marker in page.markers %}{% if marker.name %}{{ marker.name }}{% else %}pin-m{% endif %}{% if marker.label %}-{{marker.label}}{% endif %}({% for coordinate in marker.coordinates limit:1 %}{{ coordinate }}{% endfor %}){% if forloop.last %}{% else %},{% endif %}{% endfor %}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }}
-```
+    http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for marker in page.markers %}{% if marker.name %}{{ marker.name }}{% else %}pin-m{% endif %}{% if marker.label %}-{{marker.label}}{% endif %}({% for coordinate in marker.coordinates limit:1 %}{{ coordinate }}{% endfor %}){% if forloop.last %}{% else %},{% endif %}{% endfor %}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }}
 
 <figure>
   <img src="http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/pin-m-water(6.407948,46.718826),pin-m-rail(6.400716,46.717375),pin-m-parking(6.400437,46.716507),pin-m(6.395974,46.722333)/6.407948,46.718826,15/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg" alt="Map of the Saut du Day with markers">

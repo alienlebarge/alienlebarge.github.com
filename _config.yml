@@ -1,11 +1,16 @@
-markdown: rdiscount
-name: Rough toughs
+# Site settings
+name: "@alienlebarge"
 description: "Articles on the web front-end development, music and hiking."
 url: http://blog.alienlebarge.ch
-pygments: true
-exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
+author: Cédric Aellen
+
+# Build settings
+markdown: kramdown
 paginate: 5
 excerpt_separator: <!--more-->
+exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
+pygments: true
 
+# Mapbox settings
 mapbox_token: pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
 mapbox_mapid: alienlebarge.io3heb5m

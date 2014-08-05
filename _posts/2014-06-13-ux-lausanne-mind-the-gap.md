@@ -11,8 +11,11 @@ tags:        uxls, ux, event, lausanne, sketchnote
 Here's my sketchnote of [Simon Raess](https://twitter.com/simonraess)'s talk.
 
 <figure>
-![Mind the Gap](https://farm3.staticflickr.com/2904/14246216274_1e96504e16_z.jpg)
-  <figcaption>Mind the Gap sketchnote. [View original on Flickr](https://www.flickr.com/photos/alienlebarge/14246216274)</figcaption>
+  <img src="https://farm3.staticflickr.com/2904/14246216274_1e96504e16_z.jpg" alt="Mind the Gap">
+![Mind the Gap]()
+  <figcaption>
+    Mind the Gap sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/14246216274">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 ## Related links

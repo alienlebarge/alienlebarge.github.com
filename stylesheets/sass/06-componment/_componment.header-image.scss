@@ -24,6 +24,9 @@
 
   @at-root .header-image__content {
     color: #fff;
+      a {
+        color: #fff;
+      }
 
     position: absolute; // 2.
     bottom: 0; // 2.
