@@ -13,8 +13,10 @@ The first edition of [UX Lausanne](http://2014.uxlausanne.com/) was a really gre
 Well done guys !
 
 <figure>
-  ![UXLS team on stage](https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg)
-  <figcaption>The UX Lausanne team on stage. [View original on Flickr](https://www.flickr.com/photos/uxlausanne/14286898731/)</figcaption>
+  <img src="https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg" alt="UXLS team on stage">
+  <figcaption>
+    The UX Lausanne team on stage. <a href="https://www.flickr.com/photos/uxlausanne/14286898731/">View original on Flickr</a>
+  </figcaption>
 </figure>
 
 It's now time to share my notes.  
