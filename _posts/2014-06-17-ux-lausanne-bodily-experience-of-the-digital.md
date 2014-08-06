@@ -4,7 +4,7 @@ title:       "UX Lausanne: Bodily Experiences of the Digital"
 date:        2014-06-17 14:41:48
 categories:  blog
 description: My sketchnote of Fabian Hemmert talk Bodily Experiences of the Digital
-image:       https://farm3.staticflickr.com/2898/14423082256_23e9825dfc_z.jpg
+image:       https://farm4.staticflickr.com/3779/14289646894_485835c764_z.jpg
 tags:        uxls, ux, event, lausanne, sketchnote, body, experience
 ---
 

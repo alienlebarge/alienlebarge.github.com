@@ -4,7 +4,7 @@ title:       "UX Lausanne: Delight and Innovation"
 date:        2014-06-13 05:40:08
 categories:  blog
 description: My sketchnote of Giles Colborne's talk Delight and Innovation
-image:       https://farm4.staticflickr.com/3837/14224367428_e503c1c557_z.jpg
+image:       https://farm4.staticflickr.com/3794/14103533820_6b7067693e_z.jpg
 tags:        uxls, ux, event, lausanne, delight, innovation, sketchnote
 ---
 
