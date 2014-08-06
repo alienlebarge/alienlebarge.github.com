@@ -17,6 +17,13 @@ Here's my sketchnote of [Janina Wood](https://twitter.com/Kaori_Ino)'s talk.
   </figcaption>
 </figure>
 
-## Related links
+## Related Tweets
 
-- [Bonny Colville-Hide](https://twitter.com/almostexact)'s [notes](http://rockpooldigitalux.tumblr.com/post/86902707171/the-virtual-reality-experience-janina-woods-ux) of the talk.
+<blockquote class="twitter-tweet" lang="fr"><p>“No UI is best UI” — <a href="https://twitter.com/Kaori_Ino">@Kaori_Ino</a> <a href="https://twitter.com/hashtag/uxls?src=hash">#uxls</a></p>&mdash; Jérémie F. (@SkyNebula) <a href="https://twitter.com/SkyNebula/statuses/469844002934894592">23 Mai 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p>.<a href="https://twitter.com/Kaori_Ino">@Kaori_Ino</a>&#39;s fear re: future of Virtual Reality is Facebook picking a failed concept (like Second Life) and &quot;just put goggles on it&quot; <a href="https://twitter.com/hashtag/UXLS?src=hash">#UXLS</a></p>&mdash; Peter Boersma (@pboersma) <a href="https://twitter.com/pboersma/statuses/469849759533256704">23 Mai 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p>Here are my notes from the wonderful <a href="https://twitter.com/Kaori_Ino">@Kaori_Ino</a> &#39;s session <a href="https://twitter.com/uxlausanne">@uxlausanne</a> <a href="http://t.co/PhseMQyzQO">http://t.co/PhseMQyzQO</a> <a href="https://twitter.com/hashtag/uxls?src=hash">#uxls</a></p>&mdash; Bonny Colville-Hyde (@almostexact) <a href="https://twitter.com/almostexact/statuses/470953512692891648">26 Mai 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
