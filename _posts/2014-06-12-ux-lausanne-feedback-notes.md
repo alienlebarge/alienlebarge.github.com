@@ -4,7 +4,7 @@ title:  "UX Lausanne feedback and notes"
 date:   2014-06-12 20:00:00
 categories: blog
 description: Feedback and notes about UX conference in Lausanne
-image: https://farm3.staticflickr.com/2901/14286898731_9561c2c73f.jpg
+image: https://farm6.staticflickr.com/5528/14290178495_d381101809_z.jpg
 tags: uxls, ux, event, lausanne
 ---
 

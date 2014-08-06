@@ -4,7 +4,7 @@ title:       "UX Lausanne: UX sells, but not by itself"
 date:        2014-06-13 15:24:27
 categories:  blog
 description: My sketchnote of Birgit Geiberger & Peter Boersma's talk UX sells, but not by itself
-image:       https://farm3.staticflickr.com/2902/14059916040_4cc974bfe8_z.jpg
+image:       http://38.media.tumblr.com/4f28fe22dee136d62253946f6be4150b/tumblr_n5zb2ktWnL1tcuse3o1_1280.jpg
 tags:        uxls, ux, event, lausanne, sell, sketchnote
 ---
 

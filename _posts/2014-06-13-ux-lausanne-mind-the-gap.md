@@ -4,7 +4,7 @@ title:       "UX Lausanne: Mind the Gap"
 date:        2014-06-13 16:05:28
 categories:  blog
 description: My sketchnote of Simon Raess's talk Mind the Gap
-image:       https://farm3.staticflickr.com/2904/14246216274_1e96504e16_z.jpg
+image:       http://2014.uxlausanne.com/assets/img/speaker_simon-raess.jpg
 tags:        uxls, ux, event, lausanne, sketchnote
 ---
 
