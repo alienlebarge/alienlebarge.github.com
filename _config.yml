@@ -9,7 +9,7 @@ markdown: kramdown
 paginate: 5
 excerpt_separator: <!--more-->
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
-pygments: true
+highlighter: true
 
 # Mapbox settings
 mapbox_token: pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
