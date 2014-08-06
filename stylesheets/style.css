@@ -841,6 +841,10 @@ blockquote {
 .primary-navigation a {
   color: #fff;
 }
+.primary-navigation .iconic-arrow-thick * {
+  fill: #fff;
+  stroke: #fff;
+}
 .primary-navigation__block {
   display: block;
 }

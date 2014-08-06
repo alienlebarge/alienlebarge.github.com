@@ -9,6 +9,11 @@
   a {
     color: #fff;
   }
+  
+  .iconic-arrow-thick * {
+    fill: #fff;
+    stroke: #fff;
+  }
 
   @at-root .primary-navigation__block {
     display: block;
