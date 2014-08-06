@@ -1,0 +1,14 @@
+// # Iconic style
+//
+// I use [iconic](https://useiconic.com/) icons.
+// This is the style to make them match with the typography
+//
+// 1. Same size as the typo
+// 2. Vertical alignment with text
+
+.iconic {
+  height: ($base-font-size / 16px) * 1em; // 1.
+  width: ($base-font-size / 16px) * 1em; // 1.
+  line-height: 1; // 2.
+  vertical-align: middle; // 2.
+}
