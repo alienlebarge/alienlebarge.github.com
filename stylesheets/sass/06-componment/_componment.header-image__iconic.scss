@@ -1,0 +1,11 @@
+// Header image iconic
+//
+// Those style are for iconic icons in the `header-image` componment.
+// **It require `header-image` style file.
+
+.header-image {
+  .iconic * {
+    fill: $header-image-text-color;
+    stroke: $header-image-text-color;
+  }
+}
