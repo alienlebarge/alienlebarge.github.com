@@ -29,16 +29,16 @@ title: "@alienlebarge"
       <li class="layout__item 1/2">
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
-            <a href="/"><img data-direction="left" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" class="iconic" alt="arrow left" aria-hidden="true" /><span class="sr-only">Newer articles</span></a>
+            <a href="/"><img data-direction="left" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/arrow-thick-left-fill-large-angled-md.png" class="iconic" alt="arrow left" aria-hidden="true" /><span class="sr-only">Newer articles</span></a>
           {% else %}
-            <a href="/page{{ paginator.previous_page }}"><img data-direction="left" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" class="iconic" alt="arrow left" aria-hidden="true" /><span class="sr-only">Newer articles</span></a>
+            <a href="/page{{ paginator.previous_page }}"><img data-direction="left" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/arrow-thick-left-fill-large-angled-md.png" class="iconic" alt="arrow left" aria-hidden="true" /><span class="sr-only">Newer articles</span></a>
           {% endif %}
         {% endif %}
       </li><!--
 
     --><li class="layout__item 1/2 text-right">
         {% if paginator.next_page %}
-          <a href="/page{{ paginator.next_page }}"><span class="sr-only">Older articles</span><img data-direction="right" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" class="iconic" alt="arrow right" aria-hidden="true" /></a>
+          <a href="/page{{ paginator.next_page }}"><span class="sr-only">Older articles</span><img data-direction="right" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/arrow-thick-right-fill-large-angled-md.png" class="iconic" alt="arrow right" aria-hidden="true" /></a>
         {% endif %}
       </li><!--
 
