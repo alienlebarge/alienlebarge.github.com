@@ -11,6 +11,7 @@
 //
 // Sass vars, etc.
 @import "sass/01-settings/settings.defaults";
+@import "bower_components/inuit-defaults/settings.defaults";
 
 
 
@@ -19,7 +20,8 @@
 // ## Tools
 //
 // Functions and mixins.
-@import "sass/02-tools/tools.functions";
+@import "bower_components/inuit-functions/_tools.functions";
+@import "bower_components/inuit-mixins/_tools.mixins";
 @import "sass/02-tools/tools.mixins";
 
 
@@ -29,10 +31,10 @@
 // ## Generic
 //
 // Generic, high-level styling, like resets, etc.
-@import "sass/03-generic/generic.normalize";
-@import "sass/03-generic/generic.reset";
-@import "sass/03-generic/generic.shared";
-@import "sass/03-generic/generic.box-sizing";
+@import "bower_components/inuit-normalize/generic.normalize";
+@import "bower_components/inuit-reset/generic.reset";
+@import "bower_components/inuit-shared/generic.shared";
+@import "bower_components/inuit-box-sizing/generic.box-sizing";
 
 
 
@@ -43,10 +45,12 @@
 // Unclasses HTML elements (e.g. `h2`, `ul`).
 @import "sass/04-base/base.anchors";
 @import "sass/04-base/base.codes";
-@import "sass/04-base/base.headings";
-@import "sass/04-base/base.images";
-@import "sass/04-base/base.lists";
+@import "bower_components/inuit-headings/base.headings";
+@import "bower_components/inuit-images/base.images";
+@import "bower_components/inuit-lists/base.lists";
+@import "bower_components/inuit-page/base.page";
 @import "sass/04-base/base.page";
+@import "bower_components/inuit-paragraphs/base.paragraphs";
 @import "sass/04-base/base.paragraphs";
 @import "sass/04-base/base.quotes";
 
@@ -58,9 +62,9 @@
 // ## Objects
 //
 // Objects and abstractions.
-@import "sass/05-objects/objects.layout";
-@import "sass/05-objects/objects.ui-list";
-@import "sass/05-objects/objects.list-inline";
+@import "bower_components/inuit-layout/objects.layout";
+@import "bower_components/inuit-list-ui/objects.list-ui";
+@import "bower_components/inuit-list-inline/objects.list-inline";
 @import "sass/05-objects/objects.helper-classes";
 
 
@@ -69,7 +73,7 @@
 
 // ## Componment
 //
-// Designed UI elements .
+// Designed UI elements.
 @import "sass/06-componment/componment.images-shapes";
 @import "sass/06-componment/componment.structures";
 @import "sass/06-componment/componment.header-image";
@@ -84,5 +88,5 @@
 // ## Trumps
 //
 // Overrides and helper classes.
-@import "sass/07-trumps/trumps.widths";
-@import "sass/07-trumps/trumps.spacing";
+@import "bower_components/inuit-widths/trumps.widths";
+@import "bower_components/inuit-spacing/trumps.spacing";

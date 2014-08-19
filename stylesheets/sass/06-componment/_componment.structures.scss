@@ -9,6 +9,6 @@
 %container,
 .container {
   max-width: $base-container-width;
-  padding: 0 $base-spacing-unit;
+  padding: 0 $inuit-base-spacing-unit;
   @include center-block;
 }
