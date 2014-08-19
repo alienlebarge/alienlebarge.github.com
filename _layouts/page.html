@@ -6,21 +6,13 @@
 {% if page.image %}
 <div class="header-image background-gradient">
 
-  <div class="relative">
-    <nav class="primary-navigation">
-      <a href="/" class="p primary-navigation__block"><i class="fa fa-long-arrow-left"></i></i><span class="sr-only">Menu</span></a>
-    </nav>
-  </div>
+  {% include navigation.html %}
 
   <header class="header-image__image" style="background-image: url('{{ page.image }}')">
 {% else %}
 <article class="header-image">
 
-  <div class="relative">
-    <nav class="primary-navigation">
-      <a href="/" class="p primary-navigation__block"><i class="fa fa-long-arrow-left"></i></i><span class="sr-only">Menu</span></a>
-    </nav>
-  </div>
+  {% include navigation.html %}
 
   <header class="header-image__image--no-image">
   {% endif %}
