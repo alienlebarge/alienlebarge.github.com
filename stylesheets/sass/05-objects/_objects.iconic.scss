@@ -6,9 +6,16 @@
 // 1. Same size as the typo
 // 2. Vertical alignment with text
 
-.iconic {
+.iconic--base-font-size {
   height: ($base-font-size / 16px) * 1em; // 1.
   width: ($base-font-size / 16px) * 1em; // 1.
   line-height: 1; // 2.
   vertical-align: middle; // 2.
+}
+
+.iconic--small-font-size {
+  height: ($text-size-small / 16px) * 1em;
+  width: ($text-size-small / 16px) * 1em;
+  line-height: 1;
+  vertical-align: middle;
 }
