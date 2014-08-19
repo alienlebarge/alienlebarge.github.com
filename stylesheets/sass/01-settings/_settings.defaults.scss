@@ -1,8 +1,7 @@
 // # Settings defaults
 //
 // Let's set the main variables
-//
-// No styleguide reference.
+// Variable starting with `inuit-` override the inuitcss defaults settings.
 
 
 
@@ -14,10 +13,12 @@
 
 $inuit-base-font-size:          20px;
 $inuit-base-line-height:        28px;
-$inuit-base-text-color:         #333 !default;
-$inuit-base-background-color:   #fff !default;
+$inuit-base-text-color:         #333;
+$inuit-base-background-color:   #fff;
 
-//$inuit-namespace:               alb;
+
+
+
 
 // # Base headings
 $inuit-heading-size-1:  40px !default;
@@ -51,13 +52,6 @@ $inuit-lede-size:   1;
 
 
 
-// ## Headings
-$text-size-small: $inuit-heading-size-6;
-
-
-
-
-
 
 // # Colors
 //
@@ -65,7 +59,6 @@ $text-size-small: $inuit-heading-size-6;
 $base-muted-color:      #999;
 $base-primary-color:    #ff5867;
 $base-header-color:     $base-primary-color;
-$header-image-text-color: #fff;
 
 
 
@@ -106,3 +99,4 @@ $inuit-enable-paddings--large : true;
 
 // # Header images
 $base-header-height: 100%;
+$header-image-text-color: #fff;
