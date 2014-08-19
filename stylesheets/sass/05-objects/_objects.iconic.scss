@@ -13,9 +13,24 @@
   vertical-align: middle; // 2.
 }
 
+
+// # Iconic with small text
+//
+// 1. Same size as the small text.
+// 2. Override with `!important` the
+//    `svg.iconic.iconic-sm:not(.iconic-size-md):not(.iconic-size-lg)` style.
+//    added when you add `iconic-sm` class to override the icon to display.
+//    [More info in the docs](https://useiconic.com/guides/using-iconic-responsively#iconic-icon-)
+//
+//    <img data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/external-link.svg" class="iconic iconic-sm iconic--small-font-size" alt="external-link">
 .iconic--small-font-size {
-  height: ($text-size-small / 16px) * 1em;
-  width: ($text-size-small / 16px) * 1em;
+  height: ($text-size-small / 16px) * 1em; // 1.
+  width: ($text-size-small / 16px) * 1em; // 1.
   line-height: 1;
   vertical-align: middle;
+
+  &.iconic-sm {
+    height: ($text-size-small / 16px) * 1em !important; // 2.
+    width: ($text-size-small / 16px) * 1em !important; // 2.
+  }
 }
