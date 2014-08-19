@@ -749,6 +749,10 @@ blockquote {
   line-height: 1;
   vertical-align: middle;
 }
+.iconic--small-font-size.iconic-sm {
+  height: 0.8125em !important;
+  width: 0.8125em !important;
+}
 
 .img-circle {
   -webkit-border-radius: 50%;
