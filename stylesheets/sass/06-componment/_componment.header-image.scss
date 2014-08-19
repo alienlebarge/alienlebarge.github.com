@@ -8,6 +8,8 @@
 // 4. Center the title
 // 5. Force smooth scroll on iOS
 
+$header-image-text-color: #fff !default;
+
 .header-image {
   position: relative; // 2.
   height: 100%;
@@ -23,9 +25,9 @@
   }
 
   @at-root .header-image__content {
-    color: #fff;
+    color: $header-image-text-color;
       a {
-        color: #fff;
+        color: $header-image-text-color;
       }
 
     position: absolute; // 2.

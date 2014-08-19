@@ -769,14 +769,14 @@ blockquote {
   background-size: cover;
 }
 .header-image__content {
-  color: #fff;
+  color: white;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 .header-image__content a {
-  color: #fff;
+  color: white;
 }
 
 .header-image__image--no-image {
@@ -797,6 +797,11 @@ blockquote {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.header-image .iconic * {
+  fill: white;
+  stroke: white;
 }
 
 .text-left {
