@@ -11,9 +11,9 @@ title: "@alienlebarge"
   </header>
 
 <section>
-  <ul class="ui-list">
+  <ul class="list-ui">
     {% for post in paginator.posts %}
-    <li class="ui-list__item ph0">
+    <li class="list-ui__item ph0">
         <h2 class="m0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
         <p class="meta mb0">
           <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/external-link.svg" class="iconic iconic-sm" alt="external-link">{% endif %}

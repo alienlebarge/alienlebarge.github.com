@@ -1,47 +1,53 @@
 // # Settings defaults
 //
 // Let's set the main variables
+// Variable starting with `inuit-` override the inuitcss defaults settings.
+
+
+
+
+
+// # Settings default
 //
-// No styleguide reference.
+// Overriding inuit settings
+
+$inuit-base-font-size:          20px;
+$inuit-base-line-height:        28px;
+$inuit-base-text-color:         #333;
+$inuit-base-background-color:   #fff;
 
 
 
 
 
-// # Fonts
+// # Base headings
+$inuit-heading-size-1:  40px !default;
+$inuit-heading-size-2:  32px !default;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
+
+
+
+
+
+
+// # Font settings
 //
 // Everythings about the fonts
 //
 // No styleguide reference.
-$base-font-family          : "freight-text-pro", Georgia, serif;
-$base-headings-font-family : "ff-dax-compact-web-pro", serif;
-$base-code-font-family     : "inconsolata", Courier, monospace;
-$base-font-size            : 20px;
-$base-line-height          : 28px;
+$base-font-family:          "freight-text-pro", Georgia, serif;
+$base-headings-font-family: "ff-dax-compact-web-pro", serif;
+$base-code-font-family:     "inconsolata", Courier, monospace;
 
 
 
 
 
-// ## Headings
-//
-// Headings size is set here
-$heading-size-1: 40px;
-$heading-size-2: 32px;
-$heading-size-3: 24px;
-$heading-size-4: 20px;
-$heading-size-5: 17px;
-$heading-size-6: 13px;
-$text-size-small: $heading-size-6;
-
-
-
-
-
-// These variables are framework variables, sourced from variables defined
-// above. Feel free to use these variables throughout your project, but do not
-// modify or reassign them.
-$base-spacing-unit:       $base-line-height;
+// # Paragraphs
+$inuit-lede-size:   1;
 
 
 
@@ -50,12 +56,9 @@ $base-spacing-unit:       $base-line-height;
 // # Colors
 //
 // It's all about the colors
-$base-text-color:       #333;
 $base-muted-color:      #999;
 $base-primary-color:    #ff5867;
-$base-background-color: #fff;
 $base-header-color:     $base-primary-color;
-$header-image-text-color: #fff;
 
 
 
@@ -80,15 +83,15 @@ $base-container-width: 750px;
 // # Spacing
 //
 // InuitCSS settings for margin and spacing
-$enable-margins         : true;
-$enable-paddings        : true;
+$inuit-enable-margins         : true;
+$inuit-enable-paddings        : true;
 
-$enable-margins--none   : true;
-$enable-paddings--none  : true;
+$inuit-enable-margins--none   : true;
+$inuit-enable-paddings--none  : true;
 
 
-$enable-margins--large  : true;
-$enable-paddings--large : true;
+$inuit-enable-margins--large  : true;
+$inuit-enable-paddings--large : true;
 
 
 
@@ -96,3 +99,4 @@ $enable-paddings--large : true;
 
 // # Header images
 $base-header-height: 100%;
+$header-image-text-color: #fff;

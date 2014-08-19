@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@charset "UTF-8";
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -400,32 +406,57 @@ th {
   padding: 0;
 }
 
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+/**
+ * As well as using normalize.css, it is often advantageous to remove all
+ * margins from certain elements.
+ */
 body,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul,
 form, fieldset, legend,
+figure,
 table, th, td, caption,
 hr {
   margin: 0;
   padding: 0;
 }
 
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
 abbr[title],
 dfn[title] {
   cursor: help;
 }
 
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
 u,
 ins {
   text-decoration: none;
 }
 
+/**
+ * Apply faux underlines to inserted text via `border-bottom`.
+ */
 ins {
   border-bottom: 1px solid;
 }
 
-h1, h2, h3, h4, h5, h6, hgroup,
+/*------------------------------------*\
+    #SHARED
+\*------------------------------------*/
+/**
+ * Where `margin-bottom` is concerned,this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 blockquote, p, address,
 table,
@@ -435,15 +466,34 @@ pre {
   margin-bottom: 1.4rem;
 }
 
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once,here.
+ */
 ul, ol, dd {
   margin-left: 56px;
   margin-left: 2.8rem;
 }
 
-*, *:before, *:after {
+/*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
@@ -504,6 +554,13 @@ p code {
   border-radius: 2px;
 }
 
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+/**
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
 h1,
 .alpha {
   font-size: 40px;
@@ -534,16 +591,16 @@ h4,
 
 h5,
 .epsilon {
-  font-size: 17px;
-  font-size: 0.85rem;
-  line-height: 1.64706;
+  font-size: 16px;
+  font-size: 0.8rem;
+  line-height: 1.75;
 }
 
 h6,
 .zeta {
-  font-size: 13px;
-  font-size: 0.65rem;
-  line-height: 2.15385;
+  font-size: 14px;
+  font-size: 0.7rem;
+  line-height: 2;
 }
 
 h1,
@@ -556,56 +613,66 @@ h6 {
   letter-spacing: -0.025em;
 }
 
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
 img {
   max-width: 100%;
   /* [1] */
   font-style: italic;
   /* [2] */
+  vertical-align: middle;
+  /* [3] */
 }
 
+/**
+ * 1. Google Maps breaks if `max-width: 100%` acts upon it; use their selector
+ *    to remove the effects.
+ * 2. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+.gm-style img,
 img[width],
 img[height] {
+  /* [2] */
   max-width: none;
 }
 
-figure {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-figcaption {
-  font-size: 17px;
-  font-size: 0.85rem;
-}
-figcaption:before {
-  display: block;
-  color: #333333;
-  content: "\2014";
-  font-weight: bold;
-  line-height: 0;
-  margin: 7px auto;
-}
-
-@media (min-width: 1200px) {
-  figure {
-    position: relative;
-  }
-  figure figcaption {
-    position: absolute;
-    text-align: right;
-    width: 150px;
-    left: -178px;
-    top: 0;
-  }
-  figure figcaption:before {
-    margin: 0 auto 7px;
-  }
-}
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+/**
+ * Remove extra vertical spacing when nesting lists.
+ */
 li > ul,
 li > ol {
   margin-bottom: 0;
 }
 
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
 html {
   font-size: 1.25em;
   /* [1] */
@@ -617,6 +684,17 @@ html {
   /* [2] */
   min-height: 100%;
   /* [3] */
+  -webkit-text-size-adjust: 100%;
+  /* [4] */
+  -ms-text-size-adjust: 100%;
+  /* [4] */
+  -moz-osx-font-smoothing: grayscale;
+  /* [5] */
+  -webkit-font-smoothing: antialiased;
+  /* [5] */
+}
+
+html {
   height: 100%;
   /* [4] */
   font-family: "freight-text-pro", Georgia, serif;
@@ -625,9 +703,19 @@ html {
 
 body {
   height: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+.lede {
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .lede {
@@ -652,6 +740,18 @@ blockquote {
   margin: 0 28px;
 }
 
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+/**
+ * Begin a layout group.
+ */
 .layout {
   list-style: none;
   margin: 0;
@@ -678,27 +778,27 @@ blockquote {
 }
 
 /*------------------------------------*\
-    #UI-LIST
+    #LIST-UI
 \*------------------------------------*/
 /**
  * The UI list object creates blocky list items with a keyline separator out of
  * a `ul` or `ol`.
  */
-.ui-list,
-.ui-list__item,
-.ui-list > li {
+.list-ui,
+.list-ui__item,
+.list-ui > li {
   border: 0 solid #cccccc;
 }
 
-.ui-list {
+.list-ui {
   margin: 0;
   padding: 0;
   list-style: none;
   border-top-width: 1px;
 }
 
-.ui-list__item,
-.ui-list > li {
+.list-ui__item,
+.list-ui > li {
   padding: 28px;
   border-bottom-width: 1px;
 }
@@ -827,9 +927,9 @@ blockquote {
   font-family: "ff-dax-compact-web-pro", serif;
   letter-spacing: -0.015em;
   font-weight: 400;
-  font-size: 13px;
-  font-size: 0.65rem;
-  line-height: 2.15385;
+  font-size: 14px;
+  font-size: 0.7rem;
+  line-height: 2;
 }
 
 .primary-navigation {
@@ -845,6 +945,25 @@ blockquote {
   display: block;
 }
 
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
+ */
+/**
+ * Whole.
+ */
+[class~="1/1"] {
+  width: 100% !important;
+}
+
+/**
+ * Halves.
+ */
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],
@@ -854,6 +973,9 @@ blockquote {
   width: 50% !important;
 }
 
+/**
+ * Thirds.
+ */
 [class~="1/3"],
 [class~="2/6"],
 [class~="3/9"],
@@ -868,6 +990,9 @@ blockquote {
   width: 66.6666666% !important;
 }
 
+/**
+ * Quarters.
+ */
 [class~="1/4"],
 [class~="2/8"],
 [class~="3/12"] {
@@ -880,6 +1005,9 @@ blockquote {
   width: 75% !important;
 }
 
+/**
+ * Fifths.
+ */
 [class~="1/5"],
 [class~="2/10"] {
   width: 20% !important;
@@ -900,6 +1028,9 @@ blockquote {
   width: 80% !important;
 }
 
+/**
+ * Sixths.
+ */
 [class~="1/6"],
 [class~="2/12"] {
   width: 16.6666666% !important;
@@ -910,6 +1041,9 @@ blockquote {
   width: 83.3333333% !important;
 }
 
+/**
+ * Eighths.
+ */
 [class~="1/8"] {
   width: 12.5% !important;
 }
@@ -926,6 +1060,9 @@ blockquote {
   width: 87.5% !important;
 }
 
+/**
+ * Ninths.
+ */
 [class~="1/9"] {
   width: 11.1111111% !important;
 }
@@ -969,6 +1106,9 @@ blockquote {
   width: 90% !important;
 }
 
+/**
+ * Twelfths.
+ */
 [class~="1/12"] {
   width: 8.3333333% !important;
 }
@@ -985,6 +1125,15 @@ blockquote {
   width: 91.6666666% !important;
 }
 
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
 /**
  * Margin helper classes.
  *
