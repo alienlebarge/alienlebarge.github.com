@@ -736,9 +736,16 @@ blockquote {
   position: relative;
 }
 
-.iconic {
+.iconic--base-font-size {
   height: 1.25em;
   width: 1.25em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.iconic--small-font-size {
+  height: 0.8125em;
+  width: 0.8125em;
   line-height: 1;
   vertical-align: middle;
 }
