@@ -631,9 +631,8 @@ body {
 }
 
 .lede {
-  font-size: 22.5px;
-  font-size: 1.125rem;
-  line-height: 1.24444;
+  font-family: "ff-dax-compact-web-pro", serif;
+  font-weight: 300;
 }
 
 .small,
