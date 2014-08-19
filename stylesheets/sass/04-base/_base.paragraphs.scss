@@ -7,7 +7,8 @@
 //of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
 .lede,
 %lede {
-    @include font-size($base-font-size * 1.125);
+    font-family: $base-headings-font-family;
+    font-weight: 300;
 }
 
 
