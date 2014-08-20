@@ -1,5 +1,18 @@
-// # Navigation
+/*------------------------------------*\
+    #NAVIGATION
+\*------------------------------------*/
 
+
+
+
+
+/**
+ * Example HTML:
+ *
+ * <div class="primary-navigation">
+ *   <a>...</a>
+ * <div>
+ */
 .primary-navigation {
   position: absolute;
   z-index: 999;
@@ -8,9 +21,5 @@
 
   a {
     color: #fff;
-  }
-
-  @at-root .primary-navigation__block {
-    display: block;
   }
 }

@@ -1,11 +1,13 @@
-// # Structure
-//
-// Main wrapper and container
-// # Container
-//
-// Container is the main ... container
-//
-//     <div class="container">...</div>
+/*------------------------------------*\
+    #STRUCTURE
+\*------------------------------------*/
+
+
+/**
+ * Main wrapper and container
+ *
+ * Container is the main ... container
+ */
 %container,
 .container {
   max-width: $base-container-width;

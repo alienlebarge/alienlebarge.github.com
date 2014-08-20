@@ -1,10 +1,15 @@
-// # Paragraphs
+/*------------------------------------*\
+    #PARAGRPAHS
+\*------------------------------------*/
 
 
-// # Lede
-//
-//The `.lede` class is used to make the introductory text (usually a paragraph)
-//of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+
+
+
+/**
+ * Lede is the same font as the headings
+ */
+ 
 .lede,
 %lede {
     font-family: $base-headings-font-family;
@@ -15,22 +20,29 @@
 
 
 
-// # Small
-//
-//The `.lede` class is used to make the introductory text (usually a paragraph)
-//of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+/**
+ * Small
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$small-size : 0.85 !default;
+
 .small,
+%small,
 small {
-  @include inuit-font-size($inuit-base-font-size * 0.85)
+  @include inuit-font-size($inuit-base-font-size * $small-size)
 }
 
 
 
 
 
-// # Strong
-strong,
+/**
+ * Strong
+ */
+
 .strong,
-%strong {
+%strong,
+strong {
   font-weight: bold;
 }

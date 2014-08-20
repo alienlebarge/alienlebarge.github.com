@@ -1,9 +1,18 @@
-// Header image iconic
-//
-// Those style are for iconic icons in the `header-image` componment.
-// **It require `header-image` style file.
-// Iconic incons are the same color as the text in header
+/*------------------------------------*\
+    #HEADER-IMAGE__ICONIC
+\*------------------------------------*/
 
+
+
+
+
+/**
+ * Extend `.header-image {}` in _components.header-image.scss.
+ *
+ * Those style are for iconic icons in the `header-image` componment.
+ * **It require `header-image` style file.
+ * Iconic icons are the same color as the text in header
+ */
 .header-image {
   .iconic * {
     fill: $header-image-text-color;

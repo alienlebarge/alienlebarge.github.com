@@ -41,7 +41,6 @@
  * Helper-classes:      Want to align or hide something
  *
  * COMPONENTS
- * Images-shapes:       Rounded and shapy images
  * Structures:          Wrapping and constraining elements.
  * Header image:        Big mama full-screen header
  * Header image iconic: Tweak needed to make iconic work with header image
@@ -174,8 +173,6 @@ $inuit-enable-btn--small: true;
 /**
  * Designed UI elements.
  */
-
-@import "componment.images-shapes";
 
 $base-container-width: 750px;
 @import "componment.structures";
