@@ -64,7 +64,7 @@
  * Sass vars, etc
  */
 
-@import "sass/01-settings/settings.defaults";
+@import "settings.defaults";
 
 $inuit-base-font-size:          20px;
 $inuit-base-line-height:        28px;
@@ -86,7 +86,7 @@ $inuit-base-background-color:   #fff;
 
 @import "bower_components/inuit-functions/_tools.functions";
 @import "bower_components/inuit-mixins/_tools.mixins";
-@import "sass/02-tools/tools.mixins";
+@import "tools.mixins";
 
 
 
@@ -117,8 +117,8 @@ $inuit-base-background-color:   #fff;
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
 
-@import "sass/04-base/base.anchors";
-@import "sass/04-base/base.codes";
+@import "base.anchors";
+@import "base.codes";
 
 $inuit-heading-size-1:  40px !default;
 $inuit-heading-size-2:  32px !default;
@@ -128,17 +128,17 @@ $inuit-heading-size-5:  16px !default;
 $inuit-heading-size-6:  14px !default;
 @import "bower_components/inuit-headings/base.headings";
 
-@import "sass/04-base/base.headings";
+@import "base.headings";
 @import "bower_components/inuit-images/base.images";
 @import "bower_components/inuit-lists/base.lists";
 @import "bower_components/inuit-page/base.page";
-@import "sass/04-base/base.page";
+@import "base.page";
 
 $inuit-lede-size:   1;
 @import "bower_components/inuit-paragraphs/base.paragraphs";
 
-@import "sass/04-base/base.paragraphs";
-@import "sass/04-base/base.quotes";
+@import "base.paragraphs";
+@import "base.quotes";
 
 
 
@@ -161,7 +161,7 @@ $inuit-btn-border-color:  none;
 $inuit-enable-btn--small: true;
 @import "bower_components/inuit-buttons/objects.buttons";
 @import "bower_components/inuit-list-inline/objects.list-inline";
-@import "sass/05-objects/objects.helper-classes";
+@import "objects.helper-classes";
 
 
 
@@ -175,19 +175,19 @@ $inuit-enable-btn--small: true;
  * Designed UI elements.
  */
 
-@import "sass/06-componment/componment.images-shapes";
+@import "componment.images-shapes";
 
 $base-container-width: 750px;
-@import "sass/06-componment/componment.structures";
+@import "componment.structures";
 
 $base-header-height:      100%;
 $header-image-text-color: #fff;
 $base-header-color:       $base-primary-color;
-@import "sass/06-componment/componment.header-image";
+@import "componment.header-image";
 
-@import "sass/06-componment/componment.header-image__iconic";
-@import "sass/06-componment/componment.types";
-@import "sass/06-componment/componment.navigation";
+@import "componment.header-image__iconic";
+@import "componment.types";
+@import "componment.navigation";
 
 
 
