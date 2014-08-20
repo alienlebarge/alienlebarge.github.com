@@ -5,10 +5,82 @@
  */
 
 @charset "UTF-8";
+/*------------------------------------*\
+    #ALIENLEBARGE
+\*------------------------------------*/
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global:              Globally-available variables and config.
+ * InuiCSS settings:    Everythings InuitCSS need to run
+ *
+ * TOOLS
+ * Tools:               You need tools to craft things.
+ * InuitCSS mixins:     Useful mixins.
+ * Custom mixins:       Much more useful mixins.
+ *
+ * GENERIC
+ * Normalize.css:       A level playing field.
+ * Reset:               Resetting elements.
+ * Shared:              Vertical rhythm shared margin.
+ * Box-sizing:          Better default `box-sizing`.
+ *
+ * BASE
+ * Anchors:             Inline link and anchors
+ * Codes:               Code blocks and preformated text style
+ * Headings:            H1–H6 styles.
+ * Headings custom:     Custom tweaks on Inuitcss
+ * Images:              Images and caption styles
+ * Lists:               Lists styles
+ * Page:                HTML and body styles
+ * Page custom:         Custom settings over Inuitcss styles
+ * Paragraphs:          Paragraphs styles lede
+ * Paragraphs custom:   Paragraphs style like small, strong, lede
+ * Quotes:              Blockquotes and citations
+ *
+ * OBJECTS
+ * Layout:              Grid system
+ * List-ui:             Ui list
+ * Buttons:             Buttons style
+ * List-inline:         Inline list
+ * Helper-classes:      Want to align or hide something
+ *
+ * COMPONENTS
+ * Images-shapes:       Rounded and shapy images
+ * Structures:          Wrapping and constraining elements.
+ * Header image:        Big mama full-screen header
+ * Header image iconic: Tweak needed to make iconic work with header image
+ * Types:               Style on inline text
+ * Navigation:          Navigation style
+ *
+ * TRUMPS
+ * Text:                Text helpers.
+ * Width:               helper classes that you can use to size things
+ * Spacing:             collection of helper classes for spacings
+ */
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+/**
+ * Sass vars, etc
+ */
 /*!
  * inuitcss, by @csswizardry
  *
  * github.com/inuitcss | inuitcss.com
+ */
+/*------------------------------------*\
+    #TOOLS
+\*------------------------------------*/
+/**
+ * Functions and mixins
+ */
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+/**
+ * Generic, high-level styling, like resets, etc.
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -496,6 +568,12 @@ html {
   box-sizing: inherit;
 }
 
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/**
+ * Unclasses HTML elements (e.g. `h2`, `ul`).
+ */
 a {
   color: #333333;
 }
@@ -741,6 +819,12 @@ blockquote {
 }
 
 /*------------------------------------*\
+    #OBJECTS
+\*------------------------------------*/
+/**
+ * Objects and abstractions.
+ */
+/*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
 /**
@@ -899,6 +983,12 @@ blockquote {
   position: relative;
 }
 
+/*------------------------------------*\
+    #COMPONMENT
+\*------------------------------------*/
+/**
+ * Designed UI elements.
+ */
 .img-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1006,6 +1096,12 @@ blockquote {
   display: block;
 }
 
+/*------------------------------------*\
+    #TRUMPS
+\*------------------------------------*/
+/**
+ * Overrides and helper classes.
+ */
 /*------------------------------------*\
     #WIDTHS
 \*------------------------------------*/
