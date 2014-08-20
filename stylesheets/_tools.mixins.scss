@@ -1,4 +1,4 @@
-// # Breakpoint mixin
+// Breakpoint mixin
 //
 // [Info about this mixins](https://medium.com/p/889927b37740/)
 //
@@ -59,7 +59,7 @@
 
 
 
-// # Mixin border-radius
+// Mixin border-radius
 //
 // Add prefix vendor for border-radius
 //
@@ -76,7 +76,7 @@
 
 
 
-// # Mixin shadow
+// Mixin shadow
 //
 // A mixin for creating drop shadows
 //
@@ -95,7 +95,7 @@
 
 
 
-// # Mixin Shadow inset
+// Mixin Shadow inset
 //
 // A mixin for creating inset shadows
 //
@@ -113,7 +113,7 @@
 
 
 
-// # Mixin transition
+// Mixin transition
 //
 // Add vendor prefix for transition
 //
@@ -128,7 +128,7 @@
 
 
 
-// # Mixin box-sizing
+// Mixin box-sizing
 //
 // Box-sizing will change the box-model of the element it is applied to.
 @mixin box-sizing {
@@ -141,7 +141,7 @@
 
 
 
-// # Mixin linear gradient
+// Mixin linear gradient
 //
 // A mixin for creating linear gradient
 //
@@ -168,7 +168,7 @@
 
 
 
-// # Mixin center block
+// Mixin center block
 //
 // Set an element to `display: block` and center via margin.
 @mixin center-block {
@@ -181,7 +181,7 @@
 
 
 
-// # Mixin screen reader only
+// Mixin screen reader only
 //
 // The content can only be read by screen reader
 @mixin sr-only {

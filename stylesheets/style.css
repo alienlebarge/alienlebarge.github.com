@@ -64,6 +64,18 @@
 /**
  * Sass vars, etc
  */
+/*------------------------------------*\
+    # SETTINGS
+\*------------------------------------*/
+/**
+ * Font settings
+ */
+/**
+ * Colors
+ */
+/**
+ * Breakpoints
+ */
 /*!
  * inuitcss, by @csswizardry
  *
@@ -1027,12 +1039,33 @@ blockquote {
   display: inline-block;
 }
 
+/*------------------------------------*\
+    #HELPER CLASSES
+\*------------------------------------*/
+/**
+ * Center block
+ *
+ * Set an element to `display: block` and center via `margin`.
+ *
+ * Example HTML:
+ *
+ * <div class="center-block">...</div>
+ */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/**
+ * Screen reader only
+ * Hide an element to all devices except screen readers with `.sr-only`.
+ * Necessary for following accessibility best practices.
+ *
+ * Example HTML:
+ *
+ * <a class="sr-only" href="#content">Skip to main content</a>
+ */
 .sr-only {
   position: absolute !important;
   overflow: hidden;
@@ -1043,6 +1076,11 @@ blockquote {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/**
+ * Relative
+ *
+ * Set the position to relative to help some positioning
+ */
 .relative {
   position: relative;
 }

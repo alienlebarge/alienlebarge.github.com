@@ -1,14 +1,20 @@
-// # Helper classes
+/*------------------------------------*\
+    #HELPER CLASSES
+\*------------------------------------*/
 
 
 
 
+/**
+ * Center block
+ *
+ * Set an element to `display: block` and center via `margin`.
+ *
+ * Example HTML:
+ *
+ * <div class="center-block">...</div>
+ */
 
-// # Center block
-//
-// Set an element to `display: block` and center via `margin`.
-//
-//     <div class="center-block">...</div>
 .center-block {
   @include center-block;
 }
@@ -17,11 +23,16 @@
 
 
 
-// # Screen reader only
-//
-// Hide an element to all devices except screen readers with `.sr-only`. Necessary for following accessibility best practices.
-//
-//     <a class="sr-only" href="#content">Skip to main content</a>
+/**
+ * Screen reader only
+ * Hide an element to all devices except screen readers with `.sr-only`.
+ * Necessary for following accessibility best practices.
+ *
+ * Example HTML:
+ *
+ * <a class="sr-only" href="#content">Skip to main content</a>
+ */
+
 .sr-only {
   @include sr-only;
 }
@@ -30,9 +41,12 @@
 
 
 
-// # Relative
-//
-// Set the position to relative to help some positioning
+/**
+ * Relative
+ *
+ * Set the position to relative to help some positioning
+ */
+
 .relative {
   position: relative;
 }
