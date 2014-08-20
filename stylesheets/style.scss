@@ -65,6 +65,11 @@
 // Objects and abstractions.
 @import "bower_components/inuit-layout/objects.layout";
 @import "bower_components/inuit-list-ui/objects.list-ui";
+
+$inuit-btn-background:    none;
+$inuit-btn-color:         $inuit-base-text-color;
+$inuit-btn-border-color:  none;
+$inuit-enable-btn--small: true;
 @import "bower_components/inuit-buttons/objects.buttons";
 @import "bower_components/inuit-list-inline/objects.list-inline";
 @import "sass/05-objects/objects.helper-classes";

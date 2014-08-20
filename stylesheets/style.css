@@ -839,13 +839,13 @@ blockquote {
   /* [6] */
   padding: 13px 27px;
   /* [7] */
-  background-color: #4a8ec2;
-  border: 1px solid #4a8ec2;
+  background-color: none;
+  border: 1px solid none;
 }
 .btn, .btn:hover, .btn:active, .btn:focus {
   text-decoration: none;
   /* [4] */
-  color: white;
+  color: #333333;
 }
 
 /**
@@ -854,6 +854,14 @@ blockquote {
 .btn::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+/**
+ * Small buttons.
+ */
+.btn--small {
+  padding: 6px 13px;
+  /* [7] */
 }
 
 /*------------------------------------*\
