@@ -1,6 +1,10 @@
-// # Code
-//
-//
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+
+
+
 
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
@@ -26,9 +30,15 @@ pre {
 }
 
 
-// ## Inline code
-//
-// 1. Override `pre` font-size
+
+
+
+
+/**
+ * Inline code
+ *
+ * 1. Override `pre` font-size
+ */
 code,
 kbd,
 samp {
@@ -36,7 +46,7 @@ samp {
 }
 
 p code {
-  font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; // 1.
+  font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; /* 1 */
   background-color: #f8f8f8;
   @include rounded(2px);
 }

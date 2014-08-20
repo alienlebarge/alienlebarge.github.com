@@ -21,7 +21,7 @@
  * Box-sizing:          Better default `box-sizing`.
  *
  * BASE
- * Anchors:             Inline link and anchors
+ * Links:               Links and anchors.
  * Codes:               Code blocks and preformated text style
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
@@ -117,7 +117,7 @@ $inuit-base-background-color:   #fff;
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
 
-@import "base.anchors";
+@import "base.links";
 @import "base.codes";
 
 $inuit-heading-size-1:  40px !default;
