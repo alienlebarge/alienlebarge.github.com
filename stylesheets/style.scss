@@ -11,6 +11,11 @@
 //
 // Sass vars, etc.
 @import "sass/01-settings/settings.defaults";
+
+$inuit-base-font-size:          20px;
+$inuit-base-line-height:        28px;
+$inuit-base-text-color:         #333;
+$inuit-base-background-color:   #fff;
 @import "bower_components/inuit-defaults/settings.defaults";
 
 
@@ -45,14 +50,30 @@
 // Unclasses HTML elements (e.g. `h2`, `ul`).
 @import "sass/04-base/base.anchors";
 @import "sass/04-base/base.codes";
+
+$inuit-heading-size-1:  40px !default;
+$inuit-heading-size-2:  32px !default;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
 @import "bower_components/inuit-headings/base.headings";
+
 @import "sass/04-base/base.headings";
+
 @import "bower_components/inuit-images/base.images";
+
 @import "bower_components/inuit-lists/base.lists";
+
 @import "bower_components/inuit-page/base.page";
+
 @import "sass/04-base/base.page";
+
+$inuit-lede-size:   1;
 @import "bower_components/inuit-paragraphs/base.paragraphs";
+
 @import "sass/04-base/base.paragraphs";
+
 @import "sass/04-base/base.quotes";
 
 
@@ -81,11 +102,21 @@ $inuit-enable-btn--small: true;
 // ## Componment
 //
 // Designed UI elements.
+
 @import "sass/06-componment/componment.images-shapes";
+
+$base-container-width: 750px;
 @import "sass/06-componment/componment.structures";
+
+$base-header-height:      100%;
+$header-image-text-color: #fff;
+$base-header-color:       $base-primary-color;
 @import "sass/06-componment/componment.header-image";
+
 @import "sass/06-componment/componment.header-image__iconic";
+
 @import "sass/06-componment/componment.types";
+
 @import "sass/06-componment/componment.navigation";
 
 
@@ -96,4 +127,11 @@ $inuit-enable-btn--small: true;
 //
 // Overrides and helper classes.
 @import "bower_components/inuit-widths/trumps.widths";
+
+$inuit-enable-margins         : true;
+$inuit-enable-paddings        : true;
+$inuit-enable-margins--none   : true;
+$inuit-enable-paddings--none  : true;
+$inuit-enable-margins--large  : true;
+$inuit-enable-paddings--large : true;
 @import "bower_components/inuit-spacing/trumps.spacing";
