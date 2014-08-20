@@ -27,7 +27,7 @@
  * Box-sizing:          Better default `box-sizing`.
  *
  * BASE
- * Anchors:             Inline link and anchors
+ * Links:               Links and anchors.
  * Codes:               Code blocks and preformated text style
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
@@ -574,6 +574,20 @@ html {
 /**
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+/**
+ * Basic link
+ *
+ * Determine the color of link
+ * `:hover` highlight the link when hovered.
+ *
+ * Example HMTL:
+ *
+ * <a href="#">This is a link</a>
+ * <a href="#" class=":hover">This is a link</a>
+ */
 a {
   color: #333333;
 }
@@ -581,6 +595,17 @@ a:hover {
   color: #ff5867;
 }
 
+/**
+ * No underlined link
+ *
+ * If you do not want to underline a link
+ * `:hover` highlight & undeline the link when hovered.
+ *
+ * Example HTML:
+ *
+ * <a href="#" class="no-underline">This is a link</a>
+ * <a href="#" class="no-underline :hover">This is a link</a>
+ */
 .no-underline {
   text-decoration: none;
 }
