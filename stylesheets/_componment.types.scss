@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    #TYPES
+\*------------------------------------*/
+
+
+
+
+/**
+ * Align left
+ *
+ * Left aligned text
+ *
+ * Example HTML:
+ *
+ * <p class="align-left">Align me!</p>
+ */
+.text-left {
+  text-align: left;
+}
+
+
+
+
+
+/**
+ * Align center
+ *
+ * Center aligned text
+ *
+ * Example HTML:
+ *
+ * <p class="align-center">Align me!</p>
+ */
+.text-center {
+  text-align: center;
+}
+
+
+
+
+/**
+ * Align right
+ *
+ * Right Aligned text
+ *
+ * Example HTML:
+ *
+ * <p class="align-right">Align me!</p>
+ */
+.text-right {
+  text-align: right;
+}
+
+
+
+
+/**
+ * ## Align justify
+ *
+ * Justified text
+ *
+ * Example HTML:
+ *
+ * <p class="align-justify">Align me!</p>
+ */
+.text-justify {
+  text-align: justify;
+}
+
+
+
+
+/**
+ * Font-weight-normal
+ *
+ * Set the font weight to normal
+ *
+ * Example HTML:
+ *
+ * <h1 class="font-weight-normal">Heading with normal weight</h1>
+ */
+.font-weight-normal {
+  font-weight: 400;
+}
+
+
+
+
+
+/**
+ * Meta
+ *
+ * Design for article meta information
+ *
+ * Example HTML:
+ *
+ * <p class="meta">...</p>
+ */
+.meta {
+  font-family    : $base-headings-font-family;
+  letter-spacing : -0.015em;
+  font-weight    : 400;
+  @include inuit-font-size($inuit-heading-size-6);
+}

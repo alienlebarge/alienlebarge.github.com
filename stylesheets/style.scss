@@ -1,88 +1,217 @@
-// # Main file
-//
-// One File to rule them all, One File to find them,
-// One File to bring them all and in the darkness bind them
+/*------------------------------------*\
+    #ALIENLEBARGE
+\*------------------------------------*/
+
+/**
+ * CREDITS
+ *
+ * This stylesheet includes inuitcss (http://inuitcss.com/) stylesheet system
+ * developed by Harry Roberts (http://csswizardry.com/).
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global:              Globally-available variables and config.
+ * InuiCSS settings:    Everythings InuitCSS need to run
+ *
+ * TOOLS
+ * Tools:               You need tools to craft things.
+ * InuitCSS mixins:     Useful mixins.
+ * Custom mixins:       Much more useful mixins.
+ *
+ * GENERIC
+ * Normalize.css:       A level playing field.
+ * Reset:               Resetting elements.
+ * Shared:              Vertical rhythm shared margin.
+ * Box-sizing:          Better default `box-sizing`.
+ *
+ * BASE
+ * Links:               Links and anchors.
+ * Codes:               Code blocks and preformated text style
+ * Headings:            H1–H6 styles.
+ * Headings custom:     Custom tweaks on Inuitcss
+ * Images:              Images and caption styles
+ * Lists:               Lists styles
+ * Page:                HTML and body styles
+ * Page custom:         Custom settings over Inuitcss styles
+ * Paragraphs:          Paragraphs styles lede
+ * Paragraphs custom:   Paragraphs style like small, strong, lede
+ * Quotes:              Blockquotes and citations
+ *
+ * OBJECTS
+ * Layout:              Grid system
+ * List-ui:             Ui list
+ * Buttons:             Buttons style
+ * List-inline:         Inline list
+ * Helper-classes:      Want to align or hide something
+ *
+ * COMPONENTS
+ * Structures:          Wrapping and constraining elements.
+ * Header image:        Big mama full-screen header
+ * Header image iconic: Tweak needed to make iconic work with header image
+ * Types:               Style on inline text
+ * Navigation:          Navigation style
+ *
+ * TRUMPS
+ * Text:                Text helpers.
+ * Width:               helper classes that you can use to size things
+ * Spacing:             collection of helper classes for spacings
+ */
+
+
+
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+
+/**
+ * Sass vars, etc
+ */
+
+@import "settings.defaults";
+
+$inuit-base-font-size:          20px;
+$inuit-base-line-height:        28px;
+$inuit-base-text-color:         #333;
+$inuit-base-background-color:   #fff;
+@import "bower_components/inuit-defaults/settings.defaults";
 
 
 
 
 
-// ## Settings
-//
-// Sass vars, etc.
-@import "sass/01-settings/settings.defaults";
+/*------------------------------------*\
+    #TOOLS
+\*------------------------------------*/
+
+/**
+ * Functions and mixins
+ */
+
+@import "bower_components/inuit-functions/_tools.functions";
+@import "bower_components/inuit-mixins/_tools.mixins";
+@import "tools.mixins";
 
 
 
 
 
-// ## Tools
-//
-// Functions and mixins.
-@import "sass/02-tools/tools.functions";
-@import "sass/02-tools/tools.mixins";
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+
+/**
+ * Generic, high-level styling, like resets, etc.
+ */
+
+@import "bower_components/inuit-normalize/generic.normalize";
+@import "bower_components/inuit-reset/generic.reset";
+@import "bower_components/inuit-shared/generic.shared";
+@import "bower_components/inuit-box-sizing/generic.box-sizing";
 
 
 
 
 
-// ## Generic
-//
-// Generic, high-level styling, like resets, etc.
-@import "sass/03-generic/generic.normalize";
-@import "sass/03-generic/generic.reset";
-@import "sass/03-generic/generic.shared";
-@import "sass/03-generic/generic.box-sizing";
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+
+/**
+ * Unclasses HTML elements (e.g. `h2`, `ul`).
+ */
+
+@import "base.links";
+@import "base.codes";
+
+$inuit-heading-size-1:  40px !default;
+$inuit-heading-size-2:  32px !default;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
+@import "bower_components/inuit-headings/base.headings";
+
+@import "base.headings";
+@import "bower_components/inuit-images/base.images";
+@import "bower_components/inuit-lists/base.lists";
+@import "bower_components/inuit-page/base.page";
+@import "base.page";
+
+$inuit-lede-size:   1;
+@import "bower_components/inuit-paragraphs/base.paragraphs";
+
+@import "base.paragraphs";
+@import "base.quotes";
 
 
 
 
 
-// ## Base
-//
-// Unclasses HTML elements (e.g. `h2`, `ul`).
-@import "sass/04-base/base.anchors";
-@import "sass/04-base/base.codes";
-@import "sass/04-base/base.headings";
-@import "sass/04-base/base.images";
-@import "sass/04-base/base.lists";
-@import "sass/04-base/base.page";
-@import "sass/04-base/base.paragraphs";
-@import "sass/04-base/base.quotes";
+/*------------------------------------*\
+    #OBJECTS
+\*------------------------------------*/
+
+/**
+ * Objects and abstractions.
+ */
+
+@import "bower_components/inuit-layout/objects.layout";
+@import "bower_components/inuit-list-ui/objects.list-ui";
+
+$inuit-btn-background:    rgba(255,255,255,0.25);
+$inuit-btn-color:         $inuit-base-text-color;
+$inuit-btn-border-color:  none;
+$inuit-btn-radius:        quarter($inuit-base-spacing-unit);
+$inuit-enable-btn--small: true;
+@import "bower_components/inuit-buttons/objects.buttons";
+@import "bower_components/inuit-list-inline/objects.list-inline";
+@import "objects.helper-classes";
 
 
 
 
 
+/*------------------------------------*\
+    #COMPONMENT
+\*------------------------------------*/
 
-// ## Objects
-//
-// Objects and abstractions.
-@import "sass/05-objects/objects.layout";
-@import "sass/05-objects/objects.ui-list";
-@import "sass/05-objects/objects.list-inline";
-@import "sass/05-objects/objects.helper-classes";
+/**
+ * Designed UI elements.
+ */
 
+$base-container-width: 750px;
+@import "componment.structures";
 
+$base-header-height:      100%;
+$header-image-text-color: #fff;
+$base-header-color:       $base-primary-color;
+@import "componment.header-image";
 
-
-
-// ## Componment
-//
-// Designed UI elements .
-@import "sass/06-componment/componment.images-shapes";
-@import "sass/06-componment/componment.structures";
-@import "sass/06-componment/componment.header-image";
-@import "sass/06-componment/componment.header-image__iconic";
-@import "sass/06-componment/componment.types";
-@import "sass/06-componment/componment.navigation";
+@import "componment.header-image__iconic";
+@import "componment.types";
+@import "componment.navigation";
 
 
 
 
 
-// ## Trumps
-//
-// Overrides and helper classes.
-@import "sass/07-trumps/trumps.widths";
-@import "sass/07-trumps/trumps.spacing";
+/*------------------------------------*\
+    #TRUMPS
+\*------------------------------------*/
+
+/**
+ * Overrides and helper classes.
+ */
+
+@import "bower_components/inuit-widths/trumps.widths";
+
+$inuit-enable-margins         : true;
+$inuit-enable-paddings        : true;
+$inuit-enable-margins--none   : true;
+$inuit-enable-paddings--none  : true;
+$inuit-enable-margins--large  : true;
+$inuit-enable-paddings--large : true;
+@import "bower_components/inuit-spacing/trumps.spacing";

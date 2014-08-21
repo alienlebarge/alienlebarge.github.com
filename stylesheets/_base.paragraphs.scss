@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #PARAGRPAHS
+\*------------------------------------*/
+
+
+
+
+
+/**
+ * Lede is the same font as the headings
+ */
+ 
+.lede,
+%lede {
+    font-family: $base-headings-font-family;
+    font-weight: 300;
+}
+
+
+
+
+
+/**
+ * Small
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$small-size : 0.85 !default;
+
+.small,
+%small,
+small {
+  @include inuit-font-size($inuit-base-font-size * $small-size)
+}
+
+
+
+
+
+/**
+ * Strong
+ */
+
+.strong,
+%strong,
+strong {
+  font-weight: bold;
+}

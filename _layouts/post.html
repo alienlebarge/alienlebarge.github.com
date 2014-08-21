@@ -2,10 +2,10 @@
 layout: blog
 ---
 
+{% include navigation.html %}
+
 {% if page.coordinates %}
 <article class="header-image background-gradient">
-
-  {% include navigation.html %}
 
   {% if page.markers %}
   <header class="header-image__image" style="background-image: url('http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for marker in page.markers %}{% if marker.name %}{{ marker.name }}{% else %}pin-m{% endif %}{% if marker.label %}-{{marker.label}}{% endif %}({% for coordinate in marker.coordinates limit:1 %}{{ coordinate }}{% endfor %}){% if forloop.last %}{% else %},{% endif %}{% endfor %}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }}')">
@@ -16,13 +16,9 @@ layout: blog
 {% elsif page.image %}
 <article class="header-image background-gradient">
 
-  {% include navigation.html %}
-
   <header class="header-image__image" style="background-image: url('{{ page.image }}')">
 {% else %}
 <article class="header-image">
-
-  {% include navigation.html %}
 
   <header class="header-image__image--no-image">
   {% endif %}

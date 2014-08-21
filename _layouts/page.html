@@ -3,16 +3,14 @@
 {% include head.html %}
 <body>
 
+{% include navigation.html %}
+
 {% if page.image %}
 <div class="header-image background-gradient">
-
-  {% include navigation.html %}
 
   <header class="header-image__image" style="background-image: url('{{ page.image }}')">
 {% else %}
 <article class="header-image">
-
-  {% include navigation.html %}
 
   <header class="header-image__image--no-image">
   {% endif %}
