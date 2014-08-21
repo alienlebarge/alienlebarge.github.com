@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #STRUCTURE
+\*------------------------------------*/
+
+
+/**
+ * Main wrapper and container
+ *
+ * Container is the main ... container
+ */
+%container,
+.container {
+  max-width: $base-container-width;
+  padding: 0 $inuit-base-spacing-unit;
+  @include center-block;
+}
