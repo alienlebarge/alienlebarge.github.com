@@ -1,13 +1,19 @@
 /*!
  * alienlebarge-blog v1.4.2 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
 
 @charset "UTF-8";
 /*------------------------------------*\
     #ALIENLEBARGE
 \*------------------------------------*/
+/**
+ * CREDITS
+ *
+ * This stylesheet includes inuitcss (http://inuitcss.com/) stylesheet system
+ * developed by Harry Roberts (http://csswizardry.com/).
+ */
 /**
  * CONTENTS
  *
