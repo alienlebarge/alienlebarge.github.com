@@ -56,7 +56,7 @@ module.exports = function (grunt) {
         separator: ';',
         banner: '<%= banner %>',
       },
-      dist: {
+      footer_js: {
         src: ['javascripts/_iconic.js', 'javascripts/_google-analytics.js'],
         dest: 'javascripts/footer.js',
       },
