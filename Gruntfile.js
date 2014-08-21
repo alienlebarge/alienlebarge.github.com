@@ -51,6 +51,20 @@ module.exports = function (grunt) {
 
 
 
+    concat: {
+      options: {
+        separator: ';',
+        banner: '<%= banner %>',
+      },
+      footer_js: {
+        src: ['javascripts/_iconic.js', 'javascripts/_google-analytics.js'],
+        dest: 'javascripts/footer.js',
+      },
+    },
+
+
+
+
 
     exec: {
       build: {
@@ -68,7 +82,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner']
+        tasks: ['sass','usebanner','concat']
       }
     }
 
@@ -81,6 +95,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-banner');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
