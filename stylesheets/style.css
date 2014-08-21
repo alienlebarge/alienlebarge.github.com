@@ -1005,8 +1005,9 @@ blockquote {
   /* [6] */
   padding: 13px 27px;
   /* [7] */
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid none;
+  border-radius: 7px;
 }
 .btn, .btn:hover, .btn:active, .btn:focus {
   text-decoration: none;
@@ -1303,10 +1304,7 @@ blockquote {
   position: absolute;
   z-index: 999;
   top: 0;
-  left: 0;
-}
-.primary-navigation a {
-  color: #fff;
+  right: 0;
 }
 
 /*------------------------------------*\
