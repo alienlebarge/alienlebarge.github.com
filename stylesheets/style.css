@@ -1027,6 +1027,17 @@ blockquote {
 }
 
 /**
+ * Float element to the right
+ *
+ * Example HTML:
+ *
+ * <div class="pull-right">...</div>
+ */
+.pull-right {
+  float: right !important;
+}
+
+/**
  * Screen reader only
  * Hide an element to all devices except screen readers with `.sr-only`.
  * Necessary for following accessibility best practices.
