@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.5.5 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.6.0 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
@@ -46,7 +46,6 @@
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
- * Layout:              Grid system
  * List-ui:             Ui list
  * Buttons:             Buttons style
  * List-inline:         Inline list
@@ -907,43 +906,6 @@ blockquote {
  * Objects and abstractions.
  */
 /*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * The inuitcss layout system uses `box-sizing: border-box;` and
- * `display: inline-block;` to create an extremely powerful, flexible
- * alternative to the traditional grid system. Combine the layout items with
- * the widths found in `trumps.widths`.
- */
-/**
- * Begin a layout group.
- */
-.layout {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-left: -28px;
-}
-
-/**
- * 1. Cause columns to stack side-by-side.
- * 2. Space columns apart.
- * 3. Align columns to the tops of each other.
- * 4. Full-width unless told to behave otherwise.
- * 5. Required to combine fluid widths and fixed gutters.
- */
-.layout__item {
-  display: inline-block;
-  /* [1] */
-  padding-left: 28px;
-  /* [2] */
-  vertical-align: top;
-  /* [3] */
-  width: 100%;
-  /* [4] */
-}
-
-/*------------------------------------*\
     #LIST-UI
 \*------------------------------------*/
 /**
@@ -1062,6 +1024,17 @@ blockquote {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/**
+ * Float element to the right
+ *
+ * Example HTML:
+ *
+ * <div class="pull-right">...</div>
+ */
+.pull-right {
+  float: right !important;
 }
 
 /**
@@ -1305,6 +1278,23 @@ blockquote {
   z-index: 999;
   top: 0;
   right: 0;
+}
+
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Add border to your content.
+ *
+ * `.b(t|r|b|l) {}` = border top/right/bottom/left
+ */
+/**
+ * Border bottom
+ */
+.bb {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
 }
 
 /*------------------------------------*\

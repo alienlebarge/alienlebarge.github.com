@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+
+/**
+ * Add border to your content.
+ *
+ * `.b(t|r|b|l) {}` = border top/right/bottom/left
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$border-width:    1px !default;
+$border-style:    solid !default;
+$border-color:    #ccc !default;
+
+$enable-border-top:    false !default;
+$enable-border-right:  false !default;
+$enable-border-bottom: false !default;
+$enable-border-left:   false !default;
+
+
+
+
+
+@if $enable-border-top == true {
+
+  /**
+   * Border top
+   */
+  .bt {
+    border-top: {
+      width: $border-width;
+      style: $border-style;
+      color: $border-color;
+    }
+  }
+
+}
+
+
+
+
+
+@if $enable-border-right == true {
+
+  /**
+   * Border right
+   */
+  .br {
+    border-right: {
+      width: $border-width;
+      style: $border-style;
+      color: $border-color;
+    }
+  }
+
+}
+
+
+
+
+
+@if $enable-border-bottom == true {
+
+  /**
+   * Border bottom
+   */
+  .bb {
+    border-bottom: {
+      width: $border-width;
+      style: $border-style;
+      color: $border-color;
+    }
+  }
+
+}
+
+
+
+
+
+@if $enable-border-left == true {
+
+  /**
+   * Border left
+   */
+  .bl {
+    border-left: {
+      width: $border-width;
+      style: $border-style;
+      color: $border-color;
+    }
+  }
+
+}

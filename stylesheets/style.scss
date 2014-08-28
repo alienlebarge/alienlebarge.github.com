@@ -41,7 +41,6 @@
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
- * Layout:              Grid system
  * List-ui:             Ui list
  * Buttons:             Buttons style
  * List-inline:         Inline list
@@ -158,7 +157,6 @@ $inuit-lede-size:   1;
  * Objects and abstractions.
  */
 
-@import "bower_components/inuit-layout/objects.layout";
 @import "bower_components/inuit-list-ui/objects.list-ui";
 
 $inuit-btn-background:    rgba(255,255,255,0.25);
@@ -193,6 +191,9 @@ $base-header-color:       $base-primary-color;
 @import "componment.header-image__iconic";
 @import "componment.types";
 @import "componment.navigation";
+
+$enable-border-bottom: true;
+@import "componment.borders";
 
 
 

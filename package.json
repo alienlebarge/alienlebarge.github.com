@@ -2,7 +2,7 @@
   "name": "alienlebarge-blog",
   "description": "alienlebarge blog",
   "author": "Cédric Aellen",
-  "version": "1.5.5",
+  "version": "1.6.0",
   "homepage": "http://www.alienlebarge.ch",
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-exec": "~0.4.3",
-    "grunt-banner": "^0.2.3"
+    "grunt-banner": "^0.2.3",
+    "grunt-contrib-concat": "~0.5.0"
   }
 }
