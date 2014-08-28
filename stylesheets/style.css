@@ -1281,6 +1281,23 @@ blockquote {
 }
 
 /*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Add border to your content.
+ *
+ * `.b(t|r|b|l) {}` = border top/right/bottom/left
+ */
+/**
+ * Border bottom
+ */
+.bb {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+}
+
+/*------------------------------------*\
     #TRUMPS
 \*------------------------------------*/
 /**

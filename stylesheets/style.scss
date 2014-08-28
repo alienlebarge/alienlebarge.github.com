@@ -192,6 +192,9 @@ $base-header-color:       $base-primary-color;
 @import "componment.types";
 @import "componment.navigation";
 
+$enable-border-bottom: true;
+@import "componment.borders";
+
 
 
 
