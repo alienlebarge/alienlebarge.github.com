@@ -606,7 +606,7 @@ html {
  * <a href="#" class=":hover">This is a link</a>
  */
 a {
-  color: #333333;
+  color: #333;
 }
 a:hover {
   color: #ff5867;
@@ -813,8 +813,8 @@ html {
   /* [1] */
   line-height: 1.4;
   /* [1] */
-  background-color: white;
-  color: #333333;
+  background-color: #fff;
+  color: #333;
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
@@ -916,7 +916,7 @@ blockquote {
 .list-ui,
 .list-ui__item,
 .list-ui > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
 }
 
 .list-ui {
@@ -975,7 +975,7 @@ blockquote {
 .btn, .btn:hover, .btn:active, .btn:focus {
   text-decoration: none;
   /* [4] */
-  color: #333333;
+  color: #333;
 }
 
 /**
@@ -1120,7 +1120,7 @@ blockquote {
   /* 3 */
 }
 .header-image__content {
-  color: white;
+  color: #fff;
   position: absolute;
   /* 2 */
   bottom: 0;
@@ -1130,7 +1130,7 @@ blockquote {
   /* 4 */
 }
 .header-image__content a {
-  color: white;
+  color: #fff;
 }
 .header-image__content__container {
   /* 4 */
@@ -1174,8 +1174,8 @@ blockquote {
  * Iconic icons are the same color as the text in header
  */
 .header-image .iconic * {
-  fill: white;
-  stroke: white;
+  fill: #fff;
+  stroke: #fff;
 }
 
 /*------------------------------------*\
@@ -1295,7 +1295,7 @@ blockquote {
 .bb {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #cccccc;
+  border-bottom-color: #ccc;
 }
 
 /*------------------------------------*\
@@ -1694,3 +1694,5 @@ blockquote {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+/*# sourceMappingURL=style.css.map */
