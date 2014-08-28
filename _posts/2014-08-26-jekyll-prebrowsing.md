@@ -10,7 +10,7 @@ tags:
  - prebrowsing
 ---
 
-Prebrowsing in one of the hot topic on the web these time. It mean: preparing the next page the user will visite. You can do a few things about it with a Jekyll based blog.
+Prebrowsing in one of the hot topic on the web these time. It mean: preparing the next page the user will visite. So if you wanted to be like Jean-Claude Van Damme in [Timecop](http://en.wikipedia.org/wiki/Timecop "Timecop on Wikipedia") and master the (loading) time, here is a few things you can do with a Jekyll based blog.
 
 Please, read excellent [Santiago Valdarrama's article on A List Apart ](http://alistapart.com/article/one-step-ahead-improving-performance-with-prebrowsing "One Step Ahead: Improving Performance with Prebrowsing") before.
 
