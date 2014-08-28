@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.6.0 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.6.1 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
@@ -57,6 +57,7 @@
  * Header image iconic: Tweak needed to make iconic work with header image
  * Types:               Style on inline text
  * Navigation:          Navigation style
+ * Borders:             Boreders on the top, on the left, ... everywhere
  *
  * TRUMPS
  * Text:                Text helpers.
