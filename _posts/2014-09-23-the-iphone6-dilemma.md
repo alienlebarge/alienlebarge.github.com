@@ -3,7 +3,7 @@ layout:      post
 title:       "The iPhone 6 dilemma"
 description: "The new iPhone will be available in a few days and I can not choose between the big and the bigger model."
 date:        2014-09-23 22:17:58
-image:       http://static6.businessinsider.com/image/540f66b5eab8ead55165a62b-1200/the-iphone-6-left-has-a-47-inch-screen-the-iphone-6-plus-right-has-a-55-inch-screen.jpg
+image:       https://s3-eu-west-1.amazonaws.com/alb-blog/2014-09-23-the-iphone6-dilemma.jpg
 tags:
  - iPhone6
 ---
