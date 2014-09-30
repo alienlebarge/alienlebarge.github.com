@@ -851,6 +851,21 @@ body {
 }
 
 /*------------------------------------*\
+    #VERTICAL-RHYTHME
+\*------------------------------------*/
+/**
+ * The vertical rhythme base objet let you add some spacing between objects
+ * (headings, paragraphs, quotes, etc.) that keep vertical rhythme consistent.
+ */
+h2 {
+  /**
+   * Add padding at the top for vertical rhythme purpose
+   */
+  padding-top: 28px;
+  padding-top: 1.4rem;
+}
+
+/*------------------------------------*\
     #PARAGRAPHS
 \*------------------------------------*/
 /**
