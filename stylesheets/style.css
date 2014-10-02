@@ -1125,7 +1125,7 @@ blockquote {
   -webkit-overflow-scrolling: touch;
   /* 5 */
 }
-.header-image__image, .header-image__image--no-image {
+.header-image__image {
   height: 100%;
   background-position: center center;
   /* 3 */
@@ -1149,13 +1149,6 @@ blockquote {
 }
 .header-image__content__container {
   /* 4 */
-}
-
-/**
- * If there is no image for the header
- */
-.header-image__image--no-image {
-  background-color: #ff5867;
 }
 
 /**
