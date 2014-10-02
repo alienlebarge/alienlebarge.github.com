@@ -12,16 +12,18 @@ layout: blog
   {% else %}
   <header class="header-image__image" style="background-image: url(http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }})">
   {% endif %}
+  <div class="header-image__content">
+    <div class='header-image__content__container'>
+      <h1 class="mb0">{{ page.title }}</h1>
+      <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>{% if page.external-site %} / <a href="{{ page.external-link }}" title="The article on {{ page.external-site }}">{{ page.external-site }}</a> <i class="fa fa-external-link"></i>{% endif %}</p>
+    </div>
+  </div>
+</header>
 
 {% elsif page.image %}
 <article class="header-image background-gradient">
 
   <header class="header-image__image" style="background-image: url('{{ page.image }}')">
-{% else %}
-<article class="header-image">
-
-  <header class="header-image__image--no-image">
-  {% endif %}
     <div class="header-image__content">
       <div class='header-image__content__container'>
         <h1 class="mb0">{{ page.title }}</h1>
@@ -29,6 +31,13 @@ layout: blog
       </div>
     </div>
   </header>
+{% else %}
+<article>
+  <header class="container">
+    <h1 class="mb0 pt">{{ page.title }}</h1>
+      <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>{% if page.external-site %} / <a href="{{ page.external-link }}" title="The article on {{ page.external-site }}">{{ page.external-site }}</a> <i class="fa fa-external-link"></i>{% endif %}</p>
+  </header>
+{% endif %}
 
   <div class="container mt pb bb">
     {{ content }}

@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.6.7 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.7.0 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
@@ -851,6 +851,21 @@ body {
 }
 
 /*------------------------------------*\
+    #VERTICAL-RHYTHME
+\*------------------------------------*/
+/**
+ * The vertical rhythme base objet let you add some spacing between objects
+ * (headings, paragraphs, quotes, etc.) that keep vertical rhythme consistent.
+ */
+h2 {
+  /**
+   * Add padding at the top for vertical rhythme purpose
+   */
+  padding-top: 28px;
+  padding-top: 1.4rem;
+}
+
+/*------------------------------------*\
     #PARAGRAPHS
 \*------------------------------------*/
 /**
@@ -1110,7 +1125,7 @@ blockquote {
   -webkit-overflow-scrolling: touch;
   /* 5 */
 }
-.header-image__image, .header-image__image--no-image {
+.header-image__image {
   height: 100%;
   background-position: center center;
   /* 3 */
@@ -1134,13 +1149,6 @@ blockquote {
 }
 .header-image__content__container {
   /* 4 */
-}
-
-/**
- * If there is no image for the header
- */
-.header-image__image--no-image {
-  background-color: #ff5867;
 }
 
 /**

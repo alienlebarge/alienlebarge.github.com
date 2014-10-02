@@ -1,0 +1,321 @@
+/*------------------------------------*\
+    #VERTICAL-RHYTHME
+\*------------------------------------*/
+
+/**
+ * The vertical rhythme base objet let you add some spacing between objects
+ * (headings, paragraphs, quotes, etc.) that keep vertical rhythme consistent.
+ */
+// Use it if you want vertical rhythme set to the base tags. Otherwize consider
+// using inuitcss spacing helper classes
+// (https://github.com/inuitcss/trumps.spacing)
+
+
+
+// Predefine the variables below in order to alter and enable specific features.
+// 0: use default spacing
+// 1: add 1 unit of spacing
+// 2: add 2 units of spacing
+// etc.
+$h1-rhythme-top:            0;
+$h1-rhythme-bottom:         0;
+
+$h2-rhythme-top:            1;
+$h2-rhythme-bottom:         0;
+
+$h3-rhythme-top:            0;
+$h3-rhythme-bottom:         0;
+
+$h4-rhythme-top:            0;
+$h4-rhythme-bottom:         0;
+
+$h5-rhythme-top:            0;
+$h5-rhythme-bottom:         0;
+
+$h6-rhythme-top:            0;
+$h6-rhythme-bottom:         0;
+
+$p-rhythme-top:             0;
+$p-rhythme-bottom:          0;
+
+$pre-rhythme-top:           0;
+$pre-rhythme-bottom:        0;
+
+$figure-rhythme-top:        0;
+$figure-rhythme-bottom:     0;
+
+$img-rhythme-top:           0;
+$img-rhythme-bottom:        0;
+
+$figcaption-rhythme-top:    0;
+$figcaption-rhythme-bottom: 0;
+
+$ul-rhythme-top:            0;
+$ul-rhythme-bottom:         0;
+
+$blockquote-rhythme-top:    0;
+$blockquote-rhythme-bottom: 0;
+
+$rhythme-spacing-unit:      $inuit-base-spacing-unit !default;
+$rhythme-font-size:         $inuit-base-font-size !default;
+
+
+
+
+
+// Mixins
+//
+// These mixins genrates the top and bottom passings
+
+@mixin rhythme-top($factor, $spacing-unit: $rhythme-spacing-unit, $font-size: $rhythme-font-size) {
+  /**
+   * Add padding at the top for vertical rhythme purpose
+   */
+
+  padding-top: $spacing-unit * $factor;
+  padding-top: ($spacing-unit * $factor/ $font-size) * 1rem;
+}
+
+@mixin rhythme-bottom($factor, $spacing-unit: $rhythme-spacing-unit, $font-size: $rhythme-font-size) {
+  /**
+   * Add padding at the bottom for vertical rhythme purpose
+   */
+
+  padding-bottom: $spacing-unit * $factor;
+  padding-bottom: ($spacing-unit * $factor/ $font-size) * 1rem;
+}
+
+
+
+
+
+
+// Heading 1
+
+@if $h1-rhythme-top != 0 {
+  h1 {
+    @include rhythme-top($h1-rhythme-top);
+  }
+}
+
+@if $h1-rhythme-bottom != 0 {
+  h1 {
+    @include rhythme-bottom($h1-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Heading 2
+
+@if $h2-rhythme-top != 0 {
+  h2 {
+    @include rhythme-top($h2-rhythme-top);
+  }
+}
+
+@if $h2-rhythme-bottom != 0 {
+  h2 {
+    @include rhythme-bottom($h2-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Heading 3
+
+@if $h3-rhythme-top != 0 {
+  h3 {
+    @include rhythme-top($h3-rhythme-top);
+  }
+}
+
+@if $h3-rhythme-bottom != 0 {
+  h3 {
+    @include rhythme-bottom($h3-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Heading 4
+
+@if $h4-rhythme-top != 0 {
+  h4 {
+    @include rhythme-top($h4-rhythme-top);
+  }
+}
+
+@if $h4-rhythme-bottom != 0 {
+  h4 {
+    @include rhythme-bottom($h4-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Heading 5
+
+@if $h5-rhythme-top != 0 {
+  h5 {
+    @include rhythme-top($h5-rhythme-top);
+  }
+}
+
+@if $h5-rhythme-bottom != 0 {
+  h5 {
+    @include rhythme-bottom($h5-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Heading 6
+
+@if $h6-rhythme-top != 0 {
+  h6 {
+    @include rhythme-top($h6-rhythme-top);
+  }
+}
+
+@if $h6-rhythme-bottom != 0 {
+  h6 {
+    @include rhythme-bottom($h6-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Paragraphs
+
+@if $p-rhythme-top != 0 {
+  p {
+    @include rhythme-top($p-rhythme-top);
+  }
+}
+
+@if $p-rhythme-bottom != 0 {
+  p {
+    @include rhythme-bottom($p-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Pre
+
+@if $pre-rhythme-top != 0 {
+  p {
+    @include rhythme-top($pre-rhythme-top);
+  }
+}
+
+@if $pre-rhythme-bottom != 0 {
+  pre {
+    @include rhythme-bottom($pre-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Figure
+
+@if $figure-rhythme-top != 0 {
+  figure {
+    @include rhythme-top($figure-rhythme-top);
+  }
+}
+
+@if $figure-rhythme-bottom != 0 {
+  figure {
+    @include rhythme-bottom($figure-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Images
+
+@if $img-rhythme-top != 0 {
+  img {
+    @include rhythme-top($img-rhythme-top);
+  }
+}
+
+@if $img-rhythme-bottom != 0 {
+  img {
+    @include rhythme-bottom($img-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Figcaption
+
+@if $figcaption-rhythme-top != 0 {
+  figcaption {
+    @include rhythme-top($figcaption-rhythme-top);
+  }
+}
+
+@if $figcaption-rhythme-bottom != 0 {
+  figcaption {
+    @include rhythme-bottom($figcaption-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Lists
+
+@if $ul-rhythme-top != 0 {
+  ul {
+    @include rhythme-top($ul-rhythme-top);
+  }
+}
+
+@if $ul-rhythme-bottom != 0 {
+  ul {
+    @include rhythme-bottom($ul-rhythme-bottom);
+  }
+}
+
+
+
+
+
+// Blockquote
+
+@if $blockquote-rhythme-top != 0 {
+  blockquote {
+    @include rhythme-top($blockquote-rhythme-top);
+  }
+}
+
+@if $blockquote-rhythme-bottom != 0 {
+  blockquote {
+    @include rhythme-bottom($blockquote-rhythme-bottom);
+  }
+}

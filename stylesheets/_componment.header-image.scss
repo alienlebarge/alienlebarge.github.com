@@ -54,17 +54,6 @@ $header-image-text-color: #fff !default;
 
 
 
-/**
- * If there is no image for the header
- */
-.header-image__image--no-image {
-  @extend .header-image__image;
-  background-color: $base-primary-color;
-}
-
-
-
-
 
 /**
  * Add a background gradient to improve the legibility of the text
