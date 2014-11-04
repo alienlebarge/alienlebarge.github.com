@@ -11,9 +11,10 @@ tags:
 ---
 
 [Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly:
-- do things,
-- learn by doing,
-- finish your project
+
+  - do things
+  - learn by doing
+  - finish your project
 
 Here are my sketchnotes:
 
