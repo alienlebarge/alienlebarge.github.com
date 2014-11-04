@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       "CSS3 For Responsive Hardboiled Web Design"
+title:       "Beyond Tellerrand: CSS3 For Responsive Hardboiled Web Design"
 description: "My sketchnote about Andrew Clark workshop"
 date:        2014-11-04 22:14:34
 image:       http://markosun.files.wordpress.com/2013/07/apes6.jpg
