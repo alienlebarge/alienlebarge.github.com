@@ -100,7 +100,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'usebanner', 'exec:serve']);
-  grunt.registerTask('build', ['sass', 'usebanner']);
+  grunt.registerTask('default', ['sass', 'usebanner', 'concat', 'exec:serve']);
+  grunt.registerTask('build', ['sass', 'usebanner', 'concat']);
 
 };
