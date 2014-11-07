@@ -3,7 +3,7 @@ layout:      post
 title:       "Beyond Tellerrand: The Icon Design Process"
 description: ""
 image:
-date:        2014-11-07 14:15:24
+date:        2014-11-07 14:48:39
 tags:
  - btconf
  - conference
