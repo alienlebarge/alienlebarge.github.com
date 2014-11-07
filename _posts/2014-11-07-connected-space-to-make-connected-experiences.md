@@ -7,10 +7,10 @@ date:        2014-11-07 10:59:09
 tags:
 - btconf
 - conference
-- css
+- stttti
 ---
 
-Objects can interact with each and others via the internet. [Stacey Mulcahy](http://twitter.com/bitchwhocodes) presented some (funny) projects she has done to make interact thins with the internet (<abbr title="Stuff That Talks To The Interwebs">STTTTI<abbr>) and how we can build similar things.
+Objects can interact with each and others via the internet. [Stacey Mulcahy](http://twitter.com/bitchwhocodes) presented some (funny) projects she has done to make interact thins with the internet (<abbr title="Stuff That Talks To The Interwebs">STTTTTI<abbr>) and how we can build similar things.
 
   - Build for fun
   - Start small, think big !
