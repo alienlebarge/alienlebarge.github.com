@@ -10,7 +10,7 @@ tags:
  - css
 ---
 
-[Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly:
+[Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly: 
 
   - do things
   - learn by doing

@@ -13,7 +13,7 @@ tags:
 
 [Zoe Micley Gillenwater](https://twitter.com/zomigi) talk about CSS and experimenting things to improve our knowledge.
 
-More experiment means more success (but more fail too). Do not hesitate to share your mistakes and success. You will not be seen as a noob. 99% of people on earth do not not know what CSS is.
+More experiments mean more success (but more fail too). Do not hesitate to share your mistakes and success. You will not be seen as a noob. 99% of people on earth do not know what CSS is.  
 
 <figure>
   <img src="https://farm6.staticflickr.com/5611/15526026529_71888bae72_c.jpg" alt="CSS Lessons Learned the Hard Way sketchnote">
