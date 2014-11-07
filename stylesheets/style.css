@@ -828,8 +828,27 @@ img[height] {
     #IMAGES
 \*------------------------------------*/
 /**
+ * Figure
+ */
+@media (min-width: 1200px) {
+  figure {
+    position: relative;
+  }
+}
+
+/**
  * Figcaption
  */
+@media (min-width: 1200px) {
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: -224px;
+    width: 196px;
+    text-align: right;
+  }
+}
+
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
