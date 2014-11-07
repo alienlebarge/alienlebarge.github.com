@@ -10,7 +10,7 @@ tags:
  - fonts
 ---
 
-[Jonathan Hoefler](https://twitter.com/HoeflerCo) is the founder of [Hoefler & Co](http://typography.com). He prenseted us all the works behind building fonts. They are not juste "fancy" fonts. They are build in function of the context where they will be used. And there is a lot of problem to solve to make a good font.
+[Jonathan Hoefler](https://twitter.com/HoeflerCo) is the founder of [Hoefler & Co](http://typography.com). He presented us all the works behind building fonts. They are not juste "fancy" fonts. They are built regarding of the context where they will be used. And there are a lot of problems to solve to make a good font.
 
 Here is my sketchnote:
 
