@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.7.5 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.8.0 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
@@ -37,12 +37,12 @@
  * Codes:               Code blocks and preformated text style
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
+ * Paragraphs:          Paragraphs styles lede
+ * Paragraphs custom:   Paragraphs style like small, strong, lede
  * Images:              Images and caption styles
  * Lists:               Lists styles
  * Page:                HTML and body styles
  * Page custom:         Custom settings over Inuitcss styles
- * Paragraphs:          Paragraphs styles lede
- * Paragraphs custom:   Paragraphs style like small, strong, lede
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
@@ -749,6 +749,50 @@ h6 {
 }
 
 /*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+.lede {
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/*------------------------------------*\
+    #PARAGRPAHS
+\*------------------------------------*/
+/**
+ * Lede is the same font as the headings
+ */
+.lede {
+  font-family: "ff-dax-compact-web-pro", serif;
+  font-weight: 300;
+}
+
+/**
+ * Small
+ */
+.small,
+figcaption,
+small {
+  font-size: 17px;
+  font-size: 0.85rem;
+  line-height: 1.64706;
+  font-family: "freight-micro-pro", "freight-text-pro", Georgia, serif;
+}
+
+/**
+ * Strong
+ */
+.strong,
+strong {
+  font-weight: bold;
+}
+
+/*------------------------------------*\
     #IMAGES
 \*------------------------------------*/
 /**
@@ -780,6 +824,12 @@ img[height] {
   max-width: none;
 }
 
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+/**
+ * Figcaption
+ */
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
@@ -863,48 +913,6 @@ h2 {
    */
   padding-top: 28px;
   padding-top: 1.4rem;
-}
-
-/*------------------------------------*\
-    #PARAGRAPHS
-\*------------------------------------*/
-/**
- * The `.lede` class is used to make the introductory text (usually a paragraph)
- * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
- */
-.lede {
-  font-size: 20px;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-/*------------------------------------*\
-    #PARAGRPAHS
-\*------------------------------------*/
-/**
- * Lede is the same font as the headings
- */
-.lede {
-  font-family: "ff-dax-compact-web-pro", serif;
-  font-weight: 300;
-}
-
-/**
- * Small
- */
-.small,
-small {
-  font-size: 17px;
-  font-size: 0.85rem;
-  line-height: 1.64706;
-}
-
-/**
- * Strong
- */
-.strong,
-strong {
-  font-weight: bold;
 }
 
 /*------------------------------------*\

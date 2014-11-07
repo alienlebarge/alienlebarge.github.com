@@ -9,7 +9,7 @@
 /**
  * Lede is the same font as the headings
  */
- 
+
 .lede,
 %lede {
     font-family: $base-headings-font-family;
@@ -30,7 +30,8 @@ $small-size : 0.85 !default;
 .small,
 %small,
 small {
-  @include inuit-font-size($inuit-base-font-size * $small-size)
+  @include inuit-font-size($inuit-base-font-size * $small-size);
+  font-family: $base-small-font-family;
 }
 
 
