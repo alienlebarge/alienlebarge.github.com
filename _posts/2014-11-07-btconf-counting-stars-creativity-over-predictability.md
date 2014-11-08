@@ -9,10 +9,10 @@ tags:
  - conference
 ---
 
-For the short time, we tend to build sites more effective based on statistics and research. According to [Andrew Clark](https://twitter.com/Malarkey), we do not leave room for creativity.
+These days, we tend to build more effective sites based on statistics and research. According to [Andrew Clarke](https://twitter.com/Malarkey), we do not leave room for creativity.
 We remember the commercials on television because they were outstanding, funny ... creative. What was the last memorable site that comes to mind?
 
-Andy's reminder that we should have fun creating and make room for our imagination.
+Andy's remind us that we should have fun creating and make room for our imagination.
 
 <figure>
   <img src="https://farm6.staticflickr.com/5614/15526487918_ae4e454c0b_c.jpg" alt="Sketchnote of the talk Counting Stars: Creativity over Predicatbility">
