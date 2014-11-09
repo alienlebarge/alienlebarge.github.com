@@ -28,3 +28,5 @@ Objects can interact with each and other via the Internet. That's what call <abb
 Some tweets related to the talk.
 
 <blockquote class="twitter-tweet" lang="fr"><p>&quot;Start small, think big!&quot; Thanks for inspiration <a href="https://twitter.com/bitchwhocodes">@bitchwhocodes</a> <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> <a href="http://t.co/UOefST6244">pic.twitter.com/UOefST6244</a></p>&mdash; Matthias H. Lick (@mhlick) <a href="https://twitter.com/mhlick/status/529647998591311872">4 Novembre 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p>Smooth web navigation in the browser, a prototype. <a href="http://t.co/Ut9QCSrjO9">http://t.co/Ut9QCSrjO9</a> —<a href="https://twitter.com/tkadlec">@tkadlec</a> <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a></p>&mdash; Smashing Magazine (@smashingmag) <a href="https://twitter.com/smashingmag/status/529663306920120320">4 Novembre 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
