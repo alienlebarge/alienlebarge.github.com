@@ -23,4 +23,6 @@ Here's my sketchnote of the talk.
 </figure>
 
 
-This video show [how CNA language school use real-time communication protocols](http://youtu.be/-S-5EfwpFOk "Video of speaking exchange").
+## Tweets
+
+<blockquote class="twitter-tweet" lang="fr"><p>Why are my eyes wet after seeing this video in <a href="https://twitter.com/lisamarienyc">@lisamarienyc</a>&#39;s <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> talk? <a href="http://t.co/kb3Fno2Ikf">http://t.co/kb3Fno2Ikf</a></p>&mdash; Dan Sumption (@dansumption) <a href="https://twitter.com/dansumption/status/529953731417505792">5 Novembre 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
