@@ -7,6 +7,7 @@ date:        2014-11-07 11:34:33
 tags:
  - btconf
  - conference
+ - ui
 ---
 
 The cartoonists have long known. Transitions and intermediate frames are very important. [Tim Kadlec](https://twitter.com/tkadlec) showed us how to improve the user experience of a website playing on the effects of transition. Yes ladies and gentlemen, the progress bar is "has-been".
@@ -17,6 +18,15 @@ The cartoonists have long known. Transitions and intermediate frames are very im
     The Space Between. <a href="https://www.flickr.com/photos/alienlebarge/15526721387">View original on Flickr</a>
   </figcaption>
 </figure>
+
+## Slides
+
+<script async class="speakerdeck-embed" data-id="0787d6404bea0132e12d4643cc84daf4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> Historically, the intermediary states of our sites have been neglected. The transition between the starting and ending points has been treated as an afterthought, one we begrudgingly fix because they’re there and they stick out like a sore thumb. But the web is maturing, and our roles are shifting as it does. Through careful choreography we can make sure that these intermediate states feel intentional. That they don’t break our users state of flow, but help to maintain it. The result will be more delightful experiences for our users—from start to finish and every step along the way.
+>
+> Presented at Beyond Tellerand Berlin, 2014 in Berlin, Germany on November 3rd, 2014.
+
 
 ## Tweets
 
