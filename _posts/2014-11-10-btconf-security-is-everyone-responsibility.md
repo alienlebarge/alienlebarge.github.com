@@ -10,9 +10,21 @@ tags:
  - security
 ---
 
-here come the content
+This was the kind of talk after which one you shut down your phone and reset all your passwords when back at home.
+
+[James Hall](https://twitter.com/MrRio) how us how he can intercept traffic of devices using the same wifi (after having cracked this wifi). It was terrific !
+
+
+<figure>
+  <img src="https://farm8.staticflickr.com/7531/15766506482_a4fbe8b09b_c.jpg" alt="Sketchnote of the talk The Icon Design Process">
+  <figcaption>
+    The Icon Design Process. <a href="https://www.flickr.com/photos/alienlebarge/15766506482">View original on Flickr</a>
+  </figcaption>
+</figure>
 
 ## Tweets
+
+Some tweets about the talk:
 
 <blockquote class="twitter-tweet" lang="fr"><p>Nice offline demo on internet security with envelope, locks and keys by <a href="https://twitter.com/MrRio">@MrRio</a> <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> <a href="https://twitter.com/hashtag/btsec?src=hash">#btsec</a></p>&mdash; Gunnar Bittersmann (@g16n) <a href="https://twitter.com/g16n/status/529959366162923521">5 Novembre 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
