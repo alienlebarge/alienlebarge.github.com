@@ -15,7 +15,7 @@ tags:
 Here's my sketchnote of the talk:
 
 <figure>
-  <img src="https://farm6.staticflickr.com/5616/15585485688_eb83a3c180_c.jpg" width="502" height="800" alt="The Web&#x27;s Future Is Offline">
+  <img src="https://farm6.staticflickr.com/5616/15585485688_eb83a3c180_c.jpg" alt="The Web&#x27;s Future Is Offline">
   <figcaption>
     The Web's Future Is Offline. <a href="https://www.flickr.com/photos/alienlebarge/15585485688">View original on Flickr</a>
   </figcaption>
