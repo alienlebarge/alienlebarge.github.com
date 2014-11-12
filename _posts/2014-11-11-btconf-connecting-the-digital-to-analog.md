@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Beyond Tellerrand: Connecting The Digital To Analog"
-description: "The internet is full of data."
+description: "The internet is full of data. Brian Suda's talk was about bringing them back to print."
 image:       https://farm4.staticflickr.com/3940/15733822692_6d66123110_c.jpg
 date:        2014-11-11 16:08:55
 tags:
