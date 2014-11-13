@@ -27,6 +27,8 @@ Here's my sketchnote:
   </figcaption>
 </figure>
 
+There is [a nice article on *next.guardian*](http://next.theguardian.com/blog/container-model-blended-content/) on the development of the new _container model_ structure with [Information Architects](https://ia.net)
+
 <a href="https://www.flickr.com/photos/alienlebarge/15733469982" title="Untitled by Cédric Aellen, on Flickr"><img src="https://farm4.staticflickr.com/3956/15733469982_86bf8f50f9_c.jpg" alt="Untitled"></a>
 
 <a href="https://www.flickr.com/photos/alienlebarge/15547078070" title="Untitled by Cédric Aellen, on Flickr"><img src="https://farm8.staticflickr.com/7508/15547078070_b3ba4f9462_c.jpg" alt="Untitled"></a>
@@ -34,8 +36,6 @@ Here's my sketchnote:
 <a href="https://www.flickr.com/photos/alienlebarge/15733463812" title="Untitled by Cédric Aellen, on Flickr"><img src="https://farm4.staticflickr.com/3950/15733463812_78b7a0619a_c.jpg" alt="Untitled"></a>
 
 <a href="https://www.flickr.com/photos/alienlebarge/15733466502" title="Untitled by Cédric Aellen, on Flickr"><img src="https://farm4.staticflickr.com/3947/15733466502_64e66d3309_c.jpg" alt="Untitled"></a>
-
-There is [a nice article on *next.guardian*](http://next.theguardian.com/blog/container-model-blended-content/) on the development of the new _container model_ structure with [Information Architects](https://ia.net)
 
 ## Tweets
 
