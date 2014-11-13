@@ -185,7 +185,7 @@ $inuit-enable-btn--small: true;
 $base-container-width: 750px;
 @import "componment.structures";
 
-$base-header-height:      100%;
+$base-header-height:      100vh;
 $header-image-text-color: #fff;
 $base-header-color:       $base-primary-color;
 @import "componment.header-image";
