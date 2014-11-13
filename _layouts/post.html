@@ -6,7 +6,7 @@ layout: blog
 
 <article>
   {% if page.image %}
-  <header class="header-image" style="background-image: url('{{ page.image }}')">
+  <header class="header-image header-image--overlay" style="background-image: url('{{ page.image }}')">
     <div class="header-image__text-container container">
       <h1 class="mb0 pt">{{ page.title }}</h1>
       <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>{% if page.external-site %} / <a href="{{ page.external-link }}" title="The article on {{ page.external-site }}">{{ page.external-site }}</a> <i class="fa fa-external-link"></i>{% endif %}</p>
@@ -14,9 +14,9 @@ layout: blog
   </header>
   {% elsif page.coordinates %}
   {% if page.markers %}
-  <header class="header-image" style="background-image: url('http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for marker in page.markers %}{% if marker.name %}{{ marker.name }}{% else %}pin-m{% endif %}{% if marker.label %}-{{marker.label}}{% endif %}({% for coordinate in marker.coordinates limit:1 %}{{ coordinate }}{% endfor %}){% if forloop.last %}{% else %},{% endif %}{% endfor %}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }}')">
+  <header class="header-image header-image--overlay" style="background-image: url('http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for marker in page.markers %}{% if marker.name %}{{ marker.name }}{% else %}pin-m{% endif %}{% if marker.label %}-{{marker.label}}{% endif %}({% for coordinate in marker.coordinates limit:1 %}{{ coordinate }}{% endfor %}){% if forloop.last %}{% else %},{% endif %}{% endfor %}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }}')">
   {% else %}
-  <header class="header-image" style="background-image: url(http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }})">
+  <header class="header-image header-image--overlay" style="background-image: url(http://api.tiles.mapbox.com/v4/{{ site.mapbox_mapid }}/{% for coordinate in page.coordinates limit:1 %}{{ coordinate }}{% endfor %},{% if page.zoom %}{{ page.zoom }}{% else %}15{% endif %}/800x800.png?access_token={{ site.mapbox_token }})">
   {% endif %}
     <div class="header-image__text-container container">
       <h1 class="mb0 pt">{{ page.title }}</h1>
