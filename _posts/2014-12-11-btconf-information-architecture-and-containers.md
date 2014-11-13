@@ -35,6 +35,8 @@ Here's my sketchnote:
 
 <a href="https://www.flickr.com/photos/alienlebarge/15733466502" title="Untitled by Cédric Aellen, on Flickr"><img src="https://farm4.staticflickr.com/3947/15733466502_64e66d3309_c.jpg" alt="Untitled"></a>
 
+There is [a nice article on *next.guardian*](http://next.theguardian.com/blog/container-model-blended-content/) on the development of the new _container model_ structure with [Information Architects](https://ia.net)
+
 ## Tweets
 
 <blockquote class="twitter-tweet" lang="fr"><p>Last talk by <a href="https://twitter.com/iA">@iA</a> at <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> - with some real life experiences … <a href="http://t.co/MTErrcvegi">pic.twitter.com/MTErrcvegi</a></p>&mdash; Benedikt Kastl (@bkastl) <a href="https://twitter.com/bkastl/status/530036591214227456">5 Novembre 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
