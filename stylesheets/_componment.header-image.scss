@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #HEADER-IMAGE
+  #HEADER-IMAGE
 \*------------------------------------*/
 
 
@@ -8,48 +8,41 @@
 
 /**
  * Put a big image in the header that fit the screen
- *
- * 1. Prevent iOS to not showing the content
- * 2. Vertical align the text at the bottom of the header
- * 3. Backgournd properties. The image is set in the HTML for CMS purpose
- * 4. Center the title
- * 5. Force smooth scroll on iOS
  */
 
 // Predefine value
 $header-image-text-color: #fff !default;
 
 .header-image {
-  position: relative; /* 2 */
-  height: 100%;
-  overflow: scroll; /* 1 */
-  -webkit-overflow-scrolling: touch; /* 5 */
+  // size
+  height: 100vh;
+  min-height: 300px;
 
-  @at-root .header-image__image {
-    height: $base-header-height;
+  // background things
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-    background-position: center center; /* 3 */
-    background-repeat: no-repeat; /* 3 */
-    background-size: cover; /* 3 */
-  }
-
-  @at-root .header-image__content {
-    color: $header-image-text-color;
-      a {
-        color: $header-image-text-color;
-      }
-
-    position: absolute; /* 2 */
-    bottom: 0; /* 2 */
-    left: 0;
-    width: 100%; /* 4 */
-
-    @at-root .header-image__content__container{
-      @extend %container; /* 4 */
-    }
-  }
+  // flexbox things
+  @include flexbox;
+  @include align-items(flex-end);
 }
 
+
+
+
+
+
+.header-image__text-container {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+
+  color: $header-image-text-color;
+  z-index: 1;
+}
 
 
 
@@ -58,24 +51,27 @@ $header-image-text-color: #fff !default;
 /**
  * Add a background gradient to improve the legibility of the text
  */
-.background-gradient {
-  &:before {
-    content: '';
+.header-image--overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300px;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.1);
+}
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 
-    display: block;
-    width: 100%;
-    height: $base-header-height;
 
-    background-image:
-      linear-gradient(to bottom, rgba(0,0,0,0) $base-header-height/2, rgba(0,0,0,0.4) $base-header-height);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* 2 */
-  }
+
+/**
+ * Hide the image in the header
+ *
+ * If CSS are unactivated in the browser. The background image in the header
+ * will not be shown. So we add a `<figure><img></figure>` in the header.
+ * Yeah! That's progressive enhancement
+ */
+.header-image__hidden-image {
+  @include sr-only;
 }

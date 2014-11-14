@@ -5,11 +5,30 @@
 
 
 
+/**
+ * Figure
+ */
+figure {
+  @include breakpoint(lg) {
+    position: relative;
+  }
+}
+
+
+
+
 
 /**
  * Figcaption
  */
 
 figcaption {
-    @extend %small;
+  @extend %small;
+  @include breakpoint(lg) {
+    position: absolute;
+    top: 0;
+    left: $inuit-base-spacing-unit * -8;
+    width: $inuit-base-spacing-unit * 7;
+    text-align: right;
+  }
 }
