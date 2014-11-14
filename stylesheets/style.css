@@ -1173,6 +1173,23 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/**
+ * Hide the image in the header
+ *
+ * If CSS are unactivated in the browser. The background image in the header
+ * will not be shown. So we add a `<figure><img></figure>` in the header.
+ * Yeah! That's progressive enhancement
+ */
+.header-image__hidden-image {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 /*------------------------------------*\
     #HEADER-IMAGE__ICONIC
 \*------------------------------------*/
