@@ -16,7 +16,7 @@ title: "@alienlebarge"
     <li class="list-ui__item ph0">
         <h2 class="m0 p0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
         <p class="meta mb0">
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/external-link.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/black/standard/external-link-sm.png" src="http://www.alienlebarge.ch/assets/iconic/png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
         </p>
     </li>
     {% endfor %}
@@ -28,16 +28,16 @@ title: "@alienlebarge"
     <ul class="list-inline mv">
       {% if paginator.next_page %}
       <li>
-        <a href="/page{{ paginator.next_page }}" class="btn btn--small"><span class="sr-only">Older articles</span><img data-direction="left" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-left-fill-large-angled-sm.png" src="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-left-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow left" aria-hidden="true" /></a>
+        <a href="/page{{ paginator.next_page }}" class="btn btn--small"><span class="sr-only">Older articles</span><img data-direction="left" data-head="fill-large-angled" data-src="{{ site.iconic_url }}svg/smart/arrow-thick.svg" data-fallback="{{ site.iconic_url }}png/black/standard/arrow-thick-left-fill-large-angled-sm.png" src="{{ site.iconic_url }}png/black/standard/arrow-thick-left-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow left" aria-hidden="true" /></a>
       </li>
       {% endif %}
 
       {% if paginator.previous_page %}
       <li class="pull-right">
           {% if paginator.previous_page == 1 %}
-            <a href="/" class="btn btn--small"><img data-direction="right" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-right-fill-large-angled-sm.png" src="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-right-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow left" aria-hidden="true" /><span class="sr-only">Latest articles</span></a>
+            <a href="/" class="btn btn--small"><img data-direction="right" data-head="fill-large-angled" data-src="{{ site.iconic_url }}svg/smart/arrow-thick.svg" data-fallback="{{ site.iconic_url }}png/black/standard/arrow-thick-right-fill-large-angled-sm.png" src="{{ site.iconic_url }}png/black/standard/arrow-thick-right-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow left" aria-hidden="true" /><span class="sr-only">Latest articles</span></a>
           {% else %}
-            <a href="/page{{ paginator.previous_page }}" class="btn btn--small"><img data-direction="right" data-head="fill-large-angled" data-src="http://www.alienlebarge.ch/assets/iconic/svg/smart/arrow-thick.svg" data-fallback="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-right-fill-large-angled-sm.png" src="http://www.alienlebarge.ch/assets/iconic/png/black/standard/arrow-thick-right-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow right" aria-hidden="true" /><span class="sr-only">Latest articles</span></a>
+            <a href="/page{{ paginator.previous_page }}" class="btn btn--small"><img data-direction="right" data-head="fill-large-angled" data-src="{{ site.iconic_url }}svg/smart/arrow-thick.svg" data-fallback="{{ site.iconic_url }}png/black/standard/arrow-thick-right-fill-large-angled-sm.png" src="{{ site.iconic_url }}png/black/standard/arrow-thick-right-fill-large-angled-sm.png" class="iconic iconic-sm" alt="arrow right" aria-hidden="true" /><span class="sr-only">Latest articles</span></a>
           {% endif %}
       </li>
       {% endif %}
