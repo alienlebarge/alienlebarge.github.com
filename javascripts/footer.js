@@ -5,7 +5,7 @@
  */
 // Grab a handle to IconicJS and make some settings
 var iconic = IconicJS({
-  pngFallback: 'http://www.alienlebarge.ch/assets/iconic/png'
+  pngFallback: '{{ site.iconic_url }}png'
 });
 ;(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

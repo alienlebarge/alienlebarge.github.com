@@ -15,3 +15,6 @@ permalink: /:year/:month/:day/:title
 # Mapbox settings
 mapbox_token: pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
 mapbox_mapid: alienlebarge.io3heb5m
+
+# Iconic
+iconic_url: http://www.alienlebarge.ch/assets/iconic/1.7.0/
