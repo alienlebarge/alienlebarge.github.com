@@ -1181,12 +1181,13 @@ blockquote {
  * Yeah! That's progressive enhancement
  */
 .header-image__hidden-image {
-  position: absolute;
-  left: -10000px;
-  top: auto;
+  position: absolute !important;
+  overflow: hidden;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*------------------------------------*\

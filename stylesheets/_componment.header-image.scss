@@ -76,10 +76,5 @@ align-items: flex-end;
  * Yeah! That's progressive enhancement
  */
 .header-image__hidden-image {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  @include sr-only;
 }
