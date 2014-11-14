@@ -14,23 +14,20 @@
 $header-image-text-color: #fff !default;
 
 .header-image {
-// size
-height: 100vh;
-min-height: 300px;
+  // size
+  height: 100vh;
+  min-height: 300px;
 
-// background things
--webkit-background-size: cover;
-background-size: cover;
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-attachment: fixed;
+  // background things
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-// flexbox things
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: flex-end;
-align-items: flex-end;
+  // flexbox things
+  @include flexbox;
+  @include align-itmes(flex-end);
 }
 
 

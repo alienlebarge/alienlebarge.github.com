@@ -1144,6 +1144,11 @@ blockquote {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
