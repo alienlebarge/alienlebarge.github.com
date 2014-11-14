@@ -23,7 +23,12 @@ $header-image-text-color: #fff !default;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  @include breakpoint(xs){
+    background-attachment: scroll;
+  };
+  @include breakpoint(sm){
+    background-attachment: fixed;
+  };
 
   // flexbox things
   @include flexbox;
