@@ -901,22 +901,9 @@ html {
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
-/**
- * 1. Make the `.header-image` componment work
- */
 html {
-  height: 100%;
-  /* 1 */
   font-family: "freight-text-pro", Georgia, serif;
   font-weight: 100;
-}
-
-/**
- * 1. Make the `.header-image` componment work
- */
-body {
-  height: 100%;
-  /* 1 */
 }
 
 /*------------------------------------*\
@@ -1149,10 +1136,10 @@ blockquote {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
   align-items: flex-end;
 }
 
