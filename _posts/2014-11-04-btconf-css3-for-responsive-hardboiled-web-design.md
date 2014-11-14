@@ -11,7 +11,7 @@ tags:
  - css
 ---
 
-[Andrew Clark](http://www.twitter.com/malarkey) is running [Stuff & Nonsense](http://stuffandnonsense.co.uk) an agency which likes apes. He demonstrated us how we can use new CSS3 techniques to build websites. We talk a lot about flexbox, how does the alignments work and the way we can implement them.
+[Andrew Clarke](http://www.twitter.com/malarkey) is running [Stuff & Nonsense](http://stuffandnonsense.co.uk) an agency which likes apes. He demonstrated us how we can use new CSS3 techniques to build websites. We talk a lot about flexbox, how does the alignments work and the way we can implement them.
 
 I definitely have to dive in this subject.   
 
