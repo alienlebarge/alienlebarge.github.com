@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.9.0 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.9.1 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
@@ -1130,7 +1130,6 @@ blockquote {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1141,6 +1140,16 @@ blockquote {
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   align-items: flex-end;
+}
+@media (max-width: 500px) {
+  .header-image {
+    background-attachment: scroll;
+  }
+}
+@media (min-width: 501px) {
+  .header-image {
+    background-attachment: fixed;
+  }
 }
 
 .header-image__text-container {

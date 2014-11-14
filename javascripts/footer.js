@@ -1,5 +1,5 @@
 /*!
- * alienlebarge-blog v1.9.0 (http://www.alienlebarge.ch)
+ * alienlebarge-blog v1.9.1 (http://www.alienlebarge.ch)
  * Copyright 2014-2014 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
