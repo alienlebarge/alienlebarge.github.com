@@ -27,7 +27,7 @@ $header-image-text-color: #fff !default;
 
   // flexbox things
   @include flexbox;
-  @include align-itmes(flex-end);
+  @include align-items(flex-end);
 }
 
 
