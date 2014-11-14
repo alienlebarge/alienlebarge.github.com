@@ -1122,6 +1122,8 @@ blockquote {
 \*------------------------------------*/
 /**
  * Put a big image in the header that fit the screen
+ *
+ * 1. Fixed background image cost too much ressource on mobile
  */
 .header-image {
   height: 100vh;
@@ -1144,11 +1146,13 @@ blockquote {
 @media (max-width: 500px) {
   .header-image {
     background-attachment: scroll;
+    /* 1. */
   }
 }
 @media (min-width: 501px) {
   .header-image {
     background-attachment: fixed;
+    /* 1. */
   }
 }
 

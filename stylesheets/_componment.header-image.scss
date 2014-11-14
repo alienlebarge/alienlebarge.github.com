@@ -8,6 +8,8 @@
 
 /**
  * Put a big image in the header that fit the screen
+ *
+ * 1. Fixed background image cost too much ressource on mobile
  */
 
 // Predefine value
@@ -24,10 +26,10 @@ $header-image-text-color: #fff !default;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   @include breakpoint(xs){
-    background-attachment: scroll;
+    background-attachment: scroll;  /* 1. */
   };
   @include breakpoint(sm){
-    background-attachment: fixed;
+    background-attachment: fixed;  /* 1. */
   };
 
   // flexbox things
