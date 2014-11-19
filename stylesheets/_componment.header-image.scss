@@ -88,9 +88,21 @@ Add `.container` if you want the title to have the same width as the content.
 
 
 
-/**
- * Add a background gradient to improve the legibility of the text
- */
+/*doc
+---
+title: Header image overlay
+name: header-image--overlay
+parent: header-image
+---
+
+Add a background gradient to improve the legibility of the text.
+
+```
+    <header class="header-image header-image--overlay" style="background-image: url('...')">
+      ...
+    </header>
+```
+*/
 .header-image--overlay:before {
   content: '';
   position: absolute;
@@ -105,13 +117,24 @@ Add `.container` if you want the title to have the same width as the content.
 
 
 
-/**
- * Hide the image in the header
- *
- * If CSS are unactivated in the browser. The background image in the header
- * will not be shown. So we add a `<figure><img></figure>` in the header.
- * Yeah! That's progressive enhancement
- */
+
+/*doc
+---
+title: Header image hidden image
+name: header-image__hidden-image
+parent: header-image
+---
+
+If CSS are unactivated in the browser. The background image in the header
+will not be shown. So we add a `<figure><img></figure>` in the header.
+Yeah! That's progressive enhancement
+
+```
+    <figure class="header-image__hidden-image">
+      <img src="...">
+    </figure>
+```
+*/
 .header-image__hidden-image {
   @include sr-only;
 }
