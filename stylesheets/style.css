@@ -594,17 +594,20 @@ html {
 /*------------------------------------*\
     #LINKS
 \*------------------------------------*/
-/**
- * Basic link
- *
- * Determine the color of link
- * `:hover` highlight the link when hovered.
- *
- * Example HMTL:
- *
- * <a href="#">This is a link</a>
- * <a href="#" class=":hover">This is a link</a>
- */
+/*doc
+ ---
+ title: Link
+ name: link
+ category: base
+ ---
+
+Determine the color of link.
+`:hover` highlight the link when hovered.
+
+```html_example
+    <a href="#">Link</a>
+```
+*/
 a {
   color: #333;
 }
@@ -612,17 +615,20 @@ a:hover {
   color: #ff5867;
 }
 
-/**
- * No underlined link
- *
- * If you do not want to underline a link
- * `:hover` highlight & undeline the link when hovered.
- *
- * Example HTML:
- *
- * <a href="#" class="no-underline">This is a link</a>
- * <a href="#" class="no-underline :hover">This is a link</a>
- */
+/*doc
+ ---
+ title: No underlined link
+ name: no-underlined-link
+ category: base
+ ---
+
+If you do not want to underline a link.
+`:hover` highlight & undeline the link when hovered.
+
+```html_example
+    <a href="#" class="no-underline">Link</a>
+```
+*/
 .no-underline {
   text-decoration: none;
 }
@@ -633,9 +639,19 @@ a:hover {
 /*------------------------------------*\
     #CODE
 \*------------------------------------*/
-/**
- * Use an explicit font stack to ensure browsers render correct `line-height`.
- */
+/*doc
+---
+title: Codeblock
+name: pre
+category: base
+---
+
+Use an explicit font stack to ensure browsers render correct `line-height`.
+
+```html_example
+    <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
+```
+*/
 pre {
   font-size: 0.75em;
   font-family: "inconsolata", Courier, monospace;
@@ -661,11 +677,25 @@ pre mark {
   color: inherit;
 }
 
-/**
- * Inline code
- *
- * 1. Override `pre` font-size
- */
+ /*doc
+---
+title: Inline code
+name: inline-code
+category: base
+---
+
+```html_example
+    <code>Hello</code>
+```
+
+```html_example
+    <kbp>Hello</kbp>
+```
+
+```html_example
+    <samp>Hello</samp>
+```
+*/
 code,
 kbd,
 samp {
@@ -674,7 +704,7 @@ samp {
 
 p code {
   font-size: 0.75em;
-  /* 1 */
+  /* Override `pre` font-size */
   background-color: #f8f8f8;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -735,9 +765,22 @@ h6,
 /*------------------------------------*\
     #HEADINGS
 \*------------------------------------*/
-/**
- * Add some typographic refinements
- */
+/*doc
+---
+title: Headers
+name: headers
+category: base
+---
+
+```html_example
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+```
+*/
 h1,
 h2,
 h3,
@@ -764,17 +807,40 @@ h6 {
 /*------------------------------------*\
     #PARAGRPAHS
 \*------------------------------------*/
-/**
- * Lede is the same font as the headings
- */
+/*doc
+ ---
+ title: Lede
+ name: lede
+ category: base
+ ---
+
+Lede is the same font as the headings.
+It can be use for intriduction paragraph.
+
+```html_example
+    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+```
+*/
 .lede {
   font-family: "ff-dax-compact-web-pro", serif;
   font-weight: 300;
 }
 
-/**
- * Small
- */
+/*doc
+ ---
+ title: Small
+ name: small
+ category: base
+ ---
+
+Lede is the same font as the headings.
+It can be use for intriduction paragraph.
+
+```html_example
+    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+    <p>Lorem ipsum <small>dolor sit amet</small>, consectetur adipisicing elit. Perferendis, assumenda?</p>
+```
+*/
 .small,
 figcaption,
 small {
@@ -784,9 +850,18 @@ small {
   font-family: "freight-micro-pro", "freight-text-pro", Georgia, serif;
 }
 
-/**
- * Strong
- */
+/*doc
+ ---
+ title: Strong
+ name: strong
+ category: base
+ ---
+
+```html_example
+    <p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+    <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Perferendis, assumenda?</p>
+```
+*/
 .strong,
 strong {
   font-weight: bold;
@@ -827,18 +902,39 @@ img[height] {
 /*------------------------------------*\
     #IMAGES
 \*------------------------------------*/
-/**
- * Figure
- */
+/*doc
+---
+title: Figure
+name: figure
+category: base
+---
+
+```html_example
+    <figure>
+      <img src="http://placekitten.com/g/200/300" alt="image">
+    </figure>
+```
+*/
 @media (min-width: 1200px) {
   figure {
     position: relative;
   }
 }
 
-/**
- * Figcaption
- */
+/*doc
+---
+title: Figcaption
+name: figcaption
+category: base
+---
+
+```html_example
+    <figure>
+      <img src="http://placekitten.com/g/200/300" alt="image">
+      <figcaption>A cute kitty</figcaption>
+    </figure>
+```
+*/
 @media (min-width: 1200px) {
   figcaption {
     position: absolute;
@@ -901,6 +997,15 @@ html {
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
+/*doc
+ ---
+ title: html
+ name: html
+ category: base
+ ---
+
+Basic settings for font are set in `html`.
+*/
 html {
   font-family: "freight-text-pro", Georgia, serif;
   font-weight: 100;
@@ -924,6 +1029,18 @@ h2 {
 /*------------------------------------*\
     #QUOTES
 \*------------------------------------*/
+/*doc
+ ---
+ title: Blockquote
+ name: blockquote
+ category: base
+ ---
+
+
+```html_example
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+```
+*/
 blockquote {
   font-style: italic;
   margin: 0 28px;
@@ -1117,14 +1234,27 @@ blockquote {
   margin-right: auto;
 }
 
-/*------------------------------------*\
-  #HEADER-IMAGE
-\*------------------------------------*/
-/**
- * Put a big image in the header that fit the screen
- *
- * 1. Fixed background image cost too much ressource on mobile
- */
+/*doc
+---
+title: Header image
+name: header-image
+category: componment
+---
+
+Put a big image in the header that fit the screen
+
+```
+    <header class="header-image" style="background-image: url('...')">
+      <figure class="header-image__hidden-image">
+        <img src="...">
+      </figure>
+      <div class="header-image__text-container">
+        <h1 class="mb0 pt">Title</h1>
+        <p class="meta">Meta info</p>
+      </div>
+    </header>
+```
+*/
 .header-image {
   height: 100vh;
   min-height: 300px;
@@ -1146,16 +1276,41 @@ blockquote {
 @media (max-width: 500px) {
   .header-image {
     background-attachment: scroll;
-    /* 1. */
+    /*  Fixed background image cost too much ressource on mobile */
   }
 }
 @media (min-width: 501px) {
   .header-image {
     background-attachment: fixed;
-    /* 1. */
+    /*  Fixed background image cost too much ressource on mobile */
   }
 }
 
+/*doc
+---
+title: Header image text container
+name: header-image__text-container
+parent: header-image
+---
+
+The title and meta inf have to be in a `div` with class `header-image__text-container`.
+
+```
+    <div class="header-image__text-container">
+      <h1 class="mb0 pt">Title</h1>
+      <p class="meta">Meta info</p>
+    </div>
+```
+
+Add `.container` if you want the title to have the same width as the content.
+
+```
+    <div class="header-image__text-container container">
+      <h1 class="mb0 pt">Title</h1>
+      <p class="meta">Meta info</p>
+    </div>
+```
+*/
 .header-image__text-container {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -1313,17 +1468,28 @@ blockquote {
   right: 0;
 }
 
-/*------------------------------------*\
-    #BORDERS
-\*------------------------------------*/
-/**
- * Add border to your content.
- *
- * `.b(t|r|b|l) {}` = border top/right/bottom/left
- */
-/**
- * Border bottom
- */
+/*doc
+---
+title: Border
+name: border
+category: componment
+---
+Add border to your content.
+
+`.b(t|r|b|l) {}` = border top/right/bottom/left
+*/
+  /*doc
+   ---
+   title: Border bottom
+   name: border-bottom
+   parent: border
+   ---
+
+
+  ```html_example
+      <div class="bb">Content</div>
+  ```
+  */
 .bb {
   border-bottom-width: 1px;
   border-bottom-style: solid;

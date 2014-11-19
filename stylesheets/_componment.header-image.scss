@@ -1,16 +1,24 @@
-/*------------------------------------*\
-  #HEADER-IMAGE
-\*------------------------------------*/
+/*doc
+---
+title: Header image
+name: header-image
+category: componment
+---
 
+Put a big image in the header that fit the screen
 
-
-
-
-/**
- * Put a big image in the header that fit the screen
- *
- * 1. Fixed background image cost too much ressource on mobile
- */
+```
+    <header class="header-image" style="background-image: url('...')">
+      <figure class="header-image__hidden-image">
+        <img src="...">
+      </figure>
+      <div class="header-image__text-container">
+        <h1 class="mb0 pt">Title</h1>
+        <p class="meta">Meta info</p>
+      </div>
+    </header>
+```
+*/
 
 // Predefine value
 $header-image-text-color: #fff !default;
@@ -26,10 +34,10 @@ $header-image-text-color: #fff !default;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   @include breakpoint(xs){
-    background-attachment: scroll;  /* 1. */
+    background-attachment: scroll;  /*  Fixed background image cost too much ressource on mobile */
   };
   @include breakpoint(sm){
-    background-attachment: fixed;  /* 1. */
+    background-attachment: fixed;  /*  Fixed background image cost too much ressource on mobile */
   };
 
   // flexbox things
@@ -42,6 +50,31 @@ $header-image-text-color: #fff !default;
 
 
 
+/*doc
+---
+title: Header image text container
+name: header-image__text-container
+parent: header-image
+---
+
+The title and meta inf have to be in a `div` with class `header-image__text-container`.
+
+```
+    <div class="header-image__text-container">
+      <h1 class="mb0 pt">Title</h1>
+      <p class="meta">Meta info</p>
+    </div>
+```
+
+Add `.container` if you want the title to have the same width as the content.
+
+```
+    <div class="header-image__text-container container">
+      <h1 class="mb0 pt">Title</h1>
+      <p class="meta">Meta info</p>
+    </div>
+```
+*/
 .header-image__text-container {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;

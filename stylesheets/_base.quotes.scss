@@ -6,6 +6,18 @@
 
 
 
+/*doc
+ ---
+ title: Blockquote
+ name: blockquote
+ category: base
+ ---
+
+
+```html_example
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+```
+*/
 blockquote {
   font-style: italic;
   margin: 0 $inuit-base-spacing-unit;
