@@ -1,20 +1,30 @@
-/*------------------------------------*\
-    #HELPER CLASSES
-\*------------------------------------*/
+/*doc
+---
+title: Helper classes
+name: helper-classes
+category: componment
+---
+*/
 
 
 
 
-/**
- * Center block
- *
- * Set an element to `display: block` and center via `margin`.
- *
- * Example HTML:
- *
- * <div class="center-block">...</div>
- */
 
+/*doc
+---
+title: Center block
+name: center-block
+parent: helper-classes
+---
+
+Set an element to `display: block` and center via `margin`.
+
+```html_example
+<div class="center-block">
+  ...
+</div>
+```
+*/
 .center-block {
   @include center-block;
 }
@@ -23,13 +33,21 @@
 
 
 
-/**
- * Float element to the right
- *
- * Example HTML:
- *
- * <div class="pull-right">...</div>
- */
+/*doc
+---
+title: Pull right
+name: pull-right
+parent: helper-classes
+---
+
+Float element to the right
+
+```html_example
+<div class="pull-right">
+  ...
+</div>
+```
+*/
 .pull-right {
   float: right !important;
 }
@@ -38,16 +56,20 @@
 
 
 
-/**
- * Screen reader only
- * Hide an element to all devices except screen readers with `.sr-only`.
- * Necessary for following accessibility best practices.
- *
- * Example HTML:
- *
- * <a class="sr-only" href="#content">Skip to main content</a>
- */
+/*doc
+---
+title: Screen reader only
+name: sr-only
+parent: helper-classes
+---
 
+Hide an element to all devices except screen readers with `.sr-only`.
+Necessary for following accessibility best practices.
+
+```html_example
+<a class="sr-only" href="#content">Skip to main content</a>
+```
+*/
 .sr-only {
   @include sr-only;
 }
@@ -61,7 +83,19 @@
  *
  * Set the position to relative to help some positioning
  */
+/*doc
+---
+title: Relative
+name: relative
+parent: helper-classes
+---
 
+Set the position to relative to help some positioning
+
+```html_example
+<div clas="relative">...</div>
+```
+*/
 .relative {
   position: relative;
 }
