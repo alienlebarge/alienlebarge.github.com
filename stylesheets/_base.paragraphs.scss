@@ -1,17 +1,21 @@
-/*------------------------------------*\
-    #PARAGRPAHS
-\*------------------------------------*/
+/*doc
+---
+title: Paragraph
+name: paragraph
+category: base
+---
+*/
 
 
 
 
 
 /*doc
- ---
- title: Lede
- name: lede
- category: base
- ---
+---
+title: Lede
+name: lede
+parent: paragraph
+---
 
 Lede is the same font as the headings.
 It can be use for intriduction paragraph.
@@ -31,11 +35,11 @@ It can be use for intriduction paragraph.
 
 
 /*doc
- ---
- title: Small
- name: small
- category: base
- ---
+---
+title: Small
+name: small
+parent: paragraph
+---
 
 Lede is the same font as the headings.
 It can be use for intriduction paragraph.
@@ -60,11 +64,11 @@ small {
 
 
 /*doc
- ---
- title: Strong
- name: strong
- category: base
- ---
+---
+title: Strong
+name: strong
+parent: paragraph
+---
 
 ```html_example
     <p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>

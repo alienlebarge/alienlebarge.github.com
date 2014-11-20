@@ -1,6 +1,10 @@
-/*------------------------------------*\
-    #IMAGES
-\*------------------------------------*/
+/*doc
+---
+title: Image
+name: image
+category: base
+---
+*/
 
 
 
@@ -8,7 +12,7 @@
 ---
 title: Figure
 name: figure
-category: base
+parent: image
 ---
 
 ```html_example
@@ -31,7 +35,7 @@ figure {
 ---
 title: Figcaption
 name: figcaption
-category: base
+parent: image
 ---
 
 ```html_example

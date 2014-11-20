@@ -8,15 +8,15 @@ category: componment
 Put a big image in the header that fit the screen
 
 ```
-    <header class="header-image" style="background-image: url('...')">
-      <figure class="header-image__hidden-image">
-        <img src="...">
-      </figure>
-      <div class="header-image__text-container">
-        <h1 class="mb0 pt">Title</h1>
-        <p class="meta">Meta info</p>
-      </div>
-    </header>
+<header class="header-image" style="background-image: url('...')">
+  <figure class="header-image__hidden-image">
+    <img src="...">
+  </figure>
+  <div class="header-image__text-container">
+    <h1 class="mb0 pt">Title</h1>
+    <p class="meta">Meta info</p>
+  </div>
+</header>
 ```
 */
 
@@ -60,19 +60,19 @@ parent: header-image
 The title and meta inf have to be in a `div` with class `header-image__text-container`.
 
 ```
-    <div class="header-image__text-container">
-      <h1 class="mb0 pt">Title</h1>
-      <p class="meta">Meta info</p>
-    </div>
+<div class="header-image__text-container">
+  <h1 class="mb0 pt">Title</h1>
+  <p class="meta">Meta info</p>
+</div>
 ```
 
 Add `.container` if you want the title to have the same width as the content.
 
 ```
-    <div class="header-image__text-container container">
-      <h1 class="mb0 pt">Title</h1>
-      <p class="meta">Meta info</p>
-    </div>
+<div class="header-image__text-container container">
+  <h1 class="mb0 pt">Title</h1>
+  <p class="meta">Meta info</p>
+</div>
 ```
 */
 .header-image__text-container {
@@ -98,9 +98,9 @@ parent: header-image
 Add a background gradient to improve the legibility of the text.
 
 ```
-    <header class="header-image header-image--overlay" style="background-image: url('...')">
-      ...
-    </header>
+<header class="header-image header-image--overlay" style="background-image: url('...')">
+  ...
+</header>
 ```
 */
 .header-image--overlay:before {
@@ -130,9 +130,9 @@ will not be shown. So we add a `<figure><img></figure>` in the header.
 Yeah! That's progressive enhancement
 
 ```
-    <figure class="header-image__hidden-image">
-      <img src="...">
-    </figure>
+<figure class="header-image__hidden-image">
+  <img src="...">
+</figure>
 ```
 */
 .header-image__hidden-image {

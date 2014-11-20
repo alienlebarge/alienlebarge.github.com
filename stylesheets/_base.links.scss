@@ -1,16 +1,20 @@
-/*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
+/*doc
+ ---
+ title: Link
+ name: link
+ category: base
+ ---
+*/
 
 
 
 
 
 /*doc
- ---
- title: Link
- name: link
- category: base
+---
+title: Default link
+name: default-link
+parent: link
  ---
 
 Determine the color of link.
@@ -34,10 +38,10 @@ a {
 
 /*doc
  ---
- title: No underlined link
- name: no-underlined-link
- category: base
- ---
+title: No underlined link
+name: no-underlined-link
+parent: link
+---
 
 If you do not want to underline a link.
 `:hover` highlight & undeline the link when hovered.

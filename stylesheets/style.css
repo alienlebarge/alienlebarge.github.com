@@ -591,14 +591,18 @@ html {
 /**
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
-/*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
 /*doc
  ---
  title: Link
  name: link
  category: base
+ ---
+*/
+/*doc
+---
+title: Default link
+name: default-link
+parent: link
  ---
 
 Determine the color of link.
@@ -617,10 +621,10 @@ a:hover {
 
 /*doc
  ---
- title: No underlined link
- name: no-underlined-link
- category: base
- ---
+title: No underlined link
+name: no-underlined-link
+parent: link
+---
 
 If you do not want to underline a link.
 `:hover` highlight & undeline the link when hovered.
@@ -636,20 +640,24 @@ If you do not want to underline a link.
   text-decoration: underline;
 }
 
-/*------------------------------------*\
-    #CODE
-\*------------------------------------*/
+/*doc
+---
+title: Code
+name: code
+category: base
+---
+*/
 /*doc
 ---
 title: Codeblock
 name: pre
-category: base
+parent: code
 ---
 
 Use an explicit font stack to ensure browsers render correct `line-height`.
 
 ```html_example
-    <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
+<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
 ```
 */
 pre {
@@ -681,19 +689,19 @@ pre mark {
 ---
 title: Inline code
 name: inline-code
-category: base
+parent: code
 ---
 
 ```html_example
-    <code>Hello</code>
+<code>Hello</code>
 ```
 
 ```html_example
-    <kbp>Hello</kbp>
+<kbp>Hello</kbp>
 ```
 
 ```html_example
-    <samp>Hello</samp>
+<samp>Hello</samp>
 ```
 */
 code,
@@ -804,15 +812,19 @@ h6 {
   line-height: 1.4;
 }
 
-/*------------------------------------*\
-    #PARAGRPAHS
-\*------------------------------------*/
 /*doc
- ---
- title: Lede
- name: lede
- category: base
- ---
+---
+title: Paragraph
+name: paragraph
+category: base
+---
+*/
+/*doc
+---
+title: Lede
+name: lede
+parent: paragraph
+---
 
 Lede is the same font as the headings.
 It can be use for intriduction paragraph.
@@ -827,11 +839,11 @@ It can be use for intriduction paragraph.
 }
 
 /*doc
- ---
- title: Small
- name: small
- category: base
- ---
+---
+title: Small
+name: small
+parent: paragraph
+---
 
 Lede is the same font as the headings.
 It can be use for intriduction paragraph.
@@ -851,11 +863,11 @@ small {
 }
 
 /*doc
- ---
- title: Strong
- name: strong
- category: base
- ---
+---
+title: Strong
+name: strong
+parent: paragraph
+---
 
 ```html_example
     <p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
@@ -899,14 +911,18 @@ img[height] {
   max-width: none;
 }
 
-/*------------------------------------*\
-    #IMAGES
-\*------------------------------------*/
+/*doc
+---
+title: Image
+name: image
+category: base
+---
+*/
 /*doc
 ---
 title: Figure
 name: figure
-category: base
+parent: image
 ---
 
 ```html_example
@@ -925,7 +941,7 @@ category: base
 ---
 title: Figcaption
 name: figcaption
-category: base
+parent: image
 ---
 
 ```html_example
@@ -994,14 +1010,18 @@ html {
   /* [5] */
 }
 
-/*------------------------------------*\
-    #PAGE
-\*------------------------------------*/
+/*doc
+---
+title: Page
+name: page
+category: base
+ ---
+*/
 /*doc
  ---
- title: html
- name: html
- category: base
+title: html
+name: html
+parent: page
  ---
 
 Basic settings for font are set in `html`.
@@ -1026,19 +1046,28 @@ h2 {
   padding-top: 1.4rem;
 }
 
-/*------------------------------------*\
-    #QUOTES
-\*------------------------------------*/
 /*doc
- ---
- title: Blockquote
- name: blockquote
- category: base
- ---
+---
+title: Quote
+name: quote
+category: base
+---
 
 
 ```html_example
-    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+```
+*/
+/*doc
+---
+title: Blockquote
+name: blockquote
+parent: quote
+---
+
+
+```html_example
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
 ```
 */
 blockquote {
@@ -1297,15 +1326,15 @@ category: componment
 Put a big image in the header that fit the screen
 
 ```
-    <header class="header-image" style="background-image: url('...')">
-      <figure class="header-image__hidden-image">
-        <img src="...">
-      </figure>
-      <div class="header-image__text-container">
-        <h1 class="mb0 pt">Title</h1>
-        <p class="meta">Meta info</p>
-      </div>
-    </header>
+<header class="header-image" style="background-image: url('...')">
+  <figure class="header-image__hidden-image">
+    <img src="...">
+  </figure>
+  <div class="header-image__text-container">
+    <h1 class="mb0 pt">Title</h1>
+    <p class="meta">Meta info</p>
+  </div>
+</header>
 ```
 */
 .header-image {
@@ -1349,19 +1378,19 @@ parent: header-image
 The title and meta inf have to be in a `div` with class `header-image__text-container`.
 
 ```
-    <div class="header-image__text-container">
-      <h1 class="mb0 pt">Title</h1>
-      <p class="meta">Meta info</p>
-    </div>
+<div class="header-image__text-container">
+  <h1 class="mb0 pt">Title</h1>
+  <p class="meta">Meta info</p>
+</div>
 ```
 
 Add `.container` if you want the title to have the same width as the content.
 
 ```
-    <div class="header-image__text-container container">
-      <h1 class="mb0 pt">Title</h1>
-      <p class="meta">Meta info</p>
-    </div>
+<div class="header-image__text-container container">
+  <h1 class="mb0 pt">Title</h1>
+  <p class="meta">Meta info</p>
+</div>
 ```
 */
 .header-image__text-container {
@@ -1382,9 +1411,9 @@ parent: header-image
 Add a background gradient to improve the legibility of the text.
 
 ```
-    <header class="header-image header-image--overlay" style="background-image: url('...')">
-      ...
-    </header>
+<header class="header-image header-image--overlay" style="background-image: url('...')">
+  ...
+</header>
 ```
 */
 .header-image--overlay:before {
@@ -1410,9 +1439,9 @@ will not be shown. So we add a `<figure><img></figure>` in the header.
 Yeah! That's progressive enhancement
 
 ```
-    <figure class="header-image__hidden-image">
-      <img src="...">
-    </figure>
+<figure class="header-image__hidden-image">
+  <img src="...">
+</figure>
 ```
 */
 .header-image__hidden-image {

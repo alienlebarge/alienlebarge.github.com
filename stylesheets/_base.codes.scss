@@ -1,6 +1,10 @@
-/*------------------------------------*\
-    #CODE
-\*------------------------------------*/
+/*doc
+---
+title: Code
+name: code
+category: base
+---
+*/
 
 
 
@@ -10,13 +14,13 @@
 ---
 title: Codeblock
 name: pre
-category: base
+parent: code
 ---
 
 Use an explicit font stack to ensure browsers render correct `line-height`.
 
 ```html_example
-    <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
+<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
 ```
 */
 pre {
@@ -47,19 +51,19 @@ pre {
 ---
 title: Inline code
 name: inline-code
-category: base
+parent: code
 ---
 
 ```html_example
-    <code>Hello</code>
+<code>Hello</code>
 ```
 
 ```html_example
-    <kbp>Hello</kbp>
+<kbp>Hello</kbp>
 ```
 
 ```html_example
-    <samp>Hello</samp>
+<samp>Hello</samp>
 ```
 */
 code,

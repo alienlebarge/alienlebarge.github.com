@@ -1,6 +1,10 @@
-/*------------------------------------*\
-    #PAGE
-\*------------------------------------*/
+/*doc
+---
+title: Page
+name: page
+category: base
+ ---
+*/
 
 
 
@@ -8,9 +12,9 @@
 
 /*doc
  ---
- title: html
- name: html
- category: base
+title: html
+name: html
+parent: page
  ---
 
 Basic settings for font are set in `html`.
