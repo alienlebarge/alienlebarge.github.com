@@ -11,3 +11,5 @@ The styles are build with [icss](http://itcss.io) architecture in mind:
 * Objects
 * Componment
 * Trumps
+
+Everything is included in a `style.scss` files. 
