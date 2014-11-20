@@ -1,19 +1,28 @@
-/*------------------------------------*\
-    #TYPES
-\*------------------------------------*/
+/*doc
+---
+title: Types
+name: types
+category: componment
+---
+
+*/
 
 
 
 
-/**
- * Align left
- *
- * Left aligned text
- *
- * Example HTML:
- *
- * <p class="align-left">Align me!</p>
- */
+/*doc
+---
+title: Text left
+name: text-left
+parent: types
+---
+
+Left aligned text
+
+```html_example
+<p class="align-left">Align me!</p>
+```
+*/
 .text-left {
   text-align: left;
 }
@@ -22,15 +31,19 @@
 
 
 
-/**
- * Align center
- *
- * Center aligned text
- *
- * Example HTML:
- *
- * <p class="align-center">Align me!</p>
- */
+/*doc
+---
+title: Text center
+name: text-center
+parent: types
+---
+
+Center aligned text
+
+```html_example
+<p class="text-center">Align me!</p>
+```
+*/
 .text-center {
   text-align: center;
 }
@@ -38,15 +51,20 @@
 
 
 
-/**
- * Align right
- *
- * Right Aligned text
- *
- * Example HTML:
- *
- * <p class="align-right">Align me!</p>
- */
+
+/*doc
+---
+title: Text right
+name: text-right
+parent: types
+---
+
+Right Aligned text
+
+```html_example
+<p class="text-right">Align me!</p>
+```
+*/
 .text-right {
   text-align: right;
 }
@@ -54,15 +72,20 @@
 
 
 
-/**
- * ## Align justify
- *
- * Justified text
- *
- * Example HTML:
- *
- * <p class="align-justify">Align me!</p>
- */
+
+/*doc
+---
+title: Text justify
+name: text-justify
+parent: types
+---
+
+Justified text
+
+```html_example
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minima quam tempora soluta illum dolore libero. Quidem perferendis, voluptatum, optio dignissimos itaque quaerat nihil fugiat iusto, aperiam mollitia earum non?</p>
+```
+*/
 .text-justify {
   text-align: justify;
 }
@@ -71,15 +94,19 @@
 
 
 
-/**
- * Font-weight-normal
- *
- * Set the font weight to normal
- *
- * Example HTML:
- *
- * <h1 class="font-weight-normal">Heading with normal weight</h1>
- */
+/*doc
+---
+title: Font weight normal
+name: font-weight-normal
+parent: types
+---
+
+Set the font weight to normal
+
+```html_example
+<h1 class="font-weight-normal">Heading with normal weight</h1>
+```
+*/
 .font-weight-normal {
   font-weight: 400;
 }
@@ -88,15 +115,19 @@
 
 
 
-/**
- * Meta
- *
- * Design for article meta information
- *
- * Example HTML:
- *
- * <p class="meta">...</p>
- */
+/*doc
+---
+title: meta
+name: meta
+parent: types
+---
+
+Design for article meta information
+
+```html_example
+<p class="meta">This is meta information</p>
+```
+*/
 .meta {
   font-family    : $base-headings-font-family;
   letter-spacing : -0.015em;

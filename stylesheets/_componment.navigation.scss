@@ -6,13 +6,19 @@
 
 
 
-/**
- * Example HTML:
- *
- * <div class="primary-navigation">
- *   <a>...</a>
- * <div>
- */
+/*doc
+---
+title: Primary Navigation
+name: primary-navigation
+category: componment
+---
+
+```
+<div class="primary-navigation">
+  <a>...</a>
+<div>
+```
+*/
 .primary-navigation {
   position: fixed;
   z-index: 999;

@@ -3,11 +3,24 @@
 \*------------------------------------*/
 
 
-/**
- * Main wrapper and container
- *
- * Container is the main ... container
- */
+
+
+
+/*doc
+---
+title: Container
+name: container
+category: componment
+---
+
+Container is the main ... container
+
+```
+<div class="container">
+  ...
+<div>
+```
+*/
 %container,
 .container {
   max-width: $base-container-width;

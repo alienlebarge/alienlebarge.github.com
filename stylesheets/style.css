@@ -1221,11 +1221,21 @@ blockquote {
 /*------------------------------------*\
     #STRUCTURE
 \*------------------------------------*/
-/**
- * Main wrapper and container
- *
- * Container is the main ... container
- */
+/*doc
+---
+title: Container
+name: container
+category: componment
+---
+
+Container is the main ... container
+
+```
+<div class="container">
+  ...
+<div>
+```
+*/
 .container {
   max-width: 750px;
   padding: 0 28px;
@@ -1375,95 +1385,130 @@ Yeah! That's progressive enhancement
 /*------------------------------------*\
     #HEADER-IMAGE__ICONIC
 \*------------------------------------*/
-/**
- * Extend `.header-image {}` in _components.header-image.scss.
- *
- * Those style are for iconic icons in the `header-image` componment.
- * **It require `header-image` style file.
- * Iconic icons are the same color as the text in header
- */
+/*doc
+---
+title: Header image iconic
+name: header-image-iconic
+parent: header-image
+---
+
+Extend `.header-image {}` in _components.header-image.scss.
+
+Those style are for iconic icons in the `header-image` componment.
+**It require `header-image` style file.**
+Iconic icons are the same color as the text in header
+*/
 .header-image .iconic * {
   fill: #fff;
   stroke: #fff;
 }
 
-/*------------------------------------*\
-    #TYPES
-\*------------------------------------*/
-/**
- * Align left
- *
- * Left aligned text
- *
- * Example HTML:
- *
- * <p class="align-left">Align me!</p>
- */
+/*doc
+---
+title: Types
+name: types
+category: componment
+---
+
+*/
+/*doc
+---
+title: Text left
+name: text-left
+parent: types
+---
+
+Left aligned text
+
+```html_example
+<p class="align-left">Align me!</p>
+```
+*/
 .text-left {
   text-align: left;
 }
 
-/**
- * Align center
- *
- * Center aligned text
- *
- * Example HTML:
- *
- * <p class="align-center">Align me!</p>
- */
+/*doc
+---
+title: Text center
+name: text-center
+parent: types
+---
+
+Center aligned text
+
+```html_example
+<p class="text-center">Align me!</p>
+```
+*/
 .text-center {
   text-align: center;
 }
 
-/**
- * Align right
- *
- * Right Aligned text
- *
- * Example HTML:
- *
- * <p class="align-right">Align me!</p>
- */
+/*doc
+---
+title: Text right
+name: text-right
+parent: types
+---
+
+Right Aligned text
+
+```html_example
+<p class="text-right">Align me!</p>
+```
+*/
 .text-right {
   text-align: right;
 }
 
-/**
- * ## Align justify
- *
- * Justified text
- *
- * Example HTML:
- *
- * <p class="align-justify">Align me!</p>
- */
+/*doc
+---
+title: Text justify
+name: text-justify
+parent: types
+---
+
+Justified text
+
+```html_example
+<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minima quam tempora soluta illum dolore libero. Quidem perferendis, voluptatum, optio dignissimos itaque quaerat nihil fugiat iusto, aperiam mollitia earum non?</p>
+```
+*/
 .text-justify {
   text-align: justify;
 }
 
-/**
- * Font-weight-normal
- *
- * Set the font weight to normal
- *
- * Example HTML:
- *
- * <h1 class="font-weight-normal">Heading with normal weight</h1>
- */
+/*doc
+---
+title: Font weight normal
+name: font-weight-normal
+parent: types
+---
+
+Set the font weight to normal
+
+```html_example
+<h1 class="font-weight-normal">Heading with normal weight</h1>
+```
+*/
 .font-weight-normal {
   font-weight: 400;
 }
 
-/**
- * Meta
- *
- * Design for article meta information
- *
- * Example HTML:
- *
- * <p class="meta">...</p>
- */
+/*doc
+---
+title: meta
+name: meta
+parent: types
+---
+
+Design for article meta information
+
+```html_example
+<p class="meta">This is meta information</p>
+```
+*/
 .meta {
   font-family: "ff-dax-compact-web-pro", serif;
   letter-spacing: -0.015em;
@@ -1476,13 +1521,19 @@ Yeah! That's progressive enhancement
 /*------------------------------------*\
     #NAVIGATION
 \*------------------------------------*/
-/**
- * Example HTML:
- *
- * <div class="primary-navigation">
- *   <a>...</a>
- * <div>
- */
+/*doc
+---
+title: Primary Navigation
+name: primary-navigation
+category: componment
+---
+
+```
+<div class="primary-navigation">
+  <a>...</a>
+<div>
+```
+*/
 .primary-navigation {
   position: fixed;
   z-index: 999;
