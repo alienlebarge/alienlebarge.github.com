@@ -70,18 +70,51 @@
 /**
  * Sass vars, etc
  */
-/*------------------------------------*\
-    # SETTINGS
-\*------------------------------------*/
-/**
- * Font settings
- */
-/**
- * Colors
- */
-/**
- * Breakpoints
- */
+/*doc
+---
+title: Settings
+name: settings
+category: settings
+---
+*/
+/*doc
+---
+title: Font settings
+name: 01-font-settings
+parent: settings
+---
+
+```scss
+$base-font-family:          "freight-text-pro", Georgia, serif;
+$base-small-font-family:    "freight-micro-pro", $base-font-family;
+$base-headings-font-family: "ff-dax-compact-web-pro", serif;
+$base-code-font-family:     "inconsolata", Courier, monospace;
+```
+*/
+/*doc
+---
+title: Color
+name: 02-color
+parent: settings
+---
+
+```scss
+$base-primary-color:    #ff5867;
+```
+*/
+/*doc
+---
+title: Breakpoint
+name: 03-breakpoint
+parent: settings
+---
+
+```scss
+$base-break-xs: 500px;
+$base-break-sm: 900px;
+$base-break-md: 1200px;
+```
+*/
 /*!
  * inuitcss, by @csswizardry
  *
@@ -93,6 +126,238 @@
 /**
  * Functions and mixins
  */
+/*doc
+---
+title: Mixins
+name: mixin
+category: tools
+---
+*/
+/*doc
+---
+title: Mixin breakpoint
+name: mixin-breakpoint
+parent: mixin
+---
+
+[Info about this mixins](https://medium.com/p/889927b37740/)
+
+### From small to large
+
+You can use the following values with this mixins like so `@include breakpoint(md){...};`:
+
+- `xs`: Extra small
+- `sm`: Small
+- `md`: Medium
+- `lg`: Large
+
+```scss
+@mixin breakpoint($min: 0, $max: 0){...};
+@mixin breakpoint(xs){...}
+```
+The values are set in the [`_settings.defaults.scss`](sass-01-settings-settings.defaults.html) file
+
+### Custom parameters
+
+You can use custom parameters.
+
+```scss
+@include breakpoint(400px, 800px){...}; // From 400px to 800px
+@include breakpoint(400px, 0){...}; :   //400px and more
+@include breakpoint(0, 400px){...};     //400px and less
+```
+*/
+/*doc
+---
+title: Mixin border-radius
+name: mixin-border-radius
+parent: mixin
+---
+
+Add prefix vendor for border-radius
+
+- `$radius`: The radius for each corner
+
+```scss
+@mixin rounded($radius) {...}
+```
+*/
+/*doc
+---
+title: Mixin shadow
+name: mixin-shadow
+parent: mixin
+---
+
+A mixin for creating drop shadows
+
+- `$x`:     Vertical position of the shadow
+- `$y`:     Horizontal position of the shadow
+- `$blur`:  Amount of blur
+- `$color`: The color
+
+```scss
+@mixin shadow($x, $y, $blur, $color) {...}
+```
+*/
+/*doc
+---
+title: Mixin shadow inset
+name: mixin-shadow-inset
+parent: mixin
+---
+
+A mixin for creating inset shadows
+
+- `$x`:     Vertical position of the shadow
+- `$y`:     Horizontal position of the shadow
+- `$blur`:  Amount of blur
+- `$color`: The color
+
+```scss
+@mixin shadow-inset($x, $y, $blur, $color) {...}
+```
+*/
+/*doc
+---
+title: Mixin transition
+name: mixin-transition
+parent: mixin
+---
+
+Add vendor prefix for transition
+
+- `$property`: The kind of animation
+
+```scss
+@mixin transition($property) {...}
+```
+*/
+/*doc
+---
+title: Mixin box-sizing
+name: mixin-box-sizing
+parent: mixin
+---
+
+Box-sizing will change the box-model of the element it is applied to.
+
+```scss
+@mixin box-sizing {...}
+```
+*/
+/*doc
+---
+title: Mixin linear gradient
+name: mixin-linear-gradient
+parent: mixin
+---
+
+A mixin for creating linear gradient
+
+- `$from`: From hex color
+- `$to`:   To hex color
+
+```scss
+@mixin linear-gradient($from, $to) {...}
+```
+*/
+/*doc
+---
+title: Mixin flexbox
+name: mixin-flexbox
+parent: mixin
+---
+
+The following mixins will help you with the flex*flexa* things.
+*/
+/*doc
+---
+title: Mixin flexbox container
+name: mixin-flexbox-container
+parent: mixin-flexbox
+---
+
+The 'flex' value causes an element to generate a block-level flex container box.
+
+The 'inline-flex' value causes an element to generate a inline-level flex container box.
+
+`display: flex | inline-flex`
+
+http://w3.org/tr/css3-flexbox/#flex-containers
+
+(Placeholder selectors for each type, for those who rather @extend)
+
+```scss
+@mixin flexbox {...};
+@mixin inline-flex {...};
+```
+*/
+/*doc
+---
+title: Mixin flexbox grow
+name: mixin-flexbox-grow
+parent: mixin-flexbox
+---
+
+The 'flex-grow' property sets the flex grow factor. Negative numbers are invalid.
+
+- `$int`: Grow (Default: `0`)
+
+```scss
+@mixin flex-grow($int: 0) {...};
+```
+*/
+/*doc
+---
+title: Mixin flexbox align items
+name: mixin-flexbox-align-items
+parent: mixin-flexbox
+---
+
+Flex items can be aligned in the cross axis of the current line of the flex
+container, similar to 'justify-content' but in the perpendicular direction.
+'align-items' sets the default alignment for all of the flex container's items,
+including anonymous flex items. 'align-self' allows this default alignment to
+be overridden for individual flex items. (For anonymous flex items, 'align-self'
+always matches the value of 'align-items' on their associated flex container.)
+
+Values: flex-start | flex-end | center | baseline | stretch
+
+- `$value`: Value of the stretch (Default: `stretch`)
+
+[W3C specs](http://w3.org/tr/css3-flexbox/#align-items-property)
+
+```scss
+@mixin align-items($value: stretch) {...};
+```
+*/
+/*doc
+---
+title: Mixin center block
+name: mixin-center-block
+parent: mixin
+---
+
+Set an element to `display: block` and center via margin.
+
+```scss
+@mixin center-block {...}
+```
+*/
+/*doc
+---
+title: Mixin screen reader only
+name: mixin-sr-only
+parent: mixin
+---
+
+The content can only be read by screen reader
+
+```scss
+@mixin sr-only {...}
+```
+*/
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
