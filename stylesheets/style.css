@@ -1045,21 +1045,45 @@ name: headers
 category: base
 ---
 
+
 ```html_example
     <h1>Heading 1</h1>
+    <p class="alpha">Paragraph with h1 style</p>
+```
+```html_example
     <h2>Heading 2</h2>
+    <p class="beta">Paragraph with h2 style</p>
+```
+```html_example
     <h3>Heading 3</h3>
+    <p class="gamma">Paragraph with h3 style</p>
+```
+```html_example
     <h4>Heading 4</h4>
+    <p class="delta">Paragraph with h4 style</p>
+```
+```html_example
     <h5>Heading 5</h5>
+    <p class="epsilon">Paragraph with h5 style</p>
+```
+```html_example
     <h6>Heading 6</h6>
+    <p class="zeta">Paragraph with h6 style</p>
+
 ```
 */
 h1,
+.alpha,
 h2,
+.beta,
 h3,
+.gamma,
 h4,
+.delta,
 h5,
-h6 {
+.epsilon,
+h6,
+.zeta {
   font-family: "ff-dax-compact-web-pro", serif;
   letter-spacing: -0.025em;
 }
