@@ -11,15 +11,14 @@
   <body>
     <div class="container">
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+        <ul class="list-inline">
         <% @categories.each do |category, file_name| %>
           <li><a href="<%= file_name %>"><%= category %></a></li>
         <% end %>
         </ul>
       </nav>
 
-      <h1>blog.alienlebarge.ch's styleguide</h1>
+      <h1><a href="index.html">blog.alienlebarge.ch's styleguide</a></h1>
       <section class="content">
         <ul>
         <% @blocks.each do |b| %>
