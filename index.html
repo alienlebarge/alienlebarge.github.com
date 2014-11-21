@@ -6,22 +6,33 @@ title: "@alienlebarge"
 <div class="container ph pb">
 
   <header class="pt+">
-    <h1 class="mb0">{{ page.title }}</h1>
-    <p class="meta"><span class="sr-only">alienlebarge is </span><abbr title="also know as">aka</abbr> <span class="strong">{{ site.author }}</span> (<a href="/about.html" title="More info about the author and this blog">about</a>)</p>
+    <h1>{{ page.title }}</h1>
   </header>
 
-<section>
-  <ul class="list-ui">
-    {% for post in paginator.posts %}
-    <li class="list-ui__item ph0">
-        <h2 class="m0 p0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
-        <p class="meta mb0">
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
-        </p>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  {% if paginator.next_page == 2 %}
+  <section>
+    <h2 class="sr-only">Introduction</h2>
+    <p>
+      Hi!<br>
+      My name is <a href="about.html" title="More info about me">{{ site.author }}</a> <abbr title="also know as">aka</abbr> alienlebarge. I am frontend-developer who live in Switzerland.<br>
+      The following articles are mainly about web stuff. But fear not, there is also less technical (and more funny) subjects.
+    </p>
+  </section>
+  {% endif %}
+
+  <section>
+    <h2 class="sr-only">Articles</h2>
+    <ul class="list-ui">
+      {% for post in paginator.posts %}
+      <li class="list-ui__item ph0">
+          <h3 class="beta m0 p0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h3>
+          <p class="meta mb0">
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
+          </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 
   <!-- pagination -->
   <nav>
