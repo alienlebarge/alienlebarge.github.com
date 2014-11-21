@@ -6,7 +6,7 @@ author: Cédric Aellen
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 10
 excerpt_separator: <!--more-->
 exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
 highlighter: true

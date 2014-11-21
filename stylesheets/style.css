@@ -975,7 +975,7 @@ samp {
   font-family: "inconsolata", Courier, monospace;
 }
 
-p code {
+p code, ul code {
   font-size: 0.75em;
   /* Override `pre` font-size */
   background-color: #f8f8f8;
