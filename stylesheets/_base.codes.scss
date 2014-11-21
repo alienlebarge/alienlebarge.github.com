@@ -72,8 +72,10 @@ samp {
   font-family: $base-code-font-family;
 }
 
-p code {
-  font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; /* Override `pre` font-size */
-  background-color: #f8f8f8;
-  @include rounded(2px);
+p, ul {
+ code {
+    font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; /* Override `pre` font-size */
+    background-color: #f8f8f8;
+    @include rounded(2px);
+  }
 }
