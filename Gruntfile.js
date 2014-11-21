@@ -68,8 +68,8 @@ module.exports = function (grunt) {
 
     copy: {
       styleguide: {
-        src: 'stylesheet/style.css',
-        dest: '_hologram/_css/'
+        src: 'stylesheets/style.css',
+        dest: '_hologram/_css/style.css'
       }
     },
 
