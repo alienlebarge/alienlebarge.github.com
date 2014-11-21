@@ -9,3 +9,4 @@ _site/
 # Bower components
 bower_components/
 styleguide
+_hologram/_css

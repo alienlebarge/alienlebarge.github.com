@@ -66,6 +66,17 @@ module.exports = function (grunt) {
 
 
 
+    copy: {
+      styleguide: {
+        src: 'stylesheet/style.css',
+        dest: '_hologram/_css/'
+      }
+    },
+
+
+
+
+
     hologram: {
       generate: {
         options: {
@@ -94,7 +105,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner','concat', 'hologram']
+        tasks: ['sass','usebanner','concat', 'copy', 'hologram']
       }
     }
 
@@ -108,6 +119,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
