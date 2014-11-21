@@ -22,6 +22,8 @@ Here is my sketchnote:
   </figcaption>
 </figure>
 
+You can grab the slides [on Jon Hicks's website](http://hicksdesign.co.uk/journal/icon-design-process-beyond-tellerand).
+
 And some pictures of the talk:
 
 ![](https://farm8.staticflickr.com/7574/15734017342_573cfceef1_c.jpg)
