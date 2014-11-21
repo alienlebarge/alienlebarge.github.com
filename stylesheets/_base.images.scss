@@ -1,13 +1,26 @@
-/*------------------------------------*\
-    #IMAGES
-\*------------------------------------*/
+/*doc
+---
+title: Image
+name: image
+category: base
+---
+*/
 
 
 
+/*doc
+---
+title: Figure
+name: figure
+parent: image
+---
 
-/**
- * Figure
- */
+```html_example
+    <figure>
+      <img src="http://placekitten.com/g/200/300" alt="image">
+    </figure>
+```
+*/
 figure {
   @include breakpoint(lg) {
     position: relative;
@@ -18,10 +31,20 @@ figure {
 
 
 
-/**
- * Figcaption
- */
+/*doc
+---
+title: Figcaption
+name: figcaption
+parent: image
+---
 
+```html_example
+    <figure>
+      <img src="http://placekitten.com/g/200/300" alt="image">
+      <figcaption>A cute kitty</figcaption>
+    </figure>
+```
+*/
 figcaption {
   @extend %small;
   @include breakpoint(lg) {

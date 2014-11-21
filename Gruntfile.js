@@ -66,6 +66,32 @@ module.exports = function (grunt) {
 
 
 
+    copy: {
+      styleguide: {
+        src: [
+          'stylesheets/style.css',
+          'stylesheets/index.md'
+        ],
+        dest: '_hologram/_css/'
+      }
+    },
+
+
+
+
+
+    hologram: {
+      generate: {
+        options: {
+          config: '_hologram/hologram_config.yml'
+        }
+      }
+    },
+
+
+
+
+
     exec: {
       build: {
         cmd: 'jekyll build'
@@ -82,7 +108,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner','concat']
+        tasks: ['sass','usebanner','concat', 'copy', 'hologram']
       }
     }
 
@@ -96,6 +122,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
 

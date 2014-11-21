@@ -1,14 +1,28 @@
-/*------------------------------------*\
-    #CODE
-\*------------------------------------*/
+/*doc
+---
+title: Code
+name: code
+category: base
+---
+*/
 
 
 
 
 
-/**
- * Use an explicit font stack to ensure browsers render correct `line-height`.
- */
+/*doc
+---
+title: Codeblock
+name: pre
+parent: code
+---
+
+Use an explicit font stack to ensure browsers render correct `line-height`.
+
+```html_example
+<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</pre>
+```
+*/
 pre {
   font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em;
   font-family: $base-code-font-family;
@@ -33,20 +47,35 @@ pre {
 
 
 
+ /*doc
+---
+title: Inline code
+name: inline-code
+parent: code
+---
 
-/**
- * Inline code
- *
- * 1. Override `pre` font-size
- */
+```html_example
+<code>Hello</code>
+```
+
+```html_example
+<kbp>Hello</kbp>
+```
+
+```html_example
+<samp>Hello</samp>
+```
+*/
 code,
 kbd,
 samp {
   font-family: $base-code-font-family;
 }
 
-p code {
-  font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; /* 1 */
-  background-color: #f8f8f8;
-  @include rounded(2px);
+p, ul {
+ code {
+    font-size: ($inuit-base-font-size * 0.6 / 16px) * 1em; /* Override `pre` font-size */
+    background-color: #f8f8f8;
+    @include rounded(2px);
+  }
 }

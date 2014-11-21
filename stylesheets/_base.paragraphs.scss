@@ -1,15 +1,29 @@
-/*------------------------------------*\
-    #PARAGRPAHS
-\*------------------------------------*/
+/*doc
+---
+title: Paragraph
+name: paragraph
+category: base
+---
+*/
 
 
 
 
 
-/**
- * Lede is the same font as the headings
- */
+/*doc
+---
+title: Lede
+name: lede
+parent: paragraph
+---
 
+Lede is the same font as the headings.
+It can be use for intriduction paragraph.
+
+```html_example
+    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+```
+*/
 .lede,
 %lede {
     font-family: $base-headings-font-family;
@@ -20,10 +34,21 @@
 
 
 
-/**
- * Small
- */
+/*doc
+---
+title: Small
+name: small
+parent: paragraph
+---
 
+Lede is the same font as the headings.
+It can be use for intriduction paragraph.
+
+```html_example
+    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+    <p>Lorem ipsum <small>dolor sit amet</small>, consectetur adipisicing elit. Perferendis, assumenda?</p>
+```
+*/
 // Predefine the variables below in order to alter and enable specific features.
 $small-size : 0.85 !default;
 
@@ -38,10 +63,18 @@ small {
 
 
 
-/**
- * Strong
- */
+/*doc
+---
+title: Strong
+name: strong
+parent: paragraph
+---
 
+```html_example
+    <p class="strong">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+    <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Perferendis, assumenda?</p>
+```
+*/
 .strong,
 %strong,
 strong {
