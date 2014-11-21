@@ -1,16 +1,30 @@
-/*------------------------------------*\
-    # SETTINGS
-\*------------------------------------*/
+/*doc
+---
+title: Settings
+name: custom-settings
+category: settings
+---
+*/
 
 
 
 
 
 
+/*doc
+---
+title: Font settings
+name: 01-font-settings
+parent: custom-settings
+---
 
-/**
- * Font settings
- */
+```scss
+$base-font-family:          "freight-text-pro", Georgia, serif;
+$base-small-font-family:    "freight-micro-pro", $base-font-family;
+$base-headings-font-family: "ff-dax-compact-web-pro", serif;
+$base-code-font-family:     "inconsolata", Courier, monospace;
+```
+*/
 $base-font-family:          "freight-text-pro", Georgia, serif;
 $base-small-font-family:    "freight-micro-pro", $base-font-family;
 $base-headings-font-family: "ff-dax-compact-web-pro", serif;
@@ -20,18 +34,36 @@ $base-code-font-family:     "inconsolata", Courier, monospace;
 
 
 
-/**
- * Colors
- */
+/*doc
+---
+title: Color
+name: 02-color
+parent: custom-settings
+---
+
+```scss
+$base-primary-color:    #ff5867;
+```
+*/
 $base-primary-color:    #ff5867;
 
 
 
 
 
-/**
- * Breakpoints
- */
+/*doc
+---
+title: Breakpoint
+name: 03-breakpoint
+parent: custom-settings
+---
+
+```scss
+$base-break-xs: 500px;
+$base-break-sm: 900px;
+$base-break-md: 1200px;
+```
+*/
 $base-break-xs: 500px;
 $base-break-sm: 900px;
 $base-break-md: 1200px;

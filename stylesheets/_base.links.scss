@@ -1,22 +1,29 @@
-/*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
+/*doc
+ ---
+ title: Link
+ name: link
+ category: base
+ ---
+*/
 
 
 
 
 
-/**
- * Basic link
- *
- * Determine the color of link
- * `:hover` highlight the link when hovered.
- *
- * Example HMTL:
- *
- * <a href="#">This is a link</a>
- * <a href="#" class=":hover">This is a link</a>
- */
+/*doc
+---
+title: Default link
+name: default-link
+parent: link
+ ---
+
+Determine the color of link.
+`:hover` highlight the link when hovered.
+
+```html_example
+    <a href="#">Link</a>
+```
+*/
 a {
   color: $inuit-base-text-color;
 
@@ -29,17 +36,20 @@ a {
 
 
 
-/**
- * No underlined link
- *
- * If you do not want to underline a link
- * `:hover` highlight & undeline the link when hovered.
- *
- * Example HTML:
- *
- * <a href="#" class="no-underline">This is a link</a>
- * <a href="#" class="no-underline :hover">This is a link</a>
- */
+/*doc
+ ---
+title: No underlined link
+name: no-underlined-link
+parent: link
+---
+
+If you do not want to underline a link.
+`:hover` highlight & undeline the link when hovered.
+
+```html_example
+    <a href="#" class="no-underline">Link</a>
+```
+*/
 .no-underline {
   text-decoration: none;
   &:hover {

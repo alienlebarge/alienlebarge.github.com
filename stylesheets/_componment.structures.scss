@@ -1,13 +1,33 @@
-/*------------------------------------*\
-    #STRUCTURE
-\*------------------------------------*/
+/*doc
+---
+title: Structure
+name: structure
+category: componment
+---
+
+All the structural styles.
+
+*/
 
 
-/**
- * Main wrapper and container
- *
- * Container is the main ... container
- */
+
+
+
+/*doc
+---
+title: Container
+name: container
+parent: structure
+---
+
+Container is the main ... container
+
+```
+<div class="container">
+  ...
+<div>
+```
+*/
 %container,
 .container {
   max-width: $base-container-width;

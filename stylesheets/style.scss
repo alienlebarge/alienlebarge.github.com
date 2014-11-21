@@ -141,6 +141,23 @@ $inuit-lede-size:   1;
 @import "base.paragraphs";
 @import "bower_components/inuit-images/base.images";
 @import "base.images";
+/*doc
+---
+title: Lists
+name: list
+category: base
+---
+
+Default list style
+
+```html_example
+<ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 @import "bower_components/inuit-lists/base.lists";
 @import "bower_components/inuit-page/base.page";
 @import "base.page";
@@ -159,14 +176,60 @@ $inuit-lede-size:   1;
  * Objects and abstractions.
  */
 
+/*doc
+---
+title: List UI
+name: list-ui
+category: objects
+---
+
+The `list-ui` object creates blocky, keyline-delimited list items.
+
+```html_example
+<ul class="list-ui">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 @import "bower_components/inuit-list-ui/objects.list-ui";
 
+/*doc
+---
+title: Buttons
+name: buttons
+category: objects
+---
+
+```html_example
+<a href="#" class="btn">button</a>
+```
+*/
 $inuit-btn-background:    rgba(255,255,255,0.25);
 $inuit-btn-color:         $inuit-base-text-color;
 $inuit-btn-border-color:  none;
 $inuit-btn-radius:        quarter($inuit-base-spacing-unit);
 $inuit-enable-btn--small: true;
 @import "bower_components/inuit-buttons/objects.buttons";
+
+/*doc
+---
+title: List inline
+name: list-inline
+category: objects
+---
+
+The List-inline object simply displays a list as one horizontal row.
+
+```html_example
+<ul class="list-inline">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 @import "bower_components/inuit-list-inline/objects.list-inline";
 @import "objects.helper-classes";
 

@@ -1,18 +1,28 @@
-/*------------------------------------*\
-    #NAVIGATION
-\*------------------------------------*/
+/*doc
+---
+title: Navigation
+name: navigation
+category: componment
+---
+*/
 
 
 
 
 
-/**
- * Example HTML:
- *
- * <div class="primary-navigation">
- *   <a>...</a>
- * <div>
- */
+/*doc
+---
+title: Primary Navigation
+name: primary-navigation
+parent: navigation
+---
+
+```
+<div class="primary-navigation">
+  <a>...</a>
+<div>
+```
+*/
 .primary-navigation {
   position: fixed;
   z-index: 999;

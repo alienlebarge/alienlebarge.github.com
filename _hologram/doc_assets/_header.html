@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>alb styleguide: <%= title %></title>
+    <link rel="stylesheet" href="../stylesheets/style.min.css">
+    <link rel="stylesheet" href="./styleguide.css">
+    <!-- Typekit -->
+    <script type="text/javascript" src="//use.typekit.net/pxp8tkl.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="list-inline">
+        <% @categories.each do |category, file_name| %>
+          <li><a href="<%= file_name %>"><%= category %></a></li>
+        <% end %>
+        </ul>
+      </nav>
+
+      <h1><a href="index.html">blog.alienlebarge.ch's styleguide</a></h1>
+      <section class="content">
+        <ul>
+        <% @blocks.each do |b| %>
+          <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+        <% end %>
+        </ul>
