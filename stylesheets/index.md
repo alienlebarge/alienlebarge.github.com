@@ -4,12 +4,12 @@ The styles use [inuitcss](http://inuitcss.com) framwork (big up tu [Harry Robert
 
 The styles are build with [icss](http://itcss.io) architecture in mind:
 
-* Settings
-* Tools
+* [Settings](settings.html)
+* [Tools](tools.html)
 * Generic
-* Base
-* Objects
-* Componment
+* [Base](base.html)
+* [Objects](objects.html)
+* [Componment](componment.html)
 * Trumps
 
-Everything is included in a `style.scss` files. 
+Everything is included in a `style.scss` files.

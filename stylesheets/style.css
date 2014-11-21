@@ -73,7 +73,7 @@
 /*doc
 ---
 title: Settings
-name: settings
+name: custom-settings
 category: settings
 ---
 */
@@ -81,7 +81,7 @@ category: settings
 ---
 title: Font settings
 name: 01-font-settings
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
@@ -95,7 +95,7 @@ $base-code-font-family:     "inconsolata", Courier, monospace;
 ---
 title: Color
 name: 02-color
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
@@ -106,7 +106,7 @@ $base-primary-color:    #ff5867;
 ---
 title: Breakpoint
 name: 03-breakpoint
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
@@ -1250,6 +1250,23 @@ parent: image
   }
 }
 
+/*doc
+---
+title: Lists
+name: list
+category: base
+---
+
+Default list style
+
+```html_example
+<ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
@@ -1370,6 +1387,23 @@ blockquote {
 /**
  * Objects and abstractions.
  */
+/*doc
+---
+title: List UI
+name: list-ui
+category: objects
+---
+
+The `list-ui` object creates blocky, keyline-delimited list items.
+
+```html_example
+<ul class="list-ui">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 /*------------------------------------*\
     #LIST-UI
 \*------------------------------------*/
@@ -1396,6 +1430,17 @@ blockquote {
   border-bottom-width: 1px;
 }
 
+/*doc
+---
+title: Buttons
+name: buttons
+category: objects
+---
+
+```html_example
+<a href="#" class="btn">button</a>
+```
+*/
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
@@ -1458,6 +1503,23 @@ blockquote {
   /* [7] */
 }
 
+/*doc
+---
+title: List inline
+name: list-inline
+category: objects
+---
+
+The List-inline object simply displays a list as one horizontal row.
+
+```html_example
+<ul class="list-inline">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
 /*------------------------------------*\
     #LIST-INLINE
 \*------------------------------------*/

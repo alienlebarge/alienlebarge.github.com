@@ -1,7 +1,7 @@
 /*doc
 ---
 title: Settings
-name: settings
+name: custom-settings
 category: settings
 ---
 */
@@ -15,7 +15,7 @@ category: settings
 ---
 title: Font settings
 name: 01-font-settings
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
@@ -38,7 +38,7 @@ $base-code-font-family:     "inconsolata", Courier, monospace;
 ---
 title: Color
 name: 02-color
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
@@ -55,7 +55,7 @@ $base-primary-color:    #ff5867;
 ---
 title: Breakpoint
 name: 03-breakpoint
-parent: settings
+parent: custom-settings
 ---
 
 ```scss
