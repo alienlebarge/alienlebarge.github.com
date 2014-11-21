@@ -8,5 +8,4 @@ _site/
 *.sass-cache*
 # Bower components
 bower_components/
-styleguide
 _hologram/_css
