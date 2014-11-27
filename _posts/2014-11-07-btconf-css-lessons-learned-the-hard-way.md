@@ -22,6 +22,8 @@ More experiments mean more success (but more fail too). Do not hesitate to share
   </figcaption>
 </figure>
 
+[The video of the talk is available on Vimeo.](http://vimeo.com/112494277)
+
 ## Tweets
 
 Some tweets about Zoe's talk:

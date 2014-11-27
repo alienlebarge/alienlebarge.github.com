@@ -20,3 +20,5 @@ Here is my sketchnote:
     Putting the Fonts into Webfonts. <a href="https://www.flickr.com/photos/alienlebarge/15091961704">View original on Flickr</a>
   </figcaption>
 </figure>
+
+[The video of the talk is available on Vimeo.](http://vimeo.com/112561774)

@@ -23,6 +23,8 @@ Objects can interact with each and other via the Internet. That's what call <abb
   </figcaption>
 </figure>
 
+[The video of the talk is available on Vimeo.](http://vimeo.com/112630090)
+
 ## Tweet
 
 Some tweets related to the talk.

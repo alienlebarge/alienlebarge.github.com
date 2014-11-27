@@ -10,8 +10,13 @@ tags:
  - print
 ---
 
-The Internet is full of data. Can't we print them on paper ?
-I really enjoyed Brian Suda's talk. This is perhaps because my father worked in the paper industry as a typesetter. In any case, I find the question very interesting. "We design for screen, why don't we design for print ?"
+The Internet is full of data. Can't we print them on paper ?  
+I really enjoyed [Brian Suda](https://twitter.com/briansuda)'s talk. This is perhaps because my father worked in the paper industry as a typesetter. 
+
+Mr. Suda showed us how we can connect the digital to the analog. For example, why a boarding pass is "just" a boarding pass ? Why not adding usefull information on it like the weather forecast at the destination, the train connection to the city, etc. ?  
+Thus, a boarding pass can accompany the traveler during his trip and will not be forgotten in a pocket.
+
+As web developer, web design for screen everydays. Why don't we design for print anymore ? There's plenty of tricks to make a printed page from the interent more useable.
 
 Here is my sketchnote:
 

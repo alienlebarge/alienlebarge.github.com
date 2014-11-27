@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/alienlebarge/alienlebarge.github.com.png?label=ready&title=Ready)](https://waffle.io/alienlebarge/alienlebarge.github.com)
 alienlebarge.github.com
 =======================
 
