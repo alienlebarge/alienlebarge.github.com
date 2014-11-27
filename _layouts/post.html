@@ -33,7 +33,7 @@ layout: blog
     </div>
   </header>
   {% else %}
-  <header>
+  <header class="pt">
     <div class="container">
       <h1 class="mb0 pt">{{ page.title }}</h1>
       <p class="meta">by <span class="strong">{% if page.author %}by{{ page.author }}{% else %}C&eacute;dric Aellen{% endif %}</span> / <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>{% if page.external-site %} / <a href="{{ page.external-link }}" title="The article on {{ page.external-site }}">{{ page.external-site }}</a> <i class="fa fa-external-link"></i>{% endif %}</p>
