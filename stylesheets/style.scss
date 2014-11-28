@@ -14,12 +14,10 @@
  *
  * SETTINGS
  * Global:              Globally-available variables and config.
- * InuiCSS settings:    Everythings InuitCSS need to run
  *
  * TOOLS
  * Tools:               You need tools to craft things.
- * InuitCSS mixins:     Useful mixins.
- * Custom mixins:       Much more useful mixins.
+ * Custom mixins:       Useful mixins.
  *
  * GENERIC
  * Normalize.css:       A level playing field.
@@ -33,17 +31,14 @@
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
  * Paragraphs:          Paragraphs styles lede
- * Paragraphs custom:   Paragraphs style like small, strong, lede
  * Images:              Images and caption styles
  * Lists:               Lists styles
  * Page:                HTML and body styles
- * Page custom:         Custom settings over Inuitcss styles
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
- * List-ui:             Ui list
+ * List-ui:             Ui list and inline list
  * Buttons:             Buttons style
- * List-inline:         Inline list
  * Helper-classes:      Want to align or hide something
  *
  * COMPONENTS
@@ -72,12 +67,6 @@
 
 @import "settings.defaults";
 
-$inuit-base-font-size:          20px;
-$inuit-base-line-height:        28px;
-$inuit-base-text-color:         #333;
-$inuit-base-background-color:   #fff;
-@import "bower_components/inuit-defaults/settings.defaults";
-
 
 
 
@@ -91,7 +80,6 @@ $inuit-base-background-color:   #fff;
  */
 
 @import "bower_components/inuit-functions/_tools.functions";
-@import "bower_components/inuit-mixins/_tools.mixins";
 @import "tools.mixins";
 
 
@@ -125,41 +113,10 @@ $inuit-base-background-color:   #fff;
 
 @import "base.links";
 @import "base.codes";
-
-$inuit-heading-size-1:  40px !default;
-$inuit-heading-size-2:  32px !default;
-$inuit-heading-size-3:  24px !default;
-$inuit-heading-size-4:  20px !default;
-$inuit-heading-size-5:  16px !default;
-$inuit-heading-size-6:  14px !default;
-@import "bower_components/inuit-headings/base.headings";
-
 @import "base.headings";
-
-$inuit-lede-size:   1;
-@import "bower_components/inuit-paragraphs/base.paragraphs";
 @import "base.paragraphs";
-@import "bower_components/inuit-images/base.images";
 @import "base.images";
-/*doc
----
-title: Lists
-name: list
-category: List
----
-
-Default list style
-
-```html_example
-<ul>
-  <li>item</li>
-  <li>item</li>
-  <li>item</li>
-</ul>
-```
-*/
-@import "bower_components/inuit-lists/base.lists";
-@import "bower_components/inuit-page/base.page";
+@import "base.lists";
 @import "base.page";
 @import "base.vertical-rythme";
 @import "base.quotes";
@@ -176,61 +133,8 @@ Default list style
  * Objects and abstractions.
  */
 
-/*doc
----
-title: List UI
-name: list-ui
-category: List
----
-
-The `list-ui` object creates blocky, keyline-delimited list items.
-
-```html_example
-<ul class="list-ui">
-  <li>item</li>
-  <li>item</li>
-  <li>item</li>
-</ul>
-```
-*/
-@import "bower_components/inuit-list-ui/objects.list-ui";
-
-/*doc
----
-title: Buttons
-name: buttons
-category: Button
----
-
-```html_example
-<a href="#" class="btn">button</a>
-```
-*/
-$inuit-btn-background:    rgba(255,255,255,0.25);
-$inuit-btn-color:         $inuit-base-text-color;
-$inuit-btn-border-color:  none;
-$inuit-btn-radius:        quarter($inuit-base-spacing-unit);
-$inuit-enable-btn--small: true;
-@import "bower_components/inuit-buttons/objects.buttons";
-
-/*doc
----
-title: List inline
-name: list-inline
-category: List
----
-
-The List-inline object simply displays a list as one horizontal row.
-
-```html_example
-<ul class="list-inline">
-  <li>item</li>
-  <li>item</li>
-  <li>item</li>
-</ul>
-```
-*/
-@import "bower_components/inuit-list-inline/objects.list-inline";
+@import "objects.list.scss";
+@import "objects.buttons.scss";
 @import "objects.helper-classes";
 
 
