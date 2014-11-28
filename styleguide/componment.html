@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>alb styleguide: componment</title>
+    <title>alb styleguide: Componment</title>
     <meta name="viewport" content="width=device-width, minimal-ui">
     <link rel="stylesheet" href="../stylesheets/style.min.css">
     <link rel="stylesheet" href="./styleguide.css">
@@ -14,15 +14,27 @@
       <nav>
         <ul class="list-inline">
         
-          <li><a href="componment.html">componment</a></li>
+          <li><a href="componment.html">Componment</a></li>
         
-          <li><a href="objects.html">objects</a></li>
+          <li><a href="button.html">Button</a></li>
         
-          <li><a href="base.html">base</a></li>
+          <li><a href="code.html">Code</a></li>
         
-          <li><a href="settings.html">settings</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        
+          <li><a href="typography.html">Typography</a></li>
+        
+          <li><a href="helpers.html">Helpers</a></li>
+        
+          <li><a href="image.html">Image</a></li>
+        
+          <li><a href="link.html">Link</a></li>
+        
+          <li><a href="list.html">List</a></li>
         
           <li><a href="tools.html">tools</a></li>
+        
+          <li><a href="base.html">base</a></li>
         
         </ul>
       </nav>
@@ -45,16 +57,6 @@
         
           <li><a href="#header-image__text-container">Header image text container</a></li>
         
-          <li><a href="#helper-classes">Helper classes</a></li>
-        
-          <li><a href="#center-block">Center block</a></li>
-        
-          <li><a href="#pull-right">Pull right</a></li>
-        
-          <li><a href="#relative">Relative</a></li>
-        
-          <li><a href="#sr-only">Screen reader only</a></li>
-        
           <li><a href="#navigation">Navigation</a></li>
         
           <li><a href="#primary-navigation">Primary Navigation</a></li>
@@ -62,20 +64,6 @@
           <li><a href="#structure">Structure</a></li>
         
           <li><a href="#container">Container</a></li>
-        
-          <li><a href="#types">Types</a></li>
-        
-          <li><a href="#font-weight-normal">Font weight normal</a></li>
-        
-          <li><a href="#meta">Meta</a></li>
-        
-          <li><a href="#text-center">Text center</a></li>
-        
-          <li><a href="#text-justify">Text justify</a></li>
-        
-          <li><a href="#text-left">Text left</a></li>
-        
-          <li><a href="#text-right">Text right</a></li>
         
         </ul>
 <h1 id="border">Border</h1>
@@ -139,41 +127,6 @@ Yeah! That&#39;s progressive enhancement</p>
   &lt;p class="meta"&gt;Meta info&lt;/p&gt;
 &lt;/div&gt;
 </pre></div></div>
-<h1 id="helper-classes">Helper classes</h1>
-
-<h2 id="center-block">Center block</h2>
-
-<p>Set an element to <code>display: block</code> and center via <code>margin</code>.</p>
-<div class="codeExample"><div class="exampleOutput"><div class="center-block">
-  ...
-</div>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-block"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/div&gt;</span>
-</pre></div></div></div>
-<h2 id="pull-right">Pull right</h2>
-
-<p>Float element to the right</p>
-<div class="codeExample"><div class="exampleOutput"><div class="pull-right">
-  ...
-</div>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/div&gt;</span>
-</pre></div></div></div>
-<h2 id="relative">Relative</h2>
-
-<p>Set the position to relative to help some positioning</p>
-<div class="codeExample"><div class="exampleOutput"><div clas="relative">...</div>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">clas=</span><span class="s">"relative"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-</pre></div></div></div>
-<h2 id="sr-only">Screen reader only</h2>
-
-<p>Hide an element to all devices except screen readers with <code>.sr-only</code>.
-Necessary for following accessibility best practices.</p>
-<div class="codeExample"><div class="exampleOutput"><a class="sr-only" href="#content">Skip to main content</a>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">href=</span><span class="s">"#content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
-</pre></div></div></div>
 <h1 id="navigation">Navigation</h1>
 
 <h2 id="primary-navigation">Primary Navigation</h2>
@@ -191,45 +144,7 @@ Necessary for following accessibility best practices.</p>
 <div class="codeBlock"><div class="highlight"><pre>&lt;div class="container"&gt;
   ...
 &lt;div&gt;
-</pre></div></div>
-<h1 id="types">Types</h1>
-
-<h2 id="font-weight-normal">Font weight normal</h2>
-
-<p>Set the font weight to normal</p>
-<div class="codeExample"><div class="exampleOutput"><h1 class="font-weight-normal">Heading with normal weight</h1>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"font-weight-normal"</span><span class="nt">&gt;</span>Heading with normal weight<span class="nt">&lt;/h1&gt;</span>
-</pre></div></div></div>
-<h2 id="meta">Meta</h2>
-
-<p>Design for article meta information</p>
-<div class="codeExample"><div class="exampleOutput"><p class="meta">This is meta information</p>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"meta"</span><span class="nt">&gt;</span>This is meta information<span class="nt">&lt;/p&gt;</span>
-</pre></div></div></div>
-<h2 id="text-center">Text center</h2>
-
-<p>Center aligned text</p>
-<div class="codeExample"><div class="exampleOutput"><p class="text-center">Align me!</p>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Align me!<span class="nt">&lt;/p&gt;</span>
-</pre></div></div></div>
-<h2 id="text-justify">Text justify</h2>
-
-<p>Justified text</p>
-<div class="codeExample"><div class="exampleOutput"><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minima quam tempora soluta illum dolore libero. Quidem perferendis, voluptatum, optio dignissimos itaque quaerat nihil fugiat iusto, aperiam mollitia earum non?</p>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minima quam tempora soluta illum dolore libero. Quidem perferendis, voluptatum, optio dignissimos itaque quaerat nihil fugiat iusto, aperiam mollitia earum non?<span class="nt">&lt;/p&gt;</span>
-</pre></div></div></div>
-<h2 id="text-left">Text left</h2>
-
-<p>Left aligned text</p>
-<div class="codeExample"><div class="exampleOutput"><p class="align-left">Align me!</p>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"align-left"</span><span class="nt">&gt;</span>Align me!<span class="nt">&lt;/p&gt;</span>
-</pre></div></div></div>
-<h2 id="text-right">Text right</h2>
-
-<p>Right Aligned text</p>
-<div class="codeExample"><div class="exampleOutput"><p class="text-right">Align me!</p>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Align me!<span class="nt">&lt;/p&gt;</span>
-</pre></div></div></div>      </section>
+</pre></div></div>      </section>
       <footer class="small">
         <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
       </footer>

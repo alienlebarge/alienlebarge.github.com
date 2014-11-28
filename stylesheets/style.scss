@@ -145,7 +145,7 @@ $inuit-lede-size:   1;
 ---
 title: Lists
 name: list
-category: base
+category: List
 ---
 
 Default list style
@@ -180,7 +180,7 @@ Default list style
 ---
 title: List UI
 name: list-ui
-category: objects
+category: List
 ---
 
 The `list-ui` object creates blocky, keyline-delimited list items.
@@ -199,7 +199,7 @@ The `list-ui` object creates blocky, keyline-delimited list items.
 ---
 title: Buttons
 name: buttons
-category: objects
+category: Button
 ---
 
 ```html_example
@@ -217,7 +217,7 @@ $inuit-enable-btn--small: true;
 ---
 title: List inline
 name: list-inline
-category: objects
+category: List
 ---
 
 The List-inline object simply displays a list as one horizontal row.

@@ -74,7 +74,7 @@
 ---
 title: Settings
 name: custom-settings
-category: settings
+category: Settings
 ---
 */
 /*doc
@@ -860,7 +860,7 @@ html {
  ---
  title: Link
  name: link
- category: base
+ category: Link
  ---
 */
 /*doc
@@ -909,7 +909,7 @@ If you do not want to underline a link.
 ---
 title: Code
 name: code
-category: base
+category: Code
 ---
 */
 /*doc
@@ -1035,14 +1035,11 @@ h6,
   line-height: 2;
 }
 
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
 /*doc
 ---
 title: Headers
 name: headers
-category: base
+category: Typography
 ---
 
 
@@ -1105,7 +1102,7 @@ h6,
 ---
 title: Paragraph
 name: paragraph
-category: base
+category: Typography
 ---
 */
 /*doc
@@ -1204,7 +1201,7 @@ img[height] {
 ---
 title: Image
 name: image
-category: base
+category: Image
 ---
 */
 /*doc
@@ -1254,7 +1251,7 @@ parent: image
 ---
 title: Lists
 name: list
-category: base
+category: List
 ---
 
 Default list style
@@ -1356,7 +1353,7 @@ h2 {
 ---
 title: Quote
 name: quote
-category: base
+category: Typography
 ---
 
 
@@ -1391,7 +1388,7 @@ blockquote {
 ---
 title: List UI
 name: list-ui
-category: objects
+category: List
 ---
 
 The `list-ui` object creates blocky, keyline-delimited list items.
@@ -1434,7 +1431,7 @@ The `list-ui` object creates blocky, keyline-delimited list items.
 ---
 title: Buttons
 name: buttons
-category: objects
+category: Button
 ---
 
 ```html_example
@@ -1507,7 +1504,7 @@ category: objects
 ---
 title: List inline
 name: list-inline
-category: objects
+category: List
 ---
 
 The List-inline object simply displays a list as one horizontal row.
@@ -1539,7 +1536,7 @@ The List-inline object simply displays a list as one horizontal row.
 ---
 title: Helper classes
 name: helper-classes
-category: componment
+category: Helpers
 ---
 */
 /*doc
@@ -1638,7 +1635,7 @@ Set the position to relative to help some positioning
 ---
 title: Structure
 name: structure
-category: componment
+category: Componment
 ---
 
 All the structural styles.
@@ -1671,7 +1668,7 @@ Container is the main ... container
 ---
 title: Header image
 name: header-image
-category: componment
+category: Componment
 ---
 
 Put a big image in the header that fit the screen
@@ -1830,7 +1827,7 @@ Iconic icons are the same color as the text in header
 ---
 title: Types
 name: types
-category: componment
+category: Helpers
 ---
 
 */
@@ -1945,7 +1942,7 @@ Design for article meta information
 ---
 title: Navigation
 name: navigation
-category: componment
+category: Componment
 ---
 */
 /*doc
@@ -1972,7 +1969,7 @@ parent: navigation
 ---
 title: Border
 name: border
-category: componment
+category: Componment
 ---
 Add border to your content.
 
