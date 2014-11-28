@@ -121,7 +121,7 @@ $base-break-md: 1200px;
 /**
  * Functions and mixins
  */
-/*doc
+/*
 ---
 title: Mixins
 name: mixin
@@ -133,7 +133,7 @@ category: tools
 Inuit mixins
 ---
 */
-/*doc
+/*
 ---
 title: Mixin breakpoint
 name: mixin-breakpoint
@@ -167,7 +167,7 @@ You can use custom parameters.
 @include breakpoint(0, 400px){...};     //400px and less
 ```
 */
-/*doc
+/*
 ---
 title: Mixin border-radius
 name: mixin-border-radius
@@ -182,7 +182,7 @@ Add prefix vendor for border-radius
 @mixin rounded($radius) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin shadow
 name: mixin-shadow
@@ -200,7 +200,7 @@ A mixin for creating drop shadows
 @mixin shadow($x, $y, $blur, $color) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin shadow inset
 name: mixin-shadow-inset
@@ -218,7 +218,7 @@ A mixin for creating inset shadows
 @mixin shadow-inset($x, $y, $blur, $color) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin transition
 name: mixin-transition
@@ -233,7 +233,7 @@ Add vendor prefix for transition
 @mixin transition($property) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin box-sizing
 name: mixin-box-sizing
@@ -246,7 +246,7 @@ Box-sizing will change the box-model of the element it is applied to.
 @mixin box-sizing {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin linear gradient
 name: mixin-linear-gradient
@@ -262,7 +262,7 @@ A mixin for creating linear gradient
 @mixin linear-gradient($from, $to) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox
 name: mixin-flexbox
@@ -271,7 +271,7 @@ parent: mixin
 
 The following mixins will help you with the flex*flexa* things.
 */
-/*doc
+/*
 ---
 title: Mixin flexbox container
 name: mixin-flexbox-container
@@ -293,7 +293,7 @@ http://w3.org/tr/css3-flexbox/#flex-containers
 @mixin inline-flex {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox grow
 name: mixin-flexbox-grow
@@ -308,7 +308,7 @@ The 'flex-grow' property sets the flex grow factor. Negative numbers are invalid
 @mixin flex-grow($int: 0) {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox align items
 name: mixin-flexbox-align-items
@@ -332,7 +332,7 @@ Values: flex-start | flex-end | center | baseline | stretch
 @mixin align-items($value: stretch) {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin center block
 name: mixin-center-block
@@ -345,7 +345,7 @@ Set an element to `display: block` and center via margin.
 @mixin center-block {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin screen reader only
 name: mixin-sr-only
