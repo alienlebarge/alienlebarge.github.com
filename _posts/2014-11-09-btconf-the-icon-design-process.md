@@ -39,7 +39,12 @@ And some pictures of the talk:
   </figcaption>
 </figure>
 
-Here's [the video of the talk](http://vimeo.com/113733107).
+<figure>
+  <iframe src="//player.vimeo.com/video/113733107" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/113733107">Jon Hicks – The Icon Design Process – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweets
 

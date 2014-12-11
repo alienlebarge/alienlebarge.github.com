@@ -22,7 +22,12 @@ More experiments mean more success (but more fail too). Do not hesitate to share
   </figcaption>
 </figure>
 
-[The video of the talk is available on Vimeo.](http://vimeo.com/112494277)
+<figure>
+  <iframe src="//player.vimeo.com/video/112494277?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/112494277">Zoe Gillenwater – CSS Lessons Learned the Hard Way – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweets
 
