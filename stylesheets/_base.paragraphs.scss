@@ -2,7 +2,7 @@
 ---
 title: Paragraph
 name: paragraph
-category: base
+category: Typography
 ---
 */
 
@@ -24,6 +24,11 @@ It can be use for intriduction paragraph.
     <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
 ```
 */
+
+// Variables
+$inuit-lede-size:   1;
+@import "../bower_components/inuit-paragraphs/base.paragraphs";
+
 .lede,
 %lede {
     font-family: $base-headings-font-family;

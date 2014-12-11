@@ -1,0 +1,18 @@
+/*doc
+---
+title: Lists
+name: list
+category: List
+---
+
+Default list style
+
+```html_example
+<ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
+@import "../bower_components/inuit-lists/base.lists";

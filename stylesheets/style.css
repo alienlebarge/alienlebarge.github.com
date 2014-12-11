@@ -19,12 +19,10 @@
  *
  * SETTINGS
  * Global:              Globally-available variables and config.
- * InuiCSS settings:    Everythings InuitCSS need to run
  *
  * TOOLS
  * Tools:               You need tools to craft things.
- * InuitCSS mixins:     Useful mixins.
- * Custom mixins:       Much more useful mixins.
+ * Custom mixins:       Useful mixins.
  *
  * GENERIC
  * Normalize.css:       A level playing field.
@@ -38,17 +36,14 @@
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
  * Paragraphs:          Paragraphs styles lede
- * Paragraphs custom:   Paragraphs style like small, strong, lede
  * Images:              Images and caption styles
  * Lists:               Lists styles
  * Page:                HTML and body styles
- * Page custom:         Custom settings over Inuitcss styles
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
- * List-ui:             Ui list
+ * List-ui:             Ui list and inline list
  * Buttons:             Buttons style
- * List-inline:         Inline list
  * Helper-classes:      Want to align or hide something
  *
  * COMPONENTS
@@ -74,7 +69,7 @@
 ---
 title: Settings
 name: custom-settings
-category: settings
+category: Settings
 ---
 */
 /*doc
@@ -126,14 +121,19 @@ $base-break-md: 1200px;
 /**
  * Functions and mixins
  */
-/*doc
+/*
 ---
 title: Mixins
 name: mixin
 category: tools
 ---
 */
-/*doc
+/*
+---
+Inuit mixins
+---
+*/
+/*
 ---
 title: Mixin breakpoint
 name: mixin-breakpoint
@@ -167,7 +167,7 @@ You can use custom parameters.
 @include breakpoint(0, 400px){...};     //400px and less
 ```
 */
-/*doc
+/*
 ---
 title: Mixin border-radius
 name: mixin-border-radius
@@ -182,7 +182,7 @@ Add prefix vendor for border-radius
 @mixin rounded($radius) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin shadow
 name: mixin-shadow
@@ -200,7 +200,7 @@ A mixin for creating drop shadows
 @mixin shadow($x, $y, $blur, $color) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin shadow inset
 name: mixin-shadow-inset
@@ -218,7 +218,7 @@ A mixin for creating inset shadows
 @mixin shadow-inset($x, $y, $blur, $color) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin transition
 name: mixin-transition
@@ -233,7 +233,7 @@ Add vendor prefix for transition
 @mixin transition($property) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin box-sizing
 name: mixin-box-sizing
@@ -246,7 +246,7 @@ Box-sizing will change the box-model of the element it is applied to.
 @mixin box-sizing {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin linear gradient
 name: mixin-linear-gradient
@@ -262,7 +262,7 @@ A mixin for creating linear gradient
 @mixin linear-gradient($from, $to) {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox
 name: mixin-flexbox
@@ -271,7 +271,7 @@ parent: mixin
 
 The following mixins will help you with the flex*flexa* things.
 */
-/*doc
+/*
 ---
 title: Mixin flexbox container
 name: mixin-flexbox-container
@@ -293,7 +293,7 @@ http://w3.org/tr/css3-flexbox/#flex-containers
 @mixin inline-flex {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox grow
 name: mixin-flexbox-grow
@@ -308,7 +308,7 @@ The 'flex-grow' property sets the flex grow factor. Negative numbers are invalid
 @mixin flex-grow($int: 0) {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin flexbox align items
 name: mixin-flexbox-align-items
@@ -332,7 +332,7 @@ Values: flex-start | flex-end | center | baseline | stretch
 @mixin align-items($value: stretch) {...};
 ```
 */
-/*doc
+/*
 ---
 title: Mixin center block
 name: mixin-center-block
@@ -345,7 +345,7 @@ Set an element to `display: block` and center via margin.
 @mixin center-block {...}
 ```
 */
-/*doc
+/*
 ---
 title: Mixin screen reader only
 name: mixin-sr-only
@@ -860,7 +860,7 @@ html {
  ---
  title: Link
  name: link
- category: base
+ category: Link
  ---
 */
 /*doc
@@ -909,7 +909,7 @@ If you do not want to underline a link.
 ---
 title: Code
 name: code
-category: base
+category: Code
 ---
 */
 /*doc
@@ -986,6 +986,40 @@ p code, ul code {
   border-radius: 2px;
 }
 
+/*doc
+---
+title: Headers
+name: headers
+category: Typography
+---
+
+
+```html_example
+    <h1>Heading 1</h1>
+    <p class="alpha">Paragraph with h1 style</p>
+```
+```html_example
+    <h2>Heading 2</h2>
+    <p class="beta">Paragraph with h2 style</p>
+```
+```html_example
+    <h3>Heading 3</h3>
+    <p class="gamma">Paragraph with h3 style</p>
+```
+```html_example
+    <h4>Heading 4</h4>
+    <p class="delta">Paragraph with h4 style</p>
+```
+```html_example
+    <h5>Heading 5</h5>
+    <p class="epsilon">Paragraph with h5 style</p>
+```
+```html_example
+    <h6>Heading 6</h6>
+    <p class="zeta">Paragraph with h6 style</p>
+
+```
+*/
 /*------------------------------------*\
     #HEADINGS
 \*------------------------------------*/
@@ -1035,43 +1069,6 @@ h6,
   line-height: 2;
 }
 
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-/*doc
----
-title: Headers
-name: headers
-category: base
----
-
-
-```html_example
-    <h1>Heading 1</h1>
-    <p class="alpha">Paragraph with h1 style</p>
-```
-```html_example
-    <h2>Heading 2</h2>
-    <p class="beta">Paragraph with h2 style</p>
-```
-```html_example
-    <h3>Heading 3</h3>
-    <p class="gamma">Paragraph with h3 style</p>
-```
-```html_example
-    <h4>Heading 4</h4>
-    <p class="delta">Paragraph with h4 style</p>
-```
-```html_example
-    <h5>Heading 5</h5>
-    <p class="epsilon">Paragraph with h5 style</p>
-```
-```html_example
-    <h6>Heading 6</h6>
-    <p class="zeta">Paragraph with h6 style</p>
-
-```
-*/
 h1,
 .alpha,
 h2,
@@ -1088,24 +1085,11 @@ h6,
   letter-spacing: -0.025em;
 }
 
-/*------------------------------------*\
-    #PARAGRAPHS
-\*------------------------------------*/
-/**
- * The `.lede` class is used to make the introductory text (usually a paragraph)
- * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
- */
-.lede {
-  font-size: 20px;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
 /*doc
 ---
 title: Paragraph
 name: paragraph
-category: base
+category: Typography
 ---
 */
 /*doc
@@ -1122,6 +1106,19 @@ It can be use for intriduction paragraph.
     <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
 ```
 */
+/*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+.lede {
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 .lede {
   font-family: "ff-dax-compact-web-pro", serif;
   font-weight: 300;
@@ -1168,6 +1165,13 @@ strong {
   font-weight: bold;
 }
 
+/*doc
+---
+title: Image
+name: image
+category: Image
+---
+*/
 /*------------------------------------*\
     #IMAGES
 \*------------------------------------*/
@@ -1200,13 +1204,6 @@ img[height] {
   max-width: none;
 }
 
-/*doc
----
-title: Image
-name: image
-category: base
----
-*/
 /*doc
 ---
 title: Figure
@@ -1254,7 +1251,7 @@ parent: image
 ---
 title: Lists
 name: list
-category: base
+category: List
 ---
 
 Default list style
@@ -1278,6 +1275,13 @@ li > ol {
   margin-bottom: 0;
 }
 
+/*doc
+---
+title: Page
+name: page
+category: base
+ ---
+*/
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
@@ -1317,13 +1321,6 @@ html {
 }
 
 /*doc
----
-title: Page
-name: page
-category: base
- ---
-*/
-/*doc
  ---
 title: html
 name: html
@@ -1356,7 +1353,7 @@ h2 {
 ---
 title: Quote
 name: quote
-category: base
+category: Typography
 ---
 
 
@@ -1391,7 +1388,7 @@ blockquote {
 ---
 title: List UI
 name: list-ui
-category: objects
+category: List
 ---
 
 The `list-ui` object creates blocky, keyline-delimited list items.
@@ -1432,9 +1429,41 @@ The `list-ui` object creates blocky, keyline-delimited list items.
 
 /*doc
 ---
+title: List inline
+name: list-inline
+category: List
+---
+
+The List-inline object simply displays a list as one horizontal row.
+
+```html_example
+<ul class="list-inline">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+}
+
+/*doc
+---
 title: Buttons
 name: buttons
-category: objects
+category: Button
 ---
 
 ```html_example
@@ -1505,41 +1534,9 @@ category: objects
 
 /*doc
 ---
-title: List inline
-name: list-inline
-category: objects
----
-
-The List-inline object simply displays a list as one horizontal row.
-
-```html_example
-<ul class="list-inline">
-  <li>item</li>
-  <li>item</li>
-  <li>item</li>
-</ul>
-```
-*/
-/*------------------------------------*\
-    #LIST-INLINE
-\*------------------------------------*/
-/**
- * The list-inline object simply displays a list of items in one line.
- */
-.list-inline {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.list-inline > li {
-  display: inline-block;
-}
-
-/*doc
----
 title: Helper classes
 name: helper-classes
-category: componment
+category: Helpers
 ---
 */
 /*doc
@@ -1638,7 +1635,7 @@ Set the position to relative to help some positioning
 ---
 title: Structure
 name: structure
-category: componment
+category: Componment
 ---
 
 All the structural styles.
@@ -1671,7 +1668,7 @@ Container is the main ... container
 ---
 title: Header image
 name: header-image
-category: componment
+category: Componment
 ---
 
 Put a big image in the header that fit the screen
@@ -1830,7 +1827,7 @@ Iconic icons are the same color as the text in header
 ---
 title: Types
 name: types
-category: componment
+category: Helpers
 ---
 
 */
@@ -1945,7 +1942,7 @@ Design for article meta information
 ---
 title: Navigation
 name: navigation
-category: componment
+category: Componment
 ---
 */
 /*doc
@@ -1972,7 +1969,7 @@ parent: navigation
 ---
 title: Border
 name: border
-category: componment
+category: Componment
 ---
 Add border to your content.
 

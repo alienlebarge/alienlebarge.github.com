@@ -1,16 +1,8 @@
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-
-
-
-
-
 /*doc
 ---
 title: Headers
 name: headers
-category: base
+category: Typography
 ---
 
 
@@ -40,6 +32,18 @@ category: base
 
 ```
 */
+
+
+// Variables
+$inuit-heading-size-1:  40px !default;
+$inuit-heading-size-2:  32px !default;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
+
+@import "../bower_components/inuit-headings/base.headings";
+
 h1,
 .#{$inuit-namespace}alpha,
 %#{$inuit-namespace}alpha,
