@@ -19,6 +19,8 @@ The cartoonists have long known. Transitions and intermediate frames are very im
   </figcaption>
 </figure>
 
+Here's [the video of the talk](http://vimeo.com/113403673).
+
 ## Slides
 
 <script async class="speakerdeck-embed" data-id="0787d6404bea0132e12d4643cc84daf4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>

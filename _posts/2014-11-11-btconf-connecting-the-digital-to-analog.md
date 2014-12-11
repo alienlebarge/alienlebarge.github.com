@@ -11,7 +11,7 @@ tags:
 ---
 
 The Internet is full of data. Can't we print them on paper ?  
-I really enjoyed [Brian Suda](https://twitter.com/briansuda)'s talk. This is perhaps because my father worked in the paper industry as a typesetter. 
+I really enjoyed [Brian Suda](https://twitter.com/briansuda)'s talk. This is perhaps because my father worked in the paper industry as a typesetter.
 
 Mr. Suda showed us how we can connect the digital to the analog. For example, why a boarding pass is "just" a boarding pass ? Why not adding usefull information on it like the weather forecast at the destination, the train connection to the city, etc. ?  
 Thus, a boarding pass can accompany the traveler during his trip and will not be forgotten in a pocket.
@@ -31,6 +31,8 @@ Here is my sketchnote:
   <a href="https://www.flickr.com/photos/alienlebarge/15708752446" title="Why paper is better for somethings comparaison table by Cédric Aellen, on Flickr"><img src="https://farm8.staticflickr.com/7476/15708752446_4d7a1a1b03_c.jpg" alt="List of points where paper is better than phones: Water resistant, Electrical independent, Foldable and tearable, Sit on it or drop it, Annotable, Cheap, Replicable, Transmitable (FAX), Better resolution, File format agnostic, 100% recyclable"></a>
   <figcaption>Paper is better on phones on a lot of points</figcaption>
 </figure>
+
+Here's [the video of the talk](http://vimeo.com/113586350).
 
 ## Links
 

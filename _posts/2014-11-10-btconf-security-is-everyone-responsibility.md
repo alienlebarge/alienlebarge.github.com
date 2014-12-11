@@ -22,6 +22,8 @@ This was the kind of talk after which one you shut down your phone and reset all
   </figcaption>
 </figure>
 
+Here's [the video of the talk](http://vimeo.com/113578461).
+
 ## Tweets
 
 Some tweets about the talk:

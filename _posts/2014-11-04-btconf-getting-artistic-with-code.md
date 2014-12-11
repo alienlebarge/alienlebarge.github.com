@@ -10,7 +10,7 @@ tags:
  - css
 ---
 
-[Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly: 
+[Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly:
 
   - do things
   - learn by doing
@@ -24,6 +24,8 @@ Here are my sketchnotes:
     Getting Artistic With Code sketchnote. <a href="https://www.flickr.com/photos/alienlebarge/15688707556">View original on Flickr</a>
   </figcaption>
 </figure>
+
+Here's [the video of the talk](http://vimeo.com/112733394).
 
 ## Tweets
 

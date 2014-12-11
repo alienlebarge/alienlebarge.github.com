@@ -22,6 +22,7 @@ Here's my sketchnote of the talk.
   </figcaption>
 </figure>
 
+Here's [the video of the tall](http://vimeo.com/113475929).
 
 ## Tweets
 
