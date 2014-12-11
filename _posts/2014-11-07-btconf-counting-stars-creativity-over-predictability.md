@@ -21,6 +21,8 @@ Andy's remind us that we should have fun creating and make room for our imaginat
   </figcaption>
 </figure>
 
+Here's [the video of the talk](http://vimeo.com/beyondtellerrand/videos).
+
 ## Tweets
 
 Here are the tweets related to the talk:

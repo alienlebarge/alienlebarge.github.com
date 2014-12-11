@@ -39,6 +39,8 @@ And some pictures of the talk:
   </figcaption>
 </figure>
 
+Here's [the video of the talk](http://vimeo.com/113733107).
+
 ## Tweets
 
 Some tweets related to the talk:

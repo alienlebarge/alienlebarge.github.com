@@ -29,6 +29,8 @@ Here's my sketchnote of the talk:
 
 [Here](http://www.webdirections.org/offlineworkshop/ibooksDraft.pdf), you can find the draft of John Allsopp's book "Offline First"
 
+Here's [the video of the talk](http://vimeo.com/113522359).
+
 ## Tweets
 
 Some tweet about the talk:
