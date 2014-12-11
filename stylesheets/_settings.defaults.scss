@@ -2,7 +2,7 @@
 ---
 title: Settings
 name: custom-settings
-category: settings
+category: Settings
 ---
 */
 
@@ -67,3 +67,13 @@ $base-break-md: 1200px;
 $base-break-xs: 500px;
 $base-break-sm: 900px;
 $base-break-md: 1200px;
+
+
+
+
+
+$inuit-base-font-size:          20px;
+$inuit-base-line-height:        28px;
+$inuit-base-text-color:         #333;
+$inuit-base-background-color:   #fff;
+@import "bower_components/inuit-defaults/settings.defaults";
