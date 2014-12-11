@@ -79,7 +79,7 @@
  * Functions and mixins
  */
 
-@import "bower_components/inuit-functions/_tools.functions";
+@import "../bower_components/inuit-functions/_tools.functions";
 @import "tools.mixins";
 
 
@@ -94,10 +94,10 @@
  * Generic, high-level styling, like resets, etc.
  */
 
-@import "bower_components/inuit-normalize/generic.normalize";
-@import "bower_components/inuit-reset/generic.reset";
-@import "bower_components/inuit-shared/generic.shared";
-@import "bower_components/inuit-box-sizing/generic.box-sizing";
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-reset/generic.reset";
+@import "../bower_components/inuit-shared/generic.shared";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
 
 
 
@@ -176,7 +176,7 @@ $enable-border-bottom: true;
  * Overrides and helper classes.
  */
 
-@import "bower_components/inuit-widths/trumps.widths";
+@import "../bower_components/inuit-widths/trumps.widths";
 
 $inuit-enable-margins         : true;
 $inuit-enable-paddings        : true;
@@ -184,4 +184,4 @@ $inuit-enable-margins--none   : true;
 $inuit-enable-paddings--none  : true;
 $inuit-enable-margins--large  : true;
 $inuit-enable-paddings--large : true;
-@import "bower_components/inuit-spacing/trumps.spacing";
+@import "../bower_components/inuit-spacing/trumps.spacing";

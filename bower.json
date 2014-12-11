@@ -5,8 +5,8 @@
   "authors": [
     "Cédric Aellen <cedric.aellen@alienlebarge.ch>"
   ],
-  "description": "Stylesheets for blog.alienlebarge.ch",
-  "main": "style.scss",
+  "description": "alienlebarge's jekyll blog",
+  "main": "index.html",
   "keywords": [
     "css",
     "scss",
@@ -22,7 +22,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "inuit-defaults": "~0.2.1",
     "inuit-mixins": "~0.2.3",
     "inuit-functions": "~0.2.0",
