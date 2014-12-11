@@ -27,9 +27,14 @@ Here's my sketchnote of the talk:
 
 <a href="https://www.flickr.com/photos/alienlebarge/15113064323" title="Application Cache by Cédric Aellen, on Flickr"><img src="https://farm8.staticflickr.com/7540/15113064323_03838f13cc_c.jpg" alt="Application Cache"></a>
 
-[Here](http://www.webdirections.org/offlineworkshop/ibooksDraft.pdf), you can find the draft of John Allsopp's book "Offline First"
+<figure>
+  <iframe src="//player.vimeo.com/video/113522359?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/113522359">John Allsopp – The Web's future is offline – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
-Here's [the video of the talk](http://vimeo.com/113522359).
+[Here](http://www.webdirections.org/offlineworkshop/ibooksDraft.pdf), you can find the draft of John Allsopp's book "Offline First"
 
 ## Tweets
 

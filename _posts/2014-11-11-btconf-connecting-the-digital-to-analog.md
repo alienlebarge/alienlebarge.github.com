@@ -32,7 +32,10 @@ Here is my sketchnote:
   <figcaption>Paper is better on phones on a lot of points</figcaption>
 </figure>
 
-Here's [the video of the talk](http://vimeo.com/113586350).
+<figure>
+  <iframe src="//player.vimeo.com/video/113586350?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption><p><a href="http://vimeo.com/113586350">Brian Suda – Connecting The Digital To Analog – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p></figcaption>
+</figure>
 
 ## Links
 

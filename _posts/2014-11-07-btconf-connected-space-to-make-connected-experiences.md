@@ -23,7 +23,12 @@ Objects can interact with each and other via the Internet. That's what call <abb
   </figcaption>
 </figure>
 
-[The video of the talk is available on Vimeo.](http://vimeo.com/112630090)
+<figure>
+  <iframe src="//player.vimeo.com/video/112630090?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/112630090">Stacey Mulcahy – Connected Spaces to Make Connected Experiences – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweet
 

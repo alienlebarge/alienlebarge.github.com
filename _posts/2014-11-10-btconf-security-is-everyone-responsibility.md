@@ -22,7 +22,12 @@ This was the kind of talk after which one you shut down your phone and reset all
   </figcaption>
 </figure>
 
-Here's [the video of the talk](http://vimeo.com/113578461).
+<figure>
+  <iframe src="//player.vimeo.com/video/113578461?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/113578461">James Hall – Security is Everyone's Responsibility – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweets
 

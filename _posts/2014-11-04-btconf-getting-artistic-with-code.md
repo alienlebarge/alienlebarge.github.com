@@ -25,7 +25,12 @@ Here are my sketchnotes:
   </figcaption>
 </figure>
 
-Here's [the video of the talk](http://vimeo.com/112733394).
+<figure>
+  <iframe src="//player.vimeo.com/video/112733394?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/112733394">Seb Lee-Delisle – Getting artistic with code – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweets
 

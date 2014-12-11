@@ -21,4 +21,9 @@ Here is my sketchnote:
   </figcaption>
 </figure>
 
-[The video of the talk is available on Vimeo.](http://vimeo.com/112561774)
+<figure>
+  <iframe src="//player.vimeo.com/video/112561774?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/112561774">Jonathan Hoefler – Putting the Fonts into Webfonts – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>

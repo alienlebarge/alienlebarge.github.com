@@ -19,7 +19,12 @@ The cartoonists have long known. Transitions and intermediate frames are very im
   </figcaption>
 </figure>
 
-Here's [the video of the talk](http://vimeo.com/113403673).
+<figure>
+  <iframe src="//player.vimeo.com/video/113403673?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/113403673">Tim Kadlec – The Space Between – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  <figcaption>
+</figure>
 
 ## Slides
 
