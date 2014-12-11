@@ -22,7 +22,12 @@ Here's my sketchnote of the talk.
   </figcaption>
 </figure>
 
-Here's [the video of the tall](http://vimeo.com/113475929).
+<figure>
+  <iframe src="//player.vimeo.com/video/113475929?color=9c191e" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>
+    <p><a href="http://vimeo.com/113475929">Lisa Larson-Kelley - Real-time Communication – for Everyone! – beyond tellerrand Berlin 2014</a> from <a href="http://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </figcaption>
+</figure>
 
 ## Tweets
 
