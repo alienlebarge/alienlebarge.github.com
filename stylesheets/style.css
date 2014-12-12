@@ -1378,6 +1378,64 @@ blockquote {
   margin: 0 28px;
 }
 
+/*doc
+---
+title: Tables
+name: table
+category: Table
+---
+
+Default list style for table.
+
+```html_example
+<table>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+```
+```html_example
+<table>
+  <thead>
+    <tr>
+      <td>Superhero name</td>
+      <td>Story</td>
+      <td>Power</td>
+    </tr>
+  </thead>
+  <tr>
+    <td>The Mega Mask</td>
+    <td>As a child, you survived an accident involving an electrical pylon! Now, you discover that the accident has unleashed strange powers in your body. Will you use them for good, or evil?</td>
+    <td>Electromagnetic Pulse - You have the ability to project an Electromagnetic Pulse, knocking out any technological devices. The pulses can be targeted, or can stretch across an entire city!
+    Now, you protect Tokyo from pickpockets, while also battling the evil plans of Project: Janus!</td>
+  </tr>
+  <tr>
+    <td>The Ruby Tide</td>
+    <td>Abandoned as a child, you grew up with an affinity for water - and then, you discover that you are the long-lost ruler of the underwater kingdom of Atlantis! Now you must fight for control of the world's oceans, while also protecting humanity from evil!</td>
+    <td>Aquatic Powers - You can breathe underwater, swim at incredible speeds, and communicate with undersea life!
+    Now, you protect Space Town from ghosts, while also battling the evil plans of Cold Henry!</td>
+  </tr>
+</table>
+```
+*/
+thead {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+td {
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  vertical-align: top;
+}
+
 /*------------------------------------*\
     #OBJECTS
 \*------------------------------------*/
