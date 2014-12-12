@@ -23,11 +23,10 @@ Put your squarish images into a circle.
 Be aware, the image have to have the same height and weight ... like a square.
 
 ```html_example
-<img src="http://placekitten.com/g/75/75" class="image-cirlce">
+<img src="http://placekitten.com/g/75/75" class="image-circle">
 ```
 
 */
-
 .image-circle {
   border-radius: 50%;
 }
