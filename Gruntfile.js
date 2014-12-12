@@ -30,16 +30,6 @@ module.exports = function (grunt) {
         },
           files: {
             'stylesheets/style.css': 'stylesheets/style.scss'
-
-        }
-      },
-      hologram: {
-        options: {
-          style: 'expanded'
-        },
-        files: {
-          '_hologram/_css/style.css': 'stylesheets/style.scss'
-
         }
       }
     },

@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <title>alb styleguide: tools</title>
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <link rel="stylesheet" href="../stylesheets/style.min.css">
+    <link rel="stylesheet" href="./styleguide.css">
+    <!-- Typekit -->
+    <script type="text/javascript" src="//use.typekit.net/pxp8tkl.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="list-inline">
+        
+          <li><a href="componment.html">componment</a></li>
+        
+          <li><a href="objects.html">objects</a></li>
+        
+          <li><a href="base.html">base</a></li>
+        
+          <li><a href="settings.html">settings</a></li>
+        
+          <li><a href="tools.html">tools</a></li>
+        
+        </ul>
+      </nav>
+
+      <h1><a href="index.html">blog.alienlebarge.ch's styleguide</a></h1>
+      <section class="content">
+        <ul>
+        
+          <li><a href="#mixin">Mixins</a></li>
+        
+          <li><a href="#mixin-border-radius">Mixin border-radius</a></li>
+        
+          <li><a href="#mixin-box-sizing">Mixin box-sizing</a></li>
+        
+          <li><a href="#mixin-breakpoint">Mixin breakpoint</a></li>
+        
+          <li><a href="#mixin-center-block">Mixin center block</a></li>
+        
+          <li><a href="#mixin-flexbox">Mixin flexbox</a></li>
+        
+          <li><a href="#mixin-flexbox-align-items">Mixin flexbox align items</a></li>
+        
+          <li><a href="#mixin-flexbox-container">Mixin flexbox container</a></li>
+        
+          <li><a href="#mixin-flexbox-grow">Mixin flexbox grow</a></li>
+        
+          <li><a href="#mixin-linear-gradient">Mixin linear gradient</a></li>
+        
+          <li><a href="#mixin-shadow">Mixin shadow</a></li>
+        
+          <li><a href="#mixin-shadow-inset">Mixin shadow inset</a></li>
+        
+          <li><a href="#mixin-sr-only">Mixin screen reader only</a></li>
+        
+          <li><a href="#mixin-transition">Mixin transition</a></li>
+        
+        </ul>
+<h1 id="mixin">Mixins</h1>
+
+<h2 id="mixin-border-radius">Mixin border-radius</h2>
+
+<p>Add prefix vendor for border-radius</p>
+
+<ul>
+<li><code>$radius</code>: The radius for each corner</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin rounded($radius) {...}
+</pre></div></div>
+<h2 id="mixin-box-sizing">Mixin box-sizing</h2>
+
+<p>Box-sizing will change the box-model of the element it is applied to.</p>
+<div class="codeBlock"><div class="highlight"><pre>@mixin box-sizing {...}
+</pre></div></div>
+<h2 id="mixin-breakpoint">Mixin breakpoint</h2>
+
+<p><a href="https://medium.com/p/889927b37740/">Info about this mixins</a></p>
+
+<h3>From small to large</h3>
+
+<p>You can use the following values with this mixins like so <code>@include breakpoint(md){...};</code>:</p>
+
+<ul>
+<li><code>xs</code>: Extra small</li>
+<li><code>sm</code>: Small</li>
+<li><code>md</code>: Medium</li>
+<li><code>lg</code>: Large</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin breakpoint($min: 0, $max: 0){...};
+@mixin breakpoint(xs){...}
+</pre></div></div>
+<p>The values are set in the <a href="sass-01-settings-settings.defaults.html"><code>_settings.defaults.scss</code></a> file</p>
+
+<h3>Custom parameters</h3>
+
+<p>You can use custom parameters.</p>
+<div class="codeBlock"><div class="highlight"><pre>@include breakpoint(400px, 800px){...}; // From 400px to 800px
+@include breakpoint(400px, 0){...}; :   //400px and more
+@include breakpoint(0, 400px){...};     //400px and less
+</pre></div></div>
+<h2 id="mixin-center-block">Mixin center block</h2>
+
+<p>Set an element to <code>display: block</code> and center via margin.</p>
+<div class="codeBlock"><div class="highlight"><pre>@mixin center-block {...}
+</pre></div></div>
+<h2 id="mixin-flexbox">Mixin flexbox</h2>
+
+<p>The following mixins will help you with the flex<em>flexa</em> things.</p>
+
+<h3 id="mixin-flexbox-align-items">Mixin flexbox align items</h3>
+
+<p>Flex items can be aligned in the cross axis of the current line of the flex
+container, similar to &#39;justify-content&#39; but in the perpendicular direction.
+&#39;align-items&#39; sets the default alignment for all of the flex container&#39;s items,
+including anonymous flex items. &#39;align-self&#39; allows this default alignment to
+be overridden for individual flex items. (For anonymous flex items, &#39;align-self&#39;
+always matches the value of &#39;align-items&#39; on their associated flex container.)</p>
+
+<p>Values: flex-start | flex-end | center | baseline | stretch</p>
+
+<ul>
+<li><code>$value</code>: Value of the stretch (Default: <code>stretch</code>)</li>
+</ul>
+
+<p><a href="http://w3.org/tr/css3-flexbox/#align-items-property">W3C specs</a></p>
+<div class="codeBlock"><div class="highlight"><pre>@mixin align-items($value: stretch) {...};
+</pre></div></div>
+<h3 id="mixin-flexbox-container">Mixin flexbox container</h3>
+
+<p>The &#39;flex&#39; value causes an element to generate a block-level flex container box.</p>
+
+<p>The &#39;inline-flex&#39; value causes an element to generate a inline-level flex container box.</p>
+
+<p><code>display: flex | inline-flex</code></p>
+
+<p>http://w3.org/tr/css3-flexbox/#flex-containers</p>
+
+<p>(Placeholder selectors for each type, for those who rather @extend)</p>
+<div class="codeBlock"><div class="highlight"><pre>@mixin flexbox {...};
+@mixin inline-flex {...};
+</pre></div></div>
+<h3 id="mixin-flexbox-grow">Mixin flexbox grow</h3>
+
+<p>The &#39;flex-grow&#39; property sets the flex grow factor. Negative numbers are invalid.</p>
+
+<ul>
+<li><code>$int</code>: Grow (Default: <code>0</code>)</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin flex-grow($int: 0) {...};
+</pre></div></div>
+<h2 id="mixin-linear-gradient">Mixin linear gradient</h2>
+
+<p>A mixin for creating linear gradient</p>
+
+<ul>
+<li><code>$from</code>: From hex color</li>
+<li><code>$to</code>:   To hex color</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin linear-gradient($from, $to) {...}
+</pre></div></div>
+<h2 id="mixin-shadow">Mixin shadow</h2>
+
+<p>A mixin for creating drop shadows</p>
+
+<ul>
+<li><code>$x</code>:     Vertical position of the shadow</li>
+<li><code>$y</code>:     Horizontal position of the shadow</li>
+<li><code>$blur</code>:  Amount of blur</li>
+<li><code>$color</code>: The color</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin shadow($x, $y, $blur, $color) {...}
+</pre></div></div>
+<h2 id="mixin-shadow-inset">Mixin shadow inset</h2>
+
+<p>A mixin for creating inset shadows</p>
+
+<ul>
+<li><code>$x</code>:     Vertical position of the shadow</li>
+<li><code>$y</code>:     Horizontal position of the shadow</li>
+<li><code>$blur</code>:  Amount of blur</li>
+<li><code>$color</code>: The color</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin shadow-inset($x, $y, $blur, $color) {...}
+</pre></div></div>
+<h2 id="mixin-sr-only">Mixin screen reader only</h2>
+
+<p>The content can only be read by screen reader</p>
+<div class="codeBlock"><div class="highlight"><pre>@mixin sr-only {...}
+</pre></div></div>
+<h2 id="mixin-transition">Mixin transition</h2>
+
+<p>Add vendor prefix for transition</p>
+
+<ul>
+<li><code>$property</code>: The kind of animation</li>
+</ul>
+<div class="codeBlock"><div class="highlight"><pre>@mixin transition($property) {...}
+</pre></div></div>      </section>
+      <footer class="small">
+        <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+      </footer>
+    </div>
+  </body>
+</html>
