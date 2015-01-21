@@ -15,20 +15,20 @@ This technique is called the [bullet journal](http://bulletjournal.com). Here is
 
 ## Meetings and conferences ➛ Sketchnotes
 
-At conference and meetings, I use [Mike Rohde’s sketchnote technique](http://rohdesign.com/book/) for sketchnoting. Since I rode his first book "The Sketchnote Handbook", I started sketchnoting meetings. It’s fun and more visual. And as a visual personn, my brain remember better the information like so.
+At conference and meetings, I use [Mike Rohde’s sketchnote technique](http://rohdesign.com/book/) for sketchnoting. Since I read his first book “The Sketchnote Handbook”, I started sketchnoting at meetings. It is fun and more visual. And as a visual personn, my brain better remember the information.
 
-My skills are becoming better with the practice and I enjoy more en more doing that. And the more funny is that my colleague really like watching my meetings littles comics.
+My skills are becoming better with the practice and I enjoy more en more doing that. And the more funny is that my colleagues really like watching my meetings little comics.
 
 ## Material
 
-Here’s my setup to mix this two techniques in a way I’m confortable with.
+Here’s my setup to mix this two techniques in a way I'm comfortable with.
 
 ### Notebook
 
-The **[Freitage F27 Notebook](http://www.freitag.ch/Fundamentals/Notebooks-%26-Agendas/NOTEBOOK/pa/F27_00017)** is great notebook. The big advantage over the classic Moleskin is that it’s compatible with the [Atoma binding system](http://www.atoma.be/). It means you can:
-- Remove pages, put them back or change their order without damaging the pages or the notebook.
-- Exchange pages between various notebooks.
-- Print and copy on pages before returning them to the notebook.
+The [Freitage F27 Notebook](http://www.freitag.ch/Fundamentals/Notebooks-%26-Agendas/NOTEBOOK/pa/F27_00017) is great notebook. The big advantage over the classic Moleskin is that it’s compatible with the [Atoma binding system](http://www.atoma.be/). That means you can:
+- Remove pages, put them back or change their order without damaging the pages.
+- Switch pages between various notebooks.
+- Scan pages before returning them to the notebook.
 - Buy refills and insert those in existing notebooks.
 - You can do your own page if you want. You just need a [Atoma hole puncher](http://www.atoma.be/en/puncher.php). (Every [Freitag store](http://www.freitag.ch/store-locator) own a puncher you can use.)
 
@@ -40,7 +40,7 @@ And yeah, it’s a Freitag !
 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
 
-## The mix
+## The mi
 
 Here is a exemple of a month in my journal
 
@@ -54,6 +54,6 @@ Here is a exemple of a month in my journal
     - ... until the end of the week (every week, I start a new page.)
 - Page 4: If I have a meetings on day 1, I put in a blank page on wich I will sketch.  
 
-Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I'm at a meeting a put in a blank page on wich I will sketch.
+Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I’m at a meeting a put in a blank page on which I will sketch.
 
 It is simple ! no ?
