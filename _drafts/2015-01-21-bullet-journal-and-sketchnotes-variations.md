@@ -1,13 +1,13 @@
 # Bullet Journal and Sketchnotes variations
 
-At work, once a week, we have a meet at work to summarize the work of the last five working days. It is sometimes hard for me to remember on which project, issue, repository branch I have worked.
+At work, once a week, we have a meet at work to summarize the work of the last five working days. It is sometimes hard for me to remember on which project, issue, repository branch I have worked on.
 Since more than a year, I write down everything I do. This logging technique works well for and I want to share it with you.
 
 This technique consist of a mix of *bullet journal* and *sketchnoting*.
 
 ## Everyday tasks ➛ Bullet journal
 
-During a normal day of work, I use the bullet journal to log things on witch I have work. It means every mornings, I take some minutes to write down the tasks I have to accomplish during the day. Each of these tasks are precedent bay a little square. When the task is done, I mark it so.
+During a normal day of work, I use the bullet journal to log things on witch I have work. It means every mornings, I take some minutes to write down the tasks I have to accomplish during the day. Each of these tasks are precedent by a little square. When the task is done, I mark it so.
 
 This technique is called the [bullet journal](http://bulletjournal.com). Here is a video how it works:
 
@@ -15,7 +15,8 @@ This technique is called the [bullet journal](http://bulletjournal.com). Here is
 
 ## Meetings and conferences ➛ Sketchnotes
 
-At conference and meetings, I use [Mike Rohde’s sketchnote technique](http://rohdesign.com/book/) for sketchnoting. Since I rode his first book « The Sketchnote Handbook », I started sketch noting a meetings. It’s fun and more visual.
+At conference and meetings, I use [Mike Rohde’s sketchnote technique](http://rohdesign.com/book/) for sketchnoting. Since I rode his first book "The Sketchnote Handbook", I started sketchnoting meetings. It’s fun and more visual. And as a visual personn, my brain remember better the information like so.
+
 My skills are becoming better with the practice and I enjoy more en more doing that. And the more funny is that my colleague really like watching my meetings littles comics.
 
 ## Material
@@ -24,7 +25,7 @@ Here’s my setup to mix this two techniques in a way I’m confortable with.
 
 ### Notebook
 
-The **[Freitage F27 Notebook](http://www.freitag.ch/Fundamentals/Notebooks-%26-Agendas/NOTEBOOK/pa/F27_00017)** is great notebook. The big advantage over the classic Moleskin is that it’s compatible with the [Atoma binding system](http://www.atoma.be/). It means you can: 
+The **[Freitage F27 Notebook](http://www.freitag.ch/Fundamentals/Notebooks-%26-Agendas/NOTEBOOK/pa/F27_00017)** is great notebook. The big advantage over the classic Moleskin is that it’s compatible with the [Atoma binding system](http://www.atoma.be/). It means you can:
 - Remove pages, put them back or change their order without damaging the pages or the notebook.
 - Exchange pages between various notebooks.
 - Print and copy on pages before returning them to the notebook.
@@ -39,38 +40,20 @@ And yeah, it’s a Freitag !
 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
 
-## Bullet journal
+## The mix
 
-### Index
+Here is a exemple of a month in my journal
 
-- On the first page
-- On a separate page because we archive the content of the notebook.
+- Page 1 (left): Calendar view
+- Page 2 (right): Tasks for the month
+- Page 3 (left): Start with the first day of the month
+    - Day 1
+        - Tasks for day 1
+    - Day 2
+        - Tasks for day 2
+    - ... until the end of the week (every week, I start a new page.)
+- Page 4: If I have a meetings on day 1, I put in a blank page on wich I will sketch.  
 
-### Month overview
+Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I'm at a meeting a put in a blank page on wich I will sketch.
 
-#### Calendar view
-
-- Following left page
-- First column: day number
-- Second column: Two first letter of the day
-- Trace a bar aside the the day where you don’t work
-
-#### Todos
-
-- Following right page
-
-### Days
-
-## Sketchnote
-
-## Page number
-
-Using Atoma binding system means you can remove pages and archive them. So we need a time proof numbering technique. I use the date because it will not repeat.
-
-- `2014-01`: January calendar
-- `2014-01`: January todos
-- `2014-01-01`: Page were the first day is the 1st of January
-- `2014-01-04`: Page were the first day is the 4th of January  or date of a sketch note
-
-
-
+It is simple ! no ?
