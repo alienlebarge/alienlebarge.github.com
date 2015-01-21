@@ -1,4 +1,13 @@
-# Bullet Journal and Sketchnotes variations
+---
+layout:      post
+title:       "Bullet Journal and Sketchnotes variations"
+description: "Since more than a year, I write down everything I do. This logging technique works well for and I want to share it with you."
+image:       http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-notebook/2015-01-21-blog-notebook.jpg
+date:        2015-01-21 22:01:54
+tags:
+- sketchnote
+- journal
+---
 
 At work, once a week, we have a meet at work to summarize the work of the last five working days. It is sometimes hard for me to remember on which project, issue, repository branch I have worked on.
 Since more than a year, I write down everything I do. This logging technique works well for and I want to share it with you.
@@ -26,6 +35,7 @@ Here’s my setup to mix this two techniques in a way I'm comfortable with.
 ### Notebook
 
 The [Freitage F27 Notebook](http://www.freitag.ch/Fundamentals/Notebooks-%26-Agendas/NOTEBOOK/pa/F27_00017) is great notebook. The big advantage over the classic Moleskin is that it’s compatible with the [Atoma binding system](http://www.atoma.be/). That means you can:
+
 - Remove pages, put them back or change their order without damaging the pages.
 - Switch pages between various notebooks.
 - Scan pages before returning them to the notebook.
@@ -36,9 +46,23 @@ And yeah, it’s a Freitag !
 
 <iframe src="//player.vimeo.com/video/30231914" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+<figure>
+  <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-notebook/2015-01-21-blog-notebook.jpg" alt="My Freitag notebook">
+  <figcaption>
+    My Freitag notebook
+  </figcaption>
+</figure>
+
 ### Pen
 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
+
+<figure>
+  <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-pens/2015-01-21-blog-pens.JPG" alt="The pens I have allways with me">
+  <figcaption>
+   The pens I have allways with me. When I need some color, I really like the <a href="http://shinhanart.co.kr/eng/product/product_touch.php">ShinHanart TOUCH TWIN</a>.
+  </figcaption>
+</figure>
 
 ## The mix
 
@@ -55,5 +79,19 @@ Here is a exemple of a month in my journal
 - Page 4: If I have a meetings on day 1, I put in a blank page on wich I will sketch.  
 
 Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I’m at a meeting a put in a blank page on which I will sketch.
+
+<figure>
+  <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-bullet-sketch-1/2015-01-21-blog-bullet-sketch-1.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
+  <figcaption>
+    A week page on the left and a sketchnote on the right
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-bullet-sketch-2/2015-01-21-blog-bullet-sketch-2.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
+  <figcaption>
+    Tasks for the week on the left and a meeting sketchnote on the right
+  </figcaption>
+</figure>
 
 It is simple ! no ?
