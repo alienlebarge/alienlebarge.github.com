@@ -40,7 +40,7 @@ And yeah, it’s a Freitag !
 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
 
-## The mi
+## The mix
 
 Here is a exemple of a month in my journal
 
