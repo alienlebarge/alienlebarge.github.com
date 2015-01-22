@@ -46,7 +46,7 @@ And yeah, it’s a Freitag !
 <iframe src="//player.vimeo.com/video/30231914" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <figure>
-<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-notebook/2015-01-21-blog-notebook.jpg" alt="My Freitag notebook">
+<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-22-blog-notebook.jpg" alt="My Freitag notebook">
 <figcaption>
 My Freitag notebook
 </figcaption>
@@ -65,7 +65,7 @@ I cut these sheets at the right size and then go to a Freitag store to make the 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
 
 <figure>
-<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-pens/2015-01-21-blog-pens.JPG" alt="The pens I have allways with me">
+<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-22-blog-pen.jpg" alt="The pens I have allways with me">
 <figcaption>
 The pens I have allways with me. When I need some color, I really like the <a href="http://shinhanart.co.kr/eng/product/product_touch.php">ShinHanart TOUCH TWIN</a>.
 </figcaption>
@@ -88,14 +88,14 @@ Here is a exemple of a month in my journal
 Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I’m at a meeting a put in a blank page on which I will sketch.
 
 <figure>
-<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-bullet-sketch-1/2015-01-21-blog-bullet-sketch-1.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
+<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-22-blog-notebook-open-1.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
 <figcaption>
 A week page on the left and a sketchnote on the right
 </figcaption>
 </figure>
 
 <figure>
-<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-21-blog-bullet-sketch-2/2015-01-21-blog-bullet-sketch-2.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
+<img src="http://alb-dropshare.s3-eu-west-1.amazonaws.com/2015-01-22-blog-notebook-open-2.jpg" alt="Notebook open. A week page on the left and a sketchnote on the right">
 <figcaption>
 Tasks for the week on the left and a meeting sketchnote on the right
 </figcaption>
