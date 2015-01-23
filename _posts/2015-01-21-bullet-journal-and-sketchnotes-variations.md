@@ -78,11 +78,11 @@ Here is a exemple of a month in my journal
 - Page 1 (left): Calendar view
 - Page 2 (right): Tasks for the month
 - Page 3 (left): Start with the first day of the month
-- Day 1
-- Tasks for day 1
-- Day 2
-- Tasks for day 2
-- ... until the end of the week (every week, I start a new page.)
+  - Day 1
+    - Tasks for day 1
+  - Day 2
+    - Tasks for day 2
+  - ... until the end of the week (every week, I start a new page.)
 - Page 4: If I have a meetings on day 1, I put in a blank page on wich I will sketch.  
 
 Think of a normal bullet journal in which are inserted sketchnotes. It means, I do a normal bullet journal and when I’m at a meeting a put in a blank page on which I will sketch.
