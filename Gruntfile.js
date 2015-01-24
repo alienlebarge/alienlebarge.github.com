@@ -31,6 +31,14 @@ module.exports = function (grunt) {
           files: {
             'stylesheets/style.css': 'stylesheets/style.scss'
         }
+      },
+      hologram: {
+        options: {
+          style: 'expanded'
+        },
+          files: {
+            '_hologram/_css/style.css': 'stylesheets/style.scss'
+        }
       }
     },
 
@@ -61,6 +69,7 @@ module.exports = function (grunt) {
           'bower_components/jquery/dist/jquery.min.js',
           'bower_components/fitvids/jquery.fitvids.js',
           'javascripts/_fitvids.footer.js',
+          'javascripts/_mail-protection.footer.js',
           'javascripts/_iconic.js',
           'javascripts/_google-analytics.js'
           ],
@@ -81,6 +90,15 @@ module.exports = function (grunt) {
         dest: '_hologram/_css/'
       }
     },
+
+
+
+
+
+    clean: {
+      styleguide: ['styleguide']
+    },
+
 
 
 
@@ -114,7 +132,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner','concat', 'copy', 'hologram']
+        tasks: ['sass', 'usebanner', 'concat', 'clean', 'hologram']
       }
     }
 
@@ -132,9 +150,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'usebanner', 'concat', 'exec:serve']);
-  grunt.registerTask('build', ['sass', 'usebanner', 'concat']);
+  grunt.registerTask('build', ['sass', 'usebanner', 'concat', 'clean', 'hologram']);
+
 
 };
