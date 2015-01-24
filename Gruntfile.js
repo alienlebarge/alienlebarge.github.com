@@ -37,6 +37,22 @@ module.exports = function (grunt) {
 
 
 
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+        map: true
+      },
+      dist: {
+        src: 'stylesheets/style.min.css'
+      },
+      dev: {
+        src: 'stylesheets/style.css'
+      },
+    },
+
+
+
+
 
     usebanner: {
       options: {
@@ -47,6 +63,7 @@ module.exports = function (grunt) {
         src: ['stylesheets/style.min.css', 'stylesheets/style.css']
       }
     },
+
 
 
 
@@ -100,13 +117,14 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'usebanner', 'concat', 'exec:serve']);
-  grunt.registerTask('build', ['sass', 'usebanner', 'concat']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'exec:serve']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat']);
 
 };
