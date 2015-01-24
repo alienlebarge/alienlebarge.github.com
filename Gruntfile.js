@@ -89,12 +89,18 @@ module.exports = function (grunt) {
 
 
 
-    exec: {
-      build: {
-        cmd: 'jekyll build'
+    jekyll: {                             // Task
+      dist: {                             // Target
+        options: {                        // Target options
+          dest: '_site',
+          config: '_config.yml'
+        }
       },
-      serve: {
-        cmd: 'jekyll serve --watch'
+      dev : {
+        options : {
+          dest: '_site',
+          config: '_config-dev.yml'
+        }
       }
     },
 
@@ -120,11 +126,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'exec:serve']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat']);
 
 };
