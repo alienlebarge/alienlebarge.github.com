@@ -37,6 +37,22 @@ module.exports = function (grunt) {
 
 
 
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+        map: true
+      },
+      dist: {
+        src: 'stylesheets/style.min.css'
+      },
+      dev: {
+        src: 'stylesheets/style.css'
+      },
+    },
+
+
+
+
 
     usebanner: {
       options: {
@@ -47,6 +63,7 @@ module.exports = function (grunt) {
         src: ['stylesheets/style.min.css', 'stylesheets/style.css']
       }
     },
+
 
 
 
@@ -72,12 +89,18 @@ module.exports = function (grunt) {
 
 
 
-    exec: {
-      build: {
-        cmd: 'jekyll build'
+    jekyll: {                             // Task
+      dist: {                             // Target
+        options: {                        // Target options
+          dest: '_site',
+          config: '_config.yml'
+        }
       },
-      serve: {
-        cmd: 'jekyll serve --watch'
+      dev : {
+        options : {
+          dest: '_site',
+          config: '_config-dev.yml'
+        }
       }
     },
 
@@ -86,11 +109,41 @@ module.exports = function (grunt) {
 
 
     watch: {
-      css: {
+      sass: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner','concat']
+        tasks: ['sass','autoprefixer','usebanner']
+      },
+      js: {
+        files: 'javascripts/**/*.js',
+        tasks: ['concat']
+      },
+      jekyll: {
+        files: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
+        tasks: ['jekyll:dev']
       }
-    }
+    },
+
+
+
+
+
+    browserSync: {
+      files: {
+        src : ['_site/stylesheets/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html']
+      },
+      options: {
+        watchTask: true,
+        ghostMode: {
+          clicks: true,
+          scroll: true,
+          links: true,
+          forms: true
+        },
+        server: {
+          baseDir: '_site'
+        }
+      }
+    },
 
 
 
@@ -100,13 +153,15 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'usebanner', 'concat', 'exec:serve']);
-  grunt.registerTask('build', ['sass', 'usebanner', 'concat']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dist']);
 
 };

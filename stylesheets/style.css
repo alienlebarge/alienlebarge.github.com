@@ -1,6 +1,6 @@
 /*!
  * alienlebarge-blog v1.11.1 (http://www.alienlebarge.ch)
- * Copyright 2014-2014 Cédric Aellen
+ * Copyright 2014-2015 Cédric Aellen
  * Licensed under MIT (https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE)
  */
 
@@ -553,7 +553,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -694,8 +693,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -839,14 +836,10 @@ ul, ol, dd {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -935,13 +928,7 @@ pre {
   overflow: auto;
   color: #fff;
   padding: 14px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 pre mark {
@@ -979,10 +966,6 @@ p code, ul code {
   font-size: 0.75em;
   /* Override `pre` font-size */
   background-color: #f8f8f8;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -1688,16 +1671,13 @@ Put a big image in the header that fit the screen
 .header-image {
   height: 100vh;
   min-height: 300px;
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
@@ -1744,7 +1724,8 @@ Add `.container` if you want the title to have the same width as the content.
 .header-image__text-container {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
-  flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   color: #fff;
   z-index: 1;
 }
