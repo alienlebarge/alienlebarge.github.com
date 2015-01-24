@@ -111,10 +111,14 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','autoprefixer','usebanner','concat']
+        tasks: ['sass','autoprefixer','usebanner']
+      },
+      js: {
+        files: 'javascripts/**/*.js',
+        tasks: ['concat']
       },
       jekyll: {
-        files: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css'],
+        files: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
         tasks: ['jekyll:dev']
       }
     },
