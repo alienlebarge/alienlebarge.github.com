@@ -129,7 +129,7 @@ module.exports = function (grunt) {
 
     browserSync: {
       files: {
-        src : ['_site/stylesheets/*.css', '_site/**/*.html']
+        src : ['_site/stylesheets/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html']
       },
       options: {
         watchTask: true,
