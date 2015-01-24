@@ -157,7 +157,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dist']);
 
 };
