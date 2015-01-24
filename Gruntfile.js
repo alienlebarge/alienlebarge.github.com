@@ -109,11 +109,37 @@ module.exports = function (grunt) {
 
 
     watch: {
-      css: {
+      sass: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','usebanner','concat']
+        tasks: ['sass','autoprefixer','usebanner','concat']
+      },
+      jekyll: {
+        files: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css'],
+        tasks: ['jekyll:dev']
       }
-    }
+    },
+
+
+
+
+
+    browserSync: {
+      files: {
+        src : ['_site/stylesheets/*.css', '_site/**/*.html']
+      },
+      options: {
+        watchTask: true,
+        ghostMode: {
+          clicks: true,
+          scroll: true,
+          links: true,
+          forms: true
+        },
+        server: {
+          baseDir: '_site'
+        }
+      }
+    },
 
 
 
@@ -128,6 +154,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev']);

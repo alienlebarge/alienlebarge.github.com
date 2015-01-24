@@ -20,6 +20,7 @@
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-autoprefixer": "~2.2.0",
-    "grunt-jekyll": "~0.4.2"
+    "grunt-jekyll": "~0.4.2",
+    "grunt-browser-sync": "~1.9.1"
   }
 }
