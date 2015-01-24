@@ -8,7 +8,7 @@ author: Cédric Aellen
 markdown: kramdown
 paginate: 10
 excerpt_separator: <!--more-->
-exclude: [Gruntfile.js, package.json, wordpress.xml, less, scss]
+exclude: [bower_components, node_modules, Gruntfile.js, package.json, wordpress.xml, less, scss]
 highlighter: true
 permalink: /:year/:month/:day/:title
 
