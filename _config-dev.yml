@@ -1,0 +1,20 @@
+# Site settings
+name: "@alienlebarge"
+description: "Articles on the web front-end development, music and hiking."
+url: ""
+author: Cédric Aellen
+
+# Build settings
+markdown: kramdown
+paginate: 10
+excerpt_separator: <!--more-->
+exclude: [bower_components, node_modules, Gruntfile.js, package.json, wordpress.xml, less, scss]
+highlighter: true
+permalink: /:year/:month/:day/:title
+
+# Mapbox settings
+mapbox_token: pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
+mapbox_mapid: alienlebarge.io3heb5m
+
+# Iconic
+iconic_url: http://www.alienlebarge.ch/assets/iconic/1.7.0/
