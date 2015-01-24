@@ -1993,6 +1993,35 @@ Add border to your content.
   border-bottom-color: #ccc;
 }
 
+/*doc
+---
+title: Image shapes
+name: image-shapes
+category: Componment
+---
+
+Give a shape to your images.
+
+*/
+/*doc
+---
+title: Image circle
+name: image-circle
+parent: image-shapes
+---
+
+Put your squarish images into a circle.
+Be aware, the image have to have the same height and weight ... like a square.
+
+```html_example
+<img src="http://placekitten.com/g/75/75" class="image-circle">
+```
+
+*/
+.image-circle {
+  border-radius: 50%;
+}
+
 /*------------------------------------*\
     #TRUMPS
 \*------------------------------------*/
