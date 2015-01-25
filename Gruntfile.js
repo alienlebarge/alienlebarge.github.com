@@ -118,7 +118,7 @@ module.exports = function (grunt) {
         tasks: ['concat']
       },
       jekyll: {
-        files: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
+        files: ['index.html', '*.html', '*.md', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
         tasks: ['jekyll:dev']
       }
     },
