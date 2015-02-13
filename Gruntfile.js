@@ -135,6 +135,10 @@ module.exports = function (grunt) {
         files: 'javascripts/**/*.js',
         tasks: ['concat', 'hologram']
       },
+      hologram: {
+        files: 'stylesheets/*.md',
+        tasks: ['hologram']
+      },
       jekyll: {
         files: ['index.html', '*.html', '*.md', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
         tasks: ['jekyll:dev']
