@@ -4,6 +4,10 @@
 
 This is the source files of [my blog](http://blog.alienlebarge.ch)
 
-## Install components
+## Install
 
+    $ npm install
+    $ gem install jekyll
+    $ gem install hologram
     $ bower install
+    $ grunt
