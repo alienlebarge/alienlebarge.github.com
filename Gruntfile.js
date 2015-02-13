@@ -73,6 +73,12 @@ module.exports = function (grunt) {
         separator: ';',
         banner: '<%= banner %>',
       },
+      header_js: {
+        src: [
+          'javascripts/_typekit.js'
+        ],
+        dest: 'javascripts/header.js',
+      },
       footer_js: {
         src: [
           'bower_components/jquery/dist/jquery.min.js',
