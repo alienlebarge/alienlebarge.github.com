@@ -1,0 +1,960 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../stylesheets/style.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+        
+        
+          
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>Componment</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="componment.html">Componment</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Button</h3>
+          <ul>
+          
+            
+          
+            
+              
+              
+                <li><a href="button.html">Button</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Code</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="code.html">Code</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Settings</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="settings.html">Settings</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Typography</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="typography.html">Typography</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Helpers</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="helpers.html">Helpers</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Image</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="image.html">Image</a></li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>Link</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="link.html">Link</a></li>
+              
+            
+          
+            
+          
+            
+          
+          </ul>
+        
+          <h3>List</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="list.html">List</a></li>
+              
+            
+          
+            
+          
+          </ul>
+        
+          <h3>base</h3>
+          <ul>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+                <li><a href="base.html">base</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1>hello</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Border",
+              "breadcrumb": "Componment > Border",
+              "path": "componment.html#border"
+              },
+            
+              
+              
+              {
+              "title": "Border bottom",
+              "breadcrumb": "Componment > Border bottom",
+              "path": "componment.html#border-bottom"
+              },
+            
+              
+              
+              {
+              "title": "Border left",
+              "breadcrumb": "Componment > Border left",
+              "path": "componment.html#border-left"
+              },
+            
+              
+              
+              {
+              "title": "Border right",
+              "breadcrumb": "Componment > Border right",
+              "path": "componment.html#border-right"
+              },
+            
+              
+              
+              {
+              "title": "Border top",
+              "breadcrumb": "Componment > Border top",
+              "path": "componment.html#border-top"
+              },
+            
+              
+              
+              {
+              "title": "Header image",
+              "breadcrumb": "Componment > Header image",
+              "path": "componment.html#header-image"
+              },
+            
+              
+              
+              {
+              "title": "Header image overlay",
+              "breadcrumb": "Componment > Header image overlay",
+              "path": "componment.html#header-image--overlay"
+              },
+            
+              
+              
+              {
+              "title": "Header image iconic",
+              "breadcrumb": "Componment > Header image iconic",
+              "path": "componment.html#header-image-iconic"
+              },
+            
+              
+              
+              {
+              "title": "Header image hidden image",
+              "breadcrumb": "Componment > Header image hidden image",
+              "path": "componment.html#header-image__hidden-image"
+              },
+            
+              
+              
+              {
+              "title": "Header image text container",
+              "breadcrumb": "Componment > Header image text container",
+              "path": "componment.html#header-image__text-container"
+              },
+            
+              
+              
+              {
+              "title": "Image shapes",
+              "breadcrumb": "Componment > Image shapes",
+              "path": "componment.html#image-shapes"
+              },
+            
+              
+              
+              {
+              "title": "Image circle",
+              "breadcrumb": "Componment > Image circle",
+              "path": "componment.html#image-circle"
+              },
+            
+              
+              
+              {
+              "title": "Navigation",
+              "breadcrumb": "Componment > Navigation",
+              "path": "componment.html#navigation"
+              },
+            
+              
+              
+              {
+              "title": "Primary Navigation",
+              "breadcrumb": "Componment > Primary Navigation",
+              "path": "componment.html#primary-navigation"
+              },
+            
+              
+              
+              {
+              "title": "Structure",
+              "breadcrumb": "Componment > Structure",
+              "path": "componment.html#structure"
+              },
+            
+              
+              
+              {
+              "title": "Container",
+              "breadcrumb": "Componment > Container",
+              "path": "componment.html#container"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Buttons",
+              "breadcrumb": "Button > Buttons",
+              "path": "button.html#buttons"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Code",
+              "breadcrumb": "Code > Code",
+              "path": "code.html#code"
+              },
+            
+              
+              
+              {
+              "title": "Inline code",
+              "breadcrumb": "Code > Inline code",
+              "path": "code.html#inline-code"
+              },
+            
+              
+              
+              {
+              "title": "Codeblock",
+              "breadcrumb": "Code > Codeblock",
+              "path": "code.html#pre"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Settings",
+              "breadcrumb": "Settings > Settings",
+              "path": "settings.html#custom-settings"
+              },
+            
+              
+              
+              {
+              "title": "Font settings",
+              "breadcrumb": "Settings > Font settings",
+              "path": "settings.html#01-font-settings"
+              },
+            
+              
+              
+              {
+              "title": "Color",
+              "breadcrumb": "Settings > Color",
+              "path": "settings.html#02-color"
+              },
+            
+              
+              
+              {
+              "title": "Breakpoint",
+              "breadcrumb": "Settings > Breakpoint",
+              "path": "settings.html#03-breakpoint"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Headers",
+              "breadcrumb": "Typography > Headers",
+              "path": "typography.html#headers"
+              },
+            
+              
+              
+              {
+              "title": "Paragraph",
+              "breadcrumb": "Typography > Paragraph",
+              "path": "typography.html#paragraph"
+              },
+            
+              
+              
+              {
+              "title": "Lede",
+              "breadcrumb": "Typography > Lede",
+              "path": "typography.html#lede"
+              },
+            
+              
+              
+              {
+              "title": "Small",
+              "breadcrumb": "Typography > Small",
+              "path": "typography.html#small"
+              },
+            
+              
+              
+              {
+              "title": "Strong",
+              "breadcrumb": "Typography > Strong",
+              "path": "typography.html#strong"
+              },
+            
+              
+              
+              {
+              "title": "Quote",
+              "breadcrumb": "Typography > Quote",
+              "path": "typography.html#quote"
+              },
+            
+              
+              
+              {
+              "title": "Blockquote",
+              "breadcrumb": "Typography > Blockquote",
+              "path": "typography.html#blockquote"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Helper classes",
+              "breadcrumb": "Helpers > Helper classes",
+              "path": "helpers.html#helper-classes"
+              },
+            
+              
+              
+              {
+              "title": "Center block",
+              "breadcrumb": "Helpers > Center block",
+              "path": "helpers.html#center-block"
+              },
+            
+              
+              
+              {
+              "title": "Pull right",
+              "breadcrumb": "Helpers > Pull right",
+              "path": "helpers.html#pull-right"
+              },
+            
+              
+              
+              {
+              "title": "Relative",
+              "breadcrumb": "Helpers > Relative",
+              "path": "helpers.html#relative"
+              },
+            
+              
+              
+              {
+              "title": "Screen reader only",
+              "breadcrumb": "Helpers > Screen reader only",
+              "path": "helpers.html#sr-only"
+              },
+            
+              
+              
+              {
+              "title": "Types",
+              "breadcrumb": "Helpers > Types",
+              "path": "helpers.html#types"
+              },
+            
+              
+              
+              {
+              "title": "Font weight normal",
+              "breadcrumb": "Helpers > Font weight normal",
+              "path": "helpers.html#font-weight-normal"
+              },
+            
+              
+              
+              {
+              "title": "Meta",
+              "breadcrumb": "Helpers > Meta",
+              "path": "helpers.html#meta"
+              },
+            
+              
+              
+              {
+              "title": "Text center",
+              "breadcrumb": "Helpers > Text center",
+              "path": "helpers.html#text-center"
+              },
+            
+              
+              
+              {
+              "title": "Text justify",
+              "breadcrumb": "Helpers > Text justify",
+              "path": "helpers.html#text-justify"
+              },
+            
+              
+              
+              {
+              "title": "Text left",
+              "breadcrumb": "Helpers > Text left",
+              "path": "helpers.html#text-left"
+              },
+            
+              
+              
+              {
+              "title": "Text right",
+              "breadcrumb": "Helpers > Text right",
+              "path": "helpers.html#text-right"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Image",
+              "breadcrumb": "Image > Image",
+              "path": "image.html#image"
+              },
+            
+              
+              
+              {
+              "title": "Figcaption",
+              "breadcrumb": "Image > Figcaption",
+              "path": "image.html#figcaption"
+              },
+            
+              
+              
+              {
+              "title": "Figure",
+              "breadcrumb": "Image > Figure",
+              "path": "image.html#figure"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Link",
+              "breadcrumb": "Link > Link",
+              "path": "link.html#link"
+              },
+            
+              
+              
+              {
+              "title": "Default link",
+              "breadcrumb": "Link > Default link",
+              "path": "link.html#default-link"
+              },
+            
+              
+              
+              {
+              "title": "No underlined link",
+              "breadcrumb": "Link > No underlined link",
+              "path": "link.html#no-underlined-link"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Lists",
+              "breadcrumb": "List > Lists",
+              "path": "list.html#list"
+              },
+            
+              
+              
+              {
+              "title": "List inline",
+              "breadcrumb": "List > List inline",
+              "path": "list.html#list-inline"
+              },
+            
+              
+              
+              {
+              "title": "List UI",
+              "breadcrumb": "List > List UI",
+              "path": "list.html#list-ui"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Page",
+              "breadcrumb": "base > Page",
+              "path": "base.html#page"
+              },
+            
+              
+              
+              {
+              "title": "html",
+              "breadcrumb": "base > html",
+              "path": "base.html#html"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Page",
+              "breadcrumb": "base > Page",
+              "path": "base.html#page"
+              },
+            
+              
+              
+              {
+              "title": "html",
+              "breadcrumb": "base > html",
+              "path": "base.html#html"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+      <script type="text/javascript" src="../javascripts/header.js"></script>
+    
+      <script type="text/javascript" src="../javascripts/footer.js"></script>
+    
+  
+  <!-- Source Components -->
+  
+</body>
+</html>
