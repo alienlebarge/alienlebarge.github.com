@@ -46,7 +46,7 @@ And yeah, it’s a Freitag !
 <iframe src="//player.vimeo.com/video/30231914" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <figure>
-<img src="https://dlgjp9x71cipk.cloudfront.net2015-01-22-blog-notebook-gwWEqgO.jpg" alt="My Freitag notebook">
+<img src="https://dlgjp9x71cipk.cloudfront.net/2015-01-22-blog-notebook-gwWEqgO.jpg" alt="My Freitag notebook">
 <figcaption>
 My Freitag notebook
 </figcaption>
@@ -65,7 +65,7 @@ I cut these sheets at the right size and then go to a Freitag store to make the 
 I don’t use a specific pen. It has to write in black and the maximum size is 0.5mm.
 
 <figure>
-<img src="https://dlgjp9x71cipk.cloudfront.net2015-01-22-blog-pen-S4VEElk.jpg" alt="The pens I have allways with me">
+<img src="https://dlgjp9x71cipk.cloudfront.net/2015-01-22-blog-pen-S4VEElk.jpg" alt="The pens I have allways with me">
 <figcaption>
 The pens I have allways with me. When I need some color, I really like the <a href="http://shinhanart.co.kr/eng/product/product_touch.php">ShinHanart TOUCH TWIN</a>.
 </figcaption>
