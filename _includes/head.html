@@ -63,16 +63,16 @@
   <!-- Prerender pagination page -->
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-  <link rel="prerender" href="http://blog.alienlebarge.ch">
+  <link rel="prerender" href="http://www.alienlebarge.ch">
       {% else %}
-  <link rel="prerender" href="http://blog.alienlebarge.ch/page{{ paginator.previous_page }}">
+  <link rel="prerender" href="http://www.alienlebarge.ch/page{{ paginator.previous_page }}">
       {% endif %}
     {% endif %}
     {% if paginator.next_page %}
-  <link rel="prerender" href="http://blog.alienlebarge.ch/page{{ paginator.next_page }}">
+  <link rel="prerender" href="http://www.alienlebarge.ch/page{{ paginator.next_page }}">
     {% endif %}
   {% else %}
   <!-- Prerender homepage -->
-  <link rel="prerender" href="http://blog.alienlebarge.ch">
+  <link rel="prerender" href="http://www.alienlebarge.ch">
   {% endif %}
 </head>
