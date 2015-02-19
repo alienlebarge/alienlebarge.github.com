@@ -16,7 +16,7 @@ coordinates: 6.322417,46.66906
 
 Le tour du lac Brenet à la Vallée de Joux est une ballade accessible à tous. Le sentier est même facilement accessible avec une poussette.<!--more-->
 
-![Lac Brenet](https://s3-eu-west-1.amazonaws.com/alb-blog/2013/06/1370288898.jpg)
+![Lac Brenet](https://dlgjp9x71cipk.cloudfront.net/2013/06/1370288898.jpg)
 
 Je vous conseille de partir de la gare du Pont et de faire le tour du lac en commençant par la rive coté route. Ainsi vous terminerez par la place de jeux des Charbonnières. Ca fait toujours un joli susucre pour les enfant.
 
@@ -30,7 +30,7 @@ Le tronçon de la rive opposé un sentier bien plat de un à deux mètre de larg
 
 Le parcours se termine à la place de jeux des Charbonnières juste après le terrain de football. Quelques tables sont à dispositions.
 
-![Lac Brenet vu depuis Les Charbonnières](https://s3-eu-west-1.amazonaws.com/alb-blog/2013/06/1370289026.jpg)
+![Lac Brenet vu depuis Les Charbonnières](https://dlgjp9x71cipk.cloudfront.net/2013/06/1370289026.jpg)
 
 Il ne reste que quelques centaines de mètres à faire le long de la route cantonale pour rejoindre la gare du Pont.
 

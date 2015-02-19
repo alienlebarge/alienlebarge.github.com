@@ -39,13 +39,13 @@ Arrivé au viaduc du Day fraichement rénové, profiter de la vue en le traversa
 
 Suivez ensuite le sentier pédestre qu’il longe l’Orbe jusqu’au barrage du Day. À la hauteur de la station électrique de la Jougnenaz, profitez de faire une photo de la Dent de Vaulion qui s’aligne parfaitement sous les arches du Viaduc. La route goudronnée permet également de faire marcher les petits. Mais faites attention,il y a des risques de chutes de pierre juste après le tunnel.
 
-<img class="aligncenter size-medium wp-image-6580" alt="2013-05-27 10.12.19" src="https://s3-eu-west-1.amazonaws.com/alb-blog/2013/05/2013-05-27-10.12.19-800x597.jpg" width="800" height="597" />
+<img class="aligncenter size-medium wp-image-6580" alt="2013-05-27 10.12.19" src="https://dlgjp9x71cipk.cloudfront.net/2013/05/2013-05-27-10.12.19-800x597.jpg" width="800" height="597" />
 
 Après avoir passé le barrage,  il faut suivre le sentier qui indique « Gorges de l’Orbe ». Là c’est sac à dos obligatoire. Lors de notre passage, il avait plu la veille. Le terrain était très glissant.
 
 Vous arriverez vers un petit pont qui traverse l’Orbe. Ne l’empruntez pas et continuez à descendre sur la rive gauche.
 
-<img class="aligncenter size-medium wp-image-6570" alt="Le Saut du Day" src="https://s3-eu-west-1.amazonaws.com/alb-blog/2013/05/Cyk0Nr3YZp_ZvndV9_9WsuzczTLGbUG1eqc1ExFTNCM-800x596.jpeg" width="800" height="596" />
+<img class="aligncenter size-medium wp-image-6570" alt="Le Saut du Day" src="https://dlgjp9x71cipk.cloudfront.net/2013/05/Cyk0Nr3YZp_ZvndV9_9WsuzczTLGbUG1eqc1ExFTNCM-800x596.jpeg" width="800" height="596" />
 
 Une fois au pied des chutes vous y êtes.  Voici le Saut du Day, une très jolie petite plage fera le bonheur des enfants et des amateurs de ricochet. C’est la place de pique-nique idéal. D’ici, il faut compter 20 bonnes minutes pour retourner au point de départ de la ballade.
 
