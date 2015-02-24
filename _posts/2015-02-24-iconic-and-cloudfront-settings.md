@@ -1,7 +1,7 @@
 ---
 layout:      post
-title:       "How to use iconic with Amazon S3 and CloudFront"
-description: "How I set up S3 and CloudFront to make it works with iconic incons system."
+title:       "How to use Iconic with Amazon S3 and CloudFront"
+description: "How I set up S3 and CloudFront to make it works with Iconic incons system."
 date:        2015-02-24 19:27:09
 tags:
 - iconic
@@ -59,7 +59,7 @@ I will not dive into technical infos. You will find all you needs in the links a
 
 ## Thanks
 
-Thanks to the iconic team for the wonderfull work and [support](https://useiconic.com/community/#!/getting-started:does-iconic-work-with-amazo) !
+Thanks to the Iconic team for the wonderfull work and [support](https://useiconic.com/community/#!/getting-started:does-iconic-work-with-amazo) !
 
 ## Further reading
 
