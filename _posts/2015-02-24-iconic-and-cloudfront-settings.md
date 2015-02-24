@@ -1,7 +1,7 @@
 ---
 layout:      post
-title:       "How to setup CloudFront to use iconic with it"
-description: "Since more than a year, I write down everything I do. This logging technique works well for and I want to share it with you."
+title:       "How to use iconic with Amazon S3 and CloudFront"
+description: "How I set up S3 and CloudFront to make it works with iconic incons system."
 date:        2015-02-24 19:27:09
 tags:
 - iconic
