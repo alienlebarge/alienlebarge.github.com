@@ -57,6 +57,10 @@ I will not dive into technical infos. You will find all you needs in the links a
 
 ![CondFront control panel](https://dlgjp9x71cipk.cloudfront.net/2015-02-24-cloudfront-settings.png)
 
+## Thanks
+
+Thanks to the iconic team for the wonderfull work and [support](https://useiconic.com/community/#!/getting-started:does-iconic-work-with-amazo) !
+
 ## Further reading
 
 - [Tutorial: Using CORS with CloudFront and S3](http://blog.celingest.com/en/2014/10/02/tutorial-using-cors-with-cloudfront-and-s3/)
