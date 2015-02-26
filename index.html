@@ -45,7 +45,7 @@ title: "@alienlebarge"
     {% assign maxPostCount = 3 %}
 
     {% for experience in site.data.experiences %}
-    {% if experience.categorie == 'job' and counter < maxPostCount %}
+    {% if experience.category == 'job' and counter < maxPostCount %}
     {% assign counter=counter | plus:1 %}
     <h3 class="mb0">{{ experience.title }}</h2>
     <p class="meta">
