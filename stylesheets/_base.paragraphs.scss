@@ -85,3 +85,24 @@ parent: paragraph
 strong {
   font-weight: bold;
 }
+
+
+
+
+
+/*doc
+---
+title: Italic
+name: italic
+parent: paragraph
+---
+
+```html_example
+    <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat nam, doloremque, dignissimos nemo debitis.</p>
+    <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Perferendis, assumenda?</p>
+```
+*/
+.italic,
+%italic {
+  font-style: italic;
+}
