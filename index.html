@@ -32,6 +32,41 @@ title: "@alienlebarge"
       </li>
       {% endfor %}
     </ul>
+    <p>
+      <a href="blog.html">Read more</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Experiences</h2>
+
+    {% comment %} Show last only the last 3 experiences with the 'job' category. {% endcomment %}
+    {% assign counter = 0 %}
+    {% assign maxPostCount = 3 %}
+
+    {% for experience in site.data.experiences %}
+    {% if experience.categorie == 'job' and counter < maxPostCount %}
+    {% assign counter=counter | plus:1 %}
+    <h3 class="mb0">{{ experience.title }}</h2>
+    <p class="meta">
+      {{ experience.startDate | date: "%B %Y" }} -
+      {% if experience.endDate %}
+        {{ experience.endDate | date: "%B %Y" }}
+      {% elsif experience.endDate == null %}
+        Now
+      {% endif %}
+    </p>
+    {% if experience.description %}
+    <p>
+      {{ experience.description }}
+    </p>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <p>
+      <a href="cv.html">See more</a>
+    </p>
   </section>
 
 </div>
