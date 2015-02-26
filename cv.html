@@ -12,11 +12,11 @@ title: "Experiences"
   {% for experience in site.data.experiences %}
   <h2 class="mb0">{{ experience.title }}</h2>
   <p class="meta">
-    {% if experience.categorie == 'job' %}
+    {% if experience.category == 'job' %}
     <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="brain">
-    {% elsif experience.categorie == 'studies' %}
+    {% elsif experience.category == 'studies' %}
     <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="brain">
-    {% elsif experience.categorie == 'sideproject' %}
+    {% elsif experience.category == 'sideproject' %}
     <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="brain">
     {% endif %}
 
