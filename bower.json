@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "jquery": "~2.1.1",
-    "fitvids": "~1.1.0"
+    "fitvids": "~1.1.0",
+    "inuit-list-bare": "~0.3.0"
   }
 }

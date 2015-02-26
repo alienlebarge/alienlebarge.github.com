@@ -43,6 +43,7 @@
  *
  * OBJECTS
  * List-ui:             Ui list and inline list
+ * List-bar:            Remove list style
  * Buttons:             Buttons style
  * Helper-classes:      Want to align or hide something
  *
@@ -1459,6 +1460,35 @@ The List-inline object simply displays a list as one horizontal row.
 }
 .list-inline > li {
   display: inline-block;
+}
+
+/*doc
+---
+title: List bare
+name: list-bare
+category: List
+---
+
+The List-bare object remove classics liste styles.
+
+```html_example
+<ul class="list-inline">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
+/*------------------------------------*\
+    #LIST-BARE
+\*------------------------------------*/
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ */
+.list-bare {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*doc

@@ -38,3 +38,25 @@ The List-inline object simply displays a list as one horizontal row.
 ```
 */
 @import "../bower_components/inuit-list-inline/objects.list-inline";
+
+
+
+
+/*doc
+---
+title: List bare
+name: list-bare
+category: List
+---
+
+The List-bare object remove classics liste styles.
+
+```html_example
+<ul class="list-bare">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+```
+*/
+@import "../bower_components/inuit-list-bare/objects.list-bare";

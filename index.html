@@ -22,7 +22,7 @@ title: "@alienlebarge"
 
   <section>
     <h2>Articles</h2>
-    <ul>
+    <ul class="list-bare">
       {% for post in paginator.posts limit:5 %}
       <li>
         <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d" }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %} <a href="{{ post.url }}">{{ post.title }}</a>
