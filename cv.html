@@ -12,6 +12,14 @@ title: "Experiences"
   {% for experience in site.data.experiences %}
   <h2 class="mb0">{{ experience.title }}</h2>
   <p class="meta">
+    {% if experience.categorie == 'job' %}
+    <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="brain">
+    {% elsif experience.categorie == 'studies' %}
+    <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="brain">
+    {% elsif experience.categorie == 'sideproject' %}
+    <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="brain">
+    {% endif %}
+
     {{ experience.startDate | date: "%B %Y" }} -
     {% if experience.endDate %}
       {{ experience.endDate | date: "%B %Y" }}

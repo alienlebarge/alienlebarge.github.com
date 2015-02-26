@@ -1,40 +1,58 @@
 - title: Front end devloper / TYPO3 Administrator at État de Vaud
+  categorie: job
   startDate: 2009-01-01
 
+- title: <a href="http://www.alienlebarge.ch">alienlebarge.ch</a>
+  categorie: sideproject
+  startDate: 2000-01-01
+  description: It lives since a few year. From table layout and <code>&glt;blink&gt;</code>s to SVG, injection I always have a lot of fun to maintain my lovely website.
+
+- title: <a href="http://www.pou7.ch">pou7.ch</a>
+  categorie: sideproject
+  startDate: 2013-12-01
+  description: I love my kids and I love trekking. But this not always easy to find nice trail you can go with a troller and little kids.
+
 - title: Technical Manager at Pixit Communication
+  categorie: job
   startDate: 2008-02-01
   endDate: 2008-12-31
   period: February 2008 - December 2008
   description: Implementation of e-commerce platforms as well as content management tools.
 
 - title: Project Manager at Paul Vaucher S.A.
+  categorie: job
   startDate: 2004-06-01
   endDate: 2008-01-31
   description: In charge of the <abbr title="Research and Devlopment">R&D</abbr>. Developement of building automation interfaces that can handle <a href="http://www.campusbiotech.ch">complex of several buildings housing biotech laboratories</a>. Specialization in the field of <abbr title="Human Machine Interface">HMI</abbr>.
 
 - title: Diploma work at Philip Morris Product S.A.
+  categorie: job
   startDate: 2003-10-01
   endDate: 2004-02-31
   description: Setting up a reporting and management support process.
 
 - title: Bachelor of Interactive medias engeneer at <a href="http://www.heig-vd.ch">HEIG-VD</a>
+  categorie: studies
   startDate: 2000-09-01
   endDate: 2004-02-31
   description: The department comem+ of HEIG-VD, from the old esig+ forms of media engineers who, through their training curriculum, are similar to the German Wirtschaftsingenieure or French ingénieur-e-s d'affaires. The curricula contain about 55 percent engineering, the rest being spent on communication, management and business management.
 
-
 - title: Erasmus at <a href="http://www.htwk-leipzig.de/de/">HTWK</a>
+  categorie: studies
   startDate: 2002-02-01
   endDate: 2002-08-31
 
 - title: Dessinateur-Géomètre at D.T.P S.A.
+  categorie: job
   startDate: 1996-08-01
   endDate: 2000-08-31
 
 - title: Maturité Professionnelle Technique at <a href="https://www.epsic.ch">EPSIC</a>
+  categorie: studies
   startDate: 1996-08-01
   endDate: 2000-08-31
 
 - title: General Certificate of Education at <a href="https://www.epsic.ch">EPSIC</a>
+  categorie: studies
   startDate: 1996-08-01
   endDate: 2000-08-31
