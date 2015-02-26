@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Experiences"
+---
+
+<div class="container ph pb">
+
+  <header class="pt+">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {% for experience in site.data.experiences %}
+  <h2 class="mb0">{{ experience.title }}</h2>
+  <p class="meta">
+    {{ experience.startDate | date: "%B %Y" }} -
+    {% if experience.endDate %}
+      {{ experience.endDate | date: "%B %Y" }}
+    {% elsif experience.endDate == null %}
+      Now
+    {% endif %}
+  </p>
+  {% if experience.description %}
+  <p>
+    {{ experience.description }}
+  </p>
+  {% endif %}
+  {% endfor %}
+
+</div>
