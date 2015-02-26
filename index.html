@@ -22,18 +22,15 @@ title: "@alienlebarge"
 
   <section>
     <h2>Articles</h2>
-    <ul class="list-ui">
-      {% for post in paginator.posts limit:3 %}
-      <li class="list-ui__item ph0">
-          <h3 class="m0 p0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h3>
-          <p class="meta mb0">
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
-          </p>
+    <ul>
+      {% for post in paginator.posts limit:5 %}
+      <li>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d" }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %} <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
     <p>
-      <a href="blog.html">Read more</a>
+      <a href="blog.html">Show all</a>
     </p>
   </section>
 
