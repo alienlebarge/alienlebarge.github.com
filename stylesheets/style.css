@@ -2179,7 +2179,7 @@ Put something on the side on big screen
 ```
 */
 .side-element {
-  padding-right: 7px;
+  display: none;
 }
 @media (min-width: 1200px) {
   .side-element {
@@ -2189,6 +2189,14 @@ Put something on the side on big screen
     padding-right: 14px;
     text-align: right;
   }
+}
+.side-element .iconic .iconic-property-accent {
+  fill: RGBA(200, 200, 200, 1);
+  stroke: RGBA(200, 200, 200, 1);
+}
+.side-element .iconic * {
+  fill: RGBA(220, 220, 220, 1);
+  stroke: RGBA(220, 220, 220, 1);
 }
 
 /*------------------------------------*\
