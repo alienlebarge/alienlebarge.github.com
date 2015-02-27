@@ -1472,7 +1472,7 @@ category: List
 The List-bare object remove classics liste styles.
 
 ```html_example
-<ul class="list-inline">
+<ul class="list-bare">
   <li>item</li>
   <li>item</li>
   <li>item</li>
