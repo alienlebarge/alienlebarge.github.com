@@ -10,28 +10,32 @@ title: "Experiences"
   </header>
 
   {% for experience in site.data.experiences %}
-  <h2 class="mb0">{{ experience.title }}</h2>
-  <p class="meta">
-    {% if experience.category == 'job' %}
-    <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="brain">
-    {% elsif experience.category == 'studies' %}
-    <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="brain">
-    {% elsif experience.category == 'sideproject' %}
-    <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="brain">
+  <article class="" style="position:relative;">
+    <header>
+      <h2 class="mb0"><span class="side-element">
+        {% if experience.category == 'job' %}
+        <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="brain">
+        {% elsif experience.category == 'studies' %}
+        <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="brain">
+        {% elsif experience.category == 'sideproject' %}
+        <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="brain">
+        {% endif %}
+      </span>{{ experience.title }}</h2>
+      <p class="meta">
+        {{ experience.startDate | date: "%B %Y" }} -
+        {% if experience.endDate %}
+          {{ experience.endDate | date: "%B %Y" }}
+        {% elsif experience.endDate == null %}
+          Now
+        {% endif %}
+      </p>
+    </header>
+    {% if experience.description %}
+    <p>
+      {{ experience.description }}
+    </p>
     {% endif %}
-
-    {{ experience.startDate | date: "%B %Y" }} -
-    {% if experience.endDate %}
-      {{ experience.endDate | date: "%B %Y" }}
-    {% elsif experience.endDate == null %}
-      Now
-    {% endif %}
-  </p>
-  {% if experience.description %}
-  <p>
-    {{ experience.description }}
-  </p>
-  {% endif %}
+  </article>
   {% endfor %}
 
 </div>

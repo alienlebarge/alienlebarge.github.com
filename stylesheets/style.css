@@ -2162,6 +2162,32 @@ Be aware, the image have to have the same height and weight ... like a square.
   border-radius: 50%;
 }
 
+/*doc
+---
+title: Side-element
+name: side-element
+category: Componment
+---
+
+Put something on the side on big screen
+
+```html_example
+<h2>
+  <span class="side-element">hello</span>
+  <span>Heading</span>
+</h2>
+```
+*/
+@media (min-width: 1200px) {
+  .side-element {
+    display: inline-block;
+    width: 280px;
+    margin-left: -280px;
+    padding-right: 14px;
+    text-align: right;
+  }
+}
+
 /*------------------------------------*\
     #TRUMPS
 \*------------------------------------*/

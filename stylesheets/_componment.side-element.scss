@@ -1,0 +1,29 @@
+/*doc
+---
+title: Side-element
+name: side-element
+category: Componment
+---
+
+Put something on the side on big screen
+
+```html_example
+<h2>
+  <span class="side-element">hello</span>
+  <span>Heading</span>
+</h2>
+```
+*/
+
+$side-element-spacing-unit: $inuit-base-spacing-unit !default;
+$side-element-width:        10 * $side-element-spacing-unit !default;
+
+.side-element {
+  @include breakpoint(lg) {
+    display: inline-block;
+    width: $side-element-width;
+    margin-left: -$side-element-width;
+    padding-right: $side-element-spacing-unit/2;
+    text-align: right;
+  }
+}
