@@ -2178,6 +2178,9 @@ Put something on the side on big screen
 </h2>
 ```
 */
+.side-element {
+  padding-right: 7px;
+}
 @media (min-width: 1200px) {
   .side-element {
     display: inline-block;
