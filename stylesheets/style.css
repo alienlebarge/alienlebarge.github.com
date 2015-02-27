@@ -1657,6 +1657,115 @@ Set the position to relative to help some positioning
   position: relative;
 }
 
+/*doc
+---
+title: Flexbox
+name: flexbox
+category: flexbox
+---
+
+A new kind of grid system
+
+```html_example
+<div class="flex">
+  <div class="flex__item flex__item--3">...</div>
+  <div class="flex__item flex__item--1">...</div>
+  <div class="flex__item flex__item--2">...</div>
+  <div class="flex__item flex__item--4">...</div>
+</div>
+```
+*/
+/*doc
+---
+title: Flex
+name: flex
+parent: flexbox
+---
+
+flexbox container
+*/
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*doc
+---
+title: Flex-item
+name: flex-item
+parent: flexbox
+---
+
+The first and last column have no margin left and right.
+You can set the width with `flex__item--1` trough `flex__item--4`
+*/
+.flex__item {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+/* First colum has no left margin */
+.flex__item:first-child {
+  margin-left: 0;
+}
+
+/* Last colum has no right margin */
+.flex__item:last-child {
+  margin-right: 0;
+}
+
+/**
+ * Column widths
+ */
+.flex__item--1 {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
+}
+
+.flex__item--2 {
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-flex-shrink: 2;
+      -ms-flex-negative: 2;
+          flex-shrink: 2;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
+}
+
+.flex__item--3 {
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -webkit-flex-shrink: 3;
+      -ms-flex-negative: 3;
+          flex-shrink: 3;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
+}
+
+.flex__item--4 {
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -webkit-flex-shrink: 4;
+      -ms-flex-negative: 4;
+          flex-shrink: 4;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
+}
+
 /*------------------------------------*\
     #COMPONMENT
 \*------------------------------------*/
@@ -2280,6 +2389,39 @@ Be aware, the image have to have the same height and weight ... like a square.
 .mv {
   margin-top: 28px !important;
   margin-bottom: 28px !important;
+}
+
+/**
+ * Add tiny margins.
+ */
+.m-- {
+  margin: 7px !important;
+}
+
+.mt-- {
+  margin-top: 7px !important;
+}
+
+.mr-- {
+  margin-right: 7px !important;
+}
+
+.mb-- {
+  margin-bottom: 7px !important;
+}
+
+.ml-- {
+  margin-left: 7px !important;
+}
+
+.mh-- {
+  margin-right: 7px !important;
+  margin-left: 7px !important;
+}
+
+.mv-- {
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
 }
 
 /**

@@ -1,0 +1,77 @@
+/*doc
+---
+title: Flexbox
+name: flexbox
+category: flexbox
+---
+
+A new kind of grid system
+
+```html_example
+<div class="flex">
+  <div class="flex__item flex__item--3">...</div>
+  <div class="flex__item flex__item--1">...</div>
+  <div class="flex__item flex__item--2">...</div>
+  <div class="flex__item flex__item--4">...</div>
+</div>
+```
+*/
+// Predefine the variables below in order to alter and enable specific features.
+$flex-gutter:           $inuit-base-spacing-unit !default;
+
+
+
+
+
+/*doc
+---
+title: Flex
+name: flex
+parent: flexbox
+---
+
+flexbox container
+*/
+.flex {
+  display: flex;
+}
+
+
+
+
+
+/*doc
+---
+title: Flex-item
+name: flex-item
+parent: flexbox
+---
+
+The first and last column have no margin left and right.
+You can set the width with `flex__item--1` trough `flex__item--4`
+*/
+.flex__item {
+  margin-left: $flex-gutter/2;
+  margin-right: $flex-gutter/2;
+}
+
+/* First colum has no left margin */
+.flex__item:first-child {
+  margin-left: 0;
+}
+
+/* Last colum has no right margin */
+.flex__item:last-child {
+  margin-right: 0;
+}
+
+/**
+ * Column widths
+ */
+@for $i from 1 through 4 {
+  .flex__item--#{$i} {
+    flex-grow: $i;
+    flex-shrink: $i;
+    flex-basis: 0%;
+  }
+}
