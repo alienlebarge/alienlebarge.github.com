@@ -41,7 +41,6 @@
  * List-bar:            Remove list style
  * Buttons:             Buttons style
  * Helper-classes:      Want to align or hide something
- * Flex:                Grid system
  *
  * COMPONENTS
  * Structures:          Wrapping and constraining elements.
@@ -138,7 +137,6 @@
 @import "objects.list.scss";
 @import "objects.buttons.scss";
 @import "objects.helper-classes";
-@import "objects.flexbox";
 
 
 
@@ -185,7 +183,7 @@ $enable-border-bottom: true;
 @import "../bower_components/inuit-widths/trumps.widths";
 
 $inuit-enable-margins         : true;
-$inuit-enable-margins--tiny   : true;
+$inuit-enable-margins--small  : true;
 $inuit-enable-paddings        : true;
 $inuit-enable-margins--none   : true;
 $inuit-enable-paddings--none  : true;

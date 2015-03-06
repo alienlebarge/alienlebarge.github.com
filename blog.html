@@ -9,14 +9,12 @@ title: "Articles"
     <h1>{{ page.title }}</h1>
   </header>
 
-  <ul class="list-ui">
+  <ul class="list-bare">
     {% for post in site.posts %}
-    <li class="list-ui__item ph0">
-        <h2 class="m0 p0"><a href="{% if post.external-link %}{{ post.external-link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
-        <p class="meta mb0">
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %}
-        </p>
-    </li>
+    <li class="mb">
+          <span class="beta mb0">{% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %} <a href="{{ post.url }}">{{ post.title }}</a></span>
+          <br><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      </li>
     {% endfor %}
   </ul>
 
