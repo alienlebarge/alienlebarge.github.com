@@ -44,7 +44,7 @@ title: "alienlebarge"
     {% if experience.category == 'job' and counter < maxPostCount %}
     {% assign counter=counter | plus:1 %}
     <h3 class="mb0">{{ experience.title }}</h2>
-    <p class="meta">
+    <p class="meta mb0">
       {{ experience.startDate | date: "%B %Y" }} -
       {% if experience.endDate %}
         {{ experience.endDate | date: "%B %Y" }}
