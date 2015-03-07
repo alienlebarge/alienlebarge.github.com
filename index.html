@@ -24,9 +24,9 @@ title: "@alienlebarge"
     <h2><span class="side-element"><img data-src="{{ site.iconic_url }}svg/smart/inkwell.svg" class="iconic iconic-md" alt="inkwell"></span>Articles</h2>
     <ul class="list-bare mb">
       {% for post in paginator.posts limit:5 %}
-      <li class="mb-">
-          {% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %} <a href="{{ post.url }}">{{ post.title }}</a>
-          <br><time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="italic small">{{ post.date | date: "%b %d, %Y" }}</time>
+      <li class="mb">
+          <span class="gamma">{% if post.external-site %} on  {{ post.external-site }} <img data-src="{{ site.iconic_url }}svg/smart/external-link.svg" data-fallback="{{ site.iconic_url }}png/black/standard/external-link-sm.png" src="{{ site.iconic_url }}png/black/standard/external-link-sm.png" class="iconic iconic-sm" alt="external-link">{% endif %} <a href="{{ post.url }}">{{ post.title }}</a></span>
+          <br><time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="meta">{{ post.date | date: "%b %d, %Y" }}</time>
       </li>
       {% endfor %}
     </ul>

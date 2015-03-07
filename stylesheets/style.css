@@ -2321,39 +2321,6 @@ Put something on the side on big screen
 }
 
 /**
- * Add small margins.
- */
-.m- {
-  margin: 14px !important;
-}
-
-.mt- {
-  margin-top: 14px !important;
-}
-
-.mr- {
-  margin-right: 14px !important;
-}
-
-.mb- {
-  margin-bottom: 14px !important;
-}
-
-.ml- {
-  margin-left: 14px !important;
-}
-
-.mh- {
-  margin-right: 14px !important;
-  margin-left: 14px !important;
-}
-
-.mv- {
-  margin-top: 14px !important;
-  margin-bottom: 14px !important;
-}
-
-/**
  * Add large margins.
  */
 .m\+ {
