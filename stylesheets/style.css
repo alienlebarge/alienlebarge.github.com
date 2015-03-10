@@ -136,40 +136,6 @@ Inuit mixins
 */
 /*
 ---
-title: Mixin breakpoint
-name: mixin-breakpoint
-parent: mixin
----
-
-[Info about this mixins](https://medium.com/p/889927b37740/)
-
-### From small to large
-
-You can use the following values with this mixins like so `@include breakpoint(md){...};`:
-
-- `xs`: Extra small
-- `sm`: Small
-- `md`: Medium
-- `lg`: Large
-
-```scss
-@mixin breakpoint($min: 0, $max: 0){...};
-@mixin breakpoint(xs){...}
-```
-The values are set in the [`_settings.defaults.scss`](sass-01-settings-settings.defaults.html) file
-
-### Custom parameters
-
-You can use custom parameters.
-
-```scss
-@include breakpoint(400px, 800px){...}; // From 400px to 800px
-@include breakpoint(400px, 0){...}; :   //400px and more
-@include breakpoint(0, 400px){...};     //400px and less
-```
-*/
-/*
----
 title: Mixin border-radius
 name: mixin-border-radius
 parent: mixin
@@ -1221,7 +1187,7 @@ parent: image
     </figure>
 ```
 */
-@media (min-width: 1200px) {
+@media screen and (min-width: 45em) {
   figure {
     position: relative;
   }
@@ -1241,7 +1207,7 @@ parent: image
     </figure>
 ```
 */
-@media (min-width: 1200px) {
+@media screen and (min-width: 45em) {
   figcaption {
     position: absolute;
     top: 0;
@@ -1733,13 +1699,13 @@ Put a big image in the header that fit the screen
   -moz-align-items: flex-end;
   align-items: flex-end;
 }
-@media (max-width: 500px) {
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
   .header-image {
     background-attachment: scroll;
     /*  Fixed background image cost too much ressource on mobile */
   }
 }
-@media (min-width: 501px) {
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
   .header-image {
     background-attachment: fixed;
     /*  Fixed background image cost too much ressource on mobile */
@@ -2060,7 +2026,7 @@ name: side-element
 category: Componment
 ---
 
-Put something on the side.
+Put something on the side.  
 *It's better to hide it on big screen*
 
 ```html_example

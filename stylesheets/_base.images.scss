@@ -25,7 +25,7 @@ parent: image
 ```
 */
 figure {
-  @include breakpoint(lg) {
+  @include media-query(lap-and-up) {
     position: relative;
   }
 }
@@ -50,7 +50,7 @@ parent: image
 */
 figcaption {
   @extend %small;
-  @include breakpoint(lg) {
+  @include media-query(lap-and-up) {
     position: absolute;
     top: 0;
     left: $inuit-base-spacing-unit * -8;
