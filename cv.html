@@ -22,13 +22,13 @@ title: "Experiences"
         {% endif %}
       </span>{{ experience.title }}</h2>
       <p class="meta">
-        <span class="hidden-portable">
+        <span class="hidden-desk">
           {% if experience.category == 'job' %}
-          Job:
+          <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="briefcase">
           {% elsif experience.category == 'studies' %}
-          Studies:
+          <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="book">
           {% elsif experience.category == 'sideproject' %}
-          Side project:
+          <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="beaker">
           {% endif %}
         </span>
         {{ experience.startDate | date: "%B %Y" }} -
