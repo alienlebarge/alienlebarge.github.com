@@ -10,14 +10,14 @@ title: "alienlebarge"
   </header>
 
   <section>
-    <h2><span class="side-element"><img data-src="{{ site.iconic_url }}svg/smart/heart.svg" class="iconic iconic-md" alt="heart"></span>About me</h2>
+    <h2><span class="side-element hidden-portable"><img data-src="{{ site.iconic_url }}svg/smart/heart.svg" class="iconic iconic-md" alt="heart"></span>About me</h2>
     <p class="italic">
       Hello from Switzerland!<br>I'm {{ site.author }} <abbr title="also know as">aka</abbr> alienlebarge, a dad and vinyl records addict who design and code websites.
     </p>
   </section>
 
   <section>
-    <h2><span class="side-element"><img data-src="{{ site.iconic_url }}svg/smart/inkwell.svg" class="iconic iconic-md" alt="inkwell"></span>Articles</h2>
+    <h2><span class="side-element hidden-portable"><img data-src="{{ site.iconic_url }}svg/smart/inkwell.svg" class="iconic iconic-md" alt="inkwell"></span>Articles</h2>
     <ul class="list-bare mb">
       {% for post in paginator.posts limit:5 %}
       <li class="mb">
@@ -32,7 +32,7 @@ title: "alienlebarge"
   </section>
 
   <section>
-    <h2><span class="side-element"><img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-md" alt="briefcase"></span>Experiences</h2>
+    <h2><span class="side-element hidden-portable"><img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-md" alt="briefcase"></span>Experiences</h2>
 
     {% comment %} Show last only the last 3 experiences with the 'job' category. {% endcomment %}
     {% assign counter = 0 %}
@@ -64,7 +64,7 @@ title: "alienlebarge"
   </section>
 
   <section>
-    <h2><span class="side-element"><img data-state="closed" data-src="{{ site.iconic_url }}svg/smart/envelope.svg" class="iconic iconic-md" alt="envelope"></span>Get in touch</h2>
+    <h2><span class="side-element hidden-portable"><img data-state="closed" data-src="{{ site.iconic_url }}svg/smart/envelope.svg" class="iconic iconic-md" alt="envelope"></span>Get in touch</h2>
     <p>
       Interested in working together, exchanging, or just talk about coffee?<br>Great! Get in touch, I'm friendly.
     </p>
