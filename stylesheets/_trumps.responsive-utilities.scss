@@ -1,0 +1,26 @@
+/*doc
+---
+title: Responsive utilities
+name: responsive-utilities
+category: responsive
+---
+
+Hide and show things depending on the viewport size.
+*/
+.hidden-palm {
+  @include media-query(palm) {
+    display: none;
+  }
+}
+
+.hidden-lap-and-up {
+  @include media-query(lap-and-up) {
+    display: none;
+  }
+}
+
+.hidden-desk {
+  @include media-query(desk) {
+    display: none;
+  }
+}
