@@ -19,6 +19,18 @@ Hide and show things depending on the viewport size.
   }
 }
 
+.hidden-portable {
+  @include media-query(portable) {
+    display: none;
+  }
+}
+
+.hidden-lap {
+  @include media-query(lap) {
+    display: none;
+  }
+}
+
 .hidden-desk {
   @include media-query(desk) {
     display: none;

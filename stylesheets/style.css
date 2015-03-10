@@ -2060,7 +2060,8 @@ name: side-element
 category: Componment
 ---
 
-Put something on the side on big screen
+Put something on the side.
+*It's better to hide it on big screen*
 
 ```html_example
 <h2>
@@ -2070,16 +2071,11 @@ Put something on the side on big screen
 ```
 */
 .side-element {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .side-element {
-    display: inline-block;
-    width: 280px;
-    margin-left: -280px;
-    padding-right: 14px;
-    text-align: right;
-  }
+  display: inline-block;
+  width: 280px;
+  margin-left: -280px;
+  padding-right: 14px;
+  text-align: right;
 }
 .side-element .iconic .iconic-property-accent {
   fill: RGBA(200, 200, 200, 1);
@@ -2485,6 +2481,45 @@ Put something on the side on big screen
 .pv0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/*doc
+---
+title: Responsive utilities
+name: responsive-utilities
+category: responsive
+---
+
+Hide and show things depending on the viewport size.
+*/
+@media screen and (max-width: 44.9375em) {
+  .hidden-palm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .hidden-lap-and-up {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .hidden-portable {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+  .hidden-lap {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .hidden-desk {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

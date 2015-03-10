@@ -67,6 +67,7 @@
  */
 
 @import "settings.defaults";
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
 
 
 
@@ -81,6 +82,7 @@
  */
 
 @import "../bower_components/inuit-functions/_tools.functions";
+@import "../bower_components/inuit-responsive-tools/_tools.responsive.scss";
 @import "tools.mixins";
 
 
@@ -189,3 +191,4 @@ $inuit-enable-paddings--none  : true;
 $inuit-enable-margins--large  : true;
 $inuit-enable-paddings--large : true;
 @import "../bower_components/inuit-spacing/trumps.spacing";
+@import "trumps.responsive-utilities";

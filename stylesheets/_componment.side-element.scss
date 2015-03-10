@@ -5,7 +5,8 @@ name: side-element
 category: Componment
 ---
 
-Put something on the side on big screen
+Put something on the side.  
+*It's better to hide it on big screen*
 
 ```html_example
 <h2>
@@ -19,15 +20,11 @@ $side-element-spacing-unit: $inuit-base-spacing-unit !default;
 $side-element-width:        10 * $side-element-spacing-unit !default;
 
 .side-element {
-  @include breakpoint(lg) {
     display: inline-block;
     width: $side-element-width;
     margin-left: -$side-element-width;
     padding-right: $side-element-spacing-unit/2;
     text-align: right;
-  }
-
-  display: none;
 
   .iconic .iconic-property-accent {
     fill: RGBA(200, 200, 200, 1);

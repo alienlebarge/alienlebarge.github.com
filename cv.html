@@ -10,9 +10,9 @@ title: "Experiences"
   </header>
 
   {% for experience in site.data.experiences %}
-  <article class="" style="position:relative;">
+  <article style="position:relative;">
     <header>
-      <h2 class="mb0"><span class="side-element">
+      <h2 class="mb0"><span class="side-element hidden-portable">
         {% if experience.category == 'job' %}
         <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-md" alt="briefcase">
         {% elsif experience.category == 'studies' %}
@@ -22,6 +22,15 @@ title: "Experiences"
         {% endif %}
       </span>{{ experience.title }}</h2>
       <p class="meta">
+        <span class="hidden-portable">
+          {% if experience.category == 'job' %}
+          Job:
+          {% elsif experience.category == 'studies' %}
+          Studies:
+          {% elsif experience.category == 'sideproject' %}
+          Side project:
+          {% endif %}
+        </span>
         {{ experience.startDate | date: "%B %Y" }} -
         {% if experience.endDate %}
           {{ experience.endDate | date: "%B %Y" }}
