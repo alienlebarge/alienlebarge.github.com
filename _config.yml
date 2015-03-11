@@ -6,7 +6,7 @@ author: Cédric Aellen
 
 # Build settings
 markdown: kramdown
-paginate: 10
+paginate: 1000
 excerpt_separator: <!--more-->
 exclude: [bower_components, node_modules, Gruntfile.js, package.json, wordpress.xml, less, scss, hologram_config.yml]
 permalink: /:year/:month/:day/:title
