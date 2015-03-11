@@ -2453,10 +2453,26 @@ Put something on the side.
 ---
 title: Responsive utilities
 name: responsive-utilities
-category: responsive
+category: Responsive
 ---
 
 Hide and show things depending on the viewport size.
+
+|                      | Palm<br>*&lt;45em* | Lap<br>&lt;45em, &gt;64em | Desk<br>&gt;64em |
+| -------------------- |:------------------:|:-------------------------:|:----------------:|
+| `.hidden-palm`       | hidden             | **visible**               | **visible**      |
+| `.hidden-lap-and-up` | **visible**        | hidden                    | hidden           |
+| `.hidden-porable`    | hidden             | hidden                    | **visible**      |
+| `.hidden-lap`        | **visible**        | hidden                    | **visible**     |
+| `.hidden-desk`       | **visible**        | **visible**               | hidden           |
+
+```html_example
+<p class="hidden-palm">hidden-palm</p>
+<p class="hidden-lap-and-up">hidden-lap-and-up</p>
+<p class="hidden-portable">hidden-portable</p>
+<p class="hidden-lap">hidden-lap</p>
+<p class="hidden-desk">hidden-desk</p>
+```
 */
 @media screen and (max-width: 44.9375em) {
   .hidden-palm {
