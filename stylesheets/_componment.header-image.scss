@@ -33,10 +33,10 @@ $header-image-text-color: #fff !default;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  @include media-query(lap) {
+  @include media-query(portable) {
     background-attachment: scroll;  /*  Fixed background image cost too much ressource on mobile */
   };
-  @include media-query(lap) {
+  @include media-query(desk) {
     background-attachment: fixed;  /*  Fixed background image cost too much ressource on mobile */
   };
 

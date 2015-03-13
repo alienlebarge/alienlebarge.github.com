@@ -1699,13 +1699,13 @@ Put a big image in the header that fit the screen
   -moz-align-items: flex-end;
   align-items: flex-end;
 }
-@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+@media screen and (max-width: 63.9375em) {
   .header-image {
     background-attachment: scroll;
     /*  Fixed background image cost too much ressource on mobile */
   }
 }
-@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+@media screen and (min-width: 64em) {
   .header-image {
     background-attachment: fixed;
     /*  Fixed background image cost too much ressource on mobile */
