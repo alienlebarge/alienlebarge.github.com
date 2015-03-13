@@ -56,13 +56,30 @@ module.exports = function (grunt) {
 
     usebanner: {
       options: {
-        position: 'top',
+        position: 'bottom',
         banner: '<%= banner %>'
       },
       files: {
         src: ['stylesheets/style.min.css', 'stylesheets/style.css']
       }
     },
+
+
+
+
+
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      dist: [
+        'stylesheets/style.min.css'
+      ],
+      dev: [
+        'stylesheets/style.css'
+      ]
+    },
+
 
 
 
@@ -129,7 +146,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','autoprefixer','usebanner', 'hologram']
+        tasks: ['sass','autoprefixer',  'usebanner', 'csslint', 'hologram']
       },
       js: {
         files: 'javascripts/**/*.js',
@@ -176,6 +193,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-jekyll');
@@ -184,7 +202,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dist', 'hologram']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'hologram']);
 
 };
