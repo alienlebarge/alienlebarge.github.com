@@ -130,6 +130,21 @@ module.exports = function (grunt) {
 
 
 
+    htmllint: {
+      options: {
+        ignore: [
+          'Attribute "autocomplete" not allowed on element "button" at this point.',
+          'Attribute "autocomplete" not allowed on element "input" at this point.',
+          'Element "img" is missing required attribute "src".'
+        ]
+      },
+      src: '_site/index.html'
+    },
+
+
+
+
+
     hologram: {
       generate: {
         options: {
@@ -157,7 +172,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: ['index.html', '*.html', '*.md', '_data/*.*', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
-        tasks: ['jekyll:dev']
+        tasks: ['jekyll:dev', 'htmllint']
       }
     },
 
@@ -196,12 +211,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-htmllint');
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dist', 'hologram']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dev', 'htmllint', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dist', 'htmllint', 'hologram']);
 
 };
