@@ -54,6 +54,20 @@ module.exports = function (grunt) {
 
 
 
+    usebanner: {
+      options: {
+        position: 'bottom',
+        banner: '<%= banner %>'
+      },
+      files: {
+        src: ['stylesheets/style.min.css', 'stylesheets/style.css']
+      }
+    },
+
+
+
+
+
     csslint: {
       options: {
         csslintrc: '.csslintrc'
@@ -69,16 +83,6 @@ module.exports = function (grunt) {
 
 
 
-
-    usebanner: {
-      options: {
-        position: 'top',
-        banner: '<%= banner %>'
-      },
-      files: {
-        src: ['stylesheets/style.min.css', 'stylesheets/style.css']
-      }
-    },
 
 
 
@@ -160,7 +164,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: 'stylesheets/**/*.scss',
-        tasks: ['sass','autoprefixer', 'csslint','usebanner', 'hologram']
+        tasks: ['sass','autoprefixer',  'usebanner', 'csslint', 'hologram']
       },
       js: {
         files: 'javascripts/**/*.js',
@@ -217,7 +221,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dev', 'htmllint', 'hologram', 'browserSync', 'watch']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'csslint', 'usebanner', 'concat', 'jekyll:dist', 'htmllint', 'hologram']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'hologram']);
 
 };
