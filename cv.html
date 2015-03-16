@@ -14,21 +14,21 @@ title: "Experiences"
     <header>
       <h2 class="mb0"><span class="side-element hidden-portable">
         {% if experience.category == 'job' %}
-        <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-md" alt="briefcase">
+        <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" src="{{ site.iconic_url }}png/black/standard/briefcase-md.png" class="iconic iconic-md" alt="briefcase">
         {% elsif experience.category == 'studies' %}
-        <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-md" alt="book">
+        <img data-src="{{ site.iconic_url }}svg/smart/book.svg" src="{{ site.iconic_url }}png/black/standard/book-md.png" class="iconic iconic-md" alt="book">
         {% elsif experience.category == 'sideproject' %}
-        <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-md" alt="beaker">
+        <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" src="{{ site.iconic_url }}png/black/standard/beaker-md.png" class="iconic iconic-md" alt="beaker">
         {% endif %}
       </span>{{ experience.title }}</h2>
       <p class="meta">
         <span class="hidden-desk">
           {% if experience.category == 'job' %}
-          <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" class="iconic iconic-sm" alt="briefcase">
+          <img data-src="{{ site.iconic_url }}svg/smart/briefcase.svg" src="{{ site.iconic_url }}png/black/standard/briefcase-md.png" class="iconic iconic-sm" alt="briefcase">
           {% elsif experience.category == 'studies' %}
-          <img data-src="{{ site.iconic_url }}svg/smart/book.svg" class="iconic iconic-sm" alt="book">
+          <img data-src="{{ site.iconic_url }}svg/smart/book.svg" src="{{ site.iconic_url }}png/black/standard/book-md.png" class="iconic iconic-sm" alt="book">
           {% elsif experience.category == 'sideproject' %}
-          <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" class="iconic iconic-sm" alt="beaker">
+          <img data-src="{{ site.iconic_url }}svg/smart/beaker.svg" src="{{ site.iconic_url }}png/black/standard/beaker-md.png" class="iconic iconic-sm" alt="beaker">
           {% endif %}
         </span>
         {{ experience.startDate | date: "%B %Y" }} -
