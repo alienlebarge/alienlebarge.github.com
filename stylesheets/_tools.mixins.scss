@@ -374,14 +374,14 @@ The content can only be read by screen reader
 
 
 
-/*doc
+/*
 ---
 title: Mixin transition
 name: mixin-transition
 parent: mixin
 ---
-@include transition(color 200ms ease);
-```
+
+```scss
 @mixin transition {...}
 ```
 */
