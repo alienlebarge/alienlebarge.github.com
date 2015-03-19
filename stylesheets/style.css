@@ -847,13 +847,15 @@ Determine the color of link.
 */
 a {
   color: #333;
-  transition-duration: 1s;
+  transition-duration: 200ms;
   transition-property: color;
+  transition-timing-function: ease;
 }
 a:hover {
   color: #ff5867;
-  transition-duration: 1s;
+  transition-duration: 200ms;
   transition-property: color;
+  transition-timing-function: ease;
 }
 
 /*doc
