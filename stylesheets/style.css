@@ -319,6 +319,17 @@ The content can only be read by screen reader
 @mixin sr-only {...}
 ```
 */
+/*
+---
+title: Mixin transition
+name: mixin-transition
+parent: mixin
+---
+
+```scss
+@mixin transition {...}
+```
+*/
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -836,9 +847,15 @@ Determine the color of link.
 */
 a {
   color: #333;
+  transition-duration: 200ms;
+  transition-property: color;
+  transition-timing-function: ease;
 }
 a:hover {
   color: #ff5867;
+  transition-duration: 200ms;
+  transition-property: color;
+  transition-timing-function: ease;
 }
 
 /*doc

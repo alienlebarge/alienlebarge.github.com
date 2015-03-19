@@ -26,9 +26,11 @@ Determine the color of link.
 */
 a {
   color: $inuit-base-text-color;
+  @include transition(color, 200ms, ease);
 
   &:hover {
     color: $base-primary-color;
+    @include transition(color, 200ms, ease);
   }
 }
 

@@ -370,3 +370,28 @@ The content can only be read by screen reader
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+
+
+
+/*
+---
+title: Mixin transition
+name: mixin-transition
+parent: mixin
+---
+
+```scss
+@mixin transition {...}
+```
+*/
+@mixin transition ($property: all, $duration: 1s, $function: false, $delay: false) {
+  @if $delay != false {
+    transition-delay: $delay;
+  }
+  transition-duration: $duration;
+  transition-property: $property;
+  @if $function != false {
+    transition-timing-function: $function;
+  }
+}
