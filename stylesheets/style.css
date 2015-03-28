@@ -890,14 +890,14 @@ name: fout
 category: base
 ---
 
-The following fonts will be used until typekit fonts are loaded 
+The following fonts will be used until typekit fonts are loaded
 
 */
 .wf-loading {
   font-family: Georgia, serif;
 }
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6 {
-  font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 
 /*doc
