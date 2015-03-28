@@ -26,13 +26,14 @@
  *
  * BASE
  * Links:               Links and anchors.
+ * Page:                HTML and body styles
+ * FOUT:                FOUT fonts
  * Codes:               Code blocks and preformated text style
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
  * Paragraphs:          Paragraphs styles lede
  * Images:              Images and caption styles
  * Lists:               Lists styles
- * Page:                HTML and body styles
  * Quotes:              Blockquotes and citations
  *
  * OBJECTS
@@ -2075,6 +2076,36 @@ Put something on the side.
 .side-element .iconic * {
   fill: RGBA(220, 220, 220, 1);
   stroke: RGBA(220, 220, 220, 1);
+}
+
+/*doc
+---
+title: Iconic
+name: iconic
+category: Componment
+---
+*/
+/*doc
+---
+title: Iconic link
+name: iconic-link
+parent: iconic
+---
+
+Link style for iconic icons.
+Same style as the default links.
+*/
+a .iconic {
+  fill: #333;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+a .iconic:hover {
+  fill: #ff5867;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 
 /*------------------------------------*\
