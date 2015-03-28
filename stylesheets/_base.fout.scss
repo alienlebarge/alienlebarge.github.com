@@ -1,0 +1,16 @@
+/*doc
+---
+title: Fout
+name: fout
+category: base
+---
+
+The following fonts will be used until typekit fonts are loaded
+
+*/
+.wf-loading {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif ;
+  }
+  font-family: Georgia, serif;
+}

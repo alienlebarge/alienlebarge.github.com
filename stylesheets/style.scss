@@ -114,13 +114,14 @@
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
 
+@import "base.page";
+@import "base.fout";
 @import "base.links";
 @import "base.codes";
 @import "base.headings";
 @import "base.paragraphs";
 @import "base.images";
 @import "base.lists";
-@import "base.page";
 @import "base.vertical-rythme";
 @import "base.quotes";
 
