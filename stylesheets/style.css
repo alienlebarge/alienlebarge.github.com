@@ -2078,6 +2078,36 @@ Put something on the side.
   stroke: RGBA(220, 220, 220, 1);
 }
 
+/*doc
+---
+title: Iconic
+name: iconic
+category: Componment
+---
+*/
+/*doc
+---
+title: Iconic link
+name: iconic-link
+parent: iconic
+---
+
+Link style for iconic icons.
+Same style as the default links.
+*/
+a .iconic {
+  fill: #333;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+a .iconic:hover {
+  fill: #ff5867;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
 /*------------------------------------*\
     #TRUMPS
 \*------------------------------------*/
