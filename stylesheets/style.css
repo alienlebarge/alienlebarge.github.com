@@ -1523,6 +1523,8 @@ category: Button
   /* [3] */
   text-align: center;
   /* [4] */
+  border: none;
+  /* [4] */
   margin: 0;
   /* [4] */
   cursor: pointer;
