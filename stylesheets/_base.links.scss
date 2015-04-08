@@ -29,7 +29,7 @@ Determine the color of link.
 a {
   color: $inuit-base-text-color;
   @include transition(color, 200ms, ease);
-
+  @include underline();
 
   &:hover {
     color: $base-primary-color;
@@ -37,10 +37,6 @@ a {
   }
 }
 
-
-p > a {
-  @include underline();
-}
 
 
 

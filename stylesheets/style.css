@@ -940,18 +940,15 @@ a {
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.05em, #000000 0.05em, #000000 0.09em, #ffffff 0.09em);
+  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 a:hover {
   color: #ff5867;
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
-}
-
-p > a {
-  text-decoration: none;
-  background: linear-gradient(to bottom, #ffffff, #ffffff 1.15em, #000000 1.15em, #000000 1.19em, #ffffff 1.19em);
-  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
 /*doc
