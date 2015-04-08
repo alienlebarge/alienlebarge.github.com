@@ -331,6 +331,17 @@ parent: mixin
 @mixin transition {...}
 ```
 */
+/*
+---
+title: Mixin underline
+name: mixin-underline
+parent: mixin
+---
+
+```scss
+@mixin underline {...}
+```
+*/
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -920,6 +931,8 @@ Determine the color of link.
 
 ```html_example
     <a href="#">Link</a>
+
+    <p><a href="#">Link</a></p>
 ```
 */
 a {
@@ -933,6 +946,12 @@ a:hover {
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
+}
+
+p > a {
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ffffff, #ffffff 1.15em, #000000 1.15em, #000000 1.19em, #ffffff 1.19em);
+  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
 /*doc

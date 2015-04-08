@@ -395,3 +395,34 @@ parent: mixin
     transition-timing-function: $function;
   }
 }
+
+
+
+
+
+/*
+---
+title: Mixin underline
+name: mixin-underline
+parent: mixin
+---
+
+```scss
+@mixin underline {...}
+```
+*/
+@mixin underline ($position: 1.15em, $width: 0.04em, $underline-color: #000000, $background-color: #ffffff ) {
+
+  // remove classic underline
+  text-decoration: none;
+
+  // the underline
+  background: linear-gradient(to bottom, $background-color, $background-color $position, $underline-color $position, $underline-color $position+$width, $background-color $position+$width);
+
+  // text-shadow
+  text-shadow:
+  -1px -1px 0 $background-color,
+  -1px  1px 0 $background-color,
+   1px -1px 0 $background-color,
+   1px  1px 0 $background-color
+}

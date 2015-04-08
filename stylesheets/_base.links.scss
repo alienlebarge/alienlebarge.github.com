@@ -22,11 +22,14 @@ Determine the color of link.
 
 ```html_example
     <a href="#">Link</a>
+
+    <p><a href="#">Link</a></p>
 ```
 */
 a {
   color: $inuit-base-text-color;
   @include transition(color, 200ms, ease);
+
 
   &:hover {
     color: $base-primary-color;
@@ -34,6 +37,10 @@ a {
   }
 }
 
+
+p > a {
+  @include underline();
+}
 
 
 
