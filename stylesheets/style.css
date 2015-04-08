@@ -967,7 +967,7 @@ h5 > a,
 h6 > a,
 .zeta > a {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.07em, #333 0.07em, #333 0.09em, #ffffff 0.09em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #333 0.09em, #333 0.11em, #ffffff 0.11em);
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 h1 > a:hover,
@@ -983,8 +983,13 @@ h5 > a:hover,
 h6 > a:hover,
 .zeta > a:hover {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.07em, #ff5867 0.07em, #ff5867 0.09em, #ffffff 0.09em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #ff5867 0.09em, #ff5867 0.11em, #ffffff 0.11em);
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+a.btn {
+  background-image: none;
+  text-shadow: none;
 }
 
 /*doc
