@@ -949,6 +949,42 @@ a:hover {
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #ff5867 0.12em, #ff5867 0.14em, #ffffff 0.14em);
+  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+h1 > a,
+.alpha > a,
+h2 > a,
+.beta > a,
+h3 > a,
+.gamma > a,
+h4 > a,
+.delta > a,
+h5 > a,
+.epsilon > a,
+h6 > a,
+.zeta > a {
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.07em, #333 0.07em, #333 0.09em, #ffffff 0.09em);
+  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+h1 > a:hover,
+.alpha > a:hover,
+h2 > a:hover,
+.beta > a:hover,
+h3 > a:hover,
+.gamma > a:hover,
+h4 > a:hover,
+.delta > a:hover,
+h5 > a:hover,
+.epsilon > a:hover,
+h6 > a:hover,
+.zeta > a:hover {
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.07em, #ff5867 0.07em, #ff5867 0.09em, #ffffff 0.09em);
+  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
 /*doc

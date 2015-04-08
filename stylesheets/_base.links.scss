@@ -34,6 +34,28 @@ a {
   &:hover {
     color: $base-primary-color;
     @include transition(color, 200ms, ease);
+    @include underline($base-primary-color);
+  }
+}
+
+// headinf fonts need another underline position
+h1,
+.alpha,
+h2,
+.beta,
+h3,
+.gamma,
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  &> a {
+    @include underline($inuit-base-text-color, 0.07em);
+    &:hover {
+      @include underline($base-primary-color, 0.07em);
+    }
   }
 }
 

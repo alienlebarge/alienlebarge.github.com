@@ -411,7 +411,7 @@ parent: mixin
 @mixin underline {...}
 ```
 */
-@mixin underline ($position: 0.12em, $width: 0.02em, $underline-color: #000000, $background-color: #ffffff ) {
+@mixin underline ($underline-color: #000000, $position: 0.12em, $width: 0.02em, $background-color: #ffffff) {
 
   // remove classic underline
   text-decoration: none;
