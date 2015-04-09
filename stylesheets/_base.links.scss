@@ -38,7 +38,7 @@ a {
   }
 }
 
-// headinf fonts need another underline position
+// heading fonts need another underline position
 h1,
 .alpha,
 h2,
@@ -51,7 +51,7 @@ h5,
 .epsilon,
 h6,
 .zeta {
-  &> a {
+  & a {
     @include underline($inuit-base-text-color, 0.03125em);
     &:hover {
       @include underline($base-primary-color, 0.03125em);
