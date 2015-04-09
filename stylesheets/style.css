@@ -331,6 +331,20 @@ parent: mixin
 @mixin transition {...}
 ```
 */
+/*
+---
+title: Mixin underline
+name: mixin-underline
+parent: mixin
+---
+
+If you set the variable in ems, be carefull. Firefox doesn't like dimensions <1px.
+`$var * base-font-size > 1px`
+
+```scss
+@mixin underline {...}
+```
+*/
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -920,6 +934,8 @@ Determine the color of link.
 
 ```html_example
     <a href="#">Link</a>
+
+    <p><a href="#">Link</a></p>
 ```
 */
 a {
@@ -927,12 +943,56 @@ a {
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.125em, #000000 0.125em, #000000 0.175em, #ffffff 0.175em);
+  text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 a:hover {
   color: #ff5867;
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.125em, #ff5867 0.125em, #ff5867 0.175em, #ffffff 0.175em);
+  text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
+}
+
+h1 a,
+.alpha a,
+h2 a,
+.beta a,
+h3 a,
+.gamma a,
+h4 a,
+.delta a,
+h5 a,
+.epsilon a,
+h6 a,
+.zeta a {
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.03125em, #333 0.03125em, #333 0.08125em, #ffffff 0.08125em);
+  text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
+}
+h1 a:hover,
+.alpha a:hover,
+h2 a:hover,
+.beta a:hover,
+h3 a:hover,
+.gamma a:hover,
+h4 a:hover,
+.delta a:hover,
+h5 a:hover,
+.epsilon a:hover,
+h6 a:hover,
+.zeta a:hover {
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff, #ffffff 0.03125em, #ff5867 0.03125em, #ff5867 0.08125em, #ffffff 0.08125em);
+  text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
+}
+
+a.btn {
+  background-image: none;
+  text-shadow: none;
 }
 
 /*doc
