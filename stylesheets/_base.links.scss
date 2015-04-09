@@ -52,9 +52,9 @@ h5,
 h6,
 .zeta {
   & a {
-    @include underline($inuit-base-text-color, 0.03125em);
+    @include underline($inuit-base-text-color, 0.06em, 0.03em);
     &:hover {
-      @include underline($base-primary-color, 0.03125em);
+      @include underline($base-primary-color, 0.06em, 0.03em);
     }
   }
 }
