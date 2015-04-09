@@ -421,12 +421,51 @@ parent: mixin
 
   // text-shadow
   text-shadow:
-   0              $cut-distance 0 $background-color,
-   0             -$cut-distance 0 $background-color,
-   $cut-distance  0             0 $background-color,
-  -$cut-distance  0             0 $background-color,
-  -$cut-distance -$cut-distance 0 $background-color,
-  -$cut-distance  $cut-distance 0 $background-color,
-  $cut-distance  -$cut-distance 0 $background-color,
-  $cut-distance   $cut-distance 0 $background-color
+    0                    $cut-distance*1/5  0 $background-color,
+    0                    $cut-distance*2/5  0 $background-color,
+    0                    $cut-distance*3/5  0 $background-color,
+    0                    $cut-distance*4/5  0 $background-color,
+    0                    $cut-distance      0 $background-color,
+
+    0                  (-$cut-distance)*1/5 0 $background-color,
+    0                  (-$cut-distance)*2/5 0 $background-color,
+    0                  (-$cut-distance)*3/5 0 $background-color,
+    0                  (-$cut-distance)*4/5 0 $background-color,
+    0                  (-$cut-distance)     0 $background-color,
+
+    $cut-distance*1/5    0                  0 $background-color,
+    $cut-distance*2/5    0                  0 $background-color,
+    $cut-distance*3/5    0                  0 $background-color,
+    $cut-distance*4/5    0                  0 $background-color,
+    $cut-distance        0                  0 $background-color,
+
+  (-$cut-distance)*1/5   0                  0 $background-color,
+  (-$cut-distance)*2/5   0                  0 $background-color,
+  (-$cut-distance)*3/5   0                  0 $background-color,
+  (-$cut-distance)*4/5   0                  0 $background-color,
+  (-$cut-distance)       0                  0 $background-color,
+
+  (-$cut-distance)*1/5 (-$cut-distance)*1/5 0 $background-color,
+  (-$cut-distance)*2/5 (-$cut-distance)*2/5 0 $background-color,
+  (-$cut-distance)*3/5 (-$cut-distance)*3/5 0 $background-color,
+  (-$cut-distance)*4/5 (-$cut-distance)*4/5 0 $background-color,
+  (-$cut-distance)     (-$cut-distance)     0 $background-color,
+
+  (-$cut-distance)*1/5   $cut-distance*1/5  0 $background-color,
+  (-$cut-distance)*2/5   $cut-distance*2/5  0 $background-color,
+  (-$cut-distance)*3/5   $cut-distance*3/5  0 $background-color,
+  (-$cut-distance)*4/5   $cut-distance*4/5  0 $background-color,
+  (-$cut-distance)       $cut-distance      0 $background-color,
+
+    $cut-distance*1/5  (-$cut-distance)*1/5 0 $background-color,
+    $cut-distance*2/5  (-$cut-distance)*2/5 0 $background-color,
+    $cut-distance*3/5  (-$cut-distance)*3/5 0 $background-color,
+    $cut-distance*4/5  (-$cut-distance)*4/5 0 $background-color,
+    $cut-distance      (-$cut-distance)     0 $background-color,
+
+    $cut-distance*1/5    $cut-distance*1/5  0 $background-color,
+    $cut-distance*2/5    $cut-distance*2/5  0 $background-color,
+    $cut-distance*3/5    $cut-distance*3/5  0 $background-color,
+    $cut-distance*4/5    $cut-distance*4/5  0 $background-color,
+    $cut-distance        $cut-distance      0 $background-color
 }
