@@ -22,48 +22,18 @@ Determine the color of link.
 
 ```html_example
     <a href="#">Link</a>
-
-    <p><a href="#">Link</a></p>
 ```
 */
 a {
   color: $inuit-base-text-color;
   @include transition(color, 200ms, ease);
-  @include underline();
 
   &:hover {
     color: $base-primary-color;
     @include transition(color, 200ms, ease);
-    @include underline($base-primary-color);
   }
 }
 
-// heading fonts need another underline position
-h1,
-.alpha,
-h2,
-.beta,
-h3,
-.gamma,
-h4,
-.delta,
-h5,
-.epsilon,
-h6,
-.zeta {
-  & a {
-    @include underline($inuit-base-text-color, 0.03125em);
-    &:hover {
-      @include underline($base-primary-color, 0.03125em);
-    }
-  }
-}
-
-// no underline for buttons
-a.btn {
-  background-image: none;
-  text-shadow: none;
-}
 
 
 
