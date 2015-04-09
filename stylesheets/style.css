@@ -944,7 +944,7 @@ a {
   transition-property: color;
   transition-timing-function: ease;
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 1px, #000000 1px, #000000 2px, #ffffff 2px);
+  background: linear-gradient(to top, #ffffff, #ffffff 1px, #333 1px, #333 2px, #ffffff 2px);
   text-shadow: 0 0.2px 0 #ffffff, 0 -0.2px 0 #ffffff, 0.2px 0 0 #ffffff, -0.2px 0 0 #ffffff, -0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, 0.2px 0.2px 0 #ffffff, 0 0.4px 0 #ffffff, 0 -0.4px 0 #ffffff, 0.4px 0 0 #ffffff, -0.4px 0 0 #ffffff, -0.4px -0.4px 0 #ffffff, -0.4px 0.4px 0 #ffffff, 0.4px -0.4px 0 #ffffff, 0.4px 0.4px 0 #ffffff, 0 0.6px 0 #ffffff, 0 -0.6px 0 #ffffff, 0.6px 0 0 #ffffff, -0.6px 0 0 #ffffff, -0.6px -0.6px 0 #ffffff, -0.6px 0.6px 0 #ffffff, 0.6px -0.6px 0 #ffffff, 0.6px 0.6px 0 #ffffff, 0 0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, 0.8px 0 0 #ffffff, -0.8px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, -0.8px 0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 a:hover {
