@@ -414,7 +414,7 @@ If you set the variable in ems, be carefull. Firefox doesn't like dimensions <1p
 @mixin underline {...}
 ```
 */
-@mixin underline ($underline-color: #000000, $position: 0.12em, $width: 0.07em, $background-color: #ffffff, $cut-distance: 0.05em) {
+@mixin underline ($underline-color: #000000, $position: 0.125em, $width: 0.0625em, $background-color: #ffffff, $width: 0.05em, $cut-distance: $width) {
 
   // remove classic underline
   text-decoration: none;
