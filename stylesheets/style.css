@@ -338,6 +338,9 @@ name: mixin-underline
 parent: mixin
 ---
 
+If you set the variable in ems, be carefull. Firefox doesn't like dimensions <1px.
+`$var * base-font-size > 1px`
+
 ```scss
 @mixin underline {...}
 ```
@@ -941,7 +944,7 @@ a {
   transition-property: color;
   transition-timing-function: ease;
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #000000 0.12em, #000000 0.14em, #ffffff 0.14em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #000000 0.12em, #000000 0.19em, #ffffff 0.19em);
   text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 a:hover {
@@ -950,7 +953,7 @@ a:hover {
   transition-property: color;
   transition-timing-function: ease;
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #ff5867 0.12em, #ff5867 0.14em, #ffffff 0.14em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #ff5867 0.12em, #ff5867 0.19em, #ffffff 0.19em);
   text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 
@@ -967,7 +970,7 @@ h5 > a,
 h6 > a,
 .zeta > a {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #333 0.09em, #333 0.11em, #ffffff 0.11em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #333 0.09em, #333 0.16em, #ffffff 0.16em);
   text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 h1 > a:hover,
@@ -983,7 +986,7 @@ h5 > a:hover,
 h6 > a:hover,
 .zeta > a:hover {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #ff5867 0.09em, #ff5867 0.11em, #ffffff 0.11em);
+  background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #ff5867 0.09em, #ff5867 0.16em, #ffffff 0.16em);
   text-shadow: 0 0.01em 0 #ffffff, 0 0.02em 0 #ffffff, 0 0.03em 0 #ffffff, 0 0.04em 0 #ffffff, 0 0.05em 0 #ffffff, 0 -0.01em 0 #ffffff, 0 -0.02em 0 #ffffff, 0 -0.03em 0 #ffffff, 0 -0.04em 0 #ffffff, 0 -0.05em 0 #ffffff, 0.01em 0 0 #ffffff, 0.02em 0 0 #ffffff, 0.03em 0 0 #ffffff, 0.04em 0 0 #ffffff, 0.05em 0 0 #ffffff, -0.01em 0 0 #ffffff, -0.02em 0 0 #ffffff, -0.03em 0 0 #ffffff, -0.04em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.01em -0.01em 0 #ffffff, -0.02em -0.02em 0 #ffffff, -0.03em -0.03em 0 #ffffff, -0.04em -0.04em 0 #ffffff, -0.05em -0.05em 0 #ffffff, -0.01em 0.01em 0 #ffffff, -0.02em 0.02em 0 #ffffff, -0.03em 0.03em 0 #ffffff, -0.04em 0.04em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0.01em -0.01em 0 #ffffff, 0.02em -0.02em 0 #ffffff, 0.03em -0.03em 0 #ffffff, 0.04em -0.04em 0 #ffffff, 0.05em -0.05em 0 #ffffff, 0.01em 0.01em 0 #ffffff, 0.02em 0.02em 0 #ffffff, 0.03em 0.03em 0 #ffffff, 0.04em 0.04em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 
