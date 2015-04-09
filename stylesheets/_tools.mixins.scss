@@ -411,7 +411,7 @@ parent: mixin
 @mixin underline {...}
 ```
 */
-@mixin underline ($underline-color: #000000, $position: 0.12em, $width: 0.02em, $background-color: #ffffff) {
+@mixin underline ($underline-color: #000000, $position: 0.12em, $width: 0.02em, $background-color: #ffffff, $cut-distance: 0.05em) {
 
   // remove classic underline
   text-decoration: none;
@@ -421,12 +421,12 @@ parent: mixin
 
   // text-shadow
   text-shadow:
-   0    1px 0 $background-color,
-   0   -1px 0 $background-color,
-   1px  0   0 $background-color,
-  -1px  0   0 $background-color,
-  -1px -1px 0 $background-color,
-  -1px  1px 0 $background-color,
-   1px -1px 0 $background-color,
-   1px  1px 0 $background-color
+   0              $cut-distance 0 $background-color,
+   0             -$cut-distance 0 $background-color,
+   $cut-distance  0             0 $background-color,
+  -$cut-distance  0             0 $background-color,
+  -$cut-distance -$cut-distance 0 $background-color,
+  -$cut-distance  $cut-distance 0 $background-color,
+  $cut-distance  -$cut-distance 0 $background-color,
+  $cut-distance   $cut-distance 0 $background-color
 }

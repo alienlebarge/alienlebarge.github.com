@@ -942,7 +942,7 @@ a {
   transition-timing-function: ease;
   text-decoration: none;
   background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #000000 0.12em, #000000 0.14em, #ffffff 0.14em);
-  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: 0 0.05em 0 #ffffff, -0.05em 0 #ffffff, 0.05em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.1em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 a:hover {
   color: #ff5867;
@@ -951,7 +951,7 @@ a:hover {
   transition-timing-function: ease;
   text-decoration: none;
   background: linear-gradient(to top, #ffffff, #ffffff 0.12em, #ff5867 0.12em, #ff5867 0.14em, #ffffff 0.14em);
-  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: 0 0.05em 0 #ffffff, -0.05em 0 #ffffff, 0.05em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.1em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 
 h1 > a,
@@ -968,7 +968,7 @@ h6 > a,
 .zeta > a {
   text-decoration: none;
   background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #333 0.09em, #333 0.11em, #ffffff 0.11em);
-  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: 0 0.05em 0 #ffffff, -0.05em 0 #ffffff, 0.05em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.1em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 h1 > a:hover,
 .alpha > a:hover,
@@ -984,7 +984,7 @@ h6 > a:hover,
 .zeta > a:hover {
   text-decoration: none;
   background: linear-gradient(to top, #ffffff, #ffffff 0.09em, #ff5867 0.09em, #ff5867 0.11em, #ffffff 0.11em);
-  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: 0 0.05em 0 #ffffff, -0.05em 0 #ffffff, 0.05em 0 0 #ffffff, -0.05em 0 0 #ffffff, -0.1em 0 #ffffff, -0.05em 0.05em 0 #ffffff, 0em 0 #ffffff, 0.05em 0.05em 0 #ffffff;
 }
 
 a.btn {
