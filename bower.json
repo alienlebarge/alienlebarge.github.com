@@ -49,6 +49,6 @@
     "inuit-list-bare": "~0.3.0",
     "inuit-responsive-settings": "~0.1.5",
     "inuit-responsive-tools": "~0.1.3",
-    "inuit-base": "https://github.com/alienlebarge/inuit-base.underline"
+    "inuit-base-underline": "http://github.com/alienlebarge/inuit-base.underline.git"
   }
 }
