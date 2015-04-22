@@ -351,11 +351,11 @@ If you set the variable in ems, be carefull. Firefox doesn't like dimensions <1p
 /**
  * Generic, high-level styling, like resets, etc.
  */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  */
 html {
   font-family: sans-serif;
@@ -422,7 +422,7 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 [hidden],
 template {
@@ -439,7 +439,8 @@ a {
 }
 
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
  */
 a:active,
 a:hover {
@@ -676,14 +677,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  /* 2 */
   box-sizing: content-box;
+  /* 2 */
 }
 
 /**
@@ -1436,6 +1436,49 @@ blockquote {
   margin: 0 28px;
 }
 
+/*------------------------------------*\
+    #UNDERLINE
+\*------------------------------------*/
+/**
+ * Set some nice underline
+ */
+/**
+ * Add a nice underline
+ */
+.underline {
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
+  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+}
+
+/**
+ * Add a nice underline witch is the color of the links
+ */
+a.underline {
+  color: #ff0000;
+  text-decoration: none;
+  background: linear-gradient(to top, #fff, #fff 1px, #ff0000 1px, #ff0000 2px, #fff 2px);
+  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+}
+a.underline:hover {
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
+  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+}
+
+/**
+ * Button doesn't have underline
+ */
+a.underline.btn {
+  background-image: none;
+  text-shadow: none;
+}
+
+/**
+ * Link without underline
+ */
 /*------------------------------------*\
     #OBJECTS
 \*------------------------------------*/
