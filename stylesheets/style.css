@@ -943,18 +943,12 @@ a {
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
-  text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 1px, #333 1px, #333 2px, #ffffff 2px);
-  text-shadow: 0 0.2px 0 #ffffff, 0 -0.2px 0 #ffffff, 0.2px 0 0 #ffffff, -0.2px 0 0 #ffffff, -0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, 0.2px 0.2px 0 #ffffff, 0 0.4px 0 #ffffff, 0 -0.4px 0 #ffffff, 0.4px 0 0 #ffffff, -0.4px 0 0 #ffffff, -0.4px -0.4px 0 #ffffff, -0.4px 0.4px 0 #ffffff, 0.4px -0.4px 0 #ffffff, 0.4px 0.4px 0 #ffffff, 0 0.6px 0 #ffffff, 0 -0.6px 0 #ffffff, 0.6px 0 0 #ffffff, -0.6px 0 0 #ffffff, -0.6px -0.6px 0 #ffffff, -0.6px 0.6px 0 #ffffff, 0.6px -0.6px 0 #ffffff, 0.6px 0.6px 0 #ffffff, 0 0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, 0.8px 0 0 #ffffff, -0.8px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, -0.8px 0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 a:hover {
   color: #ff5867;
   transition-duration: 200ms;
   transition-property: color;
   transition-timing-function: ease;
-  text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 1px, #ff5867 1px, #ff5867 2px, #ffffff 2px);
-  text-shadow: 0 0.2px 0 #ffffff, 0 -0.2px 0 #ffffff, 0.2px 0 0 #ffffff, -0.2px 0 0 #ffffff, -0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, 0.2px 0.2px 0 #ffffff, 0 0.4px 0 #ffffff, 0 -0.4px 0 #ffffff, 0.4px 0 0 #ffffff, -0.4px 0 0 #ffffff, -0.4px -0.4px 0 #ffffff, -0.4px 0.4px 0 #ffffff, 0.4px -0.4px 0 #ffffff, 0.4px 0.4px 0 #ffffff, 0 0.6px 0 #ffffff, 0 -0.6px 0 #ffffff, 0.6px 0 0 #ffffff, -0.6px 0 0 #ffffff, -0.6px -0.6px 0 #ffffff, -0.6px 0.6px 0 #ffffff, 0.6px -0.6px 0 #ffffff, 0.6px 0.6px 0 #ffffff, 0 0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, 0.8px 0 0 #ffffff, -0.8px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, -0.8px 0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
 h1 a,
@@ -993,27 +987,6 @@ h6 a:hover,
 a.btn {
   background-image: none;
   text-shadow: none;
-}
-
-/*doc
- ---
-title: No underlined link
-name: no-underlined-link
-parent: link
----
-
-If you do not want to underline a link.
-`:hover` highlight & undeline the link when hovered.
-
-```html_example
-    <a href="#" class="no-underline">Link</a>
-```
-*/
-.no-underline {
-  text-decoration: none;
-}
-.no-underline:hover {
-  text-decoration: underline;
 }
 
 /*doc

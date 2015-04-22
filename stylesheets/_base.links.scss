@@ -29,12 +29,10 @@ Determine the color of link.
 a {
   color: $inuit-base-text-color;
   @include transition(color, 200ms, ease);
-  @include underline();
 
   &:hover {
     color: $base-primary-color;
     @include transition(color, 200ms, ease);
-    @include underline($base-primary-color);
   }
 }
 
@@ -63,28 +61,4 @@ h6,
 a.btn {
   background-image: none;
   text-shadow: none;
-}
-
-
-
-
-/*doc
- ---
-title: No underlined link
-name: no-underlined-link
-parent: link
----
-
-If you do not want to underline a link.
-`:hover` highlight & undeline the link when hovered.
-
-```html_example
-    <a href="#" class="no-underline">Link</a>
-```
-*/
-.no-underline {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
 }
