@@ -41,6 +41,7 @@
     "inuit-spacing": "~0.6.2",
     "inuit-widths": "~0.3.2",
     "inuit-buttons": "~0.4.1",
+    "inuit-base-underline": "http://github.com/alienlebarge/inuit-base.underline.git",
     "Cortana": "~1.2.8"
   },
   "dependencies": {
@@ -48,7 +49,6 @@
     "fitvids": "~1.1.0",
     "inuit-list-bare": "~0.3.0",
     "inuit-responsive-settings": "~0.1.5",
-    "inuit-responsive-tools": "~0.1.3",
-    "inuit-base-underline": "http://github.com/alienlebarge/inuit-base.underline.git"
+    "inuit-responsive-tools": "~0.1.3"
   }
 }
