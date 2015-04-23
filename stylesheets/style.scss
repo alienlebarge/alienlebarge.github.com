@@ -69,6 +69,7 @@
 
 @import "settings.defaults";
 @import "../bower_components/inuit-responsive-settings/settings.responsive";
+@import "../bower_components/inuit-underline/_settings.underline.scss";
 
 
 
@@ -85,6 +86,7 @@
 @import "../bower_components/inuit-functions/_tools.functions";
 @import "../bower_components/inuit-responsive-tools/_tools.responsive.scss";
 @import "tools.mixins";
+@import "../bower_components/inuit-underline/tools.mixins-underline.scss";
 
 
 
@@ -125,7 +127,7 @@
 @import "base.lists";
 @import "base.vertical-rythme";
 @import "base.quotes";
-@import "../bower_components/inuit-underline/_componment.underline.scss";
+@import "../bower_components/inuit-underline/_base.links-underline.scss";
 
 
 

@@ -111,6 +111,16 @@ $base-break-md: 1200px;
  *
  * github.com/inuitcss | inuitcss.com
  */
+/*doc
+---
+title: Underline settings
+name: 04-underline
+parent: custom-settings
+---
+*/
+/*------------------------------------*\
+    #UNDERLINE SETTINGS
+\*------------------------------------*/
 /*------------------------------------*\
     #TOOLS
 \*------------------------------------*/
@@ -345,6 +355,9 @@ If you set the variable in ems, be carefull. Firefox doesn't like dimensions <1p
 @mixin underline {...}
 ```
 */
+/*------------------------------------*\
+    #UNDERLINE MIXINS
+\*------------------------------------*/
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -964,8 +977,8 @@ h5 a,
 h6 a,
 .zeta a {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 1px, #333 1px, #333 2px, #ffffff 2px);
-  text-shadow: 0 0.2px 0 #ffffff, 0 -0.2px 0 #ffffff, 0.2px 0 0 #ffffff, -0.2px 0 0 #ffffff, -0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, 0.2px 0.2px 0 #ffffff, 0 0.4px 0 #ffffff, 0 -0.4px 0 #ffffff, 0.4px 0 0 #ffffff, -0.4px 0 0 #ffffff, -0.4px -0.4px 0 #ffffff, -0.4px 0.4px 0 #ffffff, 0.4px -0.4px 0 #ffffff, 0.4px 0.4px 0 #ffffff, 0 0.6px 0 #ffffff, 0 -0.6px 0 #ffffff, 0.6px 0 0 #ffffff, -0.6px 0 0 #ffffff, -0.6px -0.6px 0 #ffffff, -0.6px 0.6px 0 #ffffff, 0.6px -0.6px 0 #ffffff, 0.6px 0.6px 0 #ffffff, 0 0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, 0.8px 0 0 #ffffff, -0.8px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, -0.8px 0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
+  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
 }
 h1 a:hover,
 .alpha a:hover,
@@ -980,8 +993,8 @@ h5 a:hover,
 h6 a:hover,
 .zeta a:hover {
   text-decoration: none;
-  background: linear-gradient(to top, #ffffff, #ffffff 1px, #ff5867 1px, #ff5867 2px, #ffffff 2px);
-  text-shadow: 0 0.2px 0 #ffffff, 0 -0.2px 0 #ffffff, 0.2px 0 0 #ffffff, -0.2px 0 0 #ffffff, -0.2px -0.2px 0 #ffffff, -0.2px 0.2px 0 #ffffff, 0.2px -0.2px 0 #ffffff, 0.2px 0.2px 0 #ffffff, 0 0.4px 0 #ffffff, 0 -0.4px 0 #ffffff, 0.4px 0 0 #ffffff, -0.4px 0 0 #ffffff, -0.4px -0.4px 0 #ffffff, -0.4px 0.4px 0 #ffffff, 0.4px -0.4px 0 #ffffff, 0.4px 0.4px 0 #ffffff, 0 0.6px 0 #ffffff, 0 -0.6px 0 #ffffff, 0.6px 0 0 #ffffff, -0.6px 0 0 #ffffff, -0.6px -0.6px 0 #ffffff, -0.6px 0.6px 0 #ffffff, 0.6px -0.6px 0 #ffffff, 0.6px 0.6px 0 #ffffff, 0 0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, 0.8px 0 0 #ffffff, -0.8px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, -0.8px 0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, 1px 1px 0 #ffffff;
+  background: linear-gradient(to top, #fff, #fff 1px, #ff5867 1px, #ff5867 2px, #fff 2px);
+  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
 }
 
 a.btn {
@@ -1410,48 +1423,21 @@ blockquote {
 }
 
 /*------------------------------------*\
-    #UNDERLINE
+    #UNDERLINE LINKS
 \*------------------------------------*/
-/**
- * Set some nice underline
- */
-/**
- * Add a nice underline
- */
-.underline {
+a {
   color: #333;
   text-decoration: none;
   background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
   text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
 }
-
-/**
- * Add a nice underline witch is the color of the links
- */
-a.underline {
-  color: #ff0000;
+a:hover {
+  color: #ff5867;
   text-decoration: none;
-  background: linear-gradient(to top, #fff, #fff 1px, #ff0000 1px, #ff0000 2px, #fff 2px);
-  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
-}
-a.underline:hover {
-  color: #333;
-  text-decoration: none;
-  background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
+  background: linear-gradient(to top, #fff, #fff 1px, #ff5867 1px, #ff5867 2px, #fff 2px);
   text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
 }
 
-/**
- * Button doesn't have underline
- */
-a.underline.btn {
-  background-image: none;
-  text-shadow: none;
-}
-
-/**
- * Link without underline
- */
 /*------------------------------------*\
     #OBJECTS
 \*------------------------------------*/

@@ -77,3 +77,21 @@ $inuit-base-line-height:        28px;
 $inuit-base-text-color:         #333;
 $inuit-base-background-color:   #fff;
 @import "../bower_components/inuit-defaults/settings.defaults";
+
+
+
+
+
+/*doc
+---
+title: Underline settings
+name: 04-underline
+parent: custom-settings
+---
+*/
+$underline-position:          1px;
+$underline-width:             1px;
+$underline-background-color:  $inuit-base-background-color !default;
+
+$underline-link-color:        $inuit-base-text-color;
+$underline-link-color--hover: $base-primary-color;
