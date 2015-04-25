@@ -978,7 +978,7 @@ h6 a,
 .zeta a {
   text-decoration: none;
   background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
-  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, -1px -0.5px 0 #fff, -1px 0px 0 #fff, -1px 0.5px 0 #fff, -1px 1px 0 #fff, -0.5px -1px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0px 0 #fff, -0.5px 0.5px 0 #fff, -0.5px 1px 0 #fff, 0px -1px 0 #fff, 0px -0.5px 0 #fff, 0px 0px 0 #fff, 0px 0.5px 0 #fff, 0px 1px 0 #fff, 0.5px -1px 0 #fff, 0.5px -0.5px 0 #fff, 0.5px 0px 0 #fff, 0.5px 0.5px 0 #fff, 0.5px 1px 0 #fff, 1px -1px 0 #fff, 1px -0.5px 0 #fff, 1px 0px 0 #fff, 1px 0.5px 0 #fff, 1px 1px 0 #fff;
 }
 h1 a:hover,
 .alpha a:hover,
@@ -994,7 +994,7 @@ h6 a:hover,
 .zeta a:hover {
   text-decoration: none;
   background: linear-gradient(to top, #fff, #fff 1px, #ff5867 1px, #ff5867 2px, #fff 2px);
-  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, -1px -0.5px 0 #fff, -1px 0px 0 #fff, -1px 0.5px 0 #fff, -1px 1px 0 #fff, -0.5px -1px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0px 0 #fff, -0.5px 0.5px 0 #fff, -0.5px 1px 0 #fff, 0px -1px 0 #fff, 0px -0.5px 0 #fff, 0px 0px 0 #fff, 0px 0.5px 0 #fff, 0px 1px 0 #fff, 0.5px -1px 0 #fff, 0.5px -0.5px 0 #fff, 0.5px 0px 0 #fff, 0.5px 0.5px 0 #fff, 0.5px 1px 0 #fff, 1px -1px 0 #fff, 1px -0.5px 0 #fff, 1px 0px 0 #fff, 1px 0.5px 0 #fff, 1px 1px 0 #fff;
 }
 
 a.btn {
@@ -1429,13 +1429,13 @@ a {
   color: #333;
   text-decoration: none;
   background: linear-gradient(to top, #fff, #fff 1px, #333 1px, #333 2px, #fff 2px);
-  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, -1px -0.5px 0 #fff, -1px 0px 0 #fff, -1px 0.5px 0 #fff, -1px 1px 0 #fff, -0.5px -1px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0px 0 #fff, -0.5px 0.5px 0 #fff, -0.5px 1px 0 #fff, 0px -1px 0 #fff, 0px -0.5px 0 #fff, 0px 0px 0 #fff, 0px 0.5px 0 #fff, 0px 1px 0 #fff, 0.5px -1px 0 #fff, 0.5px -0.5px 0 #fff, 0.5px 0px 0 #fff, 0.5px 0.5px 0 #fff, 0.5px 1px 0 #fff, 1px -1px 0 #fff, 1px -0.5px 0 #fff, 1px 0px 0 #fff, 1px 0.5px 0 #fff, 1px 1px 0 #fff;
 }
 a:hover {
   color: #ff5867;
   text-decoration: none;
   background: linear-gradient(to top, #fff, #fff 1px, #ff5867 1px, #ff5867 2px, #fff 2px);
-  text-shadow: 0 0.2px 0 #fff, 0 -0.2px 0 #fff, 0.2px 0 0 #fff, -0.2px 0 0 #fff, -0.2px -0.2px 0 #fff, -0.2px 0.2px 0 #fff, 0.2px -0.2px 0 #fff, 0.2px 0.2px 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0 0 #fff, -0.4px 0 0 #fff, -0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff, 0.4px -0.4px 0 #fff, 0.4px 0.4px 0 #fff, 0 0.6px 0 #fff, 0 -0.6px 0 #fff, 0.6px 0 0 #fff, -0.6px 0 0 #fff, -0.6px -0.6px 0 #fff, -0.6px 0.6px 0 #fff, 0.6px -0.6px 0 #fff, 0.6px 0.6px 0 #fff, 0 0.8px 0 #fff, 0 -0.8px 0 #fff, 0.8px 0 0 #fff, -0.8px 0 0 #fff, -0.8px -0.8px 0 #fff, -0.8px 0.8px 0 #fff, 0.8px -0.8px 0 #fff, 0.8px 0.8px 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, -1px -0.5px 0 #fff, -1px 0px 0 #fff, -1px 0.5px 0 #fff, -1px 1px 0 #fff, -0.5px -1px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0px 0 #fff, -0.5px 0.5px 0 #fff, -0.5px 1px 0 #fff, 0px -1px 0 #fff, 0px -0.5px 0 #fff, 0px 0px 0 #fff, 0px 0.5px 0 #fff, 0px 1px 0 #fff, 0.5px -1px 0 #fff, 0.5px -0.5px 0 #fff, 0.5px 0px 0 #fff, 0.5px 0.5px 0 #fff, 0.5px 1px 0 #fff, 1px -1px 0 #fff, 1px -0.5px 0 #fff, 1px 0px 0 #fff, 1px 0.5px 0 #fff, 1px 1px 0 #fff;
 }
 
 /*------------------------------------*\
