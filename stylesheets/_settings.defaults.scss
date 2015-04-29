@@ -95,3 +95,16 @@ $underline-background-color:  $inuit-base-background-color !default;
 
 $underline-link-color:        $inuit-base-text-color;
 $underline-link-color--hover: $base-primary-color;
+
+
+
+
+
+/*doc
+---
+title: Viewport
+name: 05-viewport
+parent: custom-settings
+---
+*/
+$inuit-viewport: (width: device-width, initial-scale: 1);

@@ -118,6 +118,13 @@ name: 04-underline
 parent: custom-settings
 ---
 */
+/*doc
+---
+title: Viewport
+name: 05-viewport
+parent: custom-settings
+---
+*/
 /*------------------------------------*\
     #UNDERLINE SETTINGS
 \*------------------------------------*/
@@ -852,6 +859,28 @@ html {
 /**
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
+/*------------------------------------*\
+    #VIEWPORT
+\*------------------------------------*/
+/**
+ * Viewport descriptor
+ */
+@-webkit-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@-moz-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@viewport {
+  width: device-width;
+  initial-scale: 1;
+}
 /*doc
 ---
 title: Page

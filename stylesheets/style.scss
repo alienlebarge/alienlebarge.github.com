@@ -117,6 +117,7 @@
  * Unclasses HTML elements (e.g. `h2`, `ul`).
  */
 
+@import "../bower_components/inuit-viewport/_base.viewport.scss";
 @import "base.page";
 @import "base.fout";
 @import "base.links";
