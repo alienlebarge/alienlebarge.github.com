@@ -10,6 +10,9 @@ _site/
 # Ignore sass-cache files
 *.sass-cache*
 
+# CSS files
+css
+
 # Bower components
 bower_components/
 
