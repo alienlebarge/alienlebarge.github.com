@@ -90,7 +90,7 @@ module.exports = function (grunt) {
       },
       header_js: {
         files: {
-          'javascripts/header.min.js': ['javascripts/_typekit.js']
+          'javascripts/header.min.js': ['_js/typekit.js']
         }
       },
       footer_js: {
@@ -98,8 +98,8 @@ module.exports = function (grunt) {
           'javascripts/footer.min.js': [
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/fitvids/jquery.fitvids.js',
-            'javascripts/_fitvids.footer.js',
-            'javascripts/_google-analytics.js'
+            '_js/fitvids.footer.js',
+            '_js/google-analytics.js'
             ]
         }
       }
