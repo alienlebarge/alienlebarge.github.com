@@ -21,7 +21,7 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {
-          'stylesheets/style.min.css' : '_sass/style.scss'
+          'css/style.min.css' : '_sass/style.scss'
         }
       },
       dev: {
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
           files: {
-            'stylesheets/style.css': '_sass/style.scss'
+            'css/style.css': '_sass/style.scss'
         }
       }
     },
@@ -43,10 +43,10 @@ module.exports = function (grunt) {
         map: true
       },
       dist: {
-        src: 'stylesheets/style.min.css'
+        src: 'css/style.min.css'
       },
       dev: {
-        src: 'stylesheets/style.css'
+        src: 'css/style.css'
       },
     },
 
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
         banner: '<%= banner %>'
       },
       files: {
-        src: ['stylesheets/style.min.css', 'stylesheets/style.css']
+        src: ['css/style.min.css', 'css/style.css']
       }
     },
 
@@ -73,10 +73,10 @@ module.exports = function (grunt) {
         csslintrc: '.csslintrc'
       },
       dist: [
-        'stylesheets/style.min.css'
+        'css/style.min.css'
       ],
       dev: [
-        'stylesheets/style.css'
+        'css/style.css'
       ]
     },
 
@@ -168,11 +168,11 @@ module.exports = function (grunt) {
         tasks: ['concat', 'hologram']
       },
       hologram: {
-        files: 'stylesheets/*.md',
+        files: 'css/*.md',
         tasks: ['hologram']
       },
       jekyll: {
-        files: ['index.html', '*.html', '*.md', '_data/*.*', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'stylesheets/*.css','javascripts/*.js'],
+        files: ['index.html', '*.html', '*.md', '_data/*.*', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'css/*.css','javascripts/*.js'],
         tasks: ['jekyll:dev', 'validation']
       }
     },
@@ -183,7 +183,7 @@ module.exports = function (grunt) {
 
     browserSync: {
       files: {
-        src : ['_site/stylesheets/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html']
+        src : ['_site/css/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html']
       },
       options: {
         watchTask: true,
@@ -217,7 +217,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
   grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'validation']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'validation', 'hologram']);
 
