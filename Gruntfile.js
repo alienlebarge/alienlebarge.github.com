@@ -207,9 +207,6 @@ module.exports = function (grunt) {
       generate: {
         options: {
           basePath: "./",
-          cache: [
-             "javascripts/footer.js"
-           ],
           network: ["http://*", "https://*"],
           fallback: ["/ /offline.html"],
           verbose: false,
