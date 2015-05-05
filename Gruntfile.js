@@ -21,7 +21,7 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {
-          'stylesheets/style.min.css' : 'stylesheets/style.scss'
+          'stylesheets/style.min.css' : '_sass/style.scss'
         }
       },
       dev: {
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
           files: {
-            'stylesheets/style.css': 'stylesheets/style.scss'
+            'stylesheets/style.css': '_sass/style.scss'
         }
       }
     },
@@ -160,7 +160,7 @@ module.exports = function (grunt) {
 
     watch: {
       sass: {
-        files: 'stylesheets/**/*.scss',
+        files: '_sass/**/*.scss',
         tasks: ['sass','autoprefixer',  'usebanner', 'csslint', 'hologram']
       },
       js: {
