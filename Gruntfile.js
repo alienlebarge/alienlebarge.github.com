@@ -203,27 +203,6 @@ module.exports = function (grunt) {
 
 
 
-    manifest: {
-      generate: {
-        options: {
-          basePath: "./",
-          network: ["http://*", "https://*"],
-          fallback: ["/ /offline.html"],
-          verbose: false,
-          timestamp: true
-        },
-        src: [
-            "*.html",
-            "stylesheets/*.min.css"
-        ],
-        dest: "manifest.appcache"
-      }
-    }
-
-
-
-
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -236,7 +215,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-manifest');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
