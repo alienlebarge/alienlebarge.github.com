@@ -203,6 +203,32 @@ module.exports = function (grunt) {
 
 
 
+    manifest: {
+      generate: {
+        options: {
+          basePath: "./",
+          cache: [
+             "stylesheets/style.min.css",
+             "javascripts/header.js",
+             "javascripts/footer.js"
+           ],
+          network: ["http://*", "https://*"],
+          fallback: ["/ /offline.html"],
+          verbose: false,
+          timestamp: true
+        },
+        src: [
+            "*.html",
+            "stylesheets/*.min.css"
+        ],
+        dest: "manifest.appcache"
+      }
+    }
+
+
+
+
+
 
   });
 
@@ -216,10 +242,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-manifest');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
-  grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'validation']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'validation', 'hologram']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'hologram', 'manifest', 'browserSync', 'watch']);
+  grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'manifest', 'validation']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'validation', 'hologram', 'manifest']);
 
 };

@@ -24,6 +24,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-hologram": "0.0.6",
     "grunt-html-validation": "^0.1.18",
-    "grunt-jekyll": "^0.4.2"
+    "grunt-jekyll": "^0.4.2",
+    "grunt-manifest": "^0.4.0"
   }
 }

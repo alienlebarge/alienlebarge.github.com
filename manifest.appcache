@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# Time: Tue May 05 2015 15:22:35 GMT+0200 (CEST)
+
+CACHE:
+stylesheets/style.min.css
+javascripts/header.js
+javascripts/footer.js
+blog.html
+cv.html
+index.html
+stylesheets/style.min.css
+
+NETWORK:
+http://*
+https://*
+
+FALLBACK:
+/ /offline.html
