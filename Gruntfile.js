@@ -84,30 +84,25 @@ module.exports = function (grunt) {
 
 
 
-
-
-
-
-    concat: {
+    uglify: {
       options: {
-        separator: ';',
-        banner: '<%= banner %>',
+        banner: '<%= banner %>'
       },
       header_js: {
-        src: [
-          'javascripts/_typekit.js'
-        ],
-        dest: 'javascripts/header.js',
+        files: {
+          'javascripts/header.min.js': ['javascripts/_typekit.js']
+        }
       },
       footer_js: {
-        src: [
-          'bower_components/jquery/dist/jquery.min.js',
-          'bower_components/fitvids/jquery.fitvids.js',
-          'javascripts/_fitvids.footer.js',
-          'javascripts/_google-analytics.js'
-          ],
-        dest: 'javascripts/footer.js',
-      },
+        files: {
+          'javascripts/footer.min.js': [
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/fitvids/jquery.fitvids.js',
+            'javascripts/_fitvids.footer.js',
+            'javascripts/_google-analytics.js'
+            ]
+        }
+      }
     },
 
 
@@ -164,7 +159,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: 'javascripts/**/*.js',
-        tasks: ['concat', 'hologram']
+        tasks: ['uglify', 'hologram']
       },
       hologram: {
         files: 'css/*.md',
@@ -208,7 +203,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-banner');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-hologram');
@@ -216,8 +211,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'concat', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
-  grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dev', 'validation']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'concat', 'jekyll:dist', 'validation', 'hologram']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dev', 'validation']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dist', 'validation', 'hologram']);
 
 };
