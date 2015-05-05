@@ -208,7 +208,6 @@ module.exports = function (grunt) {
         options: {
           basePath: "./",
           cache: [
-             "stylesheets/style.min.css",
              "javascripts/header.js",
              "javascripts/footer.js"
            ],
