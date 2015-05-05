@@ -104,7 +104,6 @@ module.exports = function (grunt) {
           'bower_components/jquery/dist/jquery.min.js',
           'bower_components/fitvids/jquery.fitvids.js',
           'javascripts/_fitvids.footer.js',
-          'javascripts/_iconic.js',
           'javascripts/_google-analytics.js'
           ],
         dest: 'javascripts/footer.js',
