@@ -9,8 +9,9 @@ tags:
  - conference
 ---
 
-Here's my sketchnote of [Simon Collison](https://twitter.com/colly)'s talk "Somewhere Between Here and There".  
-Simon answers the question: what has changed in the web these last 5 years?
+[Simon Collison](https://twitter.com/colly) answers the question: what has changed in the web these last 5 years?
+
+Here's my sketchnote of Simon's talk "Somewhere Between Here and There".
 
 <figure>
 <img src="https://farm8.staticflickr.com/7755/16906854004_9547a4793c_z_d.jpg" alt="Sketchnote of the talk Somewhere Between Here and There">
