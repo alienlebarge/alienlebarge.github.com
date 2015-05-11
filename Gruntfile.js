@@ -119,7 +119,8 @@ module.exports = function (grunt) {
       dev : {
         options : {
           dest: '_site',
-          config: '_config-dev.yml'
+          config: '_config-dev.yml',
+          drafts: true
         }
       }
     },
@@ -177,7 +178,7 @@ module.exports = function (grunt) {
 
     browserSync: {
       files: {
-        src : ['_site/css/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html']
+        src : ['_site/css/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html', '_drafts/*.md']
       },
       options: {
         watchTask: true,
