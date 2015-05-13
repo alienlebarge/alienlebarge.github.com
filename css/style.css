@@ -1648,6 +1648,17 @@ category: Button
   /* [7] */
 }
 
+/**
+ * No underline on button
+ *
+ * The underline component add a background and a text-shadow on evry links.
+ * We don't want that on buttons
+ */
+a.btn:hover {
+  background: none;
+  text-shadow: none;
+}
+
 /*doc
 ---
 title: Helper classes
