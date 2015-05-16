@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Beyond Tellerrand: Content Amid Chaos"
-description: ""
+description: "Sara Wachter-Boettcher's talk Content Amid Chaos"
 image:       https://c2.staticflickr.com/6/5339/17518678705_b30b75c711_z.jpg
 date:        2015-05-16 22:10:40
 tags:
