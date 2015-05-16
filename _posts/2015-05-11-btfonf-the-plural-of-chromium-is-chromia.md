@@ -62,3 +62,6 @@ Here's my sketchnote of [Peter-Paul Koch](https://twitter.com/colly)'s talk "The
 
 <blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr">&lt;input type=&quot;datetime&quot;&gt; etc. works beautifully on mobile browsers. Use it!&#10;—<a href="https://twitter.com/ppk">@ppk</a> <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a></p>&mdash; Gunnar Bittersmann (@g16n) <a href="https://twitter.com/g16n/status/597704490561753088">11 Mai 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/sketchnotes?src=hash">#sketchnotes</a> of the talk of <a href="https://twitter.com/ppk">@ppk</a> at <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> <a href="http://t.co/HGphnyUeYs">pic.twitter.com/HGphnyUeYs</a></p>&mdash; Julia Bode (@LulesSaurus) <a href="https://twitter.com/LulesSaurus/status/597709824512634880">11 Mai 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
