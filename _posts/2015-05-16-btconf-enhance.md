@@ -42,7 +42,7 @@ tags:
 </figure>
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/16908577613" title="Beyond Tellerrand 2015 by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5327/16908577613_99a20fd070_z.jpg" width="640" height="480" alt="Beyond Tellerrand 2015"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/16908577613" title="Beyond Tellerrand 2015 by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5327/16908577613_99a20fd070_z.jpg" alt="Beyond Tellerrand 2015"></a>
   <figcaption>Futur-proof</figcaption>
 </figure>
 
