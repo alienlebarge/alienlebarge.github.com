@@ -35,7 +35,7 @@ The pictures I took during the talk.
 
 <figure>
   <a href="https://www.flickr.com/photos/alienlebarge/17341303860" title="Faster horse by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5337/17341303860_4dfc409809_z.jpg" alt="Faster horse"></a>
-  <figcatpion>Faster horses</figcaption>
+  <figcaption>Faster horses</figcaption>
 </figure>
 
 <figure>
