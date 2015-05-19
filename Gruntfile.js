@@ -156,7 +156,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '_sass/**/*.scss',
-        tasks: ['sass','autoprefixer', 'usebanner', 'csslint', 'hologram']
+        tasks: ['sass','autoprefixer', 'usebanner', 'hologram']
       },
       js: {
         files: 'javascripts/**/*.js',
@@ -167,7 +167,7 @@ module.exports = function (grunt) {
         tasks: ['hologram']
       },
       jekyll: {
-        files: ['index.html', '*.html', '*.md', '_data/*.*', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'css/*.css','javascripts/*.js'],
+        files: ['*.html', '*.md', '_data/*.yml', '_layouts/*.html', '_includes/*.html', '_posts/*.*', 'css/*.css', 'javascripts/*.js'],
         tasks: ['jekyll:dev', 'validation']
       }
     },
