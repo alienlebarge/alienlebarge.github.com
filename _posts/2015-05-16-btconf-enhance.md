@@ -88,3 +88,9 @@ Some tweets of people attending the conference.
 
 <blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr">“The real problem is to change the mind of the person who thinks websites needs to look the same in every browser.” —<a href="https://twitter.com/adactio">@adactio</a> <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a></p>&mdash; Gunnar Bittersmann (@g16n) <a href="https://twitter.com/g16n/status/597759407875878912">11 Mai 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/sketchnotes?src=hash">#sketchnotes</a> for the talk of <a href="https://twitter.com/adactio">@adactio</a> at <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a> <a href="http://t.co/wOYyyJTCTB">pic.twitter.com/wOYyyJTCTB</a></p>&mdash; Julia Bode (@LulesSaurus) <a href="https://twitter.com/LulesSaurus/status/597763716722089984">11 Mai 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr">My favorite talk so far at <a href="https://twitter.com/hashtag/btconf?src=hash">#btconf</a>: <a href="https://twitter.com/adactio">@adactio</a> on <a href="https://twitter.com/hashtag/ProgressiveEnhancement?src=hash">#ProgressiveEnhancement</a> and why we should care&#10;&#10;<a href="https://twitter.com/hashtag/Sketchnotes?src=hash">#Sketchnotes</a> <a href="https://twitter.com/btconf">@btconf</a> <a href="http://t.co/eZCcr94dWL">pic.twitter.com/eZCcr94dWL</a></p>&mdash; Rino Wenger (@rinowenger) <a href="https://twitter.com/rinowenger/status/597765605534597120">11 Mai 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
