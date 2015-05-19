@@ -50,11 +50,11 @@ parent: image
 */
 figcaption {
   @extend %small;
-  @include media-query(lap-and-up) {
+  @include media-query(desk) {
     position: absolute;
     top: 0;
-    left: $inuit-base-spacing-unit * -8;
-    width: $inuit-base-spacing-unit * 7;
+    left: $inuit-base-spacing-unit * -6;
+    width: $inuit-base-spacing-unit * 5;
     text-align: right;
   }
 }

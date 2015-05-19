@@ -1369,12 +1369,12 @@ parent: image
     </figure>
 ```
 */
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 64em) {
   figcaption {
     position: absolute;
     top: 0;
-    left: -224px;
-    width: 196px;
+    left: -168px;
+    width: 140px;
     text-align: right;
   }
 }
@@ -2154,7 +2154,7 @@ name: side-element
 category: Componment
 ---
 
-Put something on the side.  
+Put something on the side.
 *It's better to hide it on big screen*
 
 ```html_example
