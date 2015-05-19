@@ -176,28 +176,6 @@ module.exports = function (grunt) {
 
 
 
-    browserSync: {
-      files: {
-        src : ['_site/css/*.css', '_site/*.html', '_site/<%= grunt.template.today("yyyy") %>/**/*.html', '_drafts/*.md']
-      },
-      options: {
-        watchTask: true,
-        ghostMode: {
-          clicks: true,
-          scroll: true,
-          links: true,
-          forms: true
-        },
-        server: {
-          baseDir: '_site'
-        }
-      }
-    },
-
-
-
-
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -209,10 +187,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'watch']);
   grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dev', 'validation']);
   grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dist', 'validation', 'hologram']);
 
