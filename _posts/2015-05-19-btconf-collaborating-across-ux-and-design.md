@@ -15,7 +15,7 @@ tags:
 What is [Anton & Irene](https://twitter.com/antonandirene)'s worklow to build solid UX.
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/17341740478" title="Sketchnote of Anton &amp; Irène&#x27;s talk &quot;Collaborating Across UX &amp; Design&quot; by Cédric Aellen, sur Flickr"><img src="https://c1.staticflickr.com/9/8868/17341740478_f203fb9650_z.jpg" width="414" height="640" alt="Sketchnote of Anton &amp; Irène&#x27;s talk &quot;Collaborating Across UX &amp; Design&quot;"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/17341740478" title="Sketchnote of Anton &amp; Irène&#x27;s talk &quot;Collaborating Across UX &amp; Design&quot; by Cédric Aellen, sur Flickr"><img src="https://c1.staticflickr.com/9/8868/17341740478_f203fb9650_z.jpg" alt="Sketchnote of Anton &amp; Irène&#x27;s talk &quot;Collaborating Across UX &amp; Design&quot;"></a>
   <figcaption>Sketchnote of Anton &amp; Irène&#x27;s talk &quot;Collaborating Across UX &amp; Design&quot;"</figcaption>
 </figure>
 
@@ -24,27 +24,27 @@ What is [Anton & Irene](https://twitter.com/antonandirene)'s worklow to build so
 The pictures I took during the talk.
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/17502535856" title="Finding new spaces by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/8/7657/17502535856_9e87f042b5_z.jpg" width="640" height="480" alt="Finding new spaces"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/17502535856" title="Finding new spaces by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/8/7657/17502535856_9e87f042b5_z.jpg" alt="Finding new spaces"></a>
   <figcaption>This presentation is not about UX and design, it's about finding new spaces within many hard restriction.</figcaption>
 </figure>
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/16908570143" title="User research is bullshit. We want innovation ! by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5445/16908570143_e7c4480020_z.jpg" width="640" height="480" alt="User research is bullshit. We want innovation !"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/16908570143" title="User research is bullshit. We want innovation ! by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5445/16908570143_e7c4480020_z.jpg" alt="User research is bullshit. We want innovation !"></a>
   <figcaption>User research is bullshit. We want innovation !</figcaption>
 </figure>
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/17341303860" title="Faster horse by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5337/17341303860_4dfc409809_z.jpg" width="640" height="480" alt="Faster horse"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/17341303860" title="Faster horse by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5337/17341303860_4dfc409809_z.jpg" alt="Faster horse"></a>
   <figcatpion>Faster horses</figcaption>
 </figure>
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/17341303860" title="Faster horse by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5337/17341303860_4dfc409809_z.jpg" width="640" height="480" alt="Faster horse"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/17341303860" title="Faster horse by Cédric Aellen, sur Flickr"><img src="https://c2.staticflickr.com/6/5337/17341303860_4dfc409809_z.jpg" alt="Faster horse"></a>
   <figcaption>If you do UX before design it will be boring, if you do design before UX it will be a disaster</figcaption>
 </figure>
 
 <figure>
-  <a href="https://www.flickr.com/photos/alienlebarge/17528878035" title="Wireframes are bullshit by Cédric Aellen, sur Flickr"><img src="https://c1.staticflickr.com/9/8865/17528878035_84fabbc69a_z.jpg" width="640" height="480" alt="Wireframes are bullshit"></a>
+  <a href="https://www.flickr.com/photos/alienlebarge/17528878035" title="Wireframes are bullshit by Cédric Aellen, sur Flickr"><img src="https://c1.staticflickr.com/9/8865/17528878035_84fabbc69a_z.jpg" alt="Wireframes are bullshit"></a>
   <figcaption>Wireframes are bullshit</figcaption>
 </figure>
 
