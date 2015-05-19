@@ -156,7 +156,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '_sass/**/*.scss',
-        tasks: ['sass','autoprefixer',  'usebanner', 'csslint', 'hologram']
+        tasks: ['sass','autoprefixer', 'usebanner', 'csslint', 'hologram']
       },
       js: {
         files: 'javascripts/**/*.js',
