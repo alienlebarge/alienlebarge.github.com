@@ -215,8 +215,53 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'watch']);
-  grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dev', 'validation']);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dist', 'validation', 'hologram']);
+  //grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'watch']);
+  //grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dev', 'validation']);
+  //grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dist', 'validation', 'hologram']);
+
+  // Default task
+  grunt.registerTask('default', 'Build everything', function() {
+      grunt.log.subhead("Build everything !".magenta);
+      grunt.task.run('css');
+      grunt.task.run('js');
+      grunt.task.run('html');
+      grunt.task.run('styleguide');
+      grunt.task.run('watch');
+    });
+
+  // CSS
+  grunt.registerTask('css', 'Build CSS files', function() {
+    grunt.log.subhead('Here come the styles'.magenta);
+    grunt.task.run('sass');
+    grunt.task.run('autoprefixer');
+    grunt.task.run('usebanner');
+    //grunt.task.run('csslint');
+  });
+
+  // Critical CSS
+  grunt.registerTask('critical', 'Build CSS files', function() {
+    grunt.log.subhead('There is critical things in life'.magenta);
+    grunt.task.run('css');
+    grunt.task.run('jekyll:serve');
+    grunt.task.run('criticalcss');
+  });
+
+  // JS
+  grunt.registerTask('js', 'Build js files', function() {
+    grunt.log.subhead('Magic JavaScripts'.magenta);
+    grunt.task.run('uglify');
+  });
+
+  // HTML
+  grunt.registerTask('html', 'Build HTML files', function() {
+    grunt.log.subhead('Static HTML is fantastic'.magenta);
+    grunt.task.run('jekyll:dev');
+  });
+
+  // Styleguide
+  grunt.registerTask('styleguide', 'Build js files', function() {
+    grunt.log.subhead('We all need a guide'.magenta);
+    grunt.task.run('hologram');
+  });
 
 };
