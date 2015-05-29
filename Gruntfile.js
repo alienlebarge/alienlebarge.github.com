@@ -122,6 +122,13 @@ module.exports = function (grunt) {
           config: '_config-dev.yml',
           drafts: true
         }
+      },
+      serve: {
+        options : {
+          dest: '_site',
+          config: '_config-dev.yml',
+          serve: true,
+        }
       }
     },
 
@@ -135,6 +142,24 @@ module.exports = function (grunt) {
     files: {
         src: ['_site/*.html']
       }
+    },
+
+
+
+
+
+    criticalcss: {
+        custom: {
+            options: {
+                url: "http://localhost:4000",
+                width: 1200,
+                height: 900,
+                outputfile: "css/critical.css",
+                filename: "css/style.min.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                buffer: 800*1024,
+                ignoreConsole: false
+            }
+        }
     },
 
 
@@ -185,6 +210,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-criticalcss');
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
