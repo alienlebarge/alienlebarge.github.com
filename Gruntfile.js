@@ -207,11 +207,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
-  //grunt.registerTask('default', ['sass', 'autoprefixer', 'usebanner', 'uglify', 'jekyll:dev', 'hologram', 'watch']);
-  //grunt.registerTask('validate', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dev', 'validation']);
-  //grunt.registerTask('build', ['sass', 'autoprefixer', 'usebanner', 'csslint', 'uglify', 'jekyll:dist', 'validation', 'hologram']);
-
   // Default task
   grunt.registerTask('default', 'Build everything', function() {
       grunt.log.subhead("Build everything !".magenta);
