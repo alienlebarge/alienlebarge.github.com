@@ -122,13 +122,6 @@ module.exports = function (grunt) {
           config: '_config-dev.yml',
           drafts: true
         }
-      },
-      serve: {
-        options : {
-          dest: '_site',
-          config: '_config-dev.yml',
-          serve: true,
-        }
       }
     },
 
@@ -151,10 +144,10 @@ module.exports = function (grunt) {
     criticalcss: {
         custom: {
             options: {
-                url: "http://localhost:4000",
+                url: "_site/index.html",
                 width: 1200,
                 height: 900,
-                outputfile: "css/critical.css",
+                outputfile: "_includes/critical.css",
                 filename: "css/style.min.css", // Using path.resolve( path.join( ... ) ) is a good idea here
                 buffer: 800*1024,
                 ignoreConsole: false
@@ -222,9 +215,9 @@ module.exports = function (grunt) {
   // Default task
   grunt.registerTask('default', 'Build everything', function() {
       grunt.log.subhead("Build everything !".magenta);
+      grunt.task.run('html');
       grunt.task.run('css');
       grunt.task.run('js');
-      grunt.task.run('html');
       grunt.task.run('styleguide');
       grunt.task.run('watch');
     });
@@ -235,15 +228,8 @@ module.exports = function (grunt) {
     grunt.task.run('sass');
     grunt.task.run('autoprefixer');
     grunt.task.run('usebanner');
-    //grunt.task.run('csslint');
-  });
-
-  // Critical CSS
-  grunt.registerTask('critical', 'Build CSS files', function() {
-    grunt.log.subhead('There is critical things in life'.magenta);
-    grunt.task.run('css');
-    grunt.task.run('jekyll:serve');
     grunt.task.run('criticalcss');
+    //grunt.task.run('csslint');
   });
 
   // JS
