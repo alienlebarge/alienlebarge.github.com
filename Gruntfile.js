@@ -87,7 +87,7 @@ module.exports = function (grunt) {
     copy: {
       enhance: {
         src: 'bower_components/enhance/*.js',
-        dest: '_includes/enhance.js',
+        dest: '_js/enhance.js',
       },
     },
 
@@ -123,6 +123,11 @@ module.exports = function (grunt) {
             '_js/fitvids.footer.js',
             '_js/google-analytics.js'
             ]
+        }
+      },
+      enhance: {
+        files: {
+          '_includes/enhance.min.js': ['_js/enhance.js'],
         }
       }
     },
@@ -246,6 +251,7 @@ module.exports = function (grunt) {
   grunt.registerTask('init', 'Set file used to build the site', function() {
     grunt.log.subhead('init'.magenta);
     grunt.task.run('copy:enhance');
+    grunt.task.run('uglify:enhance');
   });
 
   // HTML
@@ -267,7 +273,7 @@ module.exports = function (grunt) {
   // JS
   grunt.registerTask('js', 'Build js files', function() {
     grunt.log.subhead('Build Javascripts files'.magenta);
-    grunt.task.run('uglify');
+    grunt.task.run('uglify:all_js');
   });
 
   // Styleguide
