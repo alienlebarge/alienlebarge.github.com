@@ -99,21 +99,6 @@ module.exports = function (grunt) {
       options: {
         banner: '<%= banner %>'
       },
-      header_js: {
-        files: {
-          'javascripts/header.min.js': ['_js/typekit.js']
-        }
-      },
-      footer_js: {
-        files: {
-          'javascripts/footer.min.js': [
-            'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/fitvids/jquery.fitvids.js',
-            '_js/fitvids.footer.js',
-            '_js/google-analytics.js'
-            ]
-        }
-      },
       all_js: {
         files: {
           'javascripts/all.min.js': [
