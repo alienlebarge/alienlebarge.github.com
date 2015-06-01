@@ -217,9 +217,15 @@ module.exports = function (grunt) {
       grunt.task.run('watch');
     });
 
+  // HTML
+  grunt.registerTask('html', 'Build HTML files', function() {
+    grunt.log.subhead('Build HTML files'.magenta);
+    grunt.task.run('jekyll:dev');
+  });
+
   // CSS
   grunt.registerTask('css', 'Build CSS files', function() {
-    grunt.log.subhead('Here come the styles'.magenta);
+    grunt.log.subhead('Build CSS files'.magenta);
     grunt.task.run('sass');
     grunt.task.run('autoprefixer');
     grunt.task.run('usebanner');
@@ -229,19 +235,13 @@ module.exports = function (grunt) {
 
   // JS
   grunt.registerTask('js', 'Build js files', function() {
-    grunt.log.subhead('Magic JavaScripts'.magenta);
+    grunt.log.subhead('Build Javascripts files'.magenta);
     grunt.task.run('uglify');
-  });
-
-  // HTML
-  grunt.registerTask('html', 'Build HTML files', function() {
-    grunt.log.subhead('Static HTML is fantastic'.magenta);
-    grunt.task.run('jekyll:dev');
   });
 
   // Styleguide
   grunt.registerTask('styleguide', 'Build js files', function() {
-    grunt.log.subhead('We all need a guide'.magenta);
+    grunt.log.subhead('Build Styleguide'.magenta);
     grunt.task.run('hologram');
   });
 
