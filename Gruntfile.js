@@ -84,6 +84,17 @@ module.exports = function (grunt) {
 
 
 
+    copy: {
+      enhance: {
+        src: 'bower_components/enhance/*.js',
+        dest: '_includes/enhance.js',
+      },
+    },
+
+
+
+
+
     uglify: {
       options: {
         banner: '<%= banner %>'
@@ -96,6 +107,17 @@ module.exports = function (grunt) {
       footer_js: {
         files: {
           'javascripts/footer.min.js': [
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/fitvids/jquery.fitvids.js',
+            '_js/fitvids.footer.js',
+            '_js/google-analytics.js'
+            ]
+        }
+      },
+      all_js: {
+        files: {
+          'javascripts/all.min.js': [
+            '_js/typekit.js',
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/fitvids/jquery.fitvids.js',
             '_js/fitvids.footer.js',
@@ -200,6 +222,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-banner');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
@@ -210,12 +233,20 @@ module.exports = function (grunt) {
   // Default task
   grunt.registerTask('default', 'Build everything', function() {
       grunt.log.subhead("Build everything !".magenta);
+      grunt.task.run('init');
       grunt.task.run('html');
       grunt.task.run('css');
+      grunt.task.run('html');
       grunt.task.run('js');
       grunt.task.run('styleguide');
       grunt.task.run('watch');
     });
+
+  // init
+  grunt.registerTask('init', 'Set file used to build the site', function() {
+    grunt.log.subhead('init'.magenta);
+    grunt.task.run('copy:enhance');
+  });
 
   // HTML
   grunt.registerTask('html', 'Build HTML files', function() {

@@ -10,6 +10,20 @@
   <meta name="description" content="{{site.description}}" />
   {% endif %}
 
+  <meta name="fullcss" content="/css/style.min.css">
+  <meta name="fulljs" content="/javascripts/all.min.js">
+<!--#if expr="$HTTP_COOKIE=/fullcss\=true/" -->
+  <link rel="stylesheet" href="/css/style.min.css">
+<!--#else -->
+  <style>
+    {% include critical.css %}
+  </style>
+<!--#endif -->
+  <script>
+  {% include enhance.js %}
+  </script>
+  <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@alienlebarge">
@@ -27,16 +41,7 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Rough Though by alienlebarge" href="http://feeds.feedburner.com/alienlebarge">
 
-  <!-- Critical CSS -->
-  <style>
-    {% include critical.css %}
-  </style>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/style.min.css">
-
-  <!-- Custom JS -->
-  <script type="text/javascript" src="/javascripts/header.min.js"></script>
 
   <!-- Icon -->
   <link rel="shortcut icon" href="/alb-logo.png">
