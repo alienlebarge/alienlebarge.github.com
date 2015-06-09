@@ -104,6 +104,7 @@ module.exports = function (grunt) {
           'javascripts/all.min.js': [
             '_js/typekit.js',
             'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/iconic/js/iconic.min.js',
             'bower_components/fitvids/jquery.fitvids.js',
             '_js/fitvids.footer.js',
             '_js/google-analytics.js'
