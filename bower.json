@@ -51,6 +51,7 @@
     "inuit-responsive-settings": "~0.1.5",
     "inuit-responsive-tools": "~0.1.3",
     "inuit-viewport": "~0.0.2",
-    "enhance": "https://github.com/filamentgroup/enhance.git#~1.1.0"
+    "enhance": "https://github.com/filamentgroup/enhance.git#~1.1.0",
+    "iconic": "https://github.com/alienlebarge/iconic.git#~1.7.0"
   }
 }
