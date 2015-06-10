@@ -82,11 +82,17 @@ module.exports = function (grunt) {
           'javascripts/all.min.js': [
             '_js/typekit.js',
             'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/iconic/js/iconic.min.js',
             'bower_components/fitvids/jquery.fitvids.js',
             '_js/fitvids.footer.js',
             '_js/google-analytics.js'
             ]
+        }
+      },
+      iconic: {
+        files: {
+          'javascripts/iconic.min.js': [
+            'bower_components/iconic/js/iconic.min.js',
+          ]
         }
       },
       enhance: {
@@ -236,6 +242,7 @@ module.exports = function (grunt) {
   grunt.registerTask('js', 'Build js files', function() {
     grunt.log.subhead('Build Javascripts files'.magenta);
     grunt.task.run('uglify:all_js');
+    grunt.task.run('uglify:iconic');
   });
 
   // Styleguide
