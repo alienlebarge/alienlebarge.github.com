@@ -5,11 +5,6 @@ module.exports = function (grunt) {
 
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*!\n' +
-            ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-            ' */\n',
 
 
 
@@ -54,20 +49,6 @@ module.exports = function (grunt) {
 
 
 
-    usebanner: {
-      options: {
-        position: 'bottom',
-        banner: '<%= banner %>'
-      },
-      files: {
-        src: ['css/style.min.css', 'css/style.css']
-      }
-    },
-
-
-
-
-
     csslint: {
       options: {
         csslintrc: '.csslintrc'
@@ -96,9 +77,6 @@ module.exports = function (grunt) {
 
 
     uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
       all_js: {
         files: {
           'javascripts/all.min.js': [
@@ -187,7 +165,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: '_sass/**/*.scss',
-        tasks: ['sass','autoprefixer', 'usebanner', 'hologram']
+        tasks: ['sass','autoprefixer', 'hologram']
       },
       js: {
         files: 'javascripts/**/*.js',
@@ -212,7 +190,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-jekyll');
@@ -251,7 +228,6 @@ module.exports = function (grunt) {
     grunt.log.subhead('Build CSS files'.magenta);
     grunt.task.run('sass');
     grunt.task.run('autoprefixer');
-    grunt.task.run('usebanner');
     grunt.task.run('criticalcss');
     //grunt.task.run('csslint');
   });
