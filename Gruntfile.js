@@ -78,6 +78,9 @@ module.exports = function (grunt) {
 
     uglify: {
       all_js: {
+        options: {
+          mangle: false,
+        },
         files: {
           'javascripts/all.min.js': [
             '_js/typekit.js',
@@ -85,7 +88,8 @@ module.exports = function (grunt) {
             'bower_components/iconic/js/iconic.min.js',
             'bower_components/fitvids/jquery.fitvids.js',
             '_js/fitvids.footer.js',
-            '_js/google-analytics.js'
+            '_js/google-analytics.js',
+            '_js/iconic.js'
             ]
         }
       },
