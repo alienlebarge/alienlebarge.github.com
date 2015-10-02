@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Underline learned the hard way"
-description: "Hoe to make good looking underline with CSS"
+description: "How to make good looking underline with CSS"
 date:        2015-09-23 17:55:06
 tags:
  - underline
@@ -15,7 +15,7 @@ In the age of the Internet, there is a player to take account : underline.
 
 The problem is that each browser has its own way of displaying an underlined. Chrome displays thick lines intersecting feet letters. And Safari displays fine lines that stops before each foot.
 
-![Underline in Chrome, Safari and Firefox side by side](http://alb-blog.s3.amazonaws.com/2015/09/underline/underline-side-by-side.png)
+![Underline in Chrome, Safari and Firefox side by side](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/underline-side-by-side.png)
 
 How can we manage to have the same underline's style everywhere ?  Why this is not the fonts who manages the display of underlining ? That way, they would be all the same across all browsers.  
 Well, this is a legacy of the era of font case and paper. At that time there was simply no underline. And it is considered as too distracting.
@@ -44,7 +44,7 @@ Due to the fact I wanted extra thin lines, I was tempted to use some  width like
 
 Some browser will not show line that are under 1px. Have a look at [this little test](http://www.w3.org/Style/Examples/007/units.en.html#units "CSS Tips & Tricks: Units"):
 
-![Firefox is the only browser who show a line thinner than 1px](http://alb-blog.s3.amazonaws.com/2015/09/underline/browser-less-than-1px.png)
+![Firefox is the only browser who show a line thinner than 1px](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/browser-less-than-1px.png)
 Yeah, Firefox is the only browser who show a line thinner than 1px.
 
 The conclusion is that **`1px` is the smallest value that the line can have**. Best thing you can do about that, is adding a warning.
@@ -76,7 +76,7 @@ Then, add some conditions to display a warning if the underline thickness is thi
 This is more a personal choice.
 I have choose to do all the calculation in `em` because it let me deal with proportion. It means that big text like headings will have a thicker underlines than basic text. It’s more elegant than having identical thicknesses for all fonts sizes.
 
-![Balanced underline thickness](http://alb-blog.s3.amazonaws.com/2015/09/underline/balanced-underline-thickness.png)
+![Balanced underline thickness](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/balanced-underline-thickness.png)
 
 ### There is not « one style that ruled them all »
 
@@ -84,7 +84,7 @@ Each font must have is own underline style.
 
 If you want to apply this kind of nice underlines and use more than one font, be careful. You may have to set a style for each fonts.
 
-![Same underline on two fonts](http://alb-blog.s3.amazonaws.com/2015/09/underline/same-underline-on-two-fonts.png)
+![Same underline on two fonts](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/same-underline-on-two-fonts.png)
 
 ### Almost bulletproof line cutting with `text-shadow`
 
@@ -115,7 +115,7 @@ Here is the CSS:
         1px -1px 0 $bg-color,
         1px  1px 0 $bg-color;
 
-![Shadows in the eight directions](http://alb-blog.s3.amazonaws.com/2015/09/underline/shadow-eight-directions.png)
+![Shadows in the eight directions](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/shadow-eight-directions.png)
 
 As you can see, the result may not be perfect with every font. We need something more accurate.
 
@@ -172,7 +172,7 @@ The second test was to draw more than one shadow on each of the eights axis.
         $cut-distance*4/5    $cut-distance*4/5  0 $bg-color,
         $cut-distance        $cut-distance      0 $bg-color;
 
-![Shadows in the eight directions](http://alb-blog.s3.amazonaws.com/2015/09/underline/shadow-eight-x-five-directions.png)
+![Shadows in the eight directions](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/shadow-eight-x-five-directions.png)
 
 The result was better but we can do better.
 
@@ -224,19 +224,19 @@ This is how I get the CSS in Sass.
 
 And yeah, the result is pretty decent.
 
-![The shadow using 25 `text-shadow`](http://alb-blog.s3.amazonaws.com/2015/09/underline/shadow-matrix.png)
+![The shadow using 25 `text-shadow`](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/shadow-matrix.png)
 
 ### Underline lowercase number
 
 Something to be careful with are lowercase number. The underline  of the number 3 can be invisible. There is no miracle. You have to be picky with that !
 
-![](http://alb-blog.s3.amazonaws.com/2015/09/underline/text-shadow-underline-cut.png)
+![](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/text-shadow-underline-cut.png)
 
 ### Awkward background color when selected
 
 A thing to fix is the color of the background when you select underline text. If you do nothing, it will be the same as the page background color. And it will do strange things when text is selected.
 
-![Strange background color on selected text](http://alb-blog.s3.amazonaws.com/2015/09/underline/underline-selection-wrong-background-color.png)
+![Strange background color on selected text](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/underline-selection-wrong-background-color.png)
 
 To fix that, you just have to add style on the selection. Thanks to [the `::selection` CSS pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection).
 
@@ -253,7 +253,7 @@ To fix that, you just have to add style on the selection. Thanks to [the `::sele
 
 Here is the result:
 
-![Fixed background color on selected text](http://alb-blog.s3.amazonaws.com/2015/09/underline/underline-selection-right-background-color.png)
+![Fixed background color on selected text](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/underline-selection-right-background-color.png)
 
 ### Things to know
 
@@ -261,15 +261,15 @@ Here is the result:
 
 On text selection, you can have some background exceedance.
 
-![Background exceedance on selected text](http://alb-blog.s3.amazonaws.com/2015/09/underline/background-exceedance.png)
+![Background exceedance on selected text](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/background-exceedance.png)
 
 #### When selected, the underline is not the same color as the text
 
-![](http://alb-blog.s3.amazonaws.com/2015/09/underline/underline-color.png)
+![](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/underline-color.png)
 
 The reason, is simple. The underline (made of `background-color`) is behind the selection layer.
 
-![The underline is behind the selection](http://alb-blog.s3.amazonaws.com/2015/09/underline/selection-z-index.png)
+![The underline is behind the selection](https://dlgjp9x71cipk.cloudfront.net/2015/09/underline/selection-z-index.png)
 
 ## The code
 
