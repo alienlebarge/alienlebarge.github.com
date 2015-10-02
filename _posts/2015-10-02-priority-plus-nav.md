@@ -38,4 +38,4 @@ All [the documented code is available on Codepen](http://codepen.io/alienlebarge
 
 I would be very happy to implement the ability to have more than one menu level to solve the sub-nav dilemma.
 
-![My notes about a sub-navigation](https://dlgjp9x71cipk.cloudfront.net/2015/09/priority-plus/2015-10-02-note-priority-nav-multi-level.jpg)
+![My notes about a sub-navigation](https://dlgjp9x71cipk.cloudfront.net/2015/10/priority-plus/2015-10-02-note-priority-nav-multi-level.jpg)
