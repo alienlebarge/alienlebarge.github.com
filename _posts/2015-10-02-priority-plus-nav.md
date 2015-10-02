@@ -13,6 +13,8 @@ Priority+ navigation is an interesting pattern. The main idea of it is to place 
 
 After an unsuccessful search for a priority+ navigation built with flexboxes, I have build one.
 
+[And here's the result](http://codepen.io/alienlebarge/full/rOjRBZ/).
+
 ## Pros
 
 - **Simple**. It’s very simple to implement. This is flexbox and some classes to toggle.
