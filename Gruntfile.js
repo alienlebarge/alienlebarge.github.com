@@ -154,18 +154,6 @@ module.exports = function (grunt) {
 
 
 
-    hologram: {
-      generate: {
-        options: {
-          config: 'hologram_config.yml'
-        }
-      }
-    },
-
-
-
-
-
     watch: {
       sass: {
         files: '_sass/**/*.scss',
@@ -199,7 +187,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-criticalcss');
-  grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task
@@ -210,7 +197,6 @@ module.exports = function (grunt) {
       grunt.task.run('css');
       grunt.task.run('html');
       grunt.task.run('js');
-      grunt.task.run('styleguide');
       grunt.task.run('watch');
     });
 
