@@ -2,6 +2,7 @@
 layout:      post
 title:       "Smashingconf Barcelona 2015"
 description: "I have spent three days in Barcelona for the Smashing Conference."
+image:       https://farm1.staticflickr.com/762/22340936750_644978b378_z.jpg
 date:        2015-11-06 20:18:24
 tags:
  - smashingconf
