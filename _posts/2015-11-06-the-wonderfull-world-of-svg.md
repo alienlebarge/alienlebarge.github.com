@@ -19,4 +19,6 @@ Here are my sketchnotes of this talks who gave use some nice tips and tricks:
 
 [![Second part of the sketchnote of the talk The Wonderfull World of SVG](https://farm1.staticflickr.com/629/22832640485_bcf04d5b97_z.jpg)](https://www.flickr.com/photos/alienlebarge/22832640485/)
 
+<iframe src="https://player.vimeo.com/video/144722824" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/144722824">SmashingConf Barcelona: The Wonderful World of SVG</a> from <a href="https://vimeo.com/smashingmagazine">Smashing Magazine</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 <script async class="speakerdeck-embed" data-id="11dc710ffed64ce09d302e6d10ff9e8d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
