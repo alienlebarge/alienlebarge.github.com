@@ -13,7 +13,7 @@ tags:
 ---
 
 Haaa design systems !
-I was waiting for this talk. As we start thinking about building [a design system for the State of Vaud](https://github.com/DSI-VD/foehnm "Foehn, the design system for the State of Vaud on  GitHub"), my ears were wide open to grab information how to build design systems that works.
+I was waiting for this talk. As we start thinking about building [a design system for the State of Vaud](https://github.com/DSI-VD/foehn "Foehn, the design system for the State of Vaud on  GitHub"), my ears were wide open to grab information how to build design systems that works.
 
 [Jina Bolton](https://twitter.com/jina) works as a Senior Designer on the Design Systems team at Salesforce UX, working on the Lightning Design System and team evangelism.
 
