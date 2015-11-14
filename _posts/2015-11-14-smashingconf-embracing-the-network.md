@@ -11,8 +11,6 @@ tags:
  - performance
 ---
 
-# Embracing The Network
-
 [Patrick Hamann](https://twitter.com/patrickhamann) does a very interesting talk about performances.
 
 Here's the introduction of his presentation:
