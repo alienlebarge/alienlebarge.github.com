@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       "SmashingConf: How to design with sceince without loosing the magic"
+title:       "SmashingConf: How To Design With Science Without Loosing The Magic"
 description: "Joe Leech talkes about how to design ... with magic"
 image:       https://farm1.staticflickr.com/574/22515411462_0a438f77bf_b.jpg
 date:        2015-12-01 20:24:39
