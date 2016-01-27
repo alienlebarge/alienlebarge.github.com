@@ -66,3 +66,26 @@ h6,
   letter-spacing: -0.025em;
   font-weight: bold;
 }
+
+.wf-active {
+  h1,
+  .#{$inuit-namespace}alpha,
+  %#{$inuit-namespace}alpha,
+  h2,
+  .#{$inuit-namespace}beta,
+  %#{$inuit-namespace}beta,
+  h3,
+  .#{$inuit-namespace}gamma,
+  %#{$inuit-namespace}gamma,
+  h4,
+  .#{$inuit-namespace}delta,
+  %#{$inuit-namespace}delta,
+  h5,
+  .#{$inuit-namespace}epsilon,
+  %#{$inuit-namespace}epsilon,
+  h6,
+  .#{$inuit-namespace}zeta,
+  %#{$inuit-namespace}zeta {
+    font-family: $enhance-base-headings-font-family;
+  }
+}

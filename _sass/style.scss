@@ -28,7 +28,6 @@
  * BASE
  * Links:               Links and anchors.
  * Page:                HTML and body styles
- * FOUT:                FOUT fonts
  * Codes:               Code blocks and preformated text style
  * Headings:            H1–H6 styles.
  * Headings custom:     Custom tweaks on Inuitcss
@@ -119,7 +118,6 @@
 
 @import "../bower_components/inuit-viewport/_base.viewport.scss";
 @import "base.page";
-@import "base.fout";
 @import "base.links";
 @import "base.codes";
 @import "base.headings";

@@ -19,16 +19,22 @@ parent: custom-settings
 ---
 
 ```scss
-$base-font-family:          "freight-text-pro", Georgia, serif;
-$base-small-font-family:    "freight-micro-pro", $base-font-family;
-$base-headings-font-family: "ff-dax-compact-web-pro", serif;
-$base-code-font-family:     "inconsolata", Courier, monospace;
+$base-font-family:                  "HoeflerText-Regular", "Georgia", serif;
+$enhance-base-font-family:          "freight-text-pro", $base-font-family;
+$base-small-font-family:            $base-font-family;
+$enhance-base-small-font-family:    "freight-micro-pro", $base-small-font-family;
+$base-headings-font-family:         "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$enhance-base-headings-font-family: "ff-dax-compact-web-pro", $base-headings-font-family;
+$base-code-font-family:             "inconsolata", Courier, monospace;
 ```
 */
-$base-font-family:          "freight-text-pro", Georgia, serif;
-$base-small-font-family:    "freight-micro-pro", $base-font-family;
-$base-headings-font-family: "ff-dax-compact-web-pro", serif;
-$base-code-font-family:     "inconsolata", Courier, monospace;
+$base-font-family:                  "HoeflerText-Regular", "Georgia", serif;
+$enhance-base-font-family:          "freight-text-pro", $base-font-family;
+$base-small-font-family:            $base-font-family;
+$enhance-base-small-font-family:    "freight-micro-pro", $base-small-font-family;
+$base-headings-font-family:         "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$enhance-base-headings-font-family: "ff-dax-compact-web-pro", $base-headings-font-family;
+$base-code-font-family:             "inconsolata", Courier, monospace;
 
 
 

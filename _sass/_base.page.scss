@@ -23,4 +23,8 @@ Basic settings for font are set in `html`.
 html {
     font-family: $base-font-family;
     font-weight: 100;
+
+  &.wf-active {
+    font-family: $enhance-base-font-family;
+  }
 }
