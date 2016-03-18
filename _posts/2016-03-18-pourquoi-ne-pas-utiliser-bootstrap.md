@@ -2,7 +2,7 @@
 layout:      post
 title:       "Pourquoi ne pas utiliser Bootstrap ?"
 description: "Dans le cadre du developement d'une libraire distribué, est-il bon d'utiliser Bootstrap ?"
-date:        22016-03-18 13:52:43
+date:        2016-03-18 13:52:43
 tags:
  - bootstrap
  - pattern
