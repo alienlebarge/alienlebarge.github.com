@@ -5,20 +5,21 @@ a{ background-color: transparent; }
 abbr[title]{ border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: initial; }
 h1{ font-size: 2em; margin-top: 0.67em; margin-right: 0px; margin-bottom: 0.67em; margin-left: 0px; }
 img{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
-body, h1, h2, h3, p, ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+body, h1, h2, p, ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 abbr[title]{ cursor: help; }
-h1, h2, h3, ul, p{ margin-bottom: 1.4rem; }
+h1, h2, ul, p{ margin-bottom: 1.4rem; }
 ul{ margin-left: 2.8rem; }
 html{ box-sizing: border-box; }
 *{ box-sizing: inherit; }
 html{ font-size: 1.25em; line-height: 1.4; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); overflow-y: scroll; min-height: 100%; -webkit-font-smoothing: antialiased; }
 html{ font-family: HoeflerText-Regular, Georgia, serif; font-weight: 100; }
 a{ color: rgb(51, 51, 51); }
+ .gamma a{ text-decoration: none; text-shadow: rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) -1px -0.5px 0px, rgb(255, 255, 255) -1px 0px 0px, rgb(255, 255, 255) -1px 0.5px 0px, rgb(255, 255, 255) -1px 1px 0px, rgb(255, 255, 255) -0.5px -1px 0px, rgb(255, 255, 255) -0.5px -0.5px 0px, rgb(255, 255, 255) -0.5px 0px 0px, rgb(255, 255, 255) -0.5px 0.5px 0px, rgb(255, 255, 255) -0.5px 1px 0px, rgb(255, 255, 255) 0px -1px 0px, rgb(255, 255, 255) 0px -0.5px 0px, rgb(255, 255, 255) 0px 0px 0px, rgb(255, 255, 255) 0px 0.5px 0px, rgb(255, 255, 255) 0px 1px 0px, rgb(255, 255, 255) 0.5px -1px 0px, rgb(255, 255, 255) 0.5px -0.5px 0px, rgb(255, 255, 255) 0.5px 0px 0px, rgb(255, 255, 255) 0.5px 0.5px 0px, rgb(255, 255, 255) 0.5px 1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) 1px -0.5px 0px, rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 1px 0.5px 0px, rgb(255, 255, 255) 1px 1px 0px; }
 a.btn{ background-image: none; text-shadow: none; }
 h1{ font-size: 2rem; line-height: 1.4; }
 h2{ font-size: 1.6rem; line-height: 1.75; }
-h3{ font-size: 1.2rem; line-height: 1.16667; }
-h1, h2, h3{ font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; letter-spacing: -0.025em; font-weight: bold; }
+ .gamma{ font-size: 1.2rem; line-height: 1.16667; }
+h1, h2, .gamma{ font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; letter-spacing: -0.025em; font-weight: bold; }
 .italic{ font-style: italic; }
 img{ max-width: 100%; font-style: italic; vertical-align: middle; }
 h2{ padding-top: 1.4rem; }
@@ -36,7 +37,6 @@ a{ color: rgb(51, 51, 51); text-decoration: none; text-shadow: rgb(255, 255, 255
 a .iconic{ fill: #333333; }
 .m{ margin-top: 28px !important; margin-right: 28px !important; margin-bottom: 28px !important; margin-left: 28px !important; }
 .mb{ margin-bottom: 28px !important; }
-.mb0{ margin-bottom: 0px !important; }
 .pb{ padding-bottom: 28px !important; }
 .ph{ padding-right: 28px !important; padding-left: 28px !important; }
 .pt\+{ padding-top: 56px !important; }
