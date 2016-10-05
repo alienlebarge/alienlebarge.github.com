@@ -23,6 +23,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-criticalcss": "^0.5.0",
     "grunt-html-validation": "^0.1.18",
-    "grunt-jekyll": "^0.4.2"
+    "grunt-jekyll": "^0.4.2",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
   }
 }
