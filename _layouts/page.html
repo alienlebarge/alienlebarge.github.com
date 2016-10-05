@@ -8,24 +8,24 @@
 <article>
 
   {% if page.image %}
-  <header class="header-image header-image--overlay" style="background-image: url('{{ page.image }}')">
+  <header>
 
-    <figure class="header-image__hidden-image">
+    <figure>
       <img src="{{ page.image }}">
     </figure>
 
-    <div class="header-image__text-container container">
-      <h1 class="mb0 pt">{{ page.title }}</h1>
+    <div>
+      <h1>{{ page.title }}</h1>
     </div>
 
   </header>
   {% else %}
   <header>
-    <h1 class="mb0 pt">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
   </header>
   {% endif %}
 
-  <div class="container mt">
+  <div>
     {{ content }}
   </div>
 
