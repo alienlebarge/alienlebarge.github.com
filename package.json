@@ -9,7 +9,8 @@
   },
   "author": "Cédric Aellen <cedric.aellen@alienlebarge.ch>",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2"
