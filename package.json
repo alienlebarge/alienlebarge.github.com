@@ -1,19 +1,16 @@
 {
   "name": "alienlebarge-blog",
+  "version": "2.0.0",
   "description": "alienlebarge blog",
-  "author": "Cédric Aellen",
-  "version": "1.11.1",
-  "homepage": "http://www.alienlebarge.ch",
+  "main": "README.md",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/alienlebarge/alienlebarge.github.com.git"
+    "url": "https://github.com/alienlebarge/alienlebarge.github.com.git",
+    "type": "git"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/alienlebarge/alienlebarge.github.com/blob/master/LICENSE"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.17.0",
+  "author": "Cédric Aellen <cedric.aellen@alienlebarge.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2"
   }
