@@ -10,7 +10,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('css', function () {
     var processors = [
         atImport(),
-        autoprefixer({browsers: ['last 2 version']}),
+        autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}),
         cssnano(),
     ];
     return gulp.src('./_css/*.css')
