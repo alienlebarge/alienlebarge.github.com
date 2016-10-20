@@ -4,6 +4,7 @@ var postcss = require('gulp-postcss');
 var atImport = require("postcss-import");
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
 gulp.task('css', function () {
@@ -13,7 +14,13 @@ gulp.task('css', function () {
         cssnano(),
     ];
     return gulp.src('./_css/*.css')
+        // init sourcemaps
+        .pipe(sourcemaps.init())
+        // postcss
         .pipe(postcss(processors))
+        // write sourcemaps
+        .pipe(sourcemaps.write('.'))
+        // write final css
         .pipe(gulp.dest('./css'));
 });
 
