@@ -1,12 +1,14 @@
 var gulp  = require('gulp');
 var shell = require('gulp-shell');
 var postcss = require('gulp-postcss');
+var atImport = require("postcss-import");
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var browserSync = require('browser-sync').create();
 
 gulp.task('css', function () {
     var processors = [
+        atImport(),
         autoprefixer({browsers: ['last 2 version']}),
         cssnano(),
     ];
