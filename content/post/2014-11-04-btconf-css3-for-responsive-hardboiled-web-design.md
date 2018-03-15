@@ -1,14 +1,11 @@
----
-date: 2014-11-04T22:14:34Z
-description: My sketchnote about Andrew Clark workshop
-image: http://markosun.files.wordpress.com/2013/07/apes6.jpg
-tags:
-- btconf
-- conference
-- sketchnote
-- css
-title: 'Beyond Tellerrand: CSS3 For Responsive Hardboiled Web Design'
----
++++
+date = "2014-11-04T22:14:34Z"
+description = "My sketchnote about Andrew Clark workshop"
+image = "http://markosun.files.wordpress.com/2013/07/apes6.jpg"
+tags = ["btconf", "conference", "sketchnote", "css"]
+title = "Beyond Tellerrand: CSS3 For Responsive Hardboiled Web Design"
+
++++
 
 [Andrew Clarke](http://www.twitter.com/malarkey) is running [Stuff & Nonsense](http://stuffandnonsense.co.uk) an agency which likes apes. He demonstrated us how we can use new CSS3 techniques to build websites. We talk a lot about flexbox, how does the alignments work and the way we can implement them.
 

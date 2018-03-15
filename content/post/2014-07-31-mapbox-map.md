@@ -1,87 +1,161 @@
----
-coordinates: 6.6,46.66
-date: 2014-07-31T13:10:35Z
-description: How to build maps with Mapbox API and Jekyll
-image: http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/pin-m-m(6.52,46.68),pin-m-m(6.52,46.67),pin-m-m(6.52,46.66),pin-m-m(6.52,46.65),pin-m-m(6.52,46.64),pin-m-m(6.53,46.67),pin-m-m(6.54,46.66),pin-m-m(6.55,46.67),pin-m-m(6.56,46.68),pin-m-m(6.56,46.67),pin-m-m(6.56,46.66),pin-m-m(6.56,46.65),pin-m-m(6.56,46.64),pin-m-a(6.58,46.66),pin-m-a(6.58,46.65),pin-m-a(6.58,46.64),pin-m-a(6.59,46.67),pin-m-a(6.59,46.65),pin-m-a(6.60,46.68),pin-m-a(6.60,46.65),pin-m-a(6.61,46.67),pin-m-a(6.61,46.65),pin-m-a(6.62,46.66),pin-m-a(6.62,46.65),pin-m-a(6.62,46.64),pin-m-p(6.64,46.68),pin-m-p(6.64,46.67),pin-m-p(6.64,46.66),pin-m-p(6.64,46.65),pin-m-p(6.64,46.64),pin-m-p(6.65,46.68),pin-m-p(6.65,46.66),pin-m-p(6.66,46.68),pin-m-p(6.66,46.66),pin-m-p(6.67,46.68),pin-m-p(6.67,46.66),pin-m-p(6.68,46.67)/6.6,46.66,11/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg
-markers:
-- coordinates: 6.52,46.68
-  label: m
-- coordinates: 6.52,46.67
-  label: m
-- coordinates: 6.52,46.66
-  label: m
-- coordinates: 6.52,46.65
-  label: m
-- coordinates: 6.52,46.64
-  label: m
-- coordinates: 6.53,46.67
-  label: m
-- coordinates: 6.54,46.66
-  label: m
-- coordinates: 6.55,46.67
-  label: m
-- coordinates: 6.56,46.68
-  label: m
-- coordinates: 6.56,46.67
-  label: m
-- coordinates: 6.56,46.66
-  label: m
-- coordinates: 6.56,46.65
-  label: m
-- coordinates: 6.56,46.64
-  label: m
-- coordinates: 6.58,46.66
-  label: a
-- coordinates: 6.58,46.65
-  label: a
-- coordinates: 6.58,46.64
-  label: a
-- coordinates: 6.59,46.67
-  label: a
-- coordinates: 6.59,46.65
-  label: a
-- coordinates: 6.60,46.68
-  label: a
-- coordinates: 6.60,46.65
-  label: a
-- coordinates: 6.61,46.67
-  label: a
-- coordinates: 6.61,46.65
-  label: a
-- coordinates: 6.62,46.66
-  label: a
-- coordinates: 6.62,46.65
-  label: a
-- coordinates: 6.62,46.64
-  label: a
-- coordinates: 6.64,46.68
-  label: p
-- coordinates: 6.64,46.67
-  label: p
-- coordinates: 6.64,46.66
-  label: p
-- coordinates: 6.64,46.65
-  label: p
-- coordinates: 6.64,46.64
-  label: p
-- coordinates: 6.65,46.68
-  label: p
-- coordinates: 6.65,46.66
-  label: p
-- coordinates: 6.66,46.68
-  label: p
-- coordinates: 6.66,46.66
-  label: p
-- coordinates: 6.67,46.68
-  label: p
-- coordinates: 6.67,46.66
-  label: p
-- coordinates: 6.68,46.67
-  label: p
-tags: jekyll, map, mapbox
-title: Mapbox map API
-zoom: 11
----
++++
+coordinates = "6.6,46.66"
+date = "2014-07-31T13:10:35Z"
+description = "How to build maps with Mapbox API and Jekyll"
+image = "http://api.tiles.mapbox.com/v4/alienlebarge.io3heb5m/pin-m-m(6.52,46.68),pin-m-m(6.52,46.67),pin-m-m(6.52,46.66),pin-m-m(6.52,46.65),pin-m-m(6.52,46.64),pin-m-m(6.53,46.67),pin-m-m(6.54,46.66),pin-m-m(6.55,46.67),pin-m-m(6.56,46.68),pin-m-m(6.56,46.67),pin-m-m(6.56,46.66),pin-m-m(6.56,46.65),pin-m-m(6.56,46.64),pin-m-a(6.58,46.66),pin-m-a(6.58,46.65),pin-m-a(6.58,46.64),pin-m-a(6.59,46.67),pin-m-a(6.59,46.65),pin-m-a(6.60,46.68),pin-m-a(6.60,46.65),pin-m-a(6.61,46.67),pin-m-a(6.61,46.65),pin-m-a(6.62,46.66),pin-m-a(6.62,46.65),pin-m-a(6.62,46.64),pin-m-p(6.64,46.68),pin-m-p(6.64,46.67),pin-m-p(6.64,46.66),pin-m-p(6.64,46.65),pin-m-p(6.64,46.64),pin-m-p(6.65,46.68),pin-m-p(6.65,46.66),pin-m-p(6.66,46.68),pin-m-p(6.66,46.66),pin-m-p(6.67,46.68),pin-m-p(6.67,46.66),pin-m-p(6.68,46.67)/6.6,46.66,11/800x800.png?access_token=pk.eyJ1IjoiYWxpZW5sZWJhcmdlIiwiYSI6Ik1hN3ZxVjgifQ.S2hbxqNnn7kU7HRnd6jYVg"
+tags = "jekyll, map, mapbox"
+title = "Mapbox map API"
+zoom = 11
+
+[[markers]]
+  coordinates = "6.52,46.68"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.52,46.67"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.52,46.66"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.52,46.65"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.52,46.64"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.53,46.67"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.54,46.66"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.55,46.67"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.56,46.68"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.56,46.67"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.56,46.66"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.56,46.65"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.56,46.64"
+  label = "m"
+
+[[markers]]
+  coordinates = "6.58,46.66"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.58,46.65"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.58,46.64"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.59,46.67"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.59,46.65"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.60,46.68"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.60,46.65"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.61,46.67"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.61,46.65"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.62,46.66"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.62,46.65"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.62,46.64"
+  label = "a"
+
+[[markers]]
+  coordinates = "6.64,46.68"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.64,46.67"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.64,46.66"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.64,46.65"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.64,46.64"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.65,46.68"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.65,46.66"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.66,46.68"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.66,46.66"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.67,46.68"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.67,46.66"
+  label = "p"
+
+[[markers]]
+  coordinates = "6.68,46.67"
+  label = "p"
+
++++
 
 Maps are cool and I love them. Since I'm rebuilding this blog, I wanted to add some of them in the design. As I love trekking, I was thinking it was a fine idea to add them on posts where I talk about trekking and things like that.
 [Katy DeCorah](https://twitter.com/katydecorah) was already doing that on [her blog](http://katydecorah.com). [Her work](http://katydecorah.com/code/2014/07/26/static-mapbox-for-jekyll/) was a great inspiration.

@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-13T05:40:08Z
-description: My sketchnote of Giles Colborne's talk Delight and Innovation
-image: https://farm4.staticflickr.com/3794/14103533820_6b7067693e_z.jpg
-tags: uxls, ux, event, lausanne, delight, innovation, sketchnote
-title: 'UX Lausanne: Delight and Innovation'
----
++++
+categories = "blog"
+date = "2014-06-13T05:40:08Z"
+description = "My sketchnote of Giles Colborne's talk Delight and Innovation"
+image = "https://farm4.staticflickr.com/3794/14103533820_6b7067693e_z.jpg"
+tags = "uxls, ux, event, lausanne, delight, innovation, sketchnote"
+title = "UX Lausanne: Delight and Innovation"
+
++++
 
 Here's my sketchnote of [Giles Colborne](https://twitter.com/gilescolborne)'s talk.
 

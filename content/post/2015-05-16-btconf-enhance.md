@@ -1,15 +1,11 @@
----
-date: 2015-05-16T23:03:13Z
-description: Jeremy Keith's talk Enhance!
-image: https://c1.staticflickr.com/9/8816/17529059905_932925c1a4_z.jpg
-tags:
-- btconf
-- conference
-- futur-proof
-- devlopment
-- web
-title: 'Beyond Tellerrand: Enhance!'
----
++++
+date = "2015-05-16T23:03:13Z"
+description = "Jeremy Keith's talk Enhance!"
+image = "https://c1.staticflickr.com/9/8816/17529059905_932925c1a4_z.jpg"
+tags = ["btconf", "conference", "futur-proof", "devlopment", "web"]
+title = "Beyond Tellerrand: Enhance!"
+
++++
 
 [Jeremy Keith](https://twitter.com/adactio) put forward that we had to **solidify the base of web developement that are HTML and CSS**. A site with HTML and CSS solid base will be supported more easily and longer than the site that is entirely based on javascript framework.
 

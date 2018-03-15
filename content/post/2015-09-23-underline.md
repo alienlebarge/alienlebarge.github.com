@@ -1,12 +1,10 @@
----
-date: 2015-09-23T17:55:06Z
-description: How to make good looking underline with CSS
-tags:
-- underline
-- css
-- typography
-title: Underline learned the hard way
----
++++
+date = "2015-09-23T17:55:06Z"
+description = "How to make good looking underline with CSS"
+tags = ["underline", "css", "typography"]
+title = "Underline learned the hard way"
+
++++
 
 I love typography, beautiful typography. This is one of the most important points , if not the most when designing a site. There is nothing better than a proper font that makes reading text fluid and easy.
 

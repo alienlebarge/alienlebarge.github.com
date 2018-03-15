@@ -1,14 +1,11 @@
----
-date: 2014-11-09T20:26:13Z
-description: Lisa Larson-Kelly's talk about realtime communication
-image: https://farm4.staticflickr.com/3949/15546587639_c24542b444_c.jpg
-tags:
-- btconf
-- conference
-- communication
-- realtime
-title: 'Beyond Tellerrand: Real-time Communication – for Everyone!'
----
++++
+date = "2014-11-09T20:26:13Z"
+description = "Lisa Larson-Kelly's talk about realtime communication"
+image = "https://farm4.staticflickr.com/3949/15546587639_c24542b444_c.jpg"
+tags = ["btconf", "conference", "communication", "realtime"]
+title = "Beyond Tellerrand: Real-time Communication – for Everyone!"
+
++++
 
 [Lisa Larson-Kelly](https://twitter.com/lisamarienyc) 's talk was about new protocol communication like [WebRTC](http://www.webrtc.org) who allow to bring sound and video in the browser.
 

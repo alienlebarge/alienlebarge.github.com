@@ -1,16 +1,11 @@
----
-date: 2015-05-11T23:41:58Z
-description: There a lot of Chrome browser on Android mobiles. Peter-Paul Koch presented
-  a little selection of them
-image: https://farm8.staticflickr.com/7755/17527325582_1b56086e8f_z_d.jpg
-tags:
-- btconf
-- conference
-- chromium
-- chrome
-- mobile
-title: 'Beyond Tellerrand: The Plural of Chromium is Chromia'
----
++++
+date = "2015-05-11T23:41:58Z"
+description = "There a lot of Chrome browser on Android mobiles. Peter-Paul Koch presented a little selection of them"
+image = "https://farm8.staticflickr.com/7755/17527325582_1b56086e8f_z_d.jpg"
+tags = ["btconf", "conference", "chromium", "chrome", "mobile"]
+title = "Beyond Tellerrand: The Plural of Chromium is Chromia"
+
++++
 
 There a lot of Chrome browser on Android mobiles. Peter-Paul Koch presented a little selection of them.
 

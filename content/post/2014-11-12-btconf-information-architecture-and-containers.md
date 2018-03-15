@@ -1,14 +1,11 @@
----
-date: 2014-11-12T08:00:46Z
-description: Oliver Reichenstein's talk about information, architecture & containers
-  at Beyond Tellerrand
-image: https://farm8.staticflickr.com/7550/15733471082_acd5f2f036_c.jpg
-tags:
-- btconf
-- conference
-- information architecture
-title: 'Beyond Tellerrand: Information, Architecture & Containers'
----
++++
+date = "2014-11-12T08:00:46Z"
+description = "Oliver Reichenstein's talk about information, architecture & containers at Beyond Tellerrand"
+image = "https://farm8.staticflickr.com/7550/15733471082_acd5f2f036_c.jpg"
+tags = ["btconf", "conference", "information architecture"]
+title = "Beyond Tellerrand: Information, Architecture & Containers"
+
++++
 
 [Oliver Reichenstein](https://twitter.com/reichenstein) presented a way of organizing information with containers.
 

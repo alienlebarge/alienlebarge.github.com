@@ -1,14 +1,11 @@
----
-date: 2015-11-06T20:41:13Z
-description: Chris Coyier tell us how SVG are wonderfull.
-image: https://farm1.staticflickr.com/679/22340998290_cae14ba580_z.jpg
-tags:
-- smashingconf
-- svg
-- talk
-- sketchnote
-title: 'SmashingConf: The Wonderfull World of SVG'
----
++++
+date = "2015-11-06T20:41:13Z"
+description = "Chris Coyier tell us how SVG are wonderfull."
+image = "https://farm1.staticflickr.com/679/22340998290_cae14ba580_z.jpg"
+tags = ["smashingconf", "svg", "talk", "sketchnote"]
+title = "SmashingConf: The Wonderfull World of SVG"
+
++++
 
 Chris Coyier is one of guys behind [codepen.io](http://www.codepen.io), a sandbox site where you can throw your html, css and js. He also host the [Shop Talk Show](http://shoptalkshow.com/). This is podcast about web design. (I'm a huge fan of this show.)
 

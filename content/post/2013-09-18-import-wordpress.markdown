@@ -1,8 +1,9 @@
----
-categories: blog
-date: 2013-09-18T16:19:00Z
-title: Import Wordpress réussi
----
++++
+categories = "blog"
+date = "2013-09-18T16:19:00Z"
+title = "Import Wordpress réussi"
+
++++
 
 L'import des article Wordpress est réussi !  
 Comme toujours, il y a quelques problèmes qu'il va falloir régler.  

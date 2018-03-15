@@ -1,14 +1,10 @@
----
-date: 2016-03-18T07:28:30Z
-description: Dans le cadre du développement d'une libraire distribué, est-il bon d'utiliser
-  Bootstrap ?
-tags:
-- bootstrap
-- pattern
-- library
-- styleguide
-title: Pourquoi ne pas utiliser Bootstrap ?
----
++++
+date = "2016-03-18T07:28:30Z"
+description = "Dans le cadre du développement d'une libraire distribué, est-il bon d'utiliser Bootstrap ?"
+tags = ["bootstrap", "pattern", "library", "styleguide"]
+title = "Pourquoi ne pas utiliser Bootstrap ?"
+
++++
 
 Voici une question qui revient éternellement dans le monde du web.
 

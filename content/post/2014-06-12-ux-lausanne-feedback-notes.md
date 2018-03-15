@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-12T20:00:00Z
-description: Feedback and notes about UX conference in Lausanne
-image: https://farm6.staticflickr.com/5528/14290178495_d381101809_z.jpg
-tags: uxls, ux, event, lausanne
-title: UX Lausanne feedback and notes
----
++++
+categories = "blog"
+date = "2014-06-12T20:00:00Z"
+description = "Feedback and notes about UX conference in Lausanne"
+image = "https://farm6.staticflickr.com/5528/14290178495_d381101809_z.jpg"
+tags = "uxls, ux, event, lausanne"
+title = "UX Lausanne feedback and notes"
+
++++
 
 The first edition of [UX Lausanne](http://2014.uxlausanne.com/) was a really great event. I really appreciate it. If there will be a 2015 edition, you can count me in.
 

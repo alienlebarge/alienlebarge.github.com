@@ -1,11 +1,10 @@
----
-date: 2016-06-15T13:44:58Z
-description: How I use Stylelint to lint my CSS
-tags:
-- stylelint
-- css
-title: 'Stylelint: My CSS linting workflow'
----
++++
+date = "2016-06-15T13:44:58Z"
+description = "How I use Stylelint to lint my CSS"
+tags = ["stylelint", "css"]
+title = "Stylelint: My CSS linting workflow"
+
++++
 
 > Having a good and most importantly uniform coding style is a good habit. Your code is more readable on more understandable.  
 > &ndash; A coder

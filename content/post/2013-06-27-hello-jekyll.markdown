@@ -1,8 +1,9 @@
----
-categories: jekyll
-date: 2013-06-27T07:19:00Z
-title: Hello Jekyll
----
++++
+categories = "jekyll"
+date = "2013-06-27T07:19:00Z"
+title = "Hello Jekyll"
+
++++
 
 Après quelques mois d'hésitation, je me suis enfin décidé à tester [Jekyll](http://jekyllrb.com).<!--more-->
 

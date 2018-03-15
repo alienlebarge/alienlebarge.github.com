@@ -1,18 +1,14 @@
----
-categories:
-- Ballade
-coordinates: 7.638888,46.385995
-date: 2013-06-14T00:00:00Z
-published: true
-status: publish
-tags:
-- Ballade
-- Dala
-- Loèche
-- Randonnée
-title: Les Gorges de la Dala par les deux restaurants
-type: post
----
++++
+categories = ["Ballade"]
+coordinates = "7.638888,46.385995"
+date = "2013-06-14T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Ballade", "Dala", "Loèche", "Randonnée"]
+title = "Les Gorges de la Dala par les deux restaurants"
+type = "post"
+
++++
 
 Initialement, nous avions prévu de faire le tour du Daubensee aujourd'hui. Malheureusement, après être arrivés en haut, force fut de constater que nous allions devoir revoir nos projets. Celui-ci était encore gelé et les environs étaient recouverts de neige. C'est que nous sommes quand même un 14 juin (!). Oui, l'hiver est long.<!--more-->
 

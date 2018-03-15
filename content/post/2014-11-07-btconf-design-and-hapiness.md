@@ -1,12 +1,11 @@
----
-date: 2014-11-07T14:15:24Z
-description: ""
-image: https://farm4.staticflickr.com/3944/15095391433_11272688cf_c.jpg
-tags:
-- btconf
-- conference
-title: 'Beyond Tellerrand: Design & Happiness'
----
++++
+date = "2014-11-07T14:15:24Z"
+description = ""
+image = "https://farm4.staticflickr.com/3944/15095391433_11272688cf_c.jpg"
+tags = ["btconf", "conference"]
+title = "Beyond Tellerrand: Design & Happiness"
+
++++
 
 [Stefan Sagmeister](https://twitter.com/sagmeisterwalsh) showed us what is joyousness and how to be happier in life. This has a direct impact on the design and the creative process.
 

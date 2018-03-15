@@ -1,15 +1,11 @@
----
-date: 2015-05-19T16:20:05Z
-description: ""
-image: https://c2.staticflickr.com/8/7657/17502535856_9e87f042b5_z.jpg
-tags:
-- btconf
-- conference
-- ux
-- design
-- collaboration
-title: 'Beyond Tellerrand: Collaborating Across UX & Design'
----
++++
+date = "2015-05-19T16:20:05Z"
+description = ""
+image = "https://c2.staticflickr.com/8/7657/17502535856_9e87f042b5_z.jpg"
+tags = ["btconf", "conference", "ux", "design", "collaboration"]
+title = "Beyond Tellerrand: Collaborating Across UX & Design"
+
++++
 
 What is [Anton & Irene](https://twitter.com/antonandirene)'s worklow to build solid UX.
 

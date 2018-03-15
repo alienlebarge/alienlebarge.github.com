@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-17T21:37:50Z
-description: My sketchnote of Oliver Reichenstein's talk Information ↔ Entropy
-image: https://farm4.staticflickr.com/3793/14288678243_cf83c5b8f9_c.jpg
-tags: uxls, ux, event, lausanne, sketchnote, virtual
-title: 'UX Lausanne: Information ↔ Entropy'
----
++++
+categories = "blog"
+date = "2014-06-17T21:37:50Z"
+description = "My sketchnote of Oliver Reichenstein's talk Information ↔ Entropy"
+image = "https://farm4.staticflickr.com/3793/14288678243_cf83c5b8f9_c.jpg"
+tags = "uxls, ux, event, lausanne, sketchnote, virtual"
+title = "UX Lausanne: Information ↔ Entropy"
+
++++
 
 Here's my sketchnote of [Oliver Reichestein](https://twitter.com/reichenstein)'s talk.
 

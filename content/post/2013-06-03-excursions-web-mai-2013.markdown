@@ -1,18 +1,17 @@
----
-categories:
-- Internet
-date: 2013-06-03T00:00:00Z
-meta:
-  _edit_last: "1"
-  _wpas_done_all: "1"
-published: true
-status: publish
-tags:
-- Excursions
-- Web
-title: Excursions web - Mai 2013
-type: post
----
++++
+categories = ["Internet"]
+date = "2013-06-03T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Excursions", "Web"]
+title = "Excursions web - Mai 2013"
+type = "post"
+
+[meta]
+  _edit_last = "1"
+  _wpas_done_all = "1"
+
++++
 
 Voici quelques liens intéressants découverts durant le mois de mai. Bien entendu, vous pouvez retrouver tous ces liens sur [mon compte Pinboard](https://pinboard.in/u:alienlebarge).<!--more-->
 

@@ -1,12 +1,11 @@
----
-date: 2014-09-23T22:17:58Z
-description: The new iPhone will be available in a few days and I can not choose between
-  the big and the bigger model.
-image: https://dlgjp9x71cipk.cloudfront.net/2014-09-23-the-iphone6-dilemma.jpg
-tags:
-- iPhone6
-title: The iPhone 6 dilemma
----
++++
+date = "2014-09-23T22:17:58Z"
+description = "The new iPhone will be available in a few days and I can not choose between the big and the bigger model."
+image = "https://dlgjp9x71cipk.cloudfront.net/2014-09-23-the-iphone6-dilemma.jpg"
+tags = ["iPhone6"]
+title = "The iPhone 6 dilemma"
+
++++
 
 The new iPhone will be available in a few days and I am not able choose between the big and the bigger model.
 

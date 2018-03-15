@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-17T21:32:17Z
-description: My sketchnote of Janina Wood's talk The Virtual Reality Experience
-image: https://farm6.staticflickr.com/5198/14289657384_c24949152f_z.jpg
-tags: uxls, ux, event, lausanne, sketchnote, virtual
-title: 'UX Lausanne: The Virtual Reality Experience'
----
++++
+categories = "blog"
+date = "2014-06-17T21:32:17Z"
+description = "My sketchnote of Janina Wood's talk The Virtual Reality Experience"
+image = "https://farm6.staticflickr.com/5198/14289657384_c24949152f_z.jpg"
+tags = "uxls, ux, event, lausanne, sketchnote, virtual"
+title = "UX Lausanne: The Virtual Reality Experience"
+
++++
 
 Here's my sketchnote of [Janina Wood](https://twitter.com/Kaori_Ino)'s talk.
 

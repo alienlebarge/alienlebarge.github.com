@@ -1,13 +1,11 @@
----
-date: 2014-11-07T13:37:35Z
-description: Add more creativity in your work! It's Andy Clark message in his talk
-  at Beyond Tellerrand
-image: https://farm8.staticflickr.com/7468/15712848731_01aa741414_c.jpg
-tags:
-- btconf
-- conference
-title: 'Beyond Tellerrand: Counting Stars: Creativity over Predicatbility'
----
++++
+date = "2014-11-07T13:37:35Z"
+description = "Add more creativity in your work! It's Andy Clark message in his talk at Beyond Tellerrand"
+image = "https://farm8.staticflickr.com/7468/15712848731_01aa741414_c.jpg"
+tags = ["btconf", "conference"]
+title = "Beyond Tellerrand: Counting Stars: Creativity over Predicatbility"
+
++++
 
 These days, we tend to build more effective sites based on statistics and research. According to [Andrew Clarke](https://twitter.com/Malarkey), we do not leave room for creativity.
 We remember the commercials on television because they were outstanding, funny ... creative. What was the last memorable site that comes to mind?

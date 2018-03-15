@@ -1,12 +1,10 @@
----
-date: 2015-10-02T14:42:45Z
-description: A concept of priority+ navigation built with flexbox
-tags:
-- flexbox
-- navigation
-- priority
-title: Priority+ navigation with flexbox
----
++++
+date = "2015-10-02T14:42:45Z"
+description = "A concept of priority+ navigation built with flexbox"
+tags = ["flexbox", "navigation", "priority"]
+title = "Priority+ navigation with flexbox"
+
++++
 
 Priority+ navigation is an interesting pattern. The main idea of it is to place the more important items of your menu at the left of it. It means that the most important stuff will be available on all viewports and the less importants items will popup as the screen enlarge.
 

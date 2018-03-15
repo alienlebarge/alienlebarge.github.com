@@ -1,18 +1,14 @@
----
-categories:
-- Ballade
-coordinates: 6.322417,46.66906
-date: 2013-06-03T00:00:00Z
-published: true
-status: publish
-tags:
-- Ballade
-- Lac Brenet
-- Randonnée
-- Vallée de Joux
-title: Tour du Lac Brenet
-type: post
----
++++
+categories = ["Ballade"]
+coordinates = "6.322417,46.66906"
+date = "2013-06-03T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Ballade", "Lac Brenet", "Randonnée", "Vallée de Joux"]
+title = "Tour du Lac Brenet"
+type = "post"
+
++++
 
 Le tour du lac Brenet à la Vallée de Joux est une ballade accessible à tous. Le sentier est même facilement accessible avec une poussette.<!--more-->
 

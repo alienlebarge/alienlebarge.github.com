@@ -1,12 +1,12 @@
----
-categories: blog
-date: 2014-06-13T15:24:27Z
-description: My sketchnote of Birgit Geiberger & Peter Boersma's talk UX sells, but
-  not by itself
-image: http://38.media.tumblr.com/4f28fe22dee136d62253946f6be4150b/tumblr_n5zb2ktWnL1tcuse3o1_1280.jpg
-tags: uxls, ux, event, lausanne, sell, sketchnote
-title: 'UX Lausanne: UX sells, but not by itself'
----
++++
+categories = "blog"
+date = "2014-06-13T15:24:27Z"
+description = "My sketchnote of Birgit Geiberger & Peter Boersma's talk UX sells, but not by itself"
+image = "http://38.media.tumblr.com/4f28fe22dee136d62253946f6be4150b/tumblr_n5zb2ktWnL1tcuse3o1_1280.jpg"
+tags = "uxls, ux, event, lausanne, sell, sketchnote"
+title = "UX Lausanne: UX sells, but not by itself"
+
++++
 
 Here's my sketchnote of [Birgit Geiberger](https://twitter.com/birgitgcom) and [Peter Boersma](https://twitter.com/pboersma)'s talk.
 

@@ -1,14 +1,11 @@
----
-date: 2015-12-15T21:36:44Z
-description: Bruce Lawson presentation about the history of the web, what is his future
-  and how we can help as developers to make it happen
-image: https://farm6.staticflickr.com/5682/22502903546_c12e44286d_b.jpg
-tags:
-- smashingconf
-- css
-- w3c
-title: 'SmashingConf: Houdini, Extensible Web, CSS.Next'
----
++++
+date = "2015-12-15T21:36:44Z"
+description = "Bruce Lawson presentation about the history of the web, what is his future and how we can help as developers to make it happen"
+image = "https://farm6.staticflickr.com/5682/22502903546_c12e44286d_b.jpg"
+tags = ["smashingconf", "css", "w3c"]
+title = "SmashingConf: Houdini, Extensible Web, CSS.Next"
+
++++
 
 [Bruce Lawson](https://twitter.com/brucel) was the mystery speaker at smashingconf. His presentation was about the history of the web, what is his future and how we can help as developers to make it happen.
 

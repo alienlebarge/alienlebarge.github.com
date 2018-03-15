@@ -1,13 +1,11 @@
----
-date: 2015-12-01T20:24:39Z
-description: Joe Leech talkes about how to design ... with magic
-image: https://farm1.staticflickr.com/574/22515411462_0a438f77bf_b.jpg
-tags:
-- smashingconf
-- design
-- ux
-title: 'SmashingConf: How To Design With Science Without Loosing The Magic'
----
++++
+date = "2015-12-01T20:24:39Z"
+description = "Joe Leech talkes about how to design ... with magic"
+image = "https://farm1.staticflickr.com/574/22515411462_0a438f77bf_b.jpg"
+tags = ["smashingconf", "design", "ux"]
+title = "SmashingConf: How To Design With Science Without Loosing The Magic"
+
++++
 
 Here's my sketchnote of [Joe Leech](https://twitter.com/mrjoe) talk's. He gives use some tips how to design without loosing the magic.
 

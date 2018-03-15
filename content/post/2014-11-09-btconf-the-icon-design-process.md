@@ -1,15 +1,11 @@
----
-date: 2014-11-09T13:09:26Z
-description: Jon Hicks, the man behind so much well known icons, presented us his
-  process to design an icon at Beyond Tellerrand
-image: https://farm4.staticflickr.com/3947/15112506354_5ce607be41_c.jpg
-tags:
-- btconf
-- conference
-- icon
-- design
-title: 'Beyond Tellerrand: The Icon Design Process'
----
++++
+date = "2014-11-09T13:09:26Z"
+description = "Jon Hicks, the man behind so much well known icons, presented us his process to design an icon at Beyond Tellerrand"
+image = "https://farm4.staticflickr.com/3947/15112506354_5ce607be41_c.jpg"
+tags = ["btconf", "conference", "icon", "design"]
+title = "Beyond Tellerrand: The Icon Design Process"
+
++++
 
 There is a few steps to follow to design an icon. John Hicks presented his workflow and the things you better have to be aware of when designing.
 

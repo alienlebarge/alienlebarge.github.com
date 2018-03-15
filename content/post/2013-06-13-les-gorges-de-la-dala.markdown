@@ -1,19 +1,14 @@
----
-categories:
-- Ballade
-coordinates: 7.638888,46.385995
-date: 2013-06-13T00:00:00Z
-published: true
-status: publish
-tags:
-- Ballade
-- Dala
-- Gorges
-- Loeche
-- Randonnée
-title: Les Gorges de la Dala
-type: post
----
++++
+categories = ["Ballade"]
+coordinates = "7.638888,46.385995"
+date = "2013-06-13T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Ballade", "Dala", "Gorges", "Loeche", "Randonnée"]
+title = "Les Gorges de la Dala"
+type = "post"
+
++++
 
 Voici une petite ballade bien sympathique à faire du côté de Loèche-les-Bains. Elle n'est pas très longue une heure sans arrêter. Le temps parfait pour attendre que votre chambre d'hôtel soit prête. <!--more-->
 

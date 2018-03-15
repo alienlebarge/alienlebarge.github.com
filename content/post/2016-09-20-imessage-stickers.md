@@ -1,13 +1,10 @@
----
-date: 2016-09-20T20:44:09Z
-description: Favorites stickers on iOS iMessage
-tags:
-- app
-- ios
-- stickers
-- imessage
-title: Favorites stickers
----
++++
+date = "2016-09-20T20:44:09Z"
+description = "Favorites stickers on iOS iMessage"
+tags = ["app", "ios", "stickers", "imessage"]
+title = "Favorites stickers"
+
++++
 
 I think Apple had made a great move with [the new iMessage platform](https://www.macstories.net/stories/ios-10-the-macstories-review/13/#imessage-as-a-platform "iMessage as a Platform on MacStories") on iOS 10.
 

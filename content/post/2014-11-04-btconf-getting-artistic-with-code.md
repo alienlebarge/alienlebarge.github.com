@@ -1,13 +1,10 @@
----
-date: 2014-11-04T22:54:11Z
-description: My sketchnote about Seb Lee-Delisle's talk at Beyond Tellerrand Berlin
-tags:
-- btconf
-- conference
-- sketchnote
-- css
-title: 'Beyond Tellerrand: Getting Artistic With Code'
----
++++
+date = "2014-11-04T22:54:11Z"
+description = "My sketchnote about Seb Lee-Delisle's talk at Beyond Tellerrand Berlin"
+tags = ["btconf", "conference", "sketchnote", "css"]
+title = "Beyond Tellerrand: Getting Artistic With Code"
+
++++
 
 [Seb Lee-Delisle](http://www.twitter.com/seb_ly)'s talk was about getting artistic with code but more importantly:
 

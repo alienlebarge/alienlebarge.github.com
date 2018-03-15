@@ -1,13 +1,11 @@
----
-date: 2014-11-12T07:22:06Z
-description: John Allsop's talk about putting your website in offline mode
-image: https://farm6.staticflickr.com/5614/15730350261_cc927bb61c_c.jpg
-tags:
-- btconf
-- conference
-- offline
-title: 'Beyond Tellerrand: The Web''s Futur Is Offline'
----
++++
+date = "2014-11-12T07:22:06Z"
+description = "John Allsop's talk about putting your website in offline mode"
+image = "https://farm6.staticflickr.com/5614/15730350261_cc927bb61c_c.jpg"
+tags = ["btconf", "conference", "offline"]
+title = "Beyond Tellerrand: The Web's Futur Is Offline"
+
++++
 
 [John Allsop](https://twitter.com/johnallsopp)'s talk was about putting you website in offline mode. We take a tour around localSorage, sessionStorage and AppCache (which is not a douchebag).
 

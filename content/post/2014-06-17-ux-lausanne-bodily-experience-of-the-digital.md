@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-17T14:41:48Z
-description: My sketchnote of Fabian Hemmert talk Bodily Experiences of the Digital
-image: https://farm4.staticflickr.com/3779/14289646894_485835c764_z.jpg
-tags: uxls, ux, event, lausanne, sketchnote, body, experience
-title: 'UX Lausanne: Bodily Experiences of the Digital'
----
++++
+categories = "blog"
+date = "2014-06-17T14:41:48Z"
+description = "My sketchnote of Fabian Hemmert talk Bodily Experiences of the Digital"
+image = "https://farm4.staticflickr.com/3779/14289646894_485835c764_z.jpg"
+tags = "uxls, ux, event, lausanne, sketchnote, body, experience"
+title = "UX Lausanne: Bodily Experiences of the Digital"
+
++++
 
 Here's my sketchnote of [Fabian Hemmert](https://twitter.com/fabianhemmert)'s talk.
 

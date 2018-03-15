@@ -1,17 +1,11 @@
----
-date: 2015-11-14T14:10:35Z
-description: Seb Lest talks about his life, work and achievements.
-image: https://farm1.staticflickr.com/614/21907715103_b2c966fd27_b.jpg
-tags:
-- smashingconf
-- typography
-- caligraphy
-- nasa
-- art
-- font
-- sketchnote
-title: 'SmashingConf: Peace, Hellfire & Outer Space'
----
++++
+date = "2015-11-14T14:10:35Z"
+description = "Seb Lest talks about his life, work and achievements."
+image = "https://farm1.staticflickr.com/614/21907715103_b2c966fd27_b.jpg"
+tags = ["smashingconf", "typography", "caligraphy", "nasa", "art", "font", "sketchnote"]
+title = "SmashingConf: Peace, Hellfire & Outer Space"
+
++++
 
 [Seb Lester](https://twitter.com/seblester) is the guy who does this [famous handrawing of well known logos](https://www.youtube.com/watch?v=1orjLpX7GbM).  
 He told us about his life, his passion for BMX, how he started designing fonts and his greatest achievements.

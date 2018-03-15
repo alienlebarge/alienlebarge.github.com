@@ -1,14 +1,11 @@
----
-date: 2014-11-10T07:50:33Z
-description: James Hall showed us how insecure wifi and Internet are if we doesn't
-  care about it
-image: https://farm8.staticflickr.com/7470/15732468105_ac1cf14521_c.jpg
-tags:
-- btconf
-- conference
-- security
-title: 'Beyond Tellerrand: Security is Everyone''s Responsibility'
----
++++
+date = "2014-11-10T07:50:33Z"
+description = "James Hall showed us how insecure wifi and Internet are if we doesn't care about it"
+image = "https://farm8.staticflickr.com/7470/15732468105_ac1cf14521_c.jpg"
+tags = ["btconf", "conference", "security"]
+title = "Beyond Tellerrand: Security is Everyone's Responsibility"
+
++++
 
 This was the kind of talk after which one you shut down your phone and reset all your passwords when back at home.
 

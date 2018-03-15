@@ -1,15 +1,11 @@
----
-date: 2015-05-16T22:10:40Z
-description: Sara Wachter-Boettcher's talk Content Amid Chaos
-image: https://c2.staticflickr.com/6/5339/17518678705_b30b75c711_z.jpg
-tags:
-- btconf
-- conference
-- content
-- strategy
-- web
-title: 'Beyond Tellerrand: Content Amid Chaos'
----
++++
+date = "2015-05-16T22:10:40Z"
+description = "Sara Wachter-Boettcher's talk Content Amid Chaos"
+image = "https://c2.staticflickr.com/6/5339/17518678705_b30b75c711_z.jpg"
+tags = ["btconf", "conference", "content", "strategy", "web"]
+title = "Beyond Tellerrand: Content Amid Chaos"
+
++++
 
 Taking care of the content of a website is a real challenge, a big challenge. [Sara Wachter-Boettcher](https://twitter.com/sara_ann_marie) presented how to manage this by cutting it into smallest project that are more managable.
 

@@ -1,13 +1,11 @@
----
-date: 2014-11-07T11:34:33Z
-description: Tim Kadlec talk about transitions in the UI
-image: https://farm9.staticflickr.com/8593/15691034206_af69414d46_c.jpg
-tags:
-- btconf
-- conference
-- ui
-title: 'Beyond Tellerrand: The Space Between'
----
++++
+date = "2014-11-07T11:34:33Z"
+description = "Tim Kadlec talk about transitions in the UI"
+image = "https://farm9.staticflickr.com/8593/15691034206_af69414d46_c.jpg"
+tags = ["btconf", "conference", "ui"]
+title = "Beyond Tellerrand: The Space Between"
+
++++
 
 The cartoonists have long known. Transitions and intermediate frames are very important. [Tim Kadlec](https://twitter.com/tkadlec) showed us how to improve the user experience of a website playing on the effects of transition. Yes ladies and gentlemen, the progress bar is "has-been".
 

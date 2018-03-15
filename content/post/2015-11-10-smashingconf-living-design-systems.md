@@ -1,16 +1,11 @@
----
-date: 2015-11-10T21:19:32Z
-description: Jina Bolton talks about how they build and maintain design sytems at
-  salesforce
-image: https://farm1.staticflickr.com/630/22540085821_e7f934b969_b.jpg
-tags:
-- smashingconf
-- design
-- system
-- sketchnote
-- styleguide
-title: 'SmashingConf: Living Design Systems'
----
++++
+date = "2015-11-10T21:19:32Z"
+description = "Jina Bolton talks about how they build and maintain design sytems at salesforce"
+image = "https://farm1.staticflickr.com/630/22540085821_e7f934b969_b.jpg"
+tags = ["smashingconf", "design", "system", "sketchnote", "styleguide"]
+title = "SmashingConf: Living Design Systems"
+
++++
 
 Haaa design systems !
 I was waiting for this talk. As we start thinking about building [a design system for the State of Vaud](https://github.com/DSI-VD/foehn "Foehn, the design system for the State of Vaud on  GitHub"), my ears were wide open to grab information how to build design systems that works.

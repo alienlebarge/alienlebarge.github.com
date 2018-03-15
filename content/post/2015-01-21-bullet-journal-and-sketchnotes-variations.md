@@ -1,13 +1,11 @@
----
-date: 2015-01-21T22:01:54Z
-description: Since more than a year, I write down everything I do. This logging technique
-  works well for and I want to share it with you.
-image: http://alb-blog.s3.amazonaws.com/2015-01-22-blog-sketchnote-t8ffm1i.jpg
-tags:
-- sketchnote
-- journal
-title: Bullet Journal and Sketchnotes variations
----
++++
+date = "2015-01-21T22:01:54Z"
+description = "Since more than a year, I write down everything I do. This logging technique works well for and I want to share it with you."
+image = "http://alb-blog.s3.amazonaws.com/2015-01-22-blog-sketchnote-t8ffm1i.jpg"
+tags = ["sketchnote", "journal"]
+title = "Bullet Journal and Sketchnotes variations"
+
++++
 
 Once a week, we have a meeting at work to summarize all the things done during the last five working days. It is sometimes hard for me to remember on which project, issue, repository branch I have worked on. I needed a tool to help me.
 A year ago, I dicovered the Bullet Journal. I started to use it mixed with Sketchnotes.

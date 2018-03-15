@@ -1,31 +1,31 @@
----
-categories:
-- Ballade
-coordinates: 6.407948,46.718826
-date: 2013-05-27T00:00:00Z
-markers:
-- coordinates: 6.407948,46.718826
-  label: water
-  name: pin-m
-- coordinates: 6.400716,46.717375
-  label: rail
-  name: pin-m
-- coordinates: 6.400437,46.716507
-  label: parking
-- coordinates: 6.395974,46.722333
-published: true
-status: publish
-tags:
-- Ballade
-- Enfant
-- Le Day
-- Promenade
-- Randonnée
-- Saut du Day
-- Vallorbe
-title: Saut du Day
-type: post
----
++++
+categories = ["Ballade"]
+coordinates = "6.407948,46.718826"
+date = "2013-05-27T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Ballade", "Enfant", "Le Day", "Promenade", "Randonnée", "Saut du Day", "Vallorbe"]
+title = "Saut du Day"
+type = "post"
+
+[[markers]]
+  coordinates = "6.407948,46.718826"
+  label = "water"
+  name = "pin-m"
+
+[[markers]]
+  coordinates = "6.400716,46.717375"
+  label = "rail"
+  name = "pin-m"
+
+[[markers]]
+  coordinates = "6.400437,46.716507"
+  label = "parking"
+
+[[markers]]
+  coordinates = "6.395974,46.722333"
+
++++
 
 Quoi de mieux qu’une petite randonnée pour s’aérer l’esprit ?
 

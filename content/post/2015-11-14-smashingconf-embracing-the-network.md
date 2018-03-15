@@ -1,15 +1,11 @@
----
-date: 2015-11-14T13:48:20Z
-description: The network is intrinsically unreliable. Patrick Hammann tell us how
-  to work with it.
-image: https://farm1.staticflickr.com/617/22340985680_fcc5ba198f_b.jpg
-tags:
-- smashingconf
-- network
-- sketchnote
-- performance
-title: 'SmashingConf: Embracing The Network'
----
++++
+date = "2015-11-14T13:48:20Z"
+description = "The network is intrinsically unreliable. Patrick Hammann tell us how to work with it."
+image = "https://farm1.staticflickr.com/617/22340985680_fcc5ba198f_b.jpg"
+tags = ["smashingconf", "network", "sketchnote", "performance"]
+title = "SmashingConf: Embracing The Network"
+
++++
 
 [Patrick Hamann](https://twitter.com/patrickhamann) does a very interesting talk about performances.
 

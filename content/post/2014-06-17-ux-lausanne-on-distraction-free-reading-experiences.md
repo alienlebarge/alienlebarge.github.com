@@ -1,11 +1,12 @@
----
-categories: blog
-date: 2014-06-17T14:41:48Z
-description: My sketchnote of Adrian Zumbrunnen talk On distraction-free reading experiences
-image: https://farm3.staticflickr.com/2895/14286828791_2d46ac8b54_z.jpg
-tags: uxls, ux, event, lausanne, sketchnote, distraction, read
-title: 'UX Lausanne: On distraction-free reading experiences'
----
++++
+categories = "blog"
+date = "2014-06-17T14:41:48Z"
+description = "My sketchnote of Adrian Zumbrunnen talk On distraction-free reading experiences"
+image = "https://farm3.staticflickr.com/2895/14286828791_2d46ac8b54_z.jpg"
+tags = "uxls, ux, event, lausanne, sketchnote, distraction, read"
+title = "UX Lausanne: On distraction-free reading experiences"
+
++++
 
 Here's my sketchnote of [Adrian Zumbrunnen](https://twitter.com/webchaeschtli)'s talk.
 

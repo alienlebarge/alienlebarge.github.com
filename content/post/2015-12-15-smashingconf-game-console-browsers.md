@@ -1,14 +1,11 @@
----
-date: 2015-12-15T22:08:09Z
-description: 'Anna Debenham''s talk about what we have to take in consideration to
-  build websites for console browsers and what we can learn from them. '
-image: https://farm1.staticflickr.com/704/22515375822_6a079786bb_b.jpg
-tags:
-- smashingconf
-- browsers
-- console
-title: 'SmashingConf: Game Console Browsers'
----
++++
+date = "2015-12-15T22:08:09Z"
+description = "Anna Debenham's talk about what we have to take in consideration to build websites for console browsers and what we can learn from them. "
+image = "https://farm1.staticflickr.com/704/22515375822_6a079786bb_b.jpg"
+tags = ["smashingconf", "browsers", "console"]
+title = "SmashingConf: Game Console Browsers"
+
++++
 
 These days, we can visit a web page on a lot of kind of device. Consoles are one of them. [Anna Debenham](https://twitter.com/anna_debenham)'s talk was about what we have to take in consideration to build websites for console browsers and what we can learn from them.
 

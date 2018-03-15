@@ -1,14 +1,11 @@
----
-date: 2014-11-11T16:08:55Z
-description: The internet is full of data. Brian Suda's talk was about bringing them
-  back to print.
-image: https://farm4.staticflickr.com/3940/15733822692_6d66123110_c.jpg
-tags:
-- btconf
-- conference
-- print
-title: 'Beyond Tellerrand: Connecting The Digital To Analog'
----
++++
+date = "2014-11-11T16:08:55Z"
+description = "The internet is full of data. Brian Suda's talk was about bringing them back to print."
+image = "https://farm4.staticflickr.com/3940/15733822692_6d66123110_c.jpg"
+tags = ["btconf", "conference", "print"]
+title = "Beyond Tellerrand: Connecting The Digital To Analog"
+
++++
 
 The Internet is full of data. Can't we print them on paper ?  
 I really enjoyed [Brian Suda](https://twitter.com/briansuda)'s talk. This is perhaps because my father worked in the paper industry as a typesetter.

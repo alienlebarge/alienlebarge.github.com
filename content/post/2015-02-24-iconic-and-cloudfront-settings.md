@@ -1,11 +1,10 @@
----
-date: 2015-02-24T19:27:09Z
-description: How I set up S3 and CloudFront to make it works with Iconic incons system.
-tags:
-- iconic
-- aws
-title: How to use Iconic with Amazon S3 and CloudFront
----
++++
+date = "2015-02-24T19:27:09Z"
+description = "How I set up S3 and CloudFront to make it works with Iconic incons system."
+tags = ["iconic", "aws"]
+title = "How to use Iconic with Amazon S3 and CloudFront"
+
++++
 
 [Iconic](https://useiconic.com/) is an incredible icons system. But this not as simple as downloading it, uploading it on a [S3 bucket](http://aws.amazon.com/s3/), setting up a [CloudFront](http://aws.amazon.com/cloudfront/) and here "*here you go!*".
 Here's how I setup all that stuff to make it works with as a <abbr title="Content Delivery Network">CDN</abbr> for this blog.

@@ -1,12 +1,11 @@
----
-date: 2014-11-05T14:17:17Z
-description: My impression of Beyond Tellerand Berlin 2014 conference
-image: https://farm8.staticflickr.com/7519/15529324368_ef08549418_c.jpg
-tags:
-- btconf
-- conference
-title: 'Beyond Tellerrand: First Impression'
----
++++
+date = "2014-11-05T14:17:17Z"
+description = "My impression of Beyond Tellerand Berlin 2014 conference"
+image = "https://farm8.staticflickr.com/7519/15529324368_ef08549418_c.jpg"
+tags = ["btconf", "conference"]
+title = "Beyond Tellerrand: First Impression"
+
++++
 
 Today is the second day of [Beyond Tellerrand](http://beyondtellerrand.com/) (actually the third day because I was at the workshop). Since Monday, I’m trying to publish my sketch notes of the talks. But, you know what a nightmare hotel wi-fi are. I decided to do a quick post about my impressions and post all the stuff with media when I will be back at home.
 

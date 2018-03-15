@@ -1,13 +1,11 @@
----
-date: 2014-08-26T05:00:00Z
-description: How to setup some prebrowsing in Jekyll
-image: http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/05/Timecop-2.png
-tags:
-- code
-- jekyll
-- prebrowsing
-title: Jekyll and prebrowsing
----
++++
+date = "2014-08-26T05:00:00Z"
+description = "How to setup some prebrowsing in Jekyll"
+image = "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/05/Timecop-2.png"
+tags = ["code", "jekyll", "prebrowsing"]
+title = "Jekyll and prebrowsing"
+
++++
 
 Prebrowsing in one of the hot topic on the web these time. It mean: preparing the next page the user will visite. So if you wanted to be like Jean-Claude Van Damme in [Timecop](http://en.wikipedia.org/wiki/Timecop "Timecop on Wikipedia") and master the (loading) time, here is a few things you can do with a Jekyll based blog.
 
