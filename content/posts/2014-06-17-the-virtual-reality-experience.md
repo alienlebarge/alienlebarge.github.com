@@ -3,7 +3,7 @@ categories = "blog"
 date = "2014-06-17T21:32:17Z"
 description = "My sketchnote of Janina Wood's talk The Virtual Reality Experience"
 image = "https://farm6.staticflickr.com/5198/14289657384_c24949152f_z.jpg"
-tags = "uxls, ux, event, lausanne, sketchnote, virtual"
+tags = ["uxls", "ux", "event", "lausanne", "sketchnote", "virtual"]
 title = "UX Lausanne: The Virtual Reality Experience"
 
 +++

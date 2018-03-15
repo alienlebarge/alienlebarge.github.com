@@ -2,7 +2,7 @@
 categories = "blog"
 date = "2014-05-14T14:46:04Z"
 description = "UX conference in Lausanne"
-tags = "ux"
+tags = ["ux"]
 title = "UX Lausanne"
 
 +++

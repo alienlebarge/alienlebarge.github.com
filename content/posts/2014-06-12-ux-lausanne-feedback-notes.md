@@ -3,7 +3,7 @@ categories = "blog"
 date = "2014-06-12T20:00:00Z"
 description = "Feedback and notes about UX conference in Lausanne"
 image = "https://farm6.staticflickr.com/5528/14290178495_d381101809_z.jpg"
-tags = "uxls, ux, event, lausanne"
+tags = ["uxls", "ux", "event", "lausanne"]
 title = "UX Lausanne feedback and notes"
 
 +++
