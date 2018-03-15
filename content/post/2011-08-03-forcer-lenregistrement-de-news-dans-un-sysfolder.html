@@ -1,0 +1,43 @@
+---
+categories:
+- Typo3
+date: 2011-08-03T00:00:00Z
+meta:
+  _edit_last: "1"
+  _syntaxhighlighter_encoded: "1"
+  soy_box_size: Tiny (135px)
+  soy_post_style: Normal
+  soy_show_desc: "Yes"
+  soy_show_title: "Yes"
+  tmac_last_id: "256453749923540994"
+published: true
+status: publish
+tags:
+- TSconfig
+- tt_news
+- Typo3
+title: Forcer l'enregistrement de news dans un sysfolder
+type: post
+---
+
+J'ai récemment découvert cette petite astuce bien pratique pour tt_news dans Typo3.
+
+<!--more-->
+
+Admettons que vous avez des contributeurs qui publient des news. Ces news sont enregistrées dans un sysfolder spécifique.
+Vous ne souhaitez pas que vos contributeurs enregistre les news dans n'importe quelle page de votre arborescence. Et bien, vous pouvez forcer l'enregistrement des nouveau enregistrement de news dans un PID spécifique.
+
+Pour ce faire, il suffit d'ajouter ce code dans le TSconfig de vos page.
+
+[code]
+# New tt_news records will be save in this page
+mod.web_txttnewsM1 {
+    list {
+        pidForNewArticles = 4
+    }
+}
+[/code]
+
+Il vous suffit de remplacer le "4" par l'id de votre sysfolder.
+
+J'espère que cela aura pu vous être utile.

@@ -1,0 +1,5 @@
+baseURL: http://www.alienlebarge.ch
+disablePathToLower: true
+languageCode: en-us
+title: Cédric Aellen
+theme: "ananke"
