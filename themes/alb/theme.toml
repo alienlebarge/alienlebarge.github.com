@@ -11,8 +11,8 @@ features = []
 min_version = "0.38"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Cédric Aellen"
+  homepage = "www.alienlebarge.ch"
 
 # If porting an existing theme
 [original]
