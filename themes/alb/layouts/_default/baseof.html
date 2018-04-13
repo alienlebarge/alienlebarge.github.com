@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ .Site.Title }}</title>
+
+    <link media="all" rel="stylesheet" href="../../assets/styles/style.css">
+
+    <script>
+        var script = document.createElement('script');
+        script.src = '../../assets/scripts/fontfaceobserver.js';
+        script.async = true;
+
+        script.onload = function () {
+
+            // Timeout function
+            function timeout(time) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(reject, time);
+                });
+            }
+
+            // font-loading code
+            var nort = new FontFaceObserver('Nort');
+            var nortSubset = new FontFaceObserver('NortSubset');
+            var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
+            var skemaProOmni = new FontFaceObserver('SkemaProOmni');
+            var html = document.documentElement;
+
+            // add a class if NortSubset is loaded
+            Promise.race([
+                nortSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__Nort--subset');
+            });
+
+            // add a class if Nort is loaded
+            Promise.race([
+                nort.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__Nort');
+            });
+
+            // add a class if SkemaProOmniSubset is loaded
+            Promise.race([
+                skemaProOmniSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__SkemaProOmni--subset');
+            });
+
+            // add a class if SkemaProOmni is loaded
+            Promise.race([
+                skemaProOmni.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__SkemaProOmni');
+            });
+        };
+        document.head.appendChild(script);
+    </script><script src="../../assets/scripts/fontfaceobserver.js" async=""></script>
+  </head>
+
+  <body>
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </body>
+</html>
