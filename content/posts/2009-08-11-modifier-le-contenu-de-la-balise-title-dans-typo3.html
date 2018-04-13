@@ -1,0 +1,33 @@
++++
+categories = ["Programmation", "Typo3"]
+date = "2009-08-11T00:00:00Z"
+published = true
+status = "publish"
+tags = ["Code", "Setup", "Titre", "Typo3", "TypoScript"]
+title = "Modifier le contenu de la balise \"title\" dans Typo3"
+type = "post"
+
+[meta]
+  _edit_last = "1"
+  tmac_last_id = "256453910204649472"
+
++++
+
+Et ouais, voici le premier article concernant Typo3.
+
+Il s'agit d'une astuce toute simple. De temps à autre on désire paramétrer le contenu des balises de titre de la page.
+
+<!--more-->
+
+Il suffit d'entrer le Typoscript suivant dans le Setup de votre gabarit de base.
+
+[java]
+config.noPageTitle = 2
+page.headerData {
+		5 = TEXT
+		# on wrap (|) le contenu de filed
+		5.wrap = <title>Mon site : blabla : |</title>
+		# field contient le sous-titre ou si vide le titre
+		5.field = subtitle // title
+}
+[/java]
